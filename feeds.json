@@ -1,5 +1,10 @@
 [
   {
+    "name": "Ubuntu Weekly News",
+    "nick": "uwn",
+    "url": "https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss"
+  },
+  {
     "name": "Ubuntu Classroom",
     "nick": "nhandler",
     "url": "https://ubuntuclassroom.wordpress.com/feed/?mrss=off"

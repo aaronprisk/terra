@@ -51,6 +51,7 @@ async function processFeeds() {
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(processedData, null, 2));
 
     console.log(`Successfully processed ${processedData.length} entries and saved to ${OUTPUT_FILE}`);
+    process.exit(0);
 }
 
 processFeeds().catch(e => {

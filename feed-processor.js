@@ -55,7 +55,7 @@ async function processFeeds() {
                 const cleanSnippet = sanitizeSnippet(rawSnippet);
                 
                 // Trim the snippet to 250 characters
-                const finalSnippet = cleanSnippet.substring(0, 250) + (cleanSnippet.length > 250 ? '...' : '');
+                const finalSnippet = cleanSnippet.substring(0, 500) + (cleanSnippet.length > 500 ? '...' : '');
 
                 processedData.push({
                     sourceName: feedConfig.name,

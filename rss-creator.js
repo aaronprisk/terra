@@ -67,11 +67,22 @@ const body = items.map((it) => {
   const link = xmlEscape(it.link || '');
   const guid = xmlEscape(it.link || it.title || `${Date.now()}`);
   const pubDate = toRfc1123(it.date);
-  const desc = cdata(it.snippet || '');
+  const desc = cdata(it.contentHtml || it.snippet || '');
   const sourceTag = (it.sourceName || it.sourceUrl)
     ? `\n      <source url="${xmlEscape(it.sourceUrl || '')}">${xmlEscape(it.sourceName || '')}</source>`
     : '';
-
+  let extras = '';
+  if (it.author) {
+    extras += `\n      <author>${xmlEscape(it.author)}</author>`;
+  }
+  if (Array.isArray(it.categories) && it.categories.length > 0) {
+    extras += it.categories
+      .map(c => `\n      <category>${xmlEscape(c)}</category>`)
+      .join('');
+  }
+  if (it.imageUrl) {
+    extras += `\n      <enclosure url="${xmlEscape(it.imageUrl)}" type="image/jpeg" />`;
+  }
   return (
 `    <item>
       <title>${title}</title>

@@ -1,0 +1,37 @@
+name: Ubuntu Planet RSS XML Creator
+
+on:
+  # Run the xml generator once per day
+  schedule:
+    - cron: '0 0 * * *' 
+  # Allow manual trigger from GitHub Actions
+  workflow_dispatch: 
+
+jobs:
+  build-xml:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants the token permission to commit files
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        # Important: Need token for committing changes back to the repo
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build subscribable RSS XML from processed JSON
+        run: |
+          node scripts/rss-creator.js \
+            --in ./feed-data.json \
+            --out ./feed.xml \
+            --site "https://ubuntu-community-team.github.io/terra/" \
+            --title "Ubuntu Planet" \
+            --desc "Fresh posts from the Ubuntu Planet" \
+            --lang "en" \
+            --limit 200
+
+      # Commit the new feed.xml to repo
+      - name: Commit and push RSS XML
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update RSS XML"
+          branch: ${{ github.ref_name }}

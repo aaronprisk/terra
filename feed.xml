@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu Planet</title>
+    <link>https://ubuntu-community-team.github.io/terra/</link>
+    <description>Fresh posts from the Ubuntu Planet</description>
+    <language>en</language>
+    <generator>json-to-rss (GitHub Actions)</generator>
+    <lastBuildDate>Mon, 01 Dec 2025 19:04:14 GMT</lastBuildDate>
+    <ttl>60</ttl>
+    <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E367 a Todo O Vapor</title>
+      <link>https://podcastubuntuportugal.org/e367/</link>
+      <guid isPermaLink="true">https://podcastubuntuportugal.org/e367/</guid>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Nesta semana e seguintes, vamos apostar no Ubuntu Touch e trazer o Software Livre nos telefones para as massas! O Miguel resolveu problemas com a ajuda da comunidade, o Diogo vai ao Porto evangelizar à bruta com o Ruben Carneiro e o sol brilhará para todos nós. A Canonical promete suporte para 15 anos; o Xubuntu foi hackeado porque não usa Hugo (womp, womp); o Miguel agora usa mano e bro em cada frase por causa de impressoras e vai converter-se ao Debian com Plasma e MEU DEUS, AS MÁQUINAS DA STE...]]></description>
+      <source url="https://podcastubuntuportugal.org/feed/podcast/index.xml">Podcast Ubuntu Portugal</source>
+    </item>
+    <item>
+      <title>AMI and Canonical announce partnership</title>
+      <link>https://ubuntu.com//blog/ubuntu-boot-in-uefi-announcement</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/ubuntu-boot-in-uefi-announcement</guid>
+      <pubDate>Mon, 24 Nov 2025 09:41:22 GMT</pubDate>
+      <description><![CDATA[Today, Canonical, the publisher of Ubuntu, announced a partnership with AMI, a provider of Unified Extensible Firmware Interface (UEFI) solutions, allowing users of AMI’s Aptio® V UEFI Firmware to netboot directly into Ubuntu by simply selecting Ubuntu Cloud Installation in the boot menu.]]></description>
+      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
+    </item>
+    <item>
+      <title>Think you can’t interpose static binaries with LD_PRELOAD? Think again!</title>
+      <link>https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</link>
+      <guid isPermaLink="true">https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</guid>
+      <pubDate>Thu, 20 Nov 2025 20:56:17 GMT</pubDate>
+      <description><![CDATA[Well, you are right, you can&#8217;t. At least not directly. This is well documented in many projects relying on interposing binaries, like faketime. But what if we could write something that would take a static binary, replace at least the direct syscalls with ones going through libc and load it with the dynamic linker? We [&#8230;]]]></description>
+      <source url="https://balintreczey.hu/blog/tag/ubuntu/feed/">Balint Reczey</source>
+    </item>
+    <item>
+      <title>Ubuntu Weekly Newsletter Issue 919</title>
+      <link>https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-919/72377</link>
+      <guid isPermaLink="true">https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-919/72377</guid>
+      <pubDate>Mon, 17 Nov 2025 23:09:13 GMT</pubDate>
+      <description><![CDATA[Ubuntu Weekly News
+UWN Issue 919 November 16-22 2025.
+Welcome to the Ubuntu Weekly Newsletter, Issue 919 for the week of November 16 - 22, 2025.
+In this Issue
+
+Public postmortem of the Xubuntu.org download compromise
+Ubuntu Stats
+Hot in Support
+Other Meeting Reports
+Upcoming Meetings and Events
+Ubuntu Circles! (LoCo) News
+2025 Korean LoCo 8th Representative Election
+Ubucon India 2025 - A milestone!
+Ubuntu @ FOSDEM 2026
+Ubuntu Circles! (LoCo) Events
+Debcrafters Digest Vol 3 – An Unexpected Attemp...]]></description>
+      <source url="https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss">Ubuntu Weekly News</source>
+    </item>
+    <item>
+      <title>GSoC 2025 Final Submission: Re-architecting PyCups for a Modern, Pythonic Future</title>
+      <link>https://soumyadghosh.github.io/website/interns/gsoc-2025/gsoc-final-submission/</link>
+      <guid isPermaLink="true">https://soumyadghosh.github.io/website/interns/gsoc-2025/gsoc-final-submission/</guid>
+      <pubDate>Sun, 09 Nov 2025 15:41:39 GMT</pubDate>
+      <description><![CDATA[(Please note this is still a draft of my final blog)
+And just like that, my Google Summer of Code journey with OpenPrinting is drawing to a close. This post serves as a final summary of my project: rebuilding pycups from the ground up for libcups3. While I still have a few things I plan to update, this covers the core of my work over the summer.
+It&rsquo;s been an incredible experience, and I&rsquo;m excited to share the architectural decisions, challenges, and &ldquo;magic&rdquo; tricks that we...]]></description>
+      <source url="https://soumyadghosh.github.io/website/index.xml">Soumyadeep Ghosh</source>
+    </item>
+    <item>
+      <title>Free software activity in October 2025</title>
+      <link>https://www.chiark.greenend.org.uk/~cjwatson/blog/activity-2025-10.html</link>
+      <guid isPermaLink="true">https://www.chiark.greenend.org.uk/~cjwatson/blog/activity-2025-10.html</guid>
+      <pubDate>Sun, 09 Nov 2025 15:33:33 GMT</pubDate>
+      <description><![CDATA[About 95% of my Debian contributions this month were
+sponsored by&nbsp;Freexian.
+You can also support my work directly via
+Liberapay or GitHub
+Sponsors.
+OpenSSH
+OpenSSH upstream released
+10.1p1 this month, so I
+upgraded to that.  In the process, I reverted a Debian patch that changed IP
+quality-of-service defaults, which made sense at the
+time but has since been reworked upstream
+anyway, so it makes sense to find out whether we still have similar
+problems.  So far I haven&#8217;t heard anything ...]]></description>
+      <source url="https://www.chiark.greenend.org.uk/~cjwatson/blog/feeds/tag/planet-ubuntu.atom.xml">Colin Watson</source>
+    </item>
+    <item>
+      <title>Introducing IncusOS!</title>
+      <link>https://stgraber.org/2025/11/07/introducing-incusos/</link>
+      <guid isPermaLink="true">https://stgraber.org/2025/11/07/introducing-incusos/</guid>
+      <pubDate>Fri, 07 Nov 2025 09:33:48 GMT</pubDate>
+      <description><![CDATA[After over a year of work, I&#8217;m very excited to announce the general availability of IncusOS, our own immutable OS image designed from the ground up to run Incus! IncusOS is designed for the modern world, actively relying on both &#8230; Continue reading &#8594;]]></description>
+      <source url="https://stgraber.org/category/planet-ubuntu/feed/">Stéphane Graber</source>
+    </item>
+    <item>
+      <title>Ubuntu Summit 25.10: Personal Highlights</title>
+      <link>https://jnsgr.uk/2025/11/ubuntu-summit-25/</link>
+      <guid isPermaLink="true">https://jnsgr.uk/2025/11/ubuntu-summit-25/</guid>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[This article was originally posted on the Ubuntu Discourse, and is reposted here. I welcome comments and further discussion in that thread.
+I recently had the privilege of attending the Ubuntu Summit 25.10. Ubuntu Summits have a relatively long history. Some years ago Canonical ran the ‘Ubuntu Developer Summits (UDS)’, but recently the events were brought back and reimagined as the ‘Ubuntu Summit’.
+For the most recent Summit, we tried out a new format. We invited a select few folks to come and g...]]></description>
+      <source url="https://jnsgr.uk/tags/ubuntu/index.xml">Jon Seager</source>
+    </item>
+    <item>
+      <title>A New Chapter: Career Transition Update</title>
+      <link>https://www.scarlettgatelymoore.dev/a-new-chapter-career-transition-update/</link>
+      <guid isPermaLink="true">https://www.scarlettgatelymoore.dev/a-new-chapter-career-transition-update/</guid>
+      <pubDate>Fri, 31 Oct 2025 15:38:55 GMT</pubDate>
+      <description><![CDATA[I&#8217;m pleased to share that my career transition has been successful! I&#8217;ve joined our local county assessor&#8217;s office, beginning a new path in property assessment for taxation and valuation. While the compensation is modest, it offers the stability I was looking for. My new schedule consists of four 10-hour days with an hour commute each way, which means Monday through Thursday will be largely devoted to work and travel. However, I&#8217;ll have Fridays available for open source c...]]></description>
+      <source url="https://www.scarlettgatelymoore.dev/category/open-source-software/feed/">Scarlett Gately Moore</source>
+    </item>
+    <item>
+      <title>Upgrading from 25.04 to 25.10</title>
+      <link>https://ubuntustudio.org/2025/10/upgrading-from-25-04-to-25-10/</link>
+      <guid isPermaLink="true">https://ubuntustudio.org/2025/10/upgrading-from-25-04-to-25-10/</guid>
+      <pubDate>Wed, 29 Oct 2025 20:08:52 GMT</pubDate>
+      <description><![CDATA[An issue has been identified The Ubuntu Release team has now enabled upgrades from 25.04 to 25.10! This is great news! In fact, you may have noticed this icon on your toolbar and a notification to upgrade. However, upon doing so, you may have noticed something a little more unfortunate:... Continue reading]]></description>
+      <source url="http://ubuntustudio.org/category/planetubuntu/feed/">Ubuntu Studio</source>
+    </item>
+    <item>
+      <title>Make fetch service opt-in</title>
+      <link>https://blog.launchpad.net/general/make-fetch-service-opt-in</link>
+      <guid isPermaLink="true">https://blog.launchpad.net/general/make-fetch-service-opt-in</guid>
+      <pubDate>Tue, 28 Oct 2025 11:31:12 GMT</pubDate>
+      <description><![CDATA[Launchpad Builders do not have direct access to the Internet. To reach external resources, they must acquire an authentication token that allows access to a restricted set of URLs via a proxy. This can either be a custom authenticated builder proxy or the fetch service. The fetch service is a custom sophisticated context-aware forward proxy. [&#8230;]]]></description>
+      <source url="http://news.launchpad.net/feed">Launchpad News</source>
+    </item>
+    <item>
+      <title>It's NOT always DNS.</title>
+      <link>https://notes.pault.ag/its-not-always-dns/</link>
+      <guid isPermaLink="true">https://notes.pault.ag/its-not-always-dns/</guid>
+      <pubDate>Mon, 27 Oct 2025 17:15:00 GMT</pubDate>
+      <description><![CDATA[I&rsquo;ve written down a new rule (no name, sorry) that I&rsquo;ll be repeating to myself
+and those around me. &ldquo;If you can replace &lsquo;DNS&rsquo; with &lsquo;key value store mapping
+a name to an ip&rsquo; and it still makes sense, it was not, in fact, DNS.&rdquo; Feel
+free to repeat it along with me.
+Sure, the &ldquo;It&rsquo;s always DNS&rdquo; meme is funny the first few hundred times you see
+it &ndash; but what&rsquo;s less funny is when critical thinking ends because a DNS query
+is...]]></description>
+      <source url="http://notes.pault.ag/feeds/all-en.atom.xml">Paul Tagliamonte</source>
+    </item>
+    <item>
+      <title>Sound Removals</title>
+      <link>https://blog.jak-linux.org/2025/10/18/sound-removals/</link>
+      <guid isPermaLink="true">https://blog.jak-linux.org/2025/10/18/sound-removals/</guid>
+      <pubDate>Sat, 18 Oct 2025 19:37:17 GMT</pubDate>
+      <description><![CDATA[Problem statement
+Currently if you have an automatically installed package A (= 1) where
+
+A (= 1) Depends B (= 1)
+A (= 2) Depends B (= 2)
+
+and you upgrade B from 1 to 2; then  you can:
+
+Remove A (= 1)
+Upgrade A to version 2
+
+If A was installed by a chain initiated by Recommends (say X Rec Y, Y Depends A), the solver sometimes preferred removing A (and anything depending on it until it got).]]></description>
+      <source url="https://blog.jak-linux.org/post/index.xml">Julian Andres Klode</source>
+    </item>
+    <item>
+      <title>Why I Won’t Be Attending or Speaking at Ubuntu Summit 25.10</title>
+      <link>https://ericheickmeyer.com/2025/10/09/why-i-wont-be-attending-or-speaking-at-ubuntu-summit-25-10/</link>
+      <guid isPermaLink="true">https://ericheickmeyer.com/2025/10/09/why-i-wont-be-attending-or-speaking-at-ubuntu-summit-25-10/</guid>
+      <pubDate>Thu, 09 Oct 2025 22:01:09 GMT</pubDate>
+      <description><![CDATA[Ubuntu Summit&#8217;s decision to go exclusively online, with the exception of those speaking at the Summit in London, UK, is anti-collaborative and turns its back on the very people who make Ubuntu what it is: its community of volunteers and developers. Ubuntu Summit was created from the dust of the Ubuntu Developer Summit in 2022&#8230;Read more Why I Won&#8217;t Be Attending or Speaking at Ubuntu Summit&#160;25.10]]></description>
+      <source url="https://ericheickmeyer.com/category/planet-ubuntu/feed/">Erich Eickmeyer</source>
+    </item>
+    <item>
+      <title>Lubuntu 25.10 (Questing Quokka) Released!</title>
+      <link>https://lubuntu.me/lubuntu-25-10-questing-quokka-released/</link>
+      <guid isPermaLink="true">https://lubuntu.me/lubuntu-25-10-questing-quokka-released/</guid>
+      <pubDate>Thu, 09 Oct 2025 14:05:30 GMT</pubDate>
+      <description><![CDATA[The Lubuntu Team is proud to announce Lubuntu 25.10, codenamed Questing Quokka. Lubuntu 25.10 is the 29th release of Lubuntu, the 15th release of Lubuntu with LXQt as the default desktop environment. Download and Support Lifespan With 25.10 being an interim release, it will follow the standard non-LTS support period of nine months; this means [&#8230;]]]></description>
+      <source url="http://lubuntu.me/feed/?mrss=off">Lubuntu Blog</source>
+    </item>
+    <item>
+      <title>Ubuntu Budgie 25.10 release notes</title>
+      <link>https://ubuntubudgie.org/2025/10/ubuntu-budgie-25-10-release-notes/</link>
+      <guid isPermaLink="true">https://ubuntubudgie.org/2025/10/ubuntu-budgie-25-10-release-notes/</guid>
+      <pubDate>Wed, 08 Oct 2025 17:26:51 GMT</pubDate>
+      <description><![CDATA[Introduction and overview Ubuntu Budgie 25.10 (Questing Quokka) is a Standard Release with 9 months of support by your distro maintainers and Canonical, from Oct 2025 to July 2026. These release notes showcase the key takeaways for 25.04 upgraders to 25.10. Please note &#8211; there is no direct upgrade path from 24.04.3 to 25.10; you [&#8230;]]]></description>
+      <source url="https://ubuntubudgie.org/feed/">David Mohammed</source>
+    </item>
+    <item>
+      <title>Adios Chicos, 25 Years of KDE</title>
+      <link>https://jriddell.org/2025/09/14/adios-chicos-25-years-of-kde/</link>
+      <guid isPermaLink="true">https://jriddell.org/2025/09/14/adios-chicos-25-years-of-kde/</guid>
+      <pubDate>Sun, 14 Sep 2025 20:56:35 GMT</pubDate>
+      <description><![CDATA[It was the turn of the millenium when I got my first computer fresh at university. Windows seemed uninteresting, it was impossible to work out how it worked or write programs for it. SuSE Linux 6.2 was much more interesting to try and opened a world of understanding how computers worked and wanting to code &#8230; Continue reading "Adios Chicos, 25 Years of KDE"]]></description>
+      <source url="http://jriddell.org/feed/?tag=planetubuntu">Jonathan Riddell</source>
+    </item>
+    <item>
+      <title>Testing crash recovery features in a CI environment</title>
+      <link>https://andrea.corbellini.name/2025/09/09/testing-crash-recovery-features-in-ci/</link>
+      <guid isPermaLink="true">https://andrea.corbellini.name/2025/09/09/testing-crash-recovery-features-in-ci/</guid>
+      <pubDate>Tue, 09 Sep 2025 00:05:00 GMT</pubDate>
+      <description><![CDATA[About two years ago I wrote a Rust crate to fulfill this promise:
+
+If a crash occurs while updating a file, the file either contains the old
+contents, or the new contents, nothing in between.
+
+This crate essentially solves the following problem: when you update a file,
+generally you open it, truncate it, write to it block-by-block, and eventually
+close it. The problem with this process is that if a crash occurs at any point
+during this process (the program segfaults, the kernel panics, the machi...]]></description>
+      <source url="http://andrea.corbellini.name/ubuntu.rss">Andrea Corbellini</source>
+    </item>
+    <item>
+      <title>CLI Corner: rsync</title>
+      <link>https://dougiewougie.com/linux/cli-corner-rsync/</link>
+      <guid isPermaLink="true">https://dougiewougie.com/linux/cli-corner-rsync/</guid>
+      <pubDate>Sun, 31 Aug 2025 10:38:37 GMT</pubDate>
+      <description><![CDATA[Synchronise two directories, e.g. Nextcloud and an encrypted USB drive with archive, recursive, partial, and progress flags:]]></description>
+      <source url="https://dougiewougie.com/category/linux/feed/">Dougie Richardson</source>
+    </item>
+    <item>
+      <title>Debian 13</title>
+      <link>https://jonathancarter.org/2025/08/10/debian-13/</link>
+      <guid isPermaLink="true">https://jonathancarter.org/2025/08/10/debian-13/</guid>
+      <pubDate>Sun, 10 Aug 2025 14:53:36 GMT</pubDate>
+      <description><![CDATA[Debian 13 has finally been released! One of the biggest and under-hyped features is support for HTTP Boot. This allows you to simply specify a URL (to any d-i or live image iso) in your computer&#8217;s firmware setup and then&#46;&#46;&#46;]]></description>
+      <source url="https://jonathancarter.org/feed">Jonathan Carter</source>
+    </item>
+    <item>
+      <title>Streamline Root Filesystem Modifications with chimg</title>
+      <link>https://toabctl.wordpress.com/2025/07/31/streamline-root-filesystem-modifications-with-chimg/</link>
+      <guid isPermaLink="true">https://toabctl.wordpress.com/2025/07/31/streamline-root-filesystem-modifications-with-chimg/</guid>
+      <pubDate>Thu, 31 Jul 2025 18:15:36 GMT</pubDate>
+      <description><![CDATA[During the last year I developed as a side project a new tool called chimg . That tool is useful to modify a given rootfs chroot directory in a declarative way. It can replace a kernel within a chroot, preseed &#8230; Continue reading &#8594;]]></description>
+      <source url="https://toabctl.wordpress.com/category/planet-ubuntu/feed/?mrss=off">Thomas Bechtold</source>
+    </item>
+    <item>
+      <title>Achieving actually full disk encryption of UEFI ESP at rest with TCG OPAL, FIPS, LUKS</title>
+      <link>http://blog.surgut.co.uk/2025/07/achieving-actually-full-disk-encryption.html</link>
+      <guid isPermaLink="true">http://blog.surgut.co.uk/2025/07/achieving-actually-full-disk-encryption.html</guid>
+      <pubDate>Mon, 28 Jul 2025 11:13:00 GMT</pubDate>
+      <description><![CDATA[Achieving full disk encryption using FIPS, TCG OPAL and LUKS to encrypt UEFI ESP on bare-metal and in VMsMany security standards such as CIS and STIG require to protect information at rest. For example, NIST SP 800-53r5 SC-28 advocate to use cryptographic protection, offline storage and TPMs to enhance protection of information confidentiality and/or integrity.Traditionally to satisfy such controls on portable devices such as laptops one would utilize software based Full Disk Encryption - Mac OS...]]></description>
+      <source url="http://feeds.feedburner.com/tdlk">Dimitri John Ledkov</source>
+    </item>
+    <item>
+      <title>uCareSystem v25.07.17: Stability and Integration in the best system maintenance tool for Debian &amp; Ubuntu</title>
+      <link>https://utappia.org/2025/07/17/ucaresystem-v25-07-17-system-maintenance-tool-debian-ubuntu/</link>
+      <guid isPermaLink="true">https://utappia.org/2025/07/17/ucaresystem-v25-07-17-system-maintenance-tool-debian-ubuntu/</guid>
+      <pubDate>Thu, 17 Jul 2025 22:09:26 GMT</pubDate>
+      <description><![CDATA[I am thrilled to announce a landmark new release of uCareSystem! Which you know it is THE best system maintenance tool Debian Ubuntu. This isn&#8217;t just an incremental update; it&#8217;s a significant evolution of the tool, focusing on deep infrastructure improvements, professional-grade Debian packaging, and a smoother, more reliable user experience. This release represents a [&#8230;]
+The post uCareSystem v25.07.17: Stability and Integration in the best system maintenance tool for Debian & ...]]></description>
+      <source url="http://utappia.org/feed/">Salih Emin</source>
+    </item>
+    <item>
+      <title>Making a Discord activity with PHP</title>
+      <link>https://www.kryogenix.org/days/2025/07/08/making-a-discord-activity-with-php/</link>
+      <guid isPermaLink="true">https://www.kryogenix.org/days/2025/07/08/making-a-discord-activity-with-php/</guid>
+      <pubDate>Tue, 08 Jul 2025 07:11:00 GMT</pubDate>
+      <description><![CDATA[Another post in what is slowly becoming a series, after describing how to make a Discord bot with PHP; today we're looking at how to make a Discord activity the same way.
+An activity is simpler than a bot; Discord activities are basically a web page which loads in an iframe, and can do what it likes in there. You're supposed to use them for games and the like, but I suspect that it might be useful to do quite a few bot-like tasks with activities instead; they take up more of your screen while yo...]]></description>
+      <source url="http://feeds.feedburner.com/kryogenix">Stuart Langridge</source>
+    </item>
+    <item>
+      <title>2025: Finding a job, and the understanding the market</title>
+      <link>https://joseeantonior.wordpress.com/2025/06/25/2025-finding-a-job-and-the-understanding-the-market/</link>
+      <guid isPermaLink="true">https://joseeantonior.wordpress.com/2025/06/25/2025-finding-a-job-and-the-understanding-the-market/</guid>
+      <pubDate>Wed, 25 Jun 2025 21:39:35 GMT</pubDate>
+      <description><![CDATA[So, I&#8217;ve been in the job market for a bit over a year. I was part of a layoff cycle in my last company, and finding a new gig has been difficult. I haven&#8217;t been able to find something as of yet, but it&#8217;s been a learning curve. The market is not what it has been in the last couple of years. With AI in the mix, lots of roles have been eliminated, or have shifted towards where human intervention is needed to interpret or verify the data AI is interpreting. Job hunting is a job in ...]]></description>
+      <source url="https://joseeantonior.wordpress.com/category/planet-ubuntu/feed/atom">José Antonio Rey</source>
+    </item>
+    <item>
+      <title>Attitudes on privacy and tracking</title>
+      <link>https://s3hh.wordpress.com/2025/05/25/attitudes-on-privacy-and-tracking/</link>
+      <guid isPermaLink="true">https://s3hh.wordpress.com/2025/05/25/attitudes-on-privacy-and-tracking/</guid>
+      <pubDate>Sun, 25 May 2025 13:00:15 GMT</pubDate>
+      <description><![CDATA[It&#8217;s amazing how quickly public opinion changes. Or, how quickly people cave. Remember just 10 years ago, how people felt about google glass? https://www.businessinsider.com/i-was-assaulted-for-wearing-google-glass-2014-4 https://www.youtube.com/watch?v=m8coAuWZL20 Or how they felt when they found out target was analyzing their purchases and perhaps &#8230; Continue reading &#8594;]]></description>
+      <source url="https://s3hh.wordpress.com/feed/?mrss=off">Serge Hallyn</source>
+    </item>
+    <item>
+      <title>Rooming with Mark</title>
+      <link>https://ograblog.wordpress.com/2025/05/16/rooming-with-mark/</link>
+      <guid isPermaLink="true">https://ograblog.wordpress.com/2025/05/16/rooming-with-mark/</guid>
+      <pubDate>Fri, 16 May 2025 11:17:23 GMT</pubDate>
+      <description><![CDATA[Yesterday, exactly twenty years ago my mobile rang while I was walking the dog. I had just returned from Sydney about a week ago (still battling with the last remains of my Jet-lag (I had never left Europe before!)) where I had attended the UbuntuDownUnder summit and had a 30min interview on the last day (that was literally rather like having a coffee with friends after lunch) with Mark Shuttleworth and Matt Zimmerman (back then Canonicals CTO) on a nice hotel terrace directly under a tree with ...]]></description>
+      <source url="https://ograblog.wordpress.com/feed/atom">Oliver Grawert</source>
+    </item>
+    <item>
+      <title>How to run a Linux Desktop virtual machine on Incus</title>
+      <link>https://blog.simos.info/how-to-run-a-linux-desktop-virtual-machine-on-incus/</link>
+      <guid isPermaLink="true">https://blog.simos.info/how-to-run-a-linux-desktop-virtual-machine-on-incus/</guid>
+      <pubDate>Thu, 01 May 2025 22:51:53 GMT</pubDate>
+      <description><![CDATA[Incus is a manager for virtual machines and system containers. A virtual machine (VM) is an instance of an operating system that runs on a computer, along with the main operating system. A virtual machine uses hardware virtualization features for the separation from the main operating system. With virtual machines, the full operating system boots &#8230; Continue reading]]></description>
+      <source url="https://blog.simos.info/category/planet-ubuntu/feed/?mrss=off">Simos Xenitellis</source>
+    </item>
+    <item>
+      <title>Ubuntu MATE 25.04 Release Notes</title>
+      <link>https://ubuntu-mate.org/blog/ubuntu-mate-plucky-puffin-release-notes/</link>
+      <guid isPermaLink="true">https://ubuntu-mate.org/blog/ubuntu-mate-plucky-puffin-release-notes/</guid>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Ubuntu MATE 25.04 is ready to soar! 🪽 Celebrating our 10th anniversary as an official Ubuntu flavour with the reliable MATE Desktop experience you love, built on the latest Ubuntu foundations. Read on to learn more 👓️
+
+A Decade of MATE
+
+This release marks the 10th anniversary of Ubuntu MATE becoming an official Ubuntu flavour. From our humble beginnings, we’ve developed a loyal following of users who value a traditional desktop experience with modern capabilities. Thanks to our amazing communi...]]></description>
+      <source url="https://ubuntu-mate.org/rss.xml">Ubuntu MATE</source>
+    </item>
+    <item>
+      <title>A VisionFive 2 and a Raspberry Pi 1 B</title>
+      <link>https://princessleia.com/journal/2025/04/a-visionfive-2-and-a-raspberry-pi-1-b/</link>
+      <guid isPermaLink="true">https://princessleia.com/journal/2025/04/a-visionfive-2-and-a-raspberry-pi-1-b/</guid>
+      <pubDate>Thu, 03 Apr 2025 20:43:31 GMT</pubDate>
+      <description><![CDATA[A couple weeks ago I was playing around with a multiple architecture CI setup with another team, and that led me to pull out my StarFive VisionFive 2 SBC again to see where I could make it this time with an install. I left off about a year ago when I succeeded in getting an [&#8230;]]]></description>
+      <source url="http://princessleia.com/journal/?cat=2&amp;feed=rss2">Elizabeth K. Joseph</source>
+    </item>
+    <item>
+      <title>I'm running for the OSI board... maybe</title>
+      <link>https://blog.luke.wf/2025/02/im-running-for-osi-board-maybe.html</link>
+      <guid isPermaLink="true">https://blog.luke.wf/2025/02/im-running-for-osi-board-maybe.html</guid>
+      <pubDate>Thu, 20 Feb 2025 17:31:00 GMT</pubDate>
+      <description><![CDATA[The Open Source Initiative has two classes of board seats: Affiliate seats, and Individual Member seats.&nbsp;In the upcoming election, each affiliate can nominate a candidate, and each affiliate can cast a vote for the Affiliate candidates, but there's only 1 Affiliate seat available. I initially expressed interest in being nominated as an Affiliate candidate via Debian. But since Bradley Kuhn is also running for an Affiliate seat with a similar platform to me, especially with regards to the OS...]]></description>
+      <source url="http://blog.luke.wf/feeds/posts/default/-/ubuntu-planet/">Luke Faraone</source>
+    </item>
+    <item>
+      <title>Spotlighting Community Stories</title>
+      <link>https://blog.popey.com/2025/02/spotlighting-community-stories/</link>
+      <guid isPermaLink="true">https://blog.popey.com/2025/02/spotlighting-community-stories/</guid>
+      <pubDate>Thu, 13 Feb 2025 10:00:00 GMT</pubDate>
+      <description><![CDATA[tl;dr I&rsquo;m hosting a Community Spotlight Webinar today at Anchore featuring Nicolas Vuilamy from the MegaLinter project. Register here.
+
+Throughout my career, I&rsquo;ve had the privilege of working with organizations that create widely-used open source tools. The popularity of these tools is evident through their impressive download statistics, strong community presence, and engagement both online and at events.
+During my time at Canonical, we saw the tremendous reach of Ubuntu, along with...]]></description>
+      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
+    </item>
+    <item>
+      <title>How to prevent TrackPoint or touchpad events from waking up ThinkPad T14 Gen 5 AMD from suspend</title>
+      <link>https://nobuto-m.github.io/post/2025/how-to-prevent-trackpoint-events-from-waking-up-thinkpad-t14-gen-5-amd-from-suspend/</link>
+      <guid isPermaLink="true">https://nobuto-m.github.io/post/2025/how-to-prevent-trackpoint-events-from-waking-up-thinkpad-t14-gen-5-amd-from-suspend/</guid>
+      <pubDate>Thu, 09 Jan 2025 14:50:38 GMT</pubDate>
+      <description><![CDATA[TL;DR
+Try the following lines in your custom udev rules, e.g.
+/etc/udev/rules.d/99-local-disable-wakeup-events.rules
+KERNEL==&#34;i2c-ELAN0676:00&#34;, SUBSYSTEM==&#34;i2c&#34;, DRIVERS==&#34;i2c_hid_acpi&#34;, ATTR{power/wakeup}=&#34;disabled&#34;
+KERNEL==&#34;PNP0C0E:00&#34;, SUBSYSTEM==&#34;acpi&#34;, DRIVERS==&#34;button&#34;, ATTRS{path}==&#34;\_SB_.SLPB&#34;, ATTR{power/wakeup}=&#34;disabled&#34;
+
+
+
+  Table of Contents
+  
+  
+    TL;DR
+    The motivation
+    Disabling touchpad as a wakeup s...]]></description>
+      <source url="https://nobuto-m.github.io/tag/planet-ubuntu/index.xml">Nobuto Murata</source>
+    </item>
+    <item>
+      <title>Quick howto for systemd-inhibit</title>
+      <link>https://foursixnine.io//blog/systemd/linux/hacks/2024/12/31/quickhowtoforsystemdinhibit.html</link>
+      <guid isPermaLink="true">https://foursixnine.io//blog/systemd/linux/hacks/2024/12/31/quickhowtoforsystemdinhibit.html</guid>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Bit of the why
+So often I come across the need to avoid my system to block forever, or until a process finishes, I can’t recall how did I came across systemd inhibit, but
+here’s my approach and a bit of motivation
+
+Motivation
+
+I noticed that the Gnome Settings, come with Rygel
+
+After some fiddling (not much really), it starts directly once I login and I will be using it instead of a fully fledged plex or the like, I just want to stream some videos from time to time from my home pc over my ipad :...]]></description>
+      <source url="https://foursixnine.io/atom.xml">Santiago Zarate</source>
+    </item>
+    <item>
+      <title>Thug Life</title>
+      <link>https://mako.cc/copyrighteous/thug-life</link>
+      <guid isPermaLink="true">https://mako.cc/copyrighteous/thug-life</guid>
+      <pubDate>Sat, 21 Dec 2024 23:06:02 GMT</pubDate>
+      <description><![CDATA[My current playlist is this diorama of Lulu the Piggy channeling Tupac Shakur in a toy vending machine in the basement of New World Mall in Flushing Chinatown.]]></description>
+      <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
+    </item>
+    <item>
+      <title>C void return gotcha</title>
+      <link>http://smackerelofopinion.blogspot.com/2024/12/c-void-return-gotcha.html</link>
+      <guid isPermaLink="true">http://smackerelofopinion.blogspot.com/2024/12/c-void-return-gotcha.html</guid>
+      <pubDate>Wed, 18 Dec 2024 17:43:00 GMT</pubDate>
+      <description><![CDATA[Last week I was bitten by a interesting C feature. The following terminate function was expected to exit if okay was zero (false) however it exited when zero was passed to it. The reason is the missing semicolon after the return function.&nbsp;The interesting part this that is compiles fine because the void function terminate is allowed to return the void return value, in this case the void return from exit(). &nbsp;]]></description>
+      <source url="http://smackerelofopinion.blogspot.com/feeds/posts/default">Colin King</source>
+    </item>
+    <item>
+      <title>2024 LiveCD Memory Usage Compare</title>
+      <link>https://bryanquigley.com/posts/memory-usage/2024-livecd-memory-usage-compare.html</link>
+      <guid isPermaLink="true">https://bryanquigley.com/posts/memory-usage/2024-livecd-memory-usage-compare.html</guid>
+      <pubDate>Sun, 20 Oct 2024 00:54:00 GMT</pubDate>
+      <description><![CDATA[I am using pretty much the exact same setup I did in 2020. Let's see who is more efficient in a live session!
+But first let's take a look at the image sizes:
+
+#chart-e2f331d9-b567-4c31-a180-21c8447ad965{-webkit-user-select:none;-webkit-font-smoothing:antialiased;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace}#chart-e2f331d9-b567-4c31-a180-21c8447ad965 .title{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:16px}#chart-e2f331d9-b567-4c31-a180-21c8447ad965 ....]]></description>
+      <source url="https://bryanquigley.com/rss.xml">Bryan Quigley</source>
+    </item>
+    <item>
+      <title>Waiting for a Linux system to be online</title>
+      <link>https://blog.slyon.de/2024/10/15/waiting-for-a-linux-system-to-be-online/</link>
+      <guid isPermaLink="true">https://blog.slyon.de/2024/10/15/waiting-for-a-linux-system-to-be-online/</guid>
+      <pubDate>Tue, 15 Oct 2024 07:33:10 GMT</pubDate>
+      <description><![CDATA[What is an “online” system? Networking is a complex topic, and there is lots of confusion around the definition of an “online” system. Sometimes the boot process gets delayed up to two minutes, because the system still waits for one or more network interfaces to be ready. Systemd provides the network-online.target that other service units ... Read more]]></description>
+      <source url="https://blog.slyon.de/category/ubuntu/feed/">Lukas Märdian</source>
+    </item>
+    <item>
+      <title>Freedesktop Specs Website Update</title>
+      <link>https://blog.tenstral.net/2024/08/freedesktop-specs-website-update.html</link>
+      <guid isPermaLink="true">https://blog.tenstral.net/2024/08/freedesktop-specs-website-update.html</guid>
+      <pubDate>Sun, 04 Aug 2024 18:54:37 GMT</pubDate>
+      <description><![CDATA[The Freedesktop.org Specifications directory contains a list of common specifications that have accumulated over the decades and define how common desktop environment functionality works. The specifications are designed to increase interoperability between desktops. Common specifications make the life of both desktop-environment developers and especially application developers (who will almost always want to maximize the amount [&#8230;]]]></description>
+      <source url="http://blog.tenstral.net/category/planet/planet-ubuntu/feed">Matthias Klumpp</source>
+    </item>
+    <item>
+      <title>Critical OpenSSH Vulnerability (CVE-2024-6387): Please Update Your Linux</title>
+      <link>http://blog.harisfazillah.info/2024/07/critical-openssh-vulnerability-cve-2024.html</link>
+      <guid isPermaLink="true">http://blog.harisfazillah.info/2024/07/critical-openssh-vulnerability-cve-2024.html</guid>
+      <pubDate>Thu, 04 Jul 2024 21:35:00 GMT</pubDate>
+      <description><![CDATA[&nbsp;Critical OpenSSH Vulnerability (CVE-2024-6387): Please Update Your LinuxA critical security flaw (CVE-2024-6387) has been identified in OpenSSH, a program widely used for secure remote connections. This vulnerability could allow attackers to completely compromise affected systems (remote code execution).Who is Affected?Only specific versions of OpenSSH (8.5p1 to 9.7p1) running on glibc-based Linux systems are vulnerable. Newer versions are not affected.What to Do?Update OpenSSH: Check your...]]></description>
+      <source url="https://feeds.feedburner.com/TodayNotesBlogAboutLinuxOpenSourceComputerInternet">Harisfazillah Jamel</source>
+    </item>
+    <item>
+      <title>dhcpcd almost ready to replace ISC dhclient in Debian</title>
+      <link>http://q-funk.blogspot.com/2023/11/dhcpcd-almost-ready-to-replace-isc.html</link>
+      <guid isPermaLink="true">http://q-funk.blogspot.com/2023/11/dhcpcd-almost-ready-to-replace-isc.html</guid>
+      <pubDate>Thu, 16 Nov 2023 08:31:00 GMT</pubDate>
+      <description><![CDATA[A lot of time has passed since my previous post on my work to make dhcpcd the drop-in replacement for the deprecated ISC dhclient a.k.a. isc-dhcp-client. Current status:
+
+  Upstream now regularly produces releases and with a smaller delta than before. This makes it easier to track possible breakage.
+  Debian packaging has essentially remained unchanged. A few Recommends were shuffled, but that's about it.
+  The only remaining bug is fixing the build for Hurd. Patches are welcome. Once that is fi...]]></description>
+      <source url="http://q-funk.blogspot.com/feeds/posts/default/-/Ubuntu">Martin-Éric Racine</source>
+    </item>
+    <item>
+      <title>Ubuntu Summit 2023</title>
+      <link>https://rossgammon68.wordpress.com/2023/11/05/ubuntu-summit-2023/</link>
+      <guid isPermaLink="true">https://rossgammon68.wordpress.com/2023/11/05/ubuntu-summit-2023/</guid>
+      <pubDate>Sun, 05 Nov 2023 16:01:16 GMT</pubDate>
+      <description><![CDATA[I am currently attending the Ubuntu Summit 2023 in Riga, Latvia. This is the first time I have deliberately attended an Ubuntu event. Back in 2013, I accidentally walked through what I believe was the last Ubuntu Developers Summit in &#8230; Continue reading &#8594;]]></description>
+      <source url="https://rossgammon68.wordpress.com/category/open-source/ubuntu/ubuntu-planet/feed/?mrss=off">Ross Gammon</source>
+    </item>
+    <item>
+      <title>OpenStack 2023.2 Bobcat for Ubuntu 22.04 LTS</title>
+      <link>https://wrestlingpenguins.wordpress.com/2023/10/06/openstack-2023-2-bobcat-for-ubuntu-22-04-lts/</link>
+      <guid isPermaLink="true">https://wrestlingpenguins.wordpress.com/2023/10/06/openstack-2023-2-bobcat-for-ubuntu-22-04-lts/</guid>
+      <pubDate>Fri, 06 Oct 2023 12:47:34 GMT</pubDate>
+      <description><![CDATA[The Ubuntu OpenStack team at Canonical is pleased to announce the general availability of OpenStack&#160;2023.2 Bobcat on Ubuntu 22.04 LTS (Jammy Jellyfish). For more details on the release, please see the OpenStack 2023.2 Bobcat release notes. The Ubuntu Cloud Archive for OpenStack&#160;2023.2 Bobcat can be enabled on Ubuntu 22.04 by running the following command: sudo [&#8230;]]]></description>
+      <source url="https://wrestlingpenguins.wordpress.com/category/ubuntu/feed/?mrss=off">Corey Bryant</source>
+    </item>
+    <item>
+      <title>Building a NAS</title>
+      <link>https://apebox.org/wordpress/tech/1325</link>
+      <guid isPermaLink="true">https://apebox.org/wordpress/tech/1325</guid>
+      <pubDate>Tue, 12 Sep 2023 21:33:05 GMT</pubDate>
+      <description><![CDATA[The status quo Back in 2015, I bought an off-the-shelf NAS, a QNAP TS-453mini, to act as my file store and Plex server. I had previously owned a Synology box, and whilst I liked the Synology OS and experience, the hardware was underwhelming. I loaded up the successor QNAP with four 5TB drives in RAID10, [&#8230;]]]></description>
+      <source url="http://apebox.org/wordpress/tag/ubuntu/feed/">Jo Shields</source>
+    </item>
+    <item>
+      <title>Understanding vm.swappiness: Improving Linux Performance and Memory Management</title>
+      <link>https://coderstalk.blogspot.com/2023/07/understanding-vmswappiness-improving.html</link>
+      <guid isPermaLink="true">https://coderstalk.blogspot.com/2023/07/understanding-vmswappiness-improving.html</guid>
+      <pubDate>Sun, 23 Jul 2023 23:13:00 GMT</pubDate>
+      <description><![CDATA[As a Linux user, you may have stumbled across the enigmatic 'vm.swappiness' setting when examining your system's configuration. The variable 'vm.swappiness' is important in Linux memory management because it affects how your system handles virtual memory and swap space. In this blog post, we'll debunk 'vm.swappiness' and look at how it affects system performance. So, let's plunge into the world of Linux memory management and expose the secrets of vm.swappiness.]]></description>
+      <source url="https://coderstalk.blogspot.com/feeds/posts/default/">Muhammad Fauzilkamil Zainuddin</source>
+    </item>
+    <item>
+      <title>Ubuntu debuginfod and source code indexing</title>
+      <link>https://blog.sergiodj.net/posts/ubuntu-debuginfod-source-code-indexing/</link>
+      <guid isPermaLink="true">https://blog.sergiodj.net/posts/ubuntu-debuginfod-source-code-indexing/</guid>
+      <pubDate>Sat, 13 May 2023 20:43:00 GMT</pubDate>
+      <description><![CDATA[You might remember that in my last post about the Ubuntu debuginfod
+service I talked about wanting to extend it and make it index and
+serve source code from packages.  I&rsquo;m excited to announce that this is
+now a reality since the Ubuntu Lunar (23.04) release.
+The feature should work for a lot of packages from the archive, but
+not all of them.  Keep reading to better understand why.
+The problem
+While debugging a package in Ubuntu, one of the first steps you need
+to take is to install its sou...]]></description>
+      <source url="https://blog.sergiodj.net/tag/ubuntu.xml">Sergio Durigan Junior</source>
+    </item>
+    <item>
+      <title>My Walk on the Portuguese Camino de Santiago, 2023</title>
+      <link>http://blog.dustinkirkland.com/2023/04/camino-de-santiago-2023.html</link>
+      <guid isPermaLink="true">http://blog.dustinkirkland.com/2023/04/camino-de-santiago-2023.html</guid>
+      <pubDate>Sun, 07 May 2023 18:49:00 GMT</pubDate>
+      <description><![CDATA[This is a long retrospective, organized into 3 parts, about my 2023 hike of the Portuguese Camino de Santiago.Part 1 is about my preparation, packing and gearPart 2 covers a retrospective of insights gained along the way, and advice for anyone else considering the CaminoAnd Part 3 is a roll-up of the daily social media posts and accompanying photographs from my two weeks on the trailComments are disabled on Blogger due to relentless spam, but you reach me on LinkedIn and Twitter with questions.&...]]></description>
+      <source url="http://blog.dustinkirkland.com/feeds/posts/default/-/Ubuntu">Dustin Kirkland</source>
+    </item>
+    <item>
+      <title>Today I learned: set -e sucks even more.</title>
+      <link>https://smoser.github.io//2023/04/27/set-e-bad.html</link>
+      <guid isPermaLink="true">https://smoser.github.io//2023/04/27/set-e-bad.html</guid>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[Today I learned: set -e sucks even more.
+Summary: Just don’t use set -e.
+
+I’ve never been a fan “errexit” in shell.  You’ve probably seen this as set -e, or set -o errexit or sh -e.
+
+People write lists of shell commands in a file and want the script to exit on the first one that fails rather than barreling on and causing damage.  That seems sane.
+
+I’ve always strived to write “shell programs” rather than “shell scripts”.  The difference being that the program will clean up after itself and give ...]]></description>
+      <source url="https://smoser.github.io/feed/by_tag/ubuntu.xml">Scott Moser</source>
+    </item>
+    <item>
+      <title>Selenium + AT-SPI = GUI Testing</title>
+      <link>https://apachelog.wordpress.com/2022/12/14/selenium-at-spi-gui-testing/</link>
+      <guid isPermaLink="true">https://apachelog.wordpress.com/2022/12/14/selenium-at-spi-gui-testing/</guid>
+      <pubDate>Wed, 14 Dec 2022 15:59:20 GMT</pubDate>
+      <description><![CDATA[At KDE we have multiple levels of quality assurance ranging from various degrees of a humans testing features to fully automated testing. Indeed automated testing is incredibly important for the continued quality of our software. A big corner stone of our testing strategy are so called unit tests, they test a specific piece of our [&#8230;]]]></description>
+      <source url="https://apachelog.wordpress.com/category/kde/feed/?mrss=off&amp;category_name=ubuntu">Harald Sitter</source>
+    </item>
+    <item>
+      <title>Running Cockpit inside ALP</title>
+      <link>https://losca.blogspot.com/2022/12/running-cockpit-inside-alp.html</link>
+      <guid isPermaLink="true">https://losca.blogspot.com/2022/12/running-cockpit-inside-alp.html</guid>
+      <pubDate>Sat, 10 Dec 2022 13:07:00 GMT</pubDate>
+      <description><![CDATA[(quoted from my other blog at since a new OS might be interesting for many and this is published in separate planets)ALP - The Adaptable Linux Platform
+ – is a new operating system from SUSE to run containerized and 
+virtualized workloads. It is in early prototype phase, but the 
+development is done completely openly so it’s easy to jump in to try it.
+For this trying out, I used the latest encrypted build – as of the writing, 22.1 – from ALP images.
+ I imported it in virt-manager as a Generic Li...]]></description>
+      <source url="http://losca.blogspot.com/feeds/posts/default/-/ubuntu?alt=rss">Timo Jyrinki</source>
+    </item>
+    <item>
+      <title>Grantlee version 5.3.1 now available</title>
+      <link>https://steveire.wordpress.com/2022/11/11/grantlee-version-5-3-1-now-available/</link>
+      <guid isPermaLink="true">https://steveire.wordpress.com/2022/11/11/grantlee-version-5-3-1-now-available/</guid>
+      <pubDate>Fri, 11 Nov 2022 20:55:50 GMT</pubDate>
+      <description><![CDATA[I&#8217;ve just made a new 5.3.1 release of Grantlee. The 5.3.0 release had some build issues with Qt 6 which should now be resolved with version 5.3.1. Unlike previous releases, this release will not appear on http://www.grantlee.org/downloads/. I&#8217;ll be turning off grantlee.org soon. All previous releases have already been uploaded to https://github.com/steveire/grantlee/releases. The continuation of [&#8230;]]]></description>
+      <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
+    </item>
+    <item>
+      <title>Clipboard content to file. New app</title>
+      <link>https://costales.github.io/posts/clipboard-to-file/</link>
+      <guid isPermaLink="true">https://costales.github.io/posts/clipboard-to-file/</guid>
+      <pubDate>Sat, 22 Oct 2022 08:29:27 GMT</pubDate>
+      <description><![CDATA[A simple, easy, fast and useful way to paste your clipboard content (text or image) into a file!
+Previously, you had to open editor, paste your clipboard, save file, close editor. Now, right click and choose the menu &ldquo;Clipboard to file&rdquo;!
+HOW DOES IT WORK? TEXT Copy a text into your clipboard.
+Go to your file browser and do a right click:
+Into empty area / &ldquo;Clipboard to file&rdquo; menu: Will create the file clipboard-X.]]></description>
+      <source url="https://costales.github.io/tags/planet/index.xml">Costales</source>
+    </item>
+    <item>
+      <title>Ubuntu bug fix anniversary</title>
+      <link>https://jeremy.bicha.net/2022/10/17/ubuntu-bug-fix-anniversary/</link>
+      <guid isPermaLink="true">https://jeremy.bicha.net/2022/10/17/ubuntu-bug-fix-anniversary/</guid>
+      <pubDate>Mon, 17 Oct 2022 13:54:46 GMT</pubDate>
+      <description><![CDATA[I first installed Ubuntu when Ubuntu 6.06 LTS &#8220;Dapper Drake&#8221; was released. I was brand new to Linux. This was Ubuntu&#8217;s first LTS release; the very first release of Ubuntu was only a year and a half before. I was&#8230;Read more &#8250;]]></description>
+      <source url="https://jeremy.bicha.net/category/ubuntu/feed/?mrss=off">Jeremy Bicha</source>
+    </item>
+    <item>
+      <title>Inkscape PLC Rocketchat Logs</title>
+      <link>https://gould.cx/ted/blog/2022/09/09/Inkscape-PLC-Rocketchat-Transcripts/</link>
+      <guid isPermaLink="true">https://gould.cx/ted/blog/2022/09/09/Inkscape-PLC-Rocketchat-Transcripts/</guid>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[The monthly Inkscape PLC meeting transcripts are a way for those who can’t make the meeting to keep up with what is happening on the backend of the project. We don’t discuss a lot of development or marketing, those are done by separate teams, but just the business-y stuff. We have our meeting using the Inkscape Rocketchat server and then I download the logs and put them in the PLC Git repo. There it is put in a standard IRC log format (we did the meetings in IRC before we had Rocketchat) and ren...]]></description>
+      <source url="http://gould.cx/ted/blog/feed.xml">Ted Gould</source>
+    </item>
+    <item>
+      <title>Save £23,265 with *one weird trick!*</title>
+      <link>https://thepcspy.com/read/ten-years-23k-saved/</link>
+      <guid isPermaLink="true">https://thepcspy.com/read/ten-years-23k-saved/</guid>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 GMT</pubDate>
+      <description><![CDATA[Tobacconists hate him.
+It’s that time of the year. I never really know who this sort of post is for. Maybe it’s for you, maybe for it’s for me one dark day in the future, but…
+🎉  I stopped smoking ten years ago!
+If somebody as flimsy-willed as me can stop smoking, you can stop smoking too. I’m not going to labour the “it kills you” thing, but it is so here’s the financial breakdown for any fellow cheapskates.
+
+  10 years =  3,652 days   @13/day = 47,476 cigs           =  2,374 packs2012 price =...]]></description>
+      <source url="http://feeds.feedburner.com/OliUbuntu">Oli Warner</source>
+    </item>
+    <item>
+      <title>finding binary differences</title>
+      <link>https://outflux.net/blog/archives/2022/06/24/finding-binary-differences/</link>
+      <guid isPermaLink="true">https://outflux.net/blog/archives/2022/06/24/finding-binary-differences/</guid>
+      <pubDate>Fri, 24 Jun 2022 20:11:48 GMT</pubDate>
+      <description><![CDATA[As part of the continuing work to replace 1-element arrays in the Linux kernel, it&#8217;s very handy to show that a source change has had no executable code difference. For example, if you started with this: struct foo { unsigned long flags; u32 length; u32 data[1]; }; void foo_init(int count) { struct foo *instance; size_t [&#8230;]]]></description>
+      <source url="http://outflux.net/blog/archives/category/ubuntu/feed">Kees Cook</source>
+    </item>
+    <item>
+      <title>How much does my flight sponsor Vladimir?</title>
+      <link>http://blog.markvdb.be/2022/04/how-much-does-my-flight-sponsor-vladimir.html</link>
+      <guid isPermaLink="true">http://blog.markvdb.be/2022/04/how-much-does-my-flight-sponsor-vladimir.html</guid>
+      <pubDate>Thu, 07 Apr 2022 15:20:00 GMT</pubDate>
+      <description><![CDATA[&nbsp;I regularly fly between Belgium and my second home country Latvia. How much am I sponsoring Vladimir when doing that? About 25€. Back of the envelope calculation.CRL - RIX return = 330 kg CO2 (source)1 l jet fuel a1 = 2.52 kg CO2 (source)1 l jet fuel = 0.85€ (source, some currency and SI conversion required)refinery and distribution margin ~ 15% (conservative ballpark guesstimate based upon price/barrel for crude and jet a1 fuel)percentage of Russian crude in EU: 27% (source)(330/2.52)*.85...]]></description>
+      <source url="http://blog.markvdb.be/feeds/posts/full/-/english/ubuntu">Mark Van den Borre</source>
+    </item>
+    <item>
+      <title>All-remote workspace at home</title>
+      <link>https://svij.org/blog/2021/12/05/all-remote-workspace-at-home/</link>
+      <guid isPermaLink="true">https://svij.org/blog/2021/12/05/all-remote-workspace-at-home/</guid>
+      <pubDate>Sun, 05 Dec 2021 15:10:00 GMT</pubDate>
+      <description><![CDATA[It&rsquo;s been a little over 1,5 years since I joined GitLab as my first all remote
+company. About half a year ago, I wrote about what I learned in one year at GitLab.
+In this blog post I will describe my setup how I work because I got several
+questions about it over the last time. I can also blame dnsmichi
+who published a similar post about his setup ;-).
+I can certainly recommend the page about &ldquo;Considerations for a Productive Home Office
+or Remote Workspace“
+in the GitLab Handbook abou...]]></description>
+      <source url="https://svij.org/tags/ubuntu-planet/index.xml">Sujeevan Vijayakumaran</source>
+    </item>
+    <item>
+      <title>Impish Indri Ubuntu-fr t-shirt</title>
+      <link>https://people.ubuntu.com/~olivier.fraysse/index.xml#of202110202210</link>
+      <guid isPermaLink="true">https://people.ubuntu.com/~olivier.fraysse/index.xml#of202110202210</guid>
+      <pubDate>Wed, 20 Oct 2021 22:10:00 GMT</pubDate>
+      <description><![CDATA[Ocelot did it again! The French speaking Ubuntu community is happy to present you his splendid Impish Indri t-shirt. :) You can buy it before the end of October for €15 (+ shipping costs) and receive it at the end of November 2021. You can try to buy it later but it will be more expensive and you will not have any garanty of stock.]]></description>
+      <source url="https://people.ubuntu.com/~olivier.fraysse/index.xml">Olivier Fraysse</source>
+    </item>
+    <item>
+      <title>Installing Ubuntu Core onto 64-bit Bare Metal</title>
+      <link>http://cheesehead-techblog.blogspot.com/2021/10/installing-ubuntu-core-onto-64-bit-bare.html</link>
+      <guid isPermaLink="true">http://cheesehead-techblog.blogspot.com/2021/10/installing-ubuntu-core-onto-64-bit-bare.html</guid>
+      <pubDate>Thu, 07 Oct 2021 21:29:00 GMT</pubDate>
+      <description><![CDATA[I have a re-purposed AMD64 laptop motherboard, ready to become an experimental Ubuntu Core server.
+It's in fine condition. You can see that it boots an Ubuntu LiveUSB's "Try Ubuntu" environment just fine. Attached to the motherboard is a new 60GB SSD for testing. The real server will use a 1TB HDD.
+But Ubuntu Core doesn't install on bare metal from a Live USB. It's still easy, though.
+
+1. Boot a "Try Ubuntu" Environment on the target system.
+
+
+  Test your network connection. The picture shows a ...]]></description>
+      <source url="http://cheesehead-techblog.blogspot.com/feeds/posts/default/-/planet-ubuntu">Ian Weisser</source>
+    </item>
+    <item>
+      <title>Web Hooks for the Janitor</title>
+      <link>https://www.jelmer.uk/janitor-webhooks.html</link>
+      <guid isPermaLink="true">https://www.jelmer.uk/janitor-webhooks.html</guid>
+      <pubDate>Mon, 06 Sep 2021 20:00:00 GMT</pubDate>
+      <description><![CDATA[The Debian Janitor is an automated
+system that commits fixes for (minor) issues in Debian packages that can be
+fixed by software. It gradually started proposing merges in early
+December. The first set of changes sent out ran lintian-brush on sid packages maintained in
+Git. This post is part of a series about the progress of the&nbsp;Janitor.
+As covered in my post from last week, the Janitor now regularly tries to
+import new upstream git snapshots or upstream releases into packages in Sid.
+
+Movin...]]></description>
+      <source url="https://www.jelmer.uk/feeds/tag/ubuntu.atom.xml">Jelmer Vernooij</source>
+    </item>
+    <item>
+      <title>My first six months at the Ubuntu Community Council</title>
+      <link>https://torstenfranz.wordpress.com/2021/04/25/my-first-six-months-at-the-ubuntu-community-council/</link>
+      <guid isPermaLink="true">https://torstenfranz.wordpress.com/2021/04/25/my-first-six-months-at-the-ubuntu-community-council/</guid>
+      <pubDate>Sun, 25 Apr 2021 15:30:00 GMT</pubDate>
+      <description><![CDATA[Six months ago I was elected to the Ubuntu Community Council. After the first month, I wrote a text about how I experienced the first month. Time flies and now six months have already passed. In the first few months &#8230; Weiterlesen &#8594;]]></description>
+      <source url="https://torstenfranz.wordpress.com/category/planet-ubuntu/feed/?mrss=off">Torsten Franz</source>
+    </item>
+    <item>
+      <title>ReText turns 10 years</title>
+      <link>https://mitya57.me/weblog/2021/02/retext-turns-10-years.html</link>
+      <guid isPermaLink="true">https://mitya57.me/weblog/2021/02/retext-turns-10-years.html</guid>
+      <pubDate>Sun, 21 Feb 2021 18:30:00 GMT</pubDate>
+      <description><![CDATA[Exactly ten years ago, in February 2011, the first commit in ReText git
+repository was made. It was just a single 364 lines Python file back then (now
+the project has more than 6000 lines of Python code).
+Since 2011, the editor migrated from SourceForge to GitHub, gained a lot of new
+features, and — most importantly — now there is an active community around it,
+which includes both long-time contributors and newcomers who create their first
+issues or pull requests. I don’t always have enough time...]]></description>
+      <source url="http://mitya57.me/weblog/feeds/planet.atom.xml">Dmitry Shachnev</source>
+    </item>
+    <item>
+      <title>ZFS focus on Ubuntu 20.04 LTS: ZSys properties on ZFS datasets</title>
+      <link>https://didrocks.fr/2020/06/19/zfs-focus-on-ubuntu-20.04-lts-zsys-properties-on-zfs-datasets/</link>
+      <guid isPermaLink="true">https://didrocks.fr/2020/06/19/zfs-focus-on-ubuntu-20.04-lts-zsys-properties-on-zfs-datasets/</guid>
+      <pubDate>Fri, 19 Jun 2020 10:15:19 GMT</pubDate>
+      <description><![CDATA[ZFS focus on Ubuntu 20.04 LTS: ZSys properties on ZFS datasets
+
+We are almost done in our long journey presenting our ZFS work on Ubuntu 20.04 LTS. The last piece to highlight is how we annotate datasets with some user properties to store metadata needed on boot and on state revert. As we stated on our ZSys presentation article, one of the main principles is to avoid using a dedicated database which can quickly go out of sync with the real system: we store - and thus, rely - only on ZFS properti...]]></description>
+      <source url="https://didrocks.fr/tags/pu/index.xml">Didier Roche</source>
+    </item>
+    <item>
+      <title>Open Letter to KDE GSoC Students We Could Not Accept</title>
+      <link>http://linuxgrandma.blogspot.com/2020/05/open-letter-to-kde-gsoc-students-we.html</link>
+      <guid isPermaLink="true">http://linuxgrandma.blogspot.com/2020/05/open-letter-to-kde-gsoc-students-we.html</guid>
+      <pubDate>Tue, 05 May 2020 20:38:00 GMT</pubDate>
+      <description><![CDATA[Hello students,
+
+I no longer have access to your proposal or emails, thus the open letter on my blog.
+
+If you allowed commenting before the student proposal deadline, I along with other admins and mentors tried to help you improve your proposal. Some of you took the suggestions and sharpened your presentation, fleshed out your timeline and in general created a proposal you can be proud of.
+
+If you did not allow commenting or only uploaded your proposal right before the deadline, you missed out o...]]></description>
+      <source url="http://linuxgrandma.blogspot.com/feeds/posts/default">Valorie Zimmerman</source>
+    </item>
+    <item>
+      <title>Como descargar y ver series o peliculas gratis en esta Cuarentena</title>
+      <link>https://desentropia.com/2020/04/11/como-descargar-y-ver-series-o-peliculas-gratis-en-esta-cuarentena/</link>
+      <guid isPermaLink="true">https://desentropia.com/2020/04/11/como-descargar-y-ver-series-o-peliculas-gratis-en-esta-cuarentena/</guid>
+      <pubDate>Sat, 11 Apr 2020 19:58:18 GMT</pubDate>
+      <description><![CDATA[En estos nuevos días en los que vivimos una situación muy fuera de lo común en el mundo quiero ayudar a aquellas personas que quieran entretenerse un poco con el Septimo arte.
+
+No entraré en detalles técnicos de como funciona BitTorrent ni como es el manejo de derechos de autor, esto es absolutamente de su parte.
+
+Me voy a enfocar en macOS, Windows y Linux, si quieren saber como funciona en su celular con Android o iOS/iPhone pueden buscar en internet otras alternativas.
+1. Instalar el programa ...]]></description>
+      <source url="https://desentropia.com/tags/ubuntu/index.xml">Julian Alarcon</source>
+    </item>
+    <item>
+      <title>Fingerprint Reader Support for Lenovo x390Y on Ubuntu</title>
+      <link>http://blog.sergiusens.org/posts/fingerprint-reader-support-for-lenovo-x390y-on-ubuntu/</link>
+      <guid isPermaLink="true">http://blog.sergiusens.org/posts/fingerprint-reader-support-for-lenovo-x390y-on-ubuntu/</guid>
+      <pubDate>Sat, 28 Mar 2020 22:38:02 GMT</pubDate>
+      <description><![CDATA[This is experimental, but I went ahead and ran the following after reading about it on reddit. snap install fwupdmgr /snap/bin/fwupdmgr install https://fwupd.org/downloads/cbe7b45a2591e9d149e00cd4bbf0ccbe5bb95da7-Synaptics-Prometheus_Config-0021.cab /snap/bin/fwupdmgr install https://fwupd.org/downloads/3b5102b3430329a10a3636b4a594fc3dd2bfdc09-Synaptics-Prometheus-10.02.3110269.cab   These two cab files are referenced from:    https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config    htt...]]></description>
+      <source url="http://blog.sergiusens.org/categories/ubuntu/index.xml">Sergio Schvezov</source>
+    </item>
+    <item>
+      <title>Creating AWS IAM Access Analyzers In All Regions Of All Accounts</title>
+      <link>https://alestic.com/2020/01/aws-iam-access-analyzer/</link>
+      <guid isPermaLink="true">https://alestic.com/2020/01/aws-iam-access-analyzer/</guid>
+      <pubDate>Mon, 06 Jan 2020 08:01:00 GMT</pubDate>
+      <description><![CDATA[Amazon recently announced the AWS IAM Access Analyzer,
+a useful tool to help discover if you have granted unintended access
+to specific types of resources in your AWS account.
+At the moment, an Access Analyzer needs to be created in each region
+of each account where you want to run it.
+Since this manual requirement can be a lot of work, it is a common
+complaint from customers. Given that Amazon listens to customer
+feedback and since we currently have to specify a &ldquo;type&rdquo; of &ldquo;ACC...]]></description>
+      <source url="http://feeds.alestic.com/alestic-planetubuntu">Eric Hammond</source>
+    </item>
+    <item>
+      <title>Puberty</title>
+      <link>https://rhonda.deb.at/blog/2019/12/28#puberty</link>
+      <guid isPermaLink="true">https://rhonda.deb.at/blog/2019/12/28#puberty</guid>
+      <pubDate>Sat, 28 Dec 2019 22:22:00 GMT</pubDate>
+      <description><![CDATA[I was musing about writing about this publicly. For the first time in all these years of writing pretty personal stuff about my feelings, my way of becoming more honest with myself and a more authentic person through that I was thinking about letting you in on this is a good idea.
+
+You see, people have used information from my personal blog in the past, and tried to use it against me. Needless to say they failed with it, and it only showed their true face. So why does it feel different this time...]]></description>
+      <source url="https://rhonda.deb.at/blog/?flav=rss&amp;lang=en">Rhonda D'Vine</source>
+    </item>
+    <item>
+      <title>Managing dynamic inventory in private subnets using bastion jump box</title>
+      <link>http://blog.diegoturcios.com/2019/11/managing-dynamic-inventory-in-private_56.html</link>
+      <guid isPermaLink="true">http://blog.diegoturcios.com/2019/11/managing-dynamic-inventory-in-private_56.html</guid>
+      <pubDate>Tue, 19 Nov 2019 15:47:00 GMT</pubDate>
+      <description><![CDATA[Managing dynamic inventory in private subnets using bastion jump box
+  
+
+
+
+  
+The title of post is quite large, but is something I encountered issues in the last weeks. I had a VPC in AWS,  creating x amount of instances in a private network, and was quite complex to manage this instance using static inventory files. So I will explain you how to manage this problem with Ansible.
+
+Before continue, I want to say these articles are really good and can help you with this issues.
+
+
+Dynamic inventory ...]]></description>
+      <source url="http://diegoturcios.blogspot.com/feeds/posts/default/-/planet-ubuntu">Diego Turcios</source>
+    </item>
+    <item>
+      <title>GUADEC 2019 - Thessaloniki</title>
+      <link>http://bobthegnome.blogspot.com/2019/09/guadec-2019-thessaloniki.html</link>
+      <guid isPermaLink="true">http://bobthegnome.blogspot.com/2019/09/guadec-2019-thessaloniki.html</guid>
+      <pubDate>Wed, 04 Sep 2019 23:34:00 GMT</pubDate>
+      <description><![CDATA[I recently attended GUADEC 2019 in Thessaloniki, Greece. This is the seventh GUADEC I've attended, which came as a bit of a surprise when I added it up! It was great to catch up in person (some again, and some new!) and as always the face to face communication makes future online interactions that much easier.
+
+
+
+Photo by Cassidy James Blaede
+
+
+This year we had seven people from Canonical Ubuntu desktop team in attendance. Many other companies and projects had representatives (including Collabor...]]></description>
+      <source url="http://bobthegnome.blogspot.com/feeds/posts/default">Robert Ancell</source>
+    </item>
+    <item>
+      <title>Ubuntu 18.04.3 LTS is out, including GNOME stable updates and Livepatch desktop integration</title>
+      <link>https://blogs.gnome.org/seb128/2019/08/08/ubuntu-18-04-3-lts-is-out-and-includes-gnome-bugfix-updates-and-livepatch-desktop-integration/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/seb128/2019/08/08/ubuntu-18-04-3-lts-is-out-and-includes-gnome-bugfix-updates-and-livepatch-desktop-integration/</guid>
+      <pubDate>Thu, 08 Aug 2019 19:32:31 GMT</pubDate>
+      <description><![CDATA[Ubuntu 18.04.3 LTS has just been released. As usual with LTS point releases, the main changes are a refreshed hardware enablement stack (newer versions of the kernel, xorg &#38; drivers) and a number of bug and security fixes. For the Desktop, newer stable versions of GNOME components have been included as well as a new &#8230; Continue reading Ubuntu 18.04.3 LTS is out, including GNOME stable updates and Livepatch desktop integration]]></description>
+      <source url="http://blogs.gnome.org/seb128/feed/">Sebastien Bacher</source>
+    </item>
+    <item>
+      <title>Open source in 2019, Part 3/3</title>
+      <link>https://ttx.re/open-source-2019-part3.html</link>
+      <guid isPermaLink="true">https://ttx.re/open-source-2019-part3.html</guid>
+      <pubDate>Mon, 15 Jul 2019 13:52:00 GMT</pubDate>
+      <description><![CDATA[21 years in, the landscape around open source evolved a lot. In
+part 1 and
+part 2 of this 3-part series,
+I explained why today, while open source is more necessary than ever, it
+appears to no longer be sufficient. In this part, I'll discuss what we, open
+source enthusiasts and advocates, can do about that.
+This is not a call to change open source
+First, let me clarify what we should not do.
+As mentioned in part 2, since
+open source was coined in 1998, software companies have evolved ways to
+reta...]]></description>
+      <source url="http://ttx.re/feeds/open-source.atom.xml">Thierry Carrez</source>
+    </item>
+    <item>
+      <title>Canonical’s Desktop Team is hiring</title>
+      <link>https://blogs.gnome.org/laney/2019/07/02/canonicals-desktop-team-is-hiring/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/laney/2019/07/02/canonicals-desktop-team-is-hiring/</guid>
+      <pubDate>Tue, 02 Jul 2019 10:43:12 GMT</pubDate>
+      <description><![CDATA[&#160; edit: this post is fairly old now, and we&#8217;re well on the way with the rest of the process &#8211; if you didn&#8217;t apply yet, it&#8217;s probably worth waiting until next time Some good news for anyone who might read this. In the Canonical desktop team we&#8217;re hiring a new Software Engineer. More details &#8230; Continue reading "Canonical&#8217;s Desktop Team is hiring"]]></description>
+      <source url="https://blogs.gnome.org/laney/category/planetubuntu/feed/">Iain Lane</source>
+    </item>
+    <item>
+      <title>OpenStack Stein for Ubuntu 18.04 LTS</title>
+      <link>https://javacruft.wordpress.com/2019/04/17/openstack-stein-for-ubuntu-18-04-lts/</link>
+      <guid isPermaLink="true">https://javacruft.wordpress.com/2019/04/17/openstack-stein-for-ubuntu-18-04-lts/</guid>
+      <pubDate>Wed, 17 Apr 2019 10:50:17 GMT</pubDate>
+      <description><![CDATA[The Ubuntu OpenStack team at Canonical is pleased to announce the general availability of OpenStack Stein on Ubuntu 18.04 LTS via the Ubuntu Cloud Archive. Details of the Stein release can be found here. You can enable the Ubuntu Cloud Archive pocket for OpenStack Stein on Ubuntu 18.04 LTS installations by running the following commands: [&#8230;]]]></description>
+      <source url="https://javacruft.wordpress.com/category/ubuntu/feed/?mrss=off">James Page</source>
+    </item>
+    <item>
+      <title>Intel NEO OpenCL driver for Disco</title>
+      <link>https://tjaalton.wordpress.com/2019/04/09/intel-neo-opencl-driver-for-disco/</link>
+      <guid isPermaLink="true">https://tjaalton.wordpress.com/2019/04/09/intel-neo-opencl-driver-for-disco/</guid>
+      <pubDate>Tue, 09 Apr 2019 16:11:30 GMT</pubDate>
+      <description><![CDATA[The past few months I&#8217;ve been packaging the bits needed for Intel&#8217;s new OpenCL driver, which they call NEO. The packages are now finally ready, you can enable &#8216;ppa:canonical-x/x-staging&#8217; and install &#8216;intel-opencl&#8217; on Disco. After installing it this is what &#8216;clinfo&#8217; says on my laptop: Number of platforms 1 Platform Name Intel(R) OpenCL HD Graphics [&#8230;]]]></description>
+      <source url="https://tjaalton.wordpress.com/feed/">Timo Aaltonen</source>
+    </item>
+    <item>
+      <title>Setting Up a Domain with SSL on DigitalOcean Kubernetes using ExternalDNS and Helm</title>
+      <link>//blog.andrewsomething.com/2019/04/04/external-dns-with-ssl-on-k8s/</link>
+      <guid isPermaLink="true">//blog.andrewsomething.com/2019/04/04/external-dns-with-ssl-on-k8s/</guid>
+      <pubDate>Thu, 04 Apr 2019 04:00:00 GMT</pubDate>
+      <description><![CDATA[A little while back I added support for DigitalOcean to the ExternalDNS Helm chart, and I wanted to share my notes on how to use it. ExternalDNS is an extremely convenient tool that allows you to dynamically control DNS records for your Kubernetes resources just by adding an annotation. In this post, I&#8217;ll walk through how to install it with Helm and use it to point a domain at a Kubernetes service. I&#8217;ll also cover setting up SSL using a DigitalOcean managed SSL certificate on the loa...]]></description>
+      <source url="http://blog.andrewsomething.com/feeds/all.atom.xml">Andrew SB</source>
+    </item>
+    <item>
+      <title>Resource Scale for Fractional Scaling support in GNOME Shell 3.32</title>
+      <link>https://blog.3v1n0.net/informatica/linux/gnome-shell-fractional-scaling-in-wayland-landed/</link>
+      <guid isPermaLink="true">https://blog.3v1n0.net/informatica/linux/gnome-shell-fractional-scaling-in-wayland-landed/</guid>
+      <pubDate>Mon, 04 Mar 2019 15:17:55 GMT</pubDate>
+      <description><![CDATA[The fractional scaling era for GNOME shell has finally arrived! The news spread out quite quickly, once last Friday Jonas pressed the button and that triggered the last-second merge for the relevant proposals we prepared for Mutter and GNOME Shell in order to get this available for GNOME 3.32. As someone might recall, we started [&#8230;]]]></description>
+      <source url="http://blog.3v1n0.net/tag/planet-ubuntu/feed/">Marco Trevisan (Treviño)</source>
+    </item>
+    <item>
+      <title>Rise and fall of libclamav</title>
+      <link>https://skitterman.wordpress.com/2019/01/31/rise-and-fall-of-libclamav/</link>
+      <guid isPermaLink="true">https://skitterman.wordpress.com/2019/01/31/rise-and-fall-of-libclamav/</guid>
+      <pubDate>Thu, 31 Jan 2019 06:36:03 GMT</pubDate>
+      <description><![CDATA[Because I was bored and needed to procrastinate, I decided to look at the history of packages using libclamav over the last several releases. This is binary reverse-depends in main on i386:
+
+
+
+
+Release
+
+
+libclamav soname
+
+
+rdepends
+
+
+
+
+
+
+Sarge
+
+
+libclamav1
+
+
+2
+
+
+
+
+Etch
+
+
+libclamav2
+
+
+9
+
+
+
+
+Lenny
+
+
+libclamav5
+
+
+5
+
+
+
+
+Squeeze
+
+
+libclamav6
+
+
+3
+
+
+
+
+Wheezy
+
+
+libclamav7
+
+
+3
+
+
+
+
+Jessie
+
+
+libclamav7
+
+
+4
+
+
+
+
+Stretch
+
+
+libclamav7
+
+
+4
+
+
+
+
+Buster
+
+
+libclamav7
+
+
+4
+
+
+
+
+I started working on clamav around Etch ...]]></description>
+      <source url="https://skitterman.wordpress.com/category/Ubuntu/feed/atom">Scott Kitterman</source>
+    </item>
+    <item>
+      <title>So I created a subreddit for interesting G+ refugees. Emphasis on interesting.</title>
+      <link>https://blogs.gnome.org/mneptok/2019/01/28/so-i-created-a-subreddit-for-interesting-g-refugees-emphasis-on-interesting/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/mneptok/2019/01/28/so-i-created-a-subreddit-for-interesting-g-refugees-emphasis-on-interesting/</guid>
+      <pubDate>Mon, 28 Jan 2019 20:48:02 GMT</pubDate>
+      <description><![CDATA[So I created a subreddit for interesting G+ refugees. Emphasis on interesting.]]></description>
+      <source url="http://blogs.gnome.org/mneptok/feed/">Kurt von Finck</source>
+    </item>
+    <item>
+      <title>Announcing the Ubuntu 18.10 Free Culture Showcase winners</title>
+      <link>https://www.nhaines.com/blog/2018/09/28/announcing-ubuntu-18.10-free-culture-showcase-winners/</link>
+      <guid isPermaLink="true">https://www.nhaines.com/blog/2018/09/28/announcing-ubuntu-18.10-free-culture-showcase-winners/</guid>
+      <pubDate>Fri, 28 Sep 2018 07:00:00 GMT</pubDate>
+      <description><![CDATA[October approaches, and Ubuntu marches steadly along the road from one LTS to another.  Ubuntu 18.10 is another step in Ubuntu’s future.  And now it’s time to unveil a small part of that change: the community wallpapers to be included in Ubuntu 18.10!
+
+Every cycle, talented artists around the world create media and release it under licenses that encourage sharing and adaptation. This cycle we had some amazing images submitted to the Ubuntu 18.10 Free Culture Showcase photo pool on Flickr, where ...]]></description>
+      <source url="https://www.nhaines.com/feed.xml">Nathan Haines</source>
+    </item>
+    <item>
+      <title>NVIDIA PRIME in Ubuntu 18.04 and 18.10, and a call for testing</title>
+      <link>https://albertomilone.com/blog/nvidia-prime-in-ubuntu-18-04-and-18-10-and-a-call-for-testing/</link>
+      <guid isPermaLink="true">https://albertomilone.com/blog/nvidia-prime-in-ubuntu-18-04-and-18-10-and-a-call-for-testing/</guid>
+      <pubDate>Thu, 20 Sep 2018 09:19:48 GMT</pubDate>
+      <description><![CDATA[Ubuntu 18.04 marked the transition to a new, more granular, packaging of the NVIDIA drivers, which, unfortunately, combined with a change in logind, and with the previous migration from Lightdm to Gdm3, caused (Intel+NVIDIA) hybrid laptops to stop working the way they used to in Ubuntu 16.xx and older. The following are the main issues experienced by [&#8230;]]]></description>
+      <source url="http://albertomilone.com/wordpress/?feed=rss2">Alberto Milone</source>
+    </item>
+    <item>
+      <title>Help needed to improve proposed migration</title>
+      <link>http://blog.cyphermox.net/2018/09/help-needed-to-improve-proposed.html</link>
+      <guid isPermaLink="true">http://blog.cyphermox.net/2018/09/help-needed-to-improve-proposed.html</guid>
+      <pubDate>Thu, 20 Sep 2018 07:35:00 GMT</pubDate>
+      <description><![CDATA[Hi!
+
+Every once in a while, in the Foundations team, we do a coding day.
+
+A year ago, Lukasz and I wrote a script, following an idea from Steve Langasek, to provide "hints" and help for the next steps necessary for a package to migrate from -proposed to -release.
+
+"ubuntu-archive-assistant" was born.
+
+I just pushed this to lp:ubuntu-dev-tools, after it being on its own in a separate git tree for a long while. I'd love to get help for feedback, as well as more people contributing fixes, etc.
+
+ubu...]]></description>
+      <source url="http://blog.cyphermox.net/feeds/posts/default/-/planet-ubuntu">Mathieu Trudel</source>
+    </item>
+    <item>
+      <title>Joining the Linux Foundation</title>
+      <link>https://mhall119.com/blog/joining-the-linux-foundation/</link>
+      <guid isPermaLink="true">https://mhall119.com/blog/joining-the-linux-foundation/</guid>
+      <pubDate>Wed, 04 Jul 2018 12:56:59 GMT</pubDate>
+      <description><![CDATA[This week I began a new chapter in my career by joinging the Linux Foundation as a developer advocate and community manager for the EdgeX Foundry, an open platform for IoT edge computing.
+
+I started using open source before I even knew what it was. Perl was my first programming language, and so installing libraries from CPAN became a routine task (as well as a routine challenge on SunOS). I posted my first open source code on SourceForge soon after, still thinking of it as a way for hobbyists to...]]></description>
+      <source url="https://mhall119.com/blog/category/planet-ubuntu/feeds/rss/">Michael Hall</source>
+    </item>
+    <item>
+      <title>Flisol Bogotá 2018</title>
+      <link>https://jhosman.com/en/locoteams/flisol-bogota-2018/</link>
+      <guid isPermaLink="true">https://jhosman.com/en/locoteams/flisol-bogota-2018/</guid>
+      <pubDate>Tue, 08 May 2018 01:49:07 GMT</pubDate>
+      <description><![CDATA[On April 28, we celebrated in the best way the Latin American Free Software Installation Festival (FLISoL) in Bogotá. FLISoL is the biggest event for the dissemination of Free Software in [&#8230;]]]></description>
+      <source url="http://feeds.feedburner.com/Jhosmanenglish">Jhosman Lizarazo</source>
+    </item>
+    <item>
+      <title>Debugging the debugger</title>
+      <link>https://chriscoulson.me.uk/blog/?p=295</link>
+      <guid isPermaLink="true">https://chriscoulson.me.uk/blog/?p=295</guid>
+      <pubDate>Wed, 02 May 2018 21:02:46 GMT</pubDate>
+      <description><![CDATA[I use gdb quite often, but until recently I&#8217;ve never really needed to understand how it works or debug it before. I thought I&#8217;d document a recent issue I decided to take a look at &#8211; perhaps someone else will find it interesting or useful. We run the rust testsuite when building rustc packages in [&#8230;]]]></description>
+      <source url="http://www.chriscoulson.me.uk/blog/?feed=rss2&amp;cat=3">Chris Coulson</source>
+    </item>
+    <item>
+      <title>Spaces – uncomplicating your network</title>
+      <link>https://ivoks.com/ubuntu/spaces-uncomplicating-your-network/</link>
+      <guid isPermaLink="true">https://ivoks.com/ubuntu/spaces-uncomplicating-your-network/</guid>
+      <pubDate>Thu, 12 Apr 2018 04:44:16 GMT</pubDate>
+      <description><![CDATA[For past 5-6 years I&#8217;ve been in business of deploying cloud solutions for our customers. Vast majority of that was some form of OpenStack, either a simple cloud or a complicated one. But when you think about it &#8211; what is a simple cloud? It&#8217;s easy to say that small amount of machines makes an easy, and large amount of&#46;&#46;&#46;]]></description>
+      <source url="http://ivoks.com/category/ubuntu/feed/">Ante Karamatić</source>
+    </item>
+    <item>
+      <title>No Title Available</title>
+      <link>https://carla-sella.blogspot.com/2018/02/blog-post.html</link>
+      <guid isPermaLink="true">https://carla-sella.blogspot.com/2018/02/blog-post.html</guid>
+      <pubDate>Sat, 03 Feb 2018 13:50:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+      <source url="http://carla-sella.blogspot.it/rss.xml">Carla Sella</source>
+    </item>
+    <item>
+      <title>Magic URLs in the Ubuntu ecosystem</title>
+      <link>https://tribaal.io/magic-urls.html</link>
+      <guid isPermaLink="true">https://tribaal.io/magic-urls.html</guid>
+      <pubDate>Wed, 13 Dec 2017 09:05:00 GMT</pubDate>
+      <description><![CDATA[Because of the distributed nature of Ubuntu development, it is sometimes a
+little difficult for me to keep track of the "special" URLs for various
+actions or reports that I'm regularly interested in.
+Therefore I started gathering them in my personal wiki (I use the excellent
+"zim" desktop wiki), and realized some of my colleagues
+and friends would be interested in that list as well. I'll do my best to keep
+this blog post up-to-date as I discover new ones.
+
+If you know of other candidates for thi...]]></description>
+      <source url="https://tribaal.io/feeds/ubuntu">Chris Glass</source>
+    </item>
+    <item>
+      <title>Preparing for Xubuntu 18.04</title>
+      <link>https://open.knome.fi/2017/10/24/preparing-xubuntu-18-04/</link>
+      <guid isPermaLink="true">https://open.knome.fi/2017/10/24/preparing-xubuntu-18-04/</guid>
+      <pubDate>Tue, 24 Oct 2017 06:55:22 GMT</pubDate>
+      <description><![CDATA[Xubuntu 17.10 was just released, but planning for Xubuntu 18.04 – the next long-term support (LTS) release – began quite some time ago. For our users, LTS releases mostly mean a system that is going to be more stable and supported for longer. For us contributors, this means a bunch of things. As a repercussion [&#8230;]]]></description>
+      <source url="http://open.knome.fi/category/ubuntu/feed/">Pasi Lallinaho</source>
+    </item>
+    <item>
+      <title>freenode #live</title>
+      <link>http://nhandler.com/blog/2017/08/26/freenode-live.html</link>
+      <guid isPermaLink="true">http://nhandler.com/blog/2017/08/26/freenode-live.html</guid>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 GMT</pubDate>
+      <description><![CDATA[For those of you who might not be aware, freenode is an IRC network that caters to free and open source projects. We have had a goal for a number of years to hold freenode #live, an in-person conference where our staff, projects, FOSS supporters, and IRC enthusiasts could all get together in one place. Thanks to some very generous sponsorship, primarily by Private Internet Access, this conference is finally happening! The first ever freenode #live conference will take place October 28 - 29, 2017...]]></description>
+      <source url="http://nhandler.com/blog/feed.ubuntu.xml">Nathan Handler</source>
+    </item>
+    <item>
+      <title>More on the imported repositories</title>
+      <link>http://www.justgohome.co.uk/blog/2017/08/more-on-the-imported-repositories.html</link>
+      <guid isPermaLink="true">http://www.justgohome.co.uk/blog/2017/08/more-on-the-imported-repositories.html</guid>
+      <pubDate>Mon, 21 Aug 2017 16:53:44 GMT</pubDate>
+      <description><![CDATA[This is the third post in our series on our git workflow tooling in
+Ubuntu.  There is an index of all our planned posts in the first
+post.
+As mentioned there, it is important to keep in mind that the tooling
+and implementation are still highly
+experimental.
+Nish introduced our imported repositories using the git ubuntu clone
+wrapper, as well
+as using git directly.
+I'd like to go into a little more detail about what we're actually importing.
+Automatic imports watch for new source publications in ...]]></description>
+      <source url="http://www.justgohome.co.uk/blog/feeds/tag/planet-ubuntu.atom.xml">Robie Basak</source>
+    </item>
+    <item>
+      <title>Ubuntu GNOME 17.04 Released and What’s Next</title>
+      <link>https://ubuntugnome.org/ubuntu-gnome-17-04-released/</link>
+      <guid isPermaLink="true">https://ubuntugnome.org/ubuntu-gnome-17-04-released/</guid>
+      <pubDate>Thu, 13 Apr 2017 13:15:08 GMT</pubDate>
+      <description><![CDATA[The Ubuntu GNOME developers are proud to announce our latest non-LTS release 17.04. For the first time in Ubuntu GNOME&#8217;s history, this release includes the latest stable release of GNOME, 3.24. Although Ubuntu&#8217;s release schedule was originally centered around shipping &#8230; Continue reading &#8594;]]></description>
+      <source url="http://ubuntugnome.org/feed/?mrss=off">Ubuntu GNOME</source>
+    </item>
+    <item>
+      <title>1er Festival Universitario de Tecnologías Libres</title>
+      <link>https://cesarsevilla.wordpress.com/2016/10/28/1er-festival-universitario-de-tecnologias-libres/</link>
+      <guid isPermaLink="true">https://cesarsevilla.wordpress.com/2016/10/28/1er-festival-universitario-de-tecnologias-libres/</guid>
+      <pubDate>Fri, 28 Oct 2016 22:09:25 GMT</pubDate>
+      <description><![CDATA[A petición del público traemos para todos ustedes a través de la Unidad Territorial &#8211; Fundacite Zulia (UTZ) el “Festival Universitario de Tecnologías Libres”, el mismo tiene como objetivo: Impulsar el crecimiento y desarrollo del Software Libre y Código Abierto dentro del ámbito Educativo Institucional en la Región Occidental, para lograr la independencia Científica–Tecnológica del &#8230; Seguir leyendo 1er Festival Universitario de Tecnologías&#160;Libres &#8594;]]></description>
+      <source url="https://cesarsevilla.wordpress.com/category/ubuntu/feed/?mrss=off">Cesar Sevilla</source>
+    </item>
+    <item>
+      <title>Ask Ubuntu moderator election is now underway!</title>
+      <link>https://unbrokenspectrum.wordpress.com/2016/06/07/ask-ubuntu-moderator-election-is-now-underway/</link>
+      <guid isPermaLink="true">https://unbrokenspectrum.wordpress.com/2016/06/07/ask-ubuntu-moderator-election-is-now-underway/</guid>
+      <pubDate>Tue, 07 Jun 2016 16:19:04 GMT</pubDate>
+      <description><![CDATA[We are in the midst of our 5th moderator election to add more firepower to our existing mod crew. In the 6 years that Ask Ubuntu has been around, nearly 230,000 questions and 300,000 answers have been posted on the site, with the daily traffic clocking a whopping 487k visits as of now. These numbers &#8230; Continue reading "Ask Ubuntu moderator election is now&#160;underway!"]]></description>
+      <source url="https://unbrokenspectrum.wordpress.com/category/planet-ubuntu/feed/?mrss=off">Barneedhar</source>
+    </item>
+    <item>
+      <title>Easy Rake-based Deployment for Git-hosted Rails Apps</title>
+      <link>http://ben-collins.blogspot.com/2016/03/easy-rake-based-deployment-for-git.html</link>
+      <guid isPermaLink="true">http://ben-collins.blogspot.com/2016/03/easy-rake-based-deployment-for-git.html</guid>
+      <pubDate>Fri, 25 Mar 2016 17:54:00 GMT</pubDate>
+      <description><![CDATA[I searched a lot of places for an easy way to automate my deployments for OpenStrokes, a website I've been working on. Some things were just too complex (capistrano) and some were way too simple (StackOverflow answers that didn't do everything, or didn't check for errors).
+
+So, as most people do, I wrote my own. Hopefully this short rake task can help you as well. This assumes that your application server has your app checked out as a clone of some git repo you push changes to and that you are r...]]></description>
+      <source url="http://feeds.feedburner.com/benmcollins13/ubuntu">Ben Collins</source>
+    </item>
+    <item>
+      <title>Speaking at San Diego Linux users group</title>
+      <link>https://philipballew.wordpress.com/2016/03/21/speaking-at-san-diego-linux-users-group/</link>
+      <guid isPermaLink="true">https://philipballew.wordpress.com/2016/03/21/speaking-at-san-diego-linux-users-group/</guid>
+      <pubDate>Mon, 21 Mar 2016 23:31:49 GMT</pubDate>
+      <description><![CDATA[Earlier this month, I had the honor and privilege of speaking at the San Diego Linux users group. I spoke about ways to customize your Ubuntu desktop, the talk finished a little earlier than the group meeting was planned to go to, so I used that time to talk about some of the server stuff &#8230; Continue reading &#8594;]]></description>
+      <source url="https://philipballew.wordpress.com/feed/?mrss=off">Philip Ballew</source>
+    </item>
+    <item>
+      <title>Test Android Auto – New Opel Astra [ENG]</title>
+      <link>https://www.mirkopizii.com/ubuntu-com-planet/test-android-auto-new-opel-astra-eng/</link>
+      <guid isPermaLink="true">https://www.mirkopizii.com/ubuntu-com-planet/test-android-auto-new-opel-astra-eng/</guid>
+      <pubDate>Sat, 30 Jan 2016 23:00:00 GMT</pubDate>
+      <description><![CDATA[Well yes, not only reviews and tests only for products like computer but today we are also on car industry testing the new Opel Astra Elective which supports Android Auto. First of all, before I start, I want to thanks my friend Davide, who works in Opel workshop, for all of his patience and availability...]]></description>
+      <source url="http://www.mirkopizii.com/category/ubuntu-com-planet/feed/?mrss=off">Mirko Pizii</source>
+    </item>
+    <item>
+      <title>How to Integrate Slack with Launchpad</title>
+      <link>https://daker.me/2016/01/how-to-integrate-slack-with-launchpad.html</link>
+      <guid isPermaLink="true">https://daker.me/2016/01/how-to-integrate-slack-with-launchpad.html</guid>
+      <pubDate>Tue, 26 Jan 2016 00:00:00 GMT</pubDate>
+      <description><![CDATA[Slack is a great platform for team communication, it is a collection of chat rooms, both public and private. It helps confine all your team communications to one place. Slack also provides an API to let you interacte with it, so i have to decided to write a simple app using Flask to integrate Slack with Launchpad using its new webhooks feature.
+
+Deploying to Heroku
+You can check the full steps in the README file
+$ git clone git@github.com:daker/launchpad-slack.git$ cd launchpad-slack$ heroku cre...]]></description>
+      <source url="http://daker.me/feed-ubuntuplanet.xml">Adnane Belmadiaf</source>
+    </item>
+    <item>
+      <title>mass subscriptions</title>
+      <link>http://polka.bike/blog/mass-subs</link>
+      <guid isPermaLink="true">http://polka.bike/blog/mass-subs</guid>
+      <pubDate>Fri, 11 Dec 2015 23:12:44 GMT</pubDate>
+      <description><![CDATA[mass subscriptions]]></description>
+      <source url="http://polka.bike/blog/category/planet-ubuntu/feed/index.xml">Walter Lapchynski</source>
+    </item>
+    <item>
+      <title>Current progress on AlgAudio</title>
+      <link>https://rafalcieslak.wordpress.com/2015/10/06/current-progress-on-algaudio/</link>
+      <guid isPermaLink="true">https://rafalcieslak.wordpress.com/2015/10/06/current-progress-on-algaudio/</guid>
+      <pubDate>Tue, 06 Oct 2015 18:24:20 GMT</pubDate>
+      <description><![CDATA[&#8230; or &#8220;what I&#8217;ve been working on for the past three months&#8221;. So this summer I have participated in a programming internship at Audiovisual Technology Center &#8211; CeTA in Wrocław. CeTA is developing a number of very exciting projects, and the one I had the pleasure to work on is AlgAudio. (download links available below) [&#8230;]]]></description>
+      <source url="https://rafalcieslak.wordpress.com/category/ubuntu/feed/?mrss=off">Rafał Cieślak</source>
+    </item>
+    <item>
+      <title>Resource control with systemd</title>
+      <link>https://dktrkranz.wordpress.com/2015/09/02/resource-control-with-systemd/</link>
+      <guid isPermaLink="true">https://dktrkranz.wordpress.com/2015/09/02/resource-control-with-systemd/</guid>
+      <pubDate>Wed, 02 Sep 2015 16:31:54 GMT</pubDate>
+      <description><![CDATA[I&#8217;m receiving more requests for upload accounts to the Deb-o-Matic servers lately (yay!), but that means the resources need to be monitored and shared between the build daemons to prevent server lockups.
+My servers are running systemd, so I decided to give systemd.resource-control a try. My goal was to assign lower CPU shares to the build processes (debomatic itself, sbuild, and all the related tools), in order to avoid blocking other important system services from being spawned when neces...]]></description>
+      <source url="https://dktrkranz.wordpress.com/category/planet-ubuntu/feed/atom/">Luca Falavigna</source>
+    </item>
+    <item>
+      <title>DebConf 15</title>
+      <link>https://overbenny.wordpress.com/2015/08/16/debconf-15/</link>
+      <guid isPermaLink="true">https://overbenny.wordpress.com/2015/08/16/debconf-15/</guid>
+      <pubDate>Sun, 16 Aug 2015 11:31:42 GMT</pubDate>
+      <description><![CDATA[I am still alive and currently attending DebConf 15. Feel free to grab me for a talk. I am just shy, not antisocial.]]></description>
+      <source url="https://overbenny.wordpress.com/category/planet-ubuntu/feed/atom">Benjamin Drung</source>
+    </item>
+    <item>
+      <title>SUSE Ruling the Stack in Vancouver</title>
+      <link>https://www.vuntz.net/journal/post/2015/05/26/SUSE-Ruling-the-Stack-in-Vancouver</link>
+      <guid isPermaLink="true">https://www.vuntz.net/journal/post/2015/05/26/SUSE-Ruling-the-Stack-in-Vancouver</guid>
+      <pubDate>Mon, 25 May 2015 22:58:00 GMT</pubDate>
+      <description><![CDATA[Last week during the the OpenStack Summit in Vancouver, Intel organized a Rule the Stack contest. That's the third one, after Atlanta a year ago and Paris six months ago. In case you missed earlier episodes, SUSE won the two previous contests with Dirk being pretty fast in Atlanta and Adam completing the HA challenge so we could keep the crown. So of course, we had to try again!
+
+
+For this contest, the rules came with a list of penalties and bonuses which made it easier for people to participate...]]></description>
+      <source url="http://www.vuntz.net/journal/rss.php?lang=en">Vincent Untz</source>
+    </item>
+    <item>
+      <title>Here’s how to patch Ubuntu 8.04 or anything where you have to build bash from source</title>
+      <link>https://leftyfb.com/2014/09/25/heres-how-to-patch-ubuntu-8-04-or-anything-where-you-have-to-build-bash-from-source/</link>
+      <guid isPermaLink="true">https://leftyfb.com/2014/09/25/heres-how-to-patch-ubuntu-8-04-or-anything-where-you-have-to-build-bash-from-source/</guid>
+      <pubDate>Thu, 25 Sep 2014 17:03:01 GMT</pubDate>
+      <description><![CDATA[UPDATED: I have updated the post to include the post from gb3 as well as additional patches and some tests Just a quick post to help those who might be running older/unsupported distributions of linux, mainly Ubuntu 8.04 who need to patch their version of bash due to the recent exploit here: http://thehackernews.com/2014/09/bash-shell-vulnerability-shellshock.html I found this &#8230; Continue reading Here&#8217;s how to patch Ubuntu 8.04 or anything where you have to build bash from source &#85...]]></description>
+      <source url="http://leftyfb.com/?feed=rss2&amp;cat=4">Mike Rushton</source>
+    </item>
+    <item>
+      <title>Open Source Conference 2014 Kansai@Kyoto</title>
+      <link>https://mizuno-as.hatenadiary.org/entry/20140806/1407307913</link>
+      <guid isPermaLink="true">https://mizuno-as.hatenadiary.org/entry/20140806/1407307913</guid>
+      <pubDate>Wed, 06 Aug 2014 06:51:53 GMT</pubDate>
+      <description><![CDATA[On August 1-2, 2014, Open Source Conference 2014 Kansai@Kyoto was held in Kyoto.
+(http://www.ospn.jp/osc2014-kyoto/)
+This event is the largest OSS community gathers for in Japan. We participate as exhibitor and speaker every year. Yes, Of course as for this year.
+Hiroshi Chonan was in charge of the seminar. He talked about trusty and Utopic.The highlight of the event is as follows:
+The NetBSD team displayed Luna work station of OMRON. Luna(= opposed to Sun) is very old UNIX workstation in Japan....]]></description>
+      <source url="http://d.hatena.ne.jp/mizuno-as/rss">Hajime MIZUNO</source>
+    </item>
+    <item>
+      <title>Ubuntu 14.04 LTS release party + Offline meeting 14.04 Tokyo</title>
+      <link>http://fabric-janitor.blogspot.com/2014/06/a-few-weeks-ago-ubuntu-japanese-team.html</link>
+      <guid isPermaLink="true">http://fabric-janitor.blogspot.com/2014/06/a-few-weeks-ago-ubuntu-japanese-team.html</guid>
+      <pubDate>Thu, 05 Jun 2014 03:09:00 GMT</pubDate>
+      <description><![CDATA[A
+ few weeks ago, Ubuntu Japanese Team convene "Ubuntu 14.04 LTS release 
+party + Offline meeting 14.04" with co-sponsored by GREE, Inc and around
+ 100 attendances. That event combine the hackathon and seminar sessions,
+ we have it both ways.
+
+Virtual tour:
+1) A lot of sandwitchs (for 100 enlister) and party dishes. 
+
+
+Note: These represent just the tip of the iceberg. But, they completely-disappeared within 20 minutes....:) 
+
+
+2) A lot of Ubuntu 14.04 LTS CDs (From LoCo kit, thanks Canonical!) ...]]></description>
+      <source url="http://fabric-janitor.blogspot.com/feeds/posts/default/-/planet">Fumihito YOSHIDA</source>
+    </item>
+    <item>
+      <title>Trusty DVD parcels</title>
+      <link>http://my-ubuntu-day.blogspot.com/2014/05/trusty-dvd-parcels.html</link>
+      <guid isPermaLink="true">http://my-ubuntu-day.blogspot.com/2014/05/trusty-dvd-parcels.html</guid>
+      <pubDate>Sun, 18 May 2014 14:21:00 GMT</pubDate>
+      <description><![CDATA[I am just getting the parcels of DVDs ready. I will take them to the post office this week sometime. Thanks to everyone who is willing to be a distribution point.]]></description>
+      <source url="http://my-ubuntu-day.blogspot.com/feeds/posts/default?alt=rss">Maia Grotepass</source>
+    </item>
+    <item>
+      <title>Ubuntu Open Week wrap-up</title>
+      <link>https://ubuntuclassroom.wordpress.com/2014/04/25/ubuntu-open-week-wrap-up-2/</link>
+      <guid isPermaLink="true">https://ubuntuclassroom.wordpress.com/2014/04/25/ubuntu-open-week-wrap-up-2/</guid>
+      <pubDate>Fri, 25 Apr 2014 23:20:49 GMT</pubDate>
+      <description><![CDATA[From April 22nd through April 24th the Ubuntu Classroom team worked with teams across the Ubuntu community to bring together 12 sessions exploring various parts of our community, from Documentation to Core Apps to the Kernel team to present Ubuntu Open Week. The event was a huge success! If you missed anything, logs (for IRC-based [&#8230;]]]></description>
+      <source url="https://ubuntuclassroom.wordpress.com/feed/?mrss=off">Ubuntu Classroom</source>
+    </item>
+    <item>
+      <title>IR Receiver extension for Ambilight raspberry pi clone</title>
+      <link>http://supermario-world.blogspot.com/2014/04/ir-receiver-extension-for-ambilight.html</link>
+      <guid isPermaLink="true">http://supermario-world.blogspot.com/2014/04/ir-receiver-extension-for-ambilight.html</guid>
+      <pubDate>Wed, 23 Apr 2014 05:48:00 GMT</pubDate>
+      <description><![CDATA[After working with my ambilight clone for a few days, I discovered the biggest annoyance was that it wouldn't turn off after turning off the TV. &nbsp;I had some ideas on how I could remotely trigger it from the phone or from an external HTPC but I really wanted a self contained solution in case I decided to swap the HTPC for a FireTV or a Chromecast.
+
+This brought me to trying to do it directly via my remote. &nbsp;My HTPC uses a mceusb, so I was tempted to just get another mceusb for the pi. &...]]></description>
+      <source url="http://supermario-world.blogspot.com/feeds/posts/default">Mario Limonciello</source>
+    </item>
+    <item>
+      <title>apt 1.0</title>
+      <link>https://mvogt.wordpress.com/2014/04/04/apt-1-0/</link>
+      <guid isPermaLink="true">https://mvogt.wordpress.com/2014/04/04/apt-1-0/</guid>
+      <pubDate>Fri, 04 Apr 2014 14:30:02 GMT</pubDate>
+      <description><![CDATA[APT 1.0 was released on the 1. April 2014 [0]! The first APT version was announced on the 1. April exactly 16 years ago [1]. The big news for this version is that we included a new &#8220;apt&#8221; binary that combines the most commonly used commands from apt-get and apt-cache. The commands are the same [&#8230;]]]></description>
+      <source url="https://mvogt.wordpress.com/category/ubuntu/feed/?mrss=off">Michael Vogt</source>
+    </item>
+    <item>
+      <title>The Ubuntu PC Case Mod Pt.10 The CPU + Kubuntu stickers</title>
+      <link>https://noskcaj10.wordpress.com/2013/12/18/the-ubuntu-pc-case-mod-pt-9-the-cpu-kubuntu-stickers/</link>
+      <guid isPermaLink="true">https://noskcaj10.wordpress.com/2013/12/18/the-ubuntu-pc-case-mod-pt-9-the-cpu-kubuntu-stickers/</guid>
+      <pubDate>Wed, 18 Dec 2013 06:21:44 GMT</pubDate>
+      <description><![CDATA[Hello everyone, The CPU (an AMD FX-8320) finally arrived this week, and i&#8217;ve put the LEDs on since i shouldn&#8217;t be doing any more cutting any time soon. On top of this, I received a sponsorship from linux australia recently, which is paying for the main motherboard and PSU. I also have a few other &#8230;Read More]]></description>
+      <source url="https://noskcaj10.wordpress.com/category/ubuntu/feed/?mrss=off">Jackson Doak</source>
+    </item>
+    <item>
+      <title>Ubuntu Touch and User Privacy</title>
+      <link>http://mdeslaur.blogspot.com/2013/12/ubuntu-touch-and-user-privacy.html</link>
+      <guid isPermaLink="true">http://mdeslaur.blogspot.com/2013/12/ubuntu-touch-and-user-privacy.html</guid>
+      <pubDate>Mon, 16 Dec 2013 19:25:00 GMT</pubDate>
+      <description><![CDATA[Application Confinement
+When we started thinking about how to design the security infrastructure in Ubuntu Touch, one of the important criterias was user privacy. For Ubuntu Touch, and the converged desktop in the future, we are moving from a model where people install software provided in an archive maintained by packagers to a model where applications get uploaded by the authors themselves directly into a software store. While this allows users to quickly gain access to the latest and greatest...]]></description>
+      <source url="http://mdeslaur.blogspot.com/feeds/posts/default/-/ubuntu-planet">Marc Deslauriers</source>
+    </item>
+    <item>
+      <title>Ubuntu Trusty translations are now open</title>
+      <link>https://blogs.gnome.org/happyaron/2013/12/14/ubuntu-trusty-translations-are-now-open/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/happyaron/2013/12/14/ubuntu-trusty-translations-are-now-open/</guid>
+      <pubDate>Sat, 14 Dec 2013 08:55:05 GMT</pubDate>
+      <description><![CDATA[We are pleased to announce that Trusty is now open for translation: https://translations.launchpad.net/ubuntu/trusty * Translation caveats. Remember that according to the release schedule [1] translatable messages might be subject to change until the User Interface Freeze [2]. * Language packs. During the Trusty development cycle, language packs containing translations will be released twice per week &#8230; Continue reading Ubuntu Trusty translations are now open]]></description>
+      <source url="http://blogs.gnome.org/happyaron/category/ubuntu/feed/">Aron Xu</source>
+    </item>
+    <item>
+      <title>I Know what You Did This Summer</title>
+      <link>https://blogs.gnome.org/lferrett/2013/08/03/i-know-what-you-did-this-summer/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/lferrett/2013/08/03/i-know-what-you-did-this-summer/</guid>
+      <pubDate>Sat, 03 Aug 2013 20:50:51 GMT</pubDate>
+      <description><![CDATA[For your visual pleasure, here are some fresh screenshots from GNOME 3.9.5. Enjoy 🙂 Weather and Maps Disk Usage and Notes Photos Universal Access System Monitor and Nautilus and&#8230; &#160; &#160;]]></description>
+      <source url="http://blogs.gnome.org/lferrett/feed/">Luca Ferretti</source>
+    </item>
+    <item>
+      <title>Spanish or Bust: Attaining fluency in 90 days or else ... </title>
+      <link>http://ncommander.blogspot.com/2013/06/spanish-or-bust-attaining-fluency-in-90.html</link>
+      <guid isPermaLink="true">http://ncommander.blogspot.com/2013/06/spanish-or-bust-attaining-fluency-in-90.html</guid>
+      <pubDate>Sat, 29 Jun 2013 01:38:00 GMT</pubDate>
+      <description><![CDATA["How do you have an adventure?"
+
+"You take a stupid idea, and follow through ..."
+
+Perhaps, I've truly lost my mind for once, but I've decided to embark on a personal project to try and achieve some fluency in Spanish in just 90 days, and posting it to the internet to try and keep me honest and on track towards doing so. I will post future updates as I go, and would welcome help from anyone who would be interested in helping!
+
+The cost of failure: being forced to praise Wndows 8 in a future vide...]]></description>
+      <source url="http://ncommander.blogspot.com/feeds/posts/default">Michael Casadevall</source>
+    </item>
+    <item>
+      <title>Left Canonical</title>
+      <link>https://dmtechtalk.wordpress.com/2013/06/11/left-canonical/</link>
+      <guid isPermaLink="true">https://dmtechtalk.wordpress.com/2013/06/11/left-canonical/</guid>
+      <pubDate>Tue, 11 Jun 2013 15:59:51 GMT</pubDate>
+      <description><![CDATA[After almost 6 years the time has come to move on. I&#8217;m no longer with Canonical. New things on the horizon. I still plan on participating in Linux especially ARM Linux and also still being a part of Ubuntu Linux Community too.
+It&#8217;s been an interesting journey with Canonical, managing engineers around the world, up at weird hours of the day, starting a new flavour of Ubuntu (ARM), fighting daylight savings time twice a year, and finally supporting sales folks.  Always interesting, but...]]></description>
+      <source url="https://dmtechtalk.wordpress.com/category/ubuntu-2/feed/atom/">David Mandala</source>
+    </item>
+    <item>
+      <title>Fixing build failures for 13.04</title>
+      <link>http://drowninginbugs.blogspot.com/2013/04/fixing-build-failures-for-1304.html</link>
+      <guid isPermaLink="true">http://drowninginbugs.blogspot.com/2013/04/fixing-build-failures-for-1304.html</guid>
+      <pubDate>Mon, 08 Apr 2013 19:02:00 GMT</pubDate>
+      <description><![CDATA[One of the pleasures (and privileges) of Free Software is transparency in consistency, here meaning it's fairly painless to see where stuff fails to build in Ubuntu&nbsp;and to be able to&nbsp;help in fixing those failures.
+
+Let's get 13.04 into shape!]]></description>
+      <source url="http://drowninginbugs.blogspot.com/feeds/posts/default/-/ubuntu">Daniel T Chen</source>
+    </item>
+    <item>
+      <title>Setting up full-disk encryption in OpenBSD 5.3</title>
+      <link>/blog/2013-03-26-setting-up-full-disk-encryption-in-openbsd-5.3/</link>
+      <guid isPermaLink="true">/blog/2013-03-26-setting-up-full-disk-encryption-in-openbsd-5.3/</guid>
+      <pubDate>Tue, 26 Mar 2013 13:40:54 GMT</pubDate>
+      <description><![CDATA[I recently decided to try out a snapshot of OpenBSD 5.3,
+intrigued by the notice that
+
+softraid(4) RAID1 and crypto volumes are now bootable on i386 and
+amd64 (full disk encryption).
+
+I&rsquo;ve always used an encrypted LVM (as setup by the alternate CD) with
+a fully encrypted root on my netbook and laptop when running
+Debian/Kubuntu and never noticed much a performance
+hit. Unfortunately, I&rsquo;m not the only one who has noticed a
+significant drop in performance with full-disk encryption on O...]]></description>
+      <source url="http://blog.ryanak.ca/feeds/planet-ubuntu.xml">Ryan Kavanagh</source>
+    </item>
+    <item>
+      <title>Bash script self-updates from github</title>
+      <link>http://foss-boss.blogspot.com/2013/03/bash-script-self-updates-from-github.html</link>
+      <guid isPermaLink="true">http://foss-boss.blogspot.com/2013/03/bash-script-self-updates-from-github.html</guid>
+      <pubDate>Mon, 11 Mar 2013 22:07:00 GMT</pubDate>
+      <description><![CDATA[Recently the systems engineering team&nbsp;@&nbsp;Cloud9ers&nbsp;($dayjob) has been busy building the infrastructure for a very ambitious and large scale project for one of our customers. The project involves tons of distributed programming besides lots of systems work as well. I'd like to share with the community a small tidbit of information. It's often some small things the one sometimes gives a moment to admire, and hereby share!
+
+The problem
+
+
+We are building a private cloud. Ubuntu server ...]]></description>
+      <source url="http://foss-boss.blogspot.com/feeds/posts/default/-/ubuntu-planet">Ahmed Kamal</source>
+    </item>
+    <item>
+      <title>I think I have a solution to the rolling and releasing</title>
+      <link>http://davmor2.blogspot.com/2013/03/i-think-i-have-solution-to-rolling-and.html</link>
+      <guid isPermaLink="true">http://davmor2.blogspot.com/2013/03/i-think-i-have-solution-to-rolling-and.html</guid>
+      <pubDate>Thu, 07 Mar 2013 23:22:00 GMT</pubDate>
+      <description><![CDATA[Post LTS. &nbsp;You start a rolling release. This gets all the goodness in that you want. &nbsp;6 months in you take a fortnight out. Week one stabilize, week two ISO testing. &nbsp;The resulting ISO is then supported with security back ports for the next 6 months till the next ISO is stabilized and so on till you get to the 6 months for the next lts. &nbsp;Here you go back to the more tried and tested release method so this release is solid, stable and ready for the next 5 years.
+
+This I think ...]]></description>
+      <source url="http://davmor2.blogspot.com/rss.xml">Dave Morley</source>
+    </item>
+    <item>
+      <title>Introducing Friends!</title>
+      <link>https://blogs.gnome.org/kenvandine/2013/03/07/introducing-friends/</link>
+      <guid isPermaLink="true">https://blogs.gnome.org/kenvandine/2013/03/07/introducing-friends/</guid>
+      <pubDate>Thu, 07 Mar 2013 21:46:33 GMT</pubDate>
+      <description><![CDATA[The Friends Service provides an API for interacting with your social networks. The friends service uses microblogging accounts configured in Ubuntu Online Accounts. Currently there are friends plugins for facebook, twitter, flickr, foursquare and identica. Sound familiar? Friends is actually &#8230; Continue reading &#8594;]]></description>
+      <source url="http://blogs.gnome.org/kenvandine/category/ubuntu/feed/">Ken VanDine</source>
+    </item>
+    <item>
+      <title>git-annex: encrypted remotes</title>
+      <link>https://debblog.philkern.de/2013/03/git-annex-encrypted-remotes.html</link>
+      <guid isPermaLink="true">https://debblog.philkern.de/2013/03/git-annex-encrypted-remotes.html</guid>
+      <pubDate>Sun, 03 Mar 2013 22:44:00 GMT</pubDate>
+      <description><![CDATA[Due to the data loss I blogged about, I had to reverse engineer the encryption used by git-annex for its encrypted special remotes. The file system on which the content lived has a bullet hole of 8 GB in it, which was helpfully discarded by pvmove. It's pretty unhappy about that fact, parts of the git repository are unusable and directories cannot be accessed anymore. git-annex cannot possibly run anymore.
+
+However, I was still able to access the git-annex branch within said git repository (usin...]]></description>
+      <source url="http://www.blogger.com/feeds/5048890463514304208/posts/default/-/planet-ubuntu?alt=rss">Philipp Kern</source>
+    </item>
+    <item>
+      <title>Let's shard something</title>
+      <link>http://blog.xtremeghost.com/2012/11/lets-shard-something.html</link>
+      <guid isPermaLink="true">http://blog.xtremeghost.com/2012/11/lets-shard-something.html</guid>
+      <pubDate>Fri, 30 Nov 2012 07:59:00 GMT</pubDate>
+      <description><![CDATA[It's been a while so, let's get right to it...
+
+Today I'll be talking about sharded clusters in MongoDB using Ubuntu Precise and Juju.
+
+According the the mongodb documentation found on their website,&nbsp;one way of deploying a Shard Cluster is as follows:
+
+deploy config servers
+deploy a mongo shell (mongos)
+deploy shards
+connect the config servers to the mongo shell
+add the shards to the mongo shell
+
+This is a pretty involved process that normally takes several hours to accomplish. &nbsp;In thi...]]></description>
+      <source url="http://blog.xtremeghost.com/feeds/posts/default/-/planet">Juan Negron</source>
+    </item>
+    <item>
+      <title>Kubuntu got Donations, KDE needs Donations</title>
+      <link>http://werghdf.blogspot.com/2012/09/kubuntu-got-donations-kde-needs.html</link>
+      <guid isPermaLink="true">http://werghdf.blogspot.com/2012/09/kubuntu-got-donations-kde-needs.html</guid>
+      <pubDate>Fri, 21 Sep 2012 13:31:00 GMT</pubDate>
+      <description><![CDATA[There we were starting discussions for the Ubuntu Developer Summit at the end of October in Copenhagen and wondering who we could afford to send when I got a nice e-mail asking what it would cost to send everyone who wanted to go.  I replied with a rough budget of what the flights and hotel would be and next thing I know that amount had appeared in my Paypal account.  Now I like to think Kubuntu is a friendly and trusting community but this is generosity beyond my expectations.  I'm constantly a...]]></description>
+      <source url="http://werghdf.blogspot.co.uk/feeds/posts/default">Jonathan Riddell</source>
+    </item>
+    <item>
+      <title>UK LoCo Christmas Dinner @ Dans Le Noir</title>
+      <link>https://itigloo.com/2011/12/10/uk-loco-christmas-dinner-dans-le-noir/</link>
+      <guid isPermaLink="true">https://itigloo.com/2011/12/10/uk-loco-christmas-dinner-dans-le-noir/</guid>
+      <pubDate>Sat, 10 Dec 2011 14:36:44 GMT</pubDate>
+      <description><![CDATA[Thanks to Alan Bell for organising a wonderful Christmas dinner at Dans Le Noir last night. It was a wonderful venue and the food was amazing. I never realised how dark, dark could really be.
+I would recommend this restaurant to anybody.  Also remember, this is the only restaurant  where you can get away with eating with your fingers and licking your plate when you are finished. As it is so dark, who would ever know.
+I was however, slightly disappointed that some of the other members of the podc...]]></description>
+      <source url="http://itigloo.com/category/planet-ubuntu/feed/atom">Chris Woollard</source>
+    </item>
+    <item>
+      <title>UDS Day 3</title>
+      <link>https://gilir.wordpress.com/2011/11/03/uds-day-3/</link>
+      <guid isPermaLink="true">https://gilir.wordpress.com/2011/11/03/uds-day-3/</guid>
+      <pubDate>Thu, 03 Nov 2011 04:33:54 GMT</pubDate>
+      <description><![CDATA[Today Sessions :
+Defect Analyst Bug Review Dashboard
+http://summit.ubuntu.com/uds-p/meeting/19483/other-p-bug-dashboard/
+https://blueprints.launchpad.net/ubuntu/+spec/other-p-bug-dashboard
+This session was to create a way to monitor bugs across several packages and in an efficient way. Currently, most people who want to work on bugs of multiple packages create a team and subscribe all packages to this team. It’s working to get information, but nothing exist to summarize statistics about the bugs...]]></description>
+      <source url="https://gilir.wordpress.com/tag/planet-ubuntu/feed/atom/">Julien Lavergne</source>
+    </item>
+    <item>
+      <title>FlossManuals/Google Documentation Summit</title>
+      <link>https://dindafoss.wordpress.com/2011/10/18/flossmanualsgoogle-documentation-summit/</link>
+      <guid isPermaLink="true">https://dindafoss.wordpress.com/2011/10/18/flossmanualsgoogle-documentation-summit/</guid>
+      <pubDate>Tue, 18 Oct 2011 13:45:26 GMT</pubDate>
+      <description><![CDATA[I&#8217;m fortunate to be included in the group attending the Floss Manuals &#38; Google hosted event Documentation Summit. Four really worthwhile and interesting projects were chosen and several freelancers (like myself) are also helping out. The format is part unconference and part book sprint. The goals are promote dialog among the various FOSS folks as [&#8230;]]]></description>
+      <source url="https://dindafoss.wordpress.com/category/ubuntu/feed/?mrss=off">Belinda Lopez</source>
+    </item>
+    <item>
+      <title>Ubuntu Global Jam Oneiric</title>
+      <link>http://tumbleweed.org.za/2011/09/05/ubuntu-global-jam-oneiric</link>
+      <guid isPermaLink="true">http://tumbleweed.org.za/2011/09/05/ubuntu-global-jam-oneiric</guid>
+      <pubDate>Mon, 05 Sep 2011 17:22:04 GMT</pubDate>
+      <description><![CDATA[We had quite a successful Ubuntu Global Jam on Saturday. Thanks Yola for hosting us. It was only 5 of us, and I was the only one with any uploads under my belt, but the nice small team meant I had time to help everyone fix some build failures. We had intended to focus on Scientific packages, but it was easier to just pick arbitrary build failures from the most recent archive rebuild.
+
+Maia visited us briefly at lunch time and took some photos, thanks :) Sorry you couldn&#8217;t stay longer.
+
+Som...]]></description>
+      <source url="http://tumbleweed.org.za/tags/ubuntu/feed">Stefano Rivera</source>
+    </item>
+    <item>
+      <title>The sooner the better.</title>
+      <link>https://primes2h.wordpress.com/2011/06/06/the-sooner-the-better/</link>
+      <guid isPermaLink="true">https://primes2h.wordpress.com/2011/06/06/the-sooner-the-better/</guid>
+      <pubDate>Mon, 06 Jun 2011 10:32:19 GMT</pubDate>
+      <description><![CDATA[Hi everybody! Oneiric Alpha 1 is out and ready to be tested in your laptop. If you want to be sure your graphic/audio card, touchpad or whatever work when Oneiric will be released on October 13th join us in the Laptop Testing Project. You can discover every early bug to allow developers enough time to [&#8230;]]]></description>
+      <source url="https://primes2h.wordpress.com/category/ubuntu/feed/?mrss=off">Sergio Zanchetta</source>
+    </item>
+    <item>
+      <title>Ubuntu Power Users: first meeting</title>
+      <link>https://ubuntumug.wordpress.com/2011/05/27/ubuntu-power-users-first-meeting/</link>
+      <guid isPermaLink="true">https://ubuntumug.wordpress.com/2011/05/27/ubuntu-power-users-first-meeting/</guid>
+      <pubDate>Fri, 27 May 2011 13:18:16 GMT</pubDate>
+      <description><![CDATA[The Ubuntu Power Users Community had a meeting on Thursday, May 26, 2011 at 17:00 UTC in the #ubuntu-meeting channel. This was the first meeting of this new community, and we had many things on our agenda: the organization of &#8230; Continue reading &#8594;]]></description>
+      <source url="https://ubuntumug.wordpress.com/category/planet-ubuntu/feed/?mrss=off">László Torma</source>
+    </item>
+    <item>
+      <title>xexit reaches 1.0.  Thanks Juha</title>
+      <link>http://ltspthinclient.blogspot.com/2011/03/xexit-reaches-10-thanks-juha.html</link>
+      <guid isPermaLink="true">http://ltspthinclient.blogspot.com/2011/03/xexit-reaches-10-thanks-juha.html</guid>
+      <pubDate>Tue, 29 Mar 2011 17:16:00 GMT</pubDate>
+      <description><![CDATA[Thanks to a nice article by Juha, I put in some polishing on xexit, my solution to rotten processes that just don't know when to quit on LTSP servers.I've included a (slightly modified) version of Juha's script (and, of course, added him to the AUTHORS file), got a proper manpage for it, and done some packaging.Certain members of the Brazillian hyper-geniuses have indicated it may be possible to get someone to sponsor it for Debian.In the meantime, users looking to try it can check my ppa, and g...]]></description>
+      <source url="http://ltspthinclient.blogspot.com/atom.xml">Scott Balneaves</source>
+    </item>
+    <item>
+      <title>Overview of a Puppet Split CA architecture</title>
+      <link>http://blog.mathiaz.net/2010/10/overview-of-puppet-split-ca.html</link>
+      <guid isPermaLink="true">http://blog.mathiaz.net/2010/10/overview-of-puppet-split-ca.html</guid>
+      <pubDate>Wed, 06 Oct 2010 17:49:00 GMT</pubDate>
+      <description><![CDATA[The Puppet Master CA is the only Certificate Authority (CA) in the whole infrastructure. It issues certificates for all Puppet agents. It also manages the Puppet Master systems.
+
+The Puppet Masters are only responsible for compiling catalogs requested by Puppet Agents - they don't act as CA themselves. They only accept Puppet Agents which certificates have been issued by the Puppet Master CA.
+
+The Puppet Agent retrieves their certificates from the Puppet Master CA the first time they run. They c...]]></description>
+      <source url="http://blog.mathiaz.net/feeds/posts/default/-/ubuntu">Mathias Gug</source>
+    </item>
+    <item>
+      <title>Microsoft takes off the mask</title>
+      <link>https://antoniosanchez.wordpress.com/2010/05/04/microsoft-takes-off-the-mask/</link>
+      <guid isPermaLink="true">https://antoniosanchez.wordpress.com/2010/05/04/microsoft-takes-off-the-mask/</guid>
+      <pubDate>Tue, 04 May 2010 19:28:01 GMT</pubDate>
+      <description><![CDATA[Recently the General Director for Education of Microsoft took off his mask arguing in a interview that here, in Andalusia, we are using software that Microsoft left ten years ago.
+Here in Andalusia, at the south of Spain, every computer (400.000+) at the schools runs «software libre» thanks to the commitment made by the regional government 7 years ago. Specifically, we run Guadalinex Edu, a base of Ubuntu with a lot of free educational applications in the top.
+During the interview you can read i...]]></description>
+      <source url="http://antoniosanchez.wordpress.com/category/planet-ubuntu/feed/atom">Antonio Sánchez</source>
+    </item>
+    <item>
+      <title>Webling und Android</title>
+      <link>http://blog.diener.li/allgemein/webling-und-android/</link>
+      <guid isPermaLink="true">http://blog.diener.li/allgemein/webling-und-android/</guid>
+      <pubDate>Mon, 09 Nov 2009 14:27:34 GMT</pubDate>
+      <description><![CDATA[Ja ich habe seit Kurzem auch so einen kleinen Alleskönner als Handy. Auch wenn ich meinen Freerunner sehr mag, auf mein neues Spielzeug ist einfach mehr Verlass. Da mein altes Handy einem Wasserschaden (kein Kommentar) zum Opfer fiel, besorgte ich &#8230; Continue reading &#8594;]]></description>
+      <source url="http://blog.diener.li/feed">Carlos Diener - emonkey</source>
+    </item>
+    <item>
+      <title>UDS Karmic &amp;#8211; Day One</title>
+      <link>https://mgunes.wordpress.com/2009/05/26/uds-karmic-day-one/</link>
+      <guid isPermaLink="true">https://mgunes.wordpress.com/2009/05/26/uds-karmic-day-one/</guid>
+      <pubDate>Tue, 26 May 2009 11:45:43 GMT</pubDate>
+      <description><![CDATA[I&#8217;m in Barcelona to attend the Ubuntu Developer Summit for Karmic Koala, thanks to the kind sponsorship of Canonical, and I thought I&#8217;d use the last bit of  energy I have left from the first day to post short summaries of the sessions I attended.
+Increasing Apport Coverage
+This QA session was about increasing the coverage of the Apport automated bug reporting tool. One obvious way to do this will be to increase the amount of packages with Apport package hooks, so the QA team will lea...]]></description>
+      <source url="https://mgunes.wordpress.com/tag/planet-ubuntu/feed/atom/">Murat Güneş</source>
+    </item>
+    <item>
+      <title>Next Stop UDS</title>
+      <link>https://dendrobates.wordpress.com/2009/05/20/next-stop-uds/</link>
+      <guid isPermaLink="true">https://dendrobates.wordpress.com/2009/05/20/next-stop-uds/</guid>
+      <pubDate>Wed, 20 May 2009 13:42:24 GMT</pubDate>
+      <description><![CDATA[All the Canonical folks are meeting this week prior to UDS.   We&#8217;ve already had some great discussions including:
+Canonical Plan for World Domination
+&#8212; text redacted &#8212;
+(Sorry, if I told you, I&#8217;d have to kill you.)
+Actually, it is a great time to see all our co-workers from across the globe.  However, I can&#8217;t wait for next week, when UDS starts.  UDS is a great time to see all of you, the people that make Ubuntu great.  Please come up to me and talk to me, even if I ...]]></description>
+      <source url="https://dendrobates.wordpress.com/category/Ubuntu/atom">Rick Clark</source>
+    </item>
+    <item>
+      <title>The Way to a new Ubuntu party for the Jaunty Jackalope</title>
+      <link>http://kalon33.blogspot.com/2009/05/way-to-new-ubuntu-party-for-jaunty.html</link>
+      <guid isPermaLink="true">http://kalon33.blogspot.com/2009/05/way-to-new-ubuntu-party-for-jaunty.html</guid>
+      <pubDate>Tue, 05 May 2009 16:15:00 GMT</pubDate>
+      <description><![CDATA[A new party is cooking at Bordeaux on May 23rd ! For the fifth edition, this time helped by the ABUL, The Giroll lug perpetuates the tradition of cheerfulness which has made the reputation of its parties. It's also the time to be a little bit more ambitious, a little bit more one year before the Software Libre Meeting (a.k.a. RMLL) 2010 which will be held in our nice town of Bordeaux. In fact, this time we hope doing more stuff like Ubuntu discovery, Gaming using Linux... But keeping our webradi...]]></description>
+      <source url="http://kalon33.blogspot.com/feeds/posts/default">Nicolas Derive</source>
+    </item>
+    <item>
+      <title>Ubuntu Makassar : KoPi Ngoprek 4.4</title>
+      <link>https://kipas.wordpress.com/2009/04/26/ubuntu-makassar-kopi-ngoprek-44/</link>
+      <guid isPermaLink="true">https://kipas.wordpress.com/2009/04/26/ubuntu-makassar-kopi-ngoprek-44/</guid>
+      <pubDate>Sun, 26 Apr 2009 14:45:21 GMT</pubDate>
+      <description><![CDATA[Makassar &#8211; Saturday Night 25 Apr 2009 at 19.30, Ubuntu Makassar [0] gathered in a circle [1] to try new features of Ubuntu 9.04 Jaunty Jackalope. We install and discuss about it. And we think that 9.04 is more light, faster, and have an interesting notification. In this gathering we also discuss about JRP (Jaunty [&#8230;]]]></description>
+      <source url="https://kipas.wordpress.com/category/ubuntu/feed">Muhammad Takdir</source>
+    </item>
+  </channel>
+</rss>

@@ -6,9 +6,228 @@
     <description>Fresh posts from the Ubuntu Planet</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sun, 07 Dec 2025 02:00:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2025 01:52:55 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix Broken Updates: uCareSystem New Release uCareSystem v25.12</title>
+      <link>https://utappia.org/2025/12/06/fix-broken-update-linux-ucaresystem/</link>
+      <guid isPermaLink="true">https://utappia.org/2025/12/06/fix-broken-update-linux-ucaresystem/</guid>
+      <pubDate>Sat, 06 Dec 2025 15:59:58 GMT</pubDate>
+      <description><![CDATA[<p>Let’s be honest. Dealing with <strong>broken updates</strong> is a nightmare. We’ve all experienced that moment of panic when you run an update, step away for coffee, and return to a terminal screen full of angry red error messages. That is exactly why uCareSystem exists, and today, it gets even better at preventing these issues.</p>
+
+
+
+<span id="more-49934"></span>
+
+
+
+<p><strong>Fix Broken Updates: uCareSystem New Release</strong></p>
+
+
+
+<p>I&#8217;m thrilled to announce the latest release of <a href="https://utappia.org/download-ucaresystem/">uCareSystem</a>. As the sole developer, I feel the pain of <strong>broken updates</strong> personally. For this version, I spent a lot of time under the hood, focusing on making sure the tool doesn&#8217;t just work when everything is perfect, but proactively fixes issues before they break your system.</p>
+
+
+
+<p>Here is why you should upgrade to the new version and say goodbye to <strong>broken updates</strong> for good:</p>
+
+
+
+<h3 class="wp-block-heading">Prevent Broken Updates with Pre-flight Checks</h3>
+
+
+
+<p>The most frustrating <strong>broken updates</strong> are the ones that fail because of something that happened <em>last</em> week.</p>
+
+
+
+<p>The new uCareSystem introduces automated pre-flight checks. Think of it as a bouncer for your update process. Before it lets any new packages in, it checks the ID of your system to prevent <strong>broken updates</strong>. It now automatically detects and attempts to fix:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Those annoying stale <code>dpkg</code> locks that require a reboot.</li>
+
+
+
+<li>Installations that were interrupted (ghosts of updates past).</li>
+
+
+
+<li>Broken dependencies that threaten to ruin your day.</li>
+</ul>
+
+
+
+<p>The goal is simple: You press the button, and it actually works.</p>
+
+
+
+<h3 class="wp-block-heading">A UI Upgrade for Better Monitoring</h3>
+
+
+
+<p>While staring at scrolling walls of monochrome text makes us feel like hackers in a 90s movie, it’s not great for spotting errors.</p>
+
+
+
+<p>I’ve given the uCareSystem terminal interface a significant makeover. With improved color coding, better progress indicators, and real-time output logging, you’ll now have a much clearer idea of the process, helping you catch potential issues that could lead to <strong>broken updates</strong>.</p>
+
+
+
+<h3 class="wp-block-heading">Robustness: Avoiding Broken Updates in Containers</h3>
+
+
+
+<p>Linux runs everywhere now. To keep up, uCareSystem needs to be flexible.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Containers &amp; WSL:</strong> I’ve improved <code>systemd</code> detection so the tool plays nicely even in environments like Docker containers and <a href="https://learn.microsoft.com/en-us/windows/wsl/" target="_blank" rel="noreferrer noopener">Windows Subsystem for Linux (WSL)</a>.</li>
+
+
+
+<li><strong>Internet Reality Check:</strong> I added better connectivity checks. Trying to download updates without a stable connection is a common cause of <strong>broken updates</strong>, and we now handle that gracefully.</li>
+
+
+
+<li><strong>Auto-Recovery:</strong> If a <code>dpkg</code> process trips and falls midway, the software now has mechanisms to help pick it back up automatically.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Spring Cleaning the Code with ShellCheck</h3>
+
+
+
+<p>For the code-peepers out there who like to look under the hood: I did some massive spring cleaning. Extensive refactoring and complying with <a target="_blank" rel="noreferrer noopener" href="https://www.shellcheck.net/">ShellCheck</a> standards mean the codebase is now cleaner and safer. This ensures better maintainability and fewer bugs in the future.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Give the new version a spin. Hopefully, it makes your system maintenance totally boring—and completely free of <strong>broken updates</strong>.</p>
+
+
+
+<h3 class="wp-block-heading">By the Numbers</h3>
+
+
+
+<p>This was a significant undertaking, reflected in the statistics for this release:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>38 files changed: </strong></li>
+
+
+
+<li><strong>2,030 additions, </strong></li>
+
+
+
+<li><strong>718 deletions</strong></li>
+</ul>
+
+
+
+<p>Please take a look to a comprehensive Release note in the repository: <a href="https://github.com/Utappia/uCareSystem/releases/tag/v25.12.04">https://github.com/Utappia/uCareSystem/releases/tag/v25.12.04</a></p>
+
+
+
+<p>This release is a testament to my commitment to quality and my vision for the future of uCareSystem as a one-stop system maintenance tool Debian Ubuntu. I am confident that I laid a stronger foundation that will allow for even more exciting features and faster development in the future.</p>
+
+
+
+<p>I am deeply grateful to the community members who supported the previous development cycle through donations or code contributions:</p>
+
+
+
+<ul class="wp-block-list">
+<li>P. Laoughman (Thanks for your continued support)</li>
+
+
+
+<li>W. Schreinemachers (Thanks for your continued support)</li>
+
+
+
+<li>D. Luchini (Thanks for your continued support)</li>
+
+
+
+<li>M. Van Hoof</li>
+
+
+
+<li>Frankie P.</li>
+
+
+
+<li>M. Ryser</li>
+
+
+
+<li>Th. Ploumis</li>
+
+
+
+<li>M. Stade</li>
+
+
+
+<li>K. J. Rasmussen</li>
+</ul>
+
+
+
+<p>Every version, has also a code name dedicated as a release honored to one of the contributors. For historical reference, you can check all <a href="https://github.com/Utappia/uCareSystem/blob/master/HONORED_RELEASES.md">previous honored releases</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Where can I download uCareSystem ?</h2>
+
+
+
+<p>As always, I want to express my gratitude for your support over the past 15 years. I have received countless messages from inside and outside Greece about how useful they found the application. I hope you find the new version useful as well.</p>
+
+
+
+<p>If you&#8217;ve found uCareSystem to be valuable and it has saved you time, consider showing your appreciation with a donation. You can contribute via PayPal or Debit/Credit Card by clicking on the banner.</p>
+
+
+
+<table>
+<thead>
+<tr>
+<th>Pay what you want</th>
+<th>Maybe next time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click the donate button and enter the amount you want to donate. Then you will be navigated to the page with the latest version to download the installer</td>
+<td>If you don&#8217;t want to Donate this time, just click the download icon to be navigated to the page with the latest version to download the installer</td>
+</tr>
+<tr>
+<td><a href="https://www.paypal.com/donate/?hosted_button_id=SATQ6Y9S3UCSG" rel="attachment wp-att-2601"><img decoding="async" class="wp-image-2601 size-full aligncenter" src="http://utappiablog.wordpress.com/wp-content/uploads/2016/03/btn_donatecc_lg1.gif" alt="btn_donateCC_LG" width="147" height="47" /></a></td>
+<td><a href="https://github.com/Utappia/uCareSystem/releases/latest" rel="attachment wp-att-2593"><img decoding="async" class="size-full wp-image-2593 aligncenter" src="http://utappiablog.wordpress.com/wp-content/uploads/2016/03/ucare-system-download.png" alt="ucare-system-download" width="151" height="151" /></a></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<p>Once installed, the updates for new versions will be installed along with your regular system updates.</p>
+<p>The post <a href="https://utappia.org/2025/12/06/fix-broken-update-linux-ucaresystem/">Fix Broken Updates: uCareSystem New Release uCareSystem v25.12</a> appeared first on <a href="https://utappia.org">Utappia</a>.</p>]]></description>
+      <source url="http://utappia.org/feed/">Salih Emin</source>
+    </item>
     <item>
       <title>From cloud to dashboard: experience the future of infotainment development at CES 2026</title>
       <link>https://ubuntu.com//blog/future-of-infotainment-canonical-at-ces-2026</link>
@@ -2087,165 +2306,6 @@ sudo chimg --log-console chrootfs config.yaml /tmp/chimg-noble
       <pubDate>Mon, 28 Jul 2025 11:13:00 GMT</pubDate>
       <description><![CDATA[<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifDQL9Ducebgoi5rQaoK8ZXCp1ud1YHOguORDpgsmeD5E1PNT9Ptcdps3hLehMw6RHpXeovif1fgMpYF8lAucFgYmUZYgvdl68669qcjgUkN4hcpTRBzSK1HilijZgPjSxpCySZQtvtmkh7EjKMjMB27qIpJvXXmlFfobGPp7bIjoluItyPF6cJ7fnL1A/s1280/pexels-markus-winkler-1430818-3828944.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" data-original-height="853" data-original-width="1280" height="427" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifDQL9Ducebgoi5rQaoK8ZXCp1ud1YHOguORDpgsmeD5E1PNT9Ptcdps3hLehMw6RHpXeovif1fgMpYF8lAucFgYmUZYgvdl68669qcjgUkN4hcpTRBzSK1HilijZgPjSxpCySZQtvtmkh7EjKMjMB27qIpJvXXmlFfobGPp7bIjoluItyPF6cJ7fnL1A/w640-h427/pexels-markus-winkler-1430818-3828944.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Achieving full disk encryption using FIPS, TCG OPAL and LUKS to encrypt UEFI ESP on bare-metal and in VMs</td></tr></tbody></table><p>Many security standards such as CIS and STIG require to protect information at rest. For example, <a href="https://doi.org/10.6028/NIST.SP.800-53r5">NIST SP 800-53r5</a> SC-28 advocate to use cryptographic protection, offline storage and TPMs to enhance protection of information confidentiality and/or integrity.</p><p>Traditionally to satisfy such controls on portable devices such as laptops one would utilize software based Full Disk Encryption - <a href="https://support.apple.com/en-gb/guide/mac-help/mh11785/mac">Mac OS X FileVault</a>, <a href="https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178">Windows Bitlocker</a>, <a href="https://gitlab.com/cryptsetup/cryptsetup">Linux cryptsetup LUKS2</a>. In cases when FIPS cryptography is required, additional burden would be placed onto these systems to operate their kernels in FIPS mode.</p><p><a href="https://trustedcomputinggroup.org/">Trusted Computing Group</a>&nbsp;works on establishing many industry standards and specifications, which are widely adopted to improve safety and security of computing whilst keeping it easy to use. One of their most famous specifications them is TCG&nbsp;<span face="Roboto-Medium" style="background-color: white;">TPM 2.0 (Trusted Platform Module). TPMs are now widely available on most devices and help to protect secret keys and attest systems. For example, most software full disk encryption solutions can utilise TCG TPM to store full disk encryption keys providing passwordless, biometric or pin-base ways to unlock the drives as well as attesting that system have not been modified or compromised whilst offline.</span></p><p><a href="https://trustedcomputinggroup.org/resource/storage-work-group-storage-security-subsystem-class-opal/">TCG Storage Security Subsystem Class: Opal Specification</a>&nbsp;is a set of specifications for features of data storage devices. The authors and contributors to OPAL are leading and well trusted storage manufacturers such as Samsung, Western Digital, Seagate Technologies, Dell, Google, Lenovo, IBM, Kioxia, among others. One of the features that Opal Specification enables is self-encrypting drives which becomes very powerful when combined with pre-boot authentication. Out of the box, such drives always and transparently encrypt all disk data using hardware acceleration. To protect data one can enter UEFI firmware setup (BIOS) to set NVMe single user password (or user + administrator/recovery passwords) to encrypt the disk encryption key. If one's firmware didn't come with such features, one can also use <a href="https://sedutil.com/">SEDutil</a>&nbsp;to inspect and configure all of this. Latest release of major Linux distributions have SEDutil already packaged.</p><p>Once password is set, on startup, pre-boot authentication will request one to enter password - prior to booting any operating systems. It means that full disk is actually encrypted, including the UEFI ESP and all operating systems that are installed in case of dual or multi-boot installations. This also prevents tampering with ESP, UEFI bootloaders and kernels which with traditional software-based encryption often remain unencrypted and accessible. It also means one doesn't have to do special OS level repartitioning, or installation steps to ensure all data is encrypted at rest.</p><p>What about FIPS compliance? Well, the good news is that majority of the OPAL compliant hard drives and/or security sub-chips do have FIPS 140-3 certification. Meaning they have been tested by independent laboratories to ensure they do in-fact encrypt data. On the <a href="https://csrc.nist.gov/Projects/cryptographic-module-validation-program/validated-modules/search">CMVP</a> website one can search for module name terms "OPAL" or "NVMe" or name of hardware vendor to locate FIPS certificates.</p><p>Are such drives widely available? Yes. For example, a common Thinkpad X1 gen 11 has OPAL NVMe drives as standard, and they have FIPS certification too. Thus, it is likely in your hardware fleet these are already widely available. Use sedutil to check if MediaEncrypt and LockingSupported features are available.</p><p>Well, this is great for laptops and physical servers, but you may ask - what about public or private cloud? Actually, more or less the same is already in-place in both. On CVMP website all major clouds have their disk encryption hardware certified, and all of them always encrypt all Virtual Machines with FIPS certified cryptography without an ability to opt-out. One is however in full control of how the encryption keys are managed: cloud-provider or self-managed (either with a cloud HSM or KMS or bring your own / external). See these relevant encryption options and key management docs for <a href="https://cloud.google.com/docs/security/encryption/default-encryption?hl=en">GCP</a>, <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview">Azure</a>, <a href="https://maturitymodel.security.aws.dev/en/2.-foundational/kms/">AWS</a>. But the key takeaway without doing anything, at rest, VMs in public cloud are always encrypted and satisfy NIST SP 800-53 controls.</p><p>What about private cloud? Most Linux based private clouds ultimately use <a href="https://www.qemu.org/">qemu</a>&nbsp;typically with qcow2 virtual disk images. Qemu supports user-space encryption of qcow2 disk, see this <a href="https://www.qemu.org/docs/master/tools/qemu-img.html">manpage</a>. Such encryption encrypts the full virtual machine disk, including the bootloader and ESP. And it is handled entirely outside of the VM on the host - meaning the VM never has access to the disk encryption keys. Qemu implements this encryption entirely in userspace using gnutls, nettle, libgcrypt depending on how it was compiled. This also means one can satisfy FIPS requirements entirely in userspace without a Linux kernel in FIPS mode. Higher level APIs built on top of qemu also support qcow2 disk encryption, as in projects such as <a href="https://libvirt.org/formatstorageencryption.html">libvirt</a> and <a href="https://docs.openstack.org/cinder/latest/configuration/block-storage/volume-encryption.html">OpenStack Cinder</a>.</p><p>If you carefully read the docs, you may notice that agent support is explicitly sometimes called out as not supported or not mentioned. Quite often agents running inside the OS may not have enough observability to them to assess if there is external encryption. It does mean that monitoring above encryption options require different approaches - for example monitor your cloud configuration using tools such as Wiz and <a href="https://orca.security/">Orca</a>, rather than using agents inside individual VMs. For laptop / endpoint security agents, I do wish they would start gaining capability to report OPAL SED availability and status if it is active or not.</p><p>What about using software encryption none-the-less on top of the above solutions? It is commonly referred to double or multiple encryption. There will be an additional performance impact, but it can be worthwhile. It really depends on what you define as data at rest for yourself and which controls you need. If one has a dual-boot laptop, and wants to keep one OS encrypted whilst booted into the other, it can perfectly reasonable to encrypted the two using separate software encryption keys. In addition to the OPAL encryption of the ESP. For more targeted per-file / per-folder encryption, one can look into using <a href="https://nuetzlich.net/gocryptfs/">gocryptfs</a>&nbsp;which is the best successor to the once popular, but now deprecated&nbsp;<a href="https://www.ecryptfs.org/">eCryptfs</a>&nbsp;(amazing tool, but has fallen behind in development and can lead to data loss).</p><p>All of the above mostly talks about cryptographic encryption, which only provides confidentially but not data integrity. To protect integrity, one needs to choose how to maintain that. <a href="https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html">dm-verity</a> is a good choice for read-only and rigid installations. For read-write workloads, it may be easier to deploy <a href="https://zfsonlinux.org/">ZFS</a> or <a href="https://btrfs.readthedocs.io/en/latest/index.html">Btrfs</a>&nbsp;instead. If one is using filesystems without a built-in integrity support such as XFS or Ext4, one can retrofit integrity layer to them by using <a href="https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html">dm-integrity</a>&nbsp;(either standalone, or via dm-luks/cryptsetup --integrity option).</p><p style="text-align: left;">If one has a lot of estate and a lot of encryption keys to keep track off a key management solution is likely needed. The most popular solution is likely the one from Thales Group marketed under <a href="https://cpl.thalesgroup.com/encryption/data-security-platform">ChiperTrust Data Security Platform</a> (previously Vormetric), but there are many others including OEM / Vendor / Hardware / Cloud specific or agnostic solutions.</p><p style="text-align: left;">I hope this crash course guide piques your interest to learn and discover modern confidentially and integrity solutions, and to re-affirm or change your existing controls w.r.t. to data protection at rest.&nbsp;</p><p style="text-align: left;">Full disk encryption, including UEFI ESP /boot/efi is now widely achievable by default on both baremetal machines and in VMs including with FIPS certification. To discuss more let's connect on&nbsp;<a href="https://www.linkedin.com/in/dimitri-john-ledkov/">Linkedin</a>.</p>]]></description>
       <source url="http://feeds.feedburner.com/tdlk">Dimitri John Ledkov</source>
-    </item>
-    <item>
-      <title>uCareSystem v25.07.17: Stability and Integration in the best system maintenance tool for Debian &amp; Ubuntu</title>
-      <link>https://utappia.org/2025/07/17/ucaresystem-v25-07-17-system-maintenance-tool-debian-ubuntu/</link>
-      <guid isPermaLink="true">https://utappia.org/2025/07/17/ucaresystem-v25-07-17-system-maintenance-tool-debian-ubuntu/</guid>
-      <pubDate>Thu, 17 Jul 2025 22:09:26 GMT</pubDate>
-      <description><![CDATA[<p>I am thrilled to announce a landmark new release of uCareSystem! Which you know it is THE best system maintenance tool Debian Ubuntu.</p>
-
-
-
-<p>This isn&#8217;t just an incremental update; it&#8217;s a significant evolution of the tool, focusing on deep infrastructure improvements, professional-grade Debian packaging, and a smoother, more reliable user experience.</p>
-
-
-
-<span id="more-49924"></span>
-
-
-
-<p>This release represents a major milestone my journey to make uCareSystem the most robust and user-friendly system maintenance tool for Debian and Ubuntu-based systems. Let&#8217;s dive into what makes this update so special .</p>
-
-
-
-<h3 class="wp-block-heading">A New Standard for Debian &amp; Ubuntu Integration</h3>
-
-
-
-<p>The previous release was a huge improvement as it introduced <strong><a href="https://utappia.org/2025/06/06/ucaresystem-25-05-06-because-even-your-wsl-deserves-a-spa-day/">WSL support for uCareSystem</a></strong> The centerpiece of this release is a complete overhaul of the Debian packaging for <a href="https://utappia.org/download-ucaresystem/">uCareSystem</a> as a automated maintenance tool for Debian Ubuntu. I&#8217;ve restructured everything to be fully compliant with Debian standards. What does this mean for you?</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Seamless Installation:</strong> A more unified and reliable installation experience for all Debian and Ubuntu based Linux distributions.</li>
-
-
-
-<li><strong>Man Pages Included:</strong> For our terminal-loving users, you can now access detailed documentation directly from your command line with <br><code>man ucaresystem</code>.</li>
-
-
-
-<li><strong>Enhanced GPG Key Handling:</strong> The GPG key retrieval process more resilient. With multiple fallback keyservers and support for HTTPS, adding the repository is more reliable than ever.</li>
-
-
-
-<li><strong>CI/CD Pipeline Enhancement:</strong> I&#8217;ve implemented a comprehensive CI/CD pipeline for building testing DEB release packages. This helps a ton in quickly testing every change that is implemented ensuring that no-braking bugs can slip to the end user. I&#8217;ve completely reorganized the file structure, creating dedicated directories for source code, Debian packaging files, and other assets. This makes the project more maintainable and easier for new contributors to get involved.</li>
-
-
-
-<li><strong>Honoring Our Contributors:</strong> I&#8217;ve introduced a new system to track and formally honor the amazing contributors who make each release possible.</li>
-</ul>
-
-
-
-<h3 class="wp-block-heading">Bug Fixes &amp; Key Enhancements for the system maintenance </h3>
-
-
-
-<p>A great release isn&#8217;t just about new features; it&#8217;s also about refinement. I&#8217;ve squashed several bugs and made some notable enhancements:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Fixed:</strong> An issue with <code>xargs</code> in the maintenance script that could cause errors.</li>
-
-
-
-<li><strong>Fixed:</strong> Validation issues with the desktop file and application metadata.</li>
-
-
-
-<li><strong>Enhanced:</strong> The help documentation now includes more detailed options and version information.</li>
-
-
-
-<li><strong>Added:</strong> A new script timer to help track execution time. This way you will have an idea how long it took to complete the maintenance</li>
-</ul>
-
-
-
-<h3 class="wp-block-heading">By the Numbers</h3>
-
-
-
-<p>This was a significant undertaking, reflected in the statistics for this release:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>35 files changed</strong></li>
-
-
-
-<li><strong>1,031 additions</strong></li>
-
-
-
-<li><strong>200 deletions</strong></li>
-</ul>
-
-
-
-<p>Please take a look to a comprehensive Release note in the repository: <a href="https://github.com/Utappia/uCareSystem/releases/tag/v25.07.17">https://github.com/Utappia/uCareSystem/releases/tag/v25.07.17</a></p>
-
-
-
-<p>This release is a testament to my commitment to quality and my vision for the future of uCareSystem as a one-stop system maintenance tool Debian Ubuntu. I am confident that I laid a stronger foundation that will allow for even more exciting features and faster development in the future.</p>
-
-
-
-<p>Thank you for your continued support. ! Special thanks to the supporters of this development cycle:</p>
-
-
-
-<ul class="wp-block-list">
-<li>W. Schreinemachers</li>
-
-
-
-<li>K. A. Gkountras (Jemadux)</li>
-</ul>
-
-
-
-<h2 class="wp-block-heading">Where can I download uCareSystem ?</h2>
-
-
-
-<p>As always, I want to express my gratitude for your support over the past 15 years. I have received countless messages from inside and outside Greece about how useful they found the application. I hope you find the new version useful as well.</p>
-
-
-
-<p>If you&#8217;ve found uCareSystem to be valuable and it has saved you time, consider showing your appreciation with a donation. You can contribute via PayPal or Debit/Credit Card by clicking on the banner.</p>
-
-
-
-<table>
-<thead>
-<tr>
-<th>Pay what you want</th>
-<th>Maybe next time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Click the donate button and enter the amount you want to donate. Then you will be navigated to the page with the latest version to download the installer</td>
-<td>If you don&#8217;t want to Donate this time, just click the download icon to be navigated to the page with the latest version to download the installer</td>
-</tr>
-<tr>
-<td><a href="https://www.paypal.com/donate/?hosted_button_id=SATQ6Y9S3UCSG" rel="attachment wp-att-2601"><img decoding="async" class="wp-image-2601 size-full aligncenter" src="http://utappiablog.wordpress.com/wp-content/uploads/2016/03/btn_donatecc_lg1.gif" alt="btn_donateCC_LG" width="147" height="47" /></a></td>
-<td><a href="https://github.com/Utappia/uCareSystem/releases/latest" rel="attachment wp-att-2593"><img decoding="async" class="size-full wp-image-2593 aligncenter" src="http://utappiablog.wordpress.com/wp-content/uploads/2016/03/ucare-system-download.png" alt="ucare-system-download" width="151" height="151" /></a></td>
-</tr>
-<tr>
-<td> </td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-<p>Once installed, the updates for new versions will be installed along with your regular system updates.</p>
-<p>The post <a href="https://utappia.org/2025/07/17/ucaresystem-v25-07-17-system-maintenance-tool-debian-ubuntu/">uCareSystem v25.07.17: Stability and Integration in the best system maintenance tool for Debian &amp; Ubuntu</a> appeared first on <a href="https://utappia.org">Utappia</a>.</p>]]></description>
-      <source url="http://utappia.org/feed/">Salih Emin</source>
     </item>
     <item>
       <title>Making a Discord activity with PHP</title>

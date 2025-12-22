@@ -6,7 +6,7 @@
     <description>Fresh posts from the Ubuntu Planet</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sun, 21 Dec 2025 02:00:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 02:00:24 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>

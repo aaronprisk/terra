@@ -1,87 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu Planet</title>
+    <title>Planet Ubuntu</title>
     <link>https://ubuntu-community-team.github.io/terra/</link>
-    <description>Fresh posts from the Ubuntu Planet</description>
+    <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Wed, 14 Jan 2026 02:03:09 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 01:57:56 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Minimal Ubuntu Pro: lean images backed by enterprise-grade security</title>
-      <link>https://ubuntu.com//blog/minimal-ubuntu-pro-on-public-clouds</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/minimal-ubuntu-pro-on-public-clouds</guid>
-      <pubDate>Mon, 12 Jan 2026 15:07:56 GMT</pubDate>
-      <description><![CDATA[<h2 class="wp-block-heading">Deploy Minimal Ubuntu Pro across AWS, Azure, and Google Cloud</h2>
-<p>The security landscape is growing continually in complexity. Whatever industry you work in, your organization has to contend with evolving threats and ever-stricter compliance requirements, whilst at the same time facing pressure to build fast and scale smart. This is especially true when innovating on the public cloud.</p>
-<p>Minimal Ubuntu Pro is built to help you meet those challenges. </p>
-<h2 class="wp-block-heading">Minimized attack surface. Enhanced security.</h2>
-<p>Users of Ubuntu value its accessibility, robustness, and mature ecosystem. That’s why Canonical works with major cloud vendors to make optimized Ubuntu images available on their platforms. This includes Minimal Ubuntu – Ubuntu images which are optimized to have the smallest footprint possible and make security more straightforward. Minimal Ubuntu Pro builds on these images by making security in the public cloud more efficient.</p>
-<p>Ubuntu Pro is Canonical’s comprehensive subscription for open source security. Through Ubuntu Pro, organizations receive up to 15 years of security maintenance (with the legacy add-on), tools for compliance automation, and kernel live patching. Minimal Ubuntu Pro brings these features to Minimal Ubuntu, combined with a convenient, metered per-hour billing on Amazon EC2, Google GCP and Microsoft Azure. By bringing these two technologies together, customers can combine the smallest Ubuntu footprint with enterprise-grade security and compliance features. It is the perfect starting point for automated cloud deployments in your production environments. </p>
-<p>Whether you are deploying cloud workloads, containers, or regulated infrastructure, Minimal Ubuntu Pro offers a unique blend of minimalism, control, and long-term support, without sacrificing compatibility or flexibility.</p>
-<h2 class="wp-block-heading">Why security-aware companies choose Minimal Ubuntu Pro</h2>
-<p><strong>Perfect for cloud operations</strong></p>
-<p>Minimal Ubuntu Pro builds on the strengths of Minimal Ubuntu: the smallest Ubuntu base image for VMs and containers. Its lightweight design enables faster provisioning and scaling, with a 50% smaller image size and 40% faster boot times. At the same time, it retains optimizations for leading cloud hypervisors (AWS, GCP, Azure, KVM, LXD) through a custom kernel, drivers, and agents.</p>
-<p>If you’re running microservices, containerized applications, or ephemeral workloads, this is the image you want on the public cloud.</p>
-<p><strong>Tight control over installed software</strong></p>
-<p>Minimal Ubuntu Pro is fully compatible with the entire Ubuntu package ecosystem. Applications that already work on classic Ubuntu Server will retain full compatibility, provided dependencies are installed. You decide exactly what your environment includes, with the added benefit of extended security coverage for critical and high CVEs, including third-party open source packages, delivered through the Ubuntu Pro subscription.</p>
-<p>This fine-grained control is crucial for DevSecOps practices, automated CI/CD pipelines, and infrastructure-as-code workflows.</p>
-<p><strong>Reduced attack surface by design</strong></p>
-<p>Every unnecessary package is a potential risk. Minimal Ubuntu Pro ships with only the essential components required to boot and connect, dramatically reducing exposure. Fewer packages mean fewer CVEs to track, fewer patches to apply, and less overall maintenance. For example, documentation, text editors, and locale files are removed, leaving only what’s necessary to run your workloads.</p>
-<p>This makes Minimal Ubuntu Pro ideal for teams building golden images, zero-trust environments, or security-hardened cloud instances.</p>
-<p><strong>Enterprise-grade hardening and compliance</strong></p>
-<p>Ubuntu Pro unlocks advanced security and compliance features, including up to 15 years of CVE patching across both Main and Universe repositories for Ubuntu LTS releases, optional FIPS 140-3 certified cryptographic modules for government compliance, and CIS and DISA-STIG hardening profiles for regulated environments.</p>
-<p>Whether your target is FedRAMP, NIST, HIPAA, or another framework, Minimal Ubuntu Pro helps accelerate compliance with trusted tooling and validated configurations.</p>
-<h2 class="wp-block-heading">Available on all the major cloud platforms</h2>
-<p>Minimal Ubuntu Pro is available on AWS, Azure, and GCP. Whichever platform you choose to innovate on, Minimal Ubuntu Pro offers consistency and robustness:</p>
+      <title>Deploy your Spring Boot application to production</title>
+      <link>https://ubuntu.com//blog/deploy-spring-application-to-production</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/deploy-spring-application-to-production</guid>
+      <pubDate>Tue, 13 Jan 2026 12:00:54 GMT</pubDate>
+      <description><![CDATA[<p>In a previous article, we covered how easy it is to create <a href="https://canonical.com/blog/spring-boot-containers-made-easy">Spring Boot containers</a> with Rockcraft. So the next logical step is to deploy and operate your application in a production environment. The Juju ecosystem is the key to making this process straightforward.</p>
+<p>In this article we walk through the steps required to deploy a Spring Boot application to production using Juju and Kubernetes. The goal is to showcase the integration of the application with essential services like PostgreSQL for database management and Traefik for ingress control.</p>
+<figure class="wp-block-image size-full"><img alt="" height="1080" loading="lazy" sizes="(min-width: 1920px) 1920px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F91ec%2FDiagram-deploy-spring-production-16_9.png 1920w" width="1920"/></figure>
+<p>Ordinarily, deploying and operating Spring Boot containers is easier said than done. Any non-trivial application will require integrations with other software components like databases, message brokers, and authentication services. Some of these components are complex to operate. What’s more, your application will need to be exposed to the outside world. And for Day 2 operations, you’ll also need to perform routine maintenance and properly monitor your application.</p>
+<p>Fortunately, Juju provides a strong ecosystem composed of a multitude of high quality software operators that enables deployment, integration and lifecycle management at any scale, on any infrastructure.</p>
+<p>With the release of the Spring Boot framework extensions for <a href="https://documentation.ubuntu.com/rockcraft/stable/">Rockcraft</a> and <a href="https://documentation.ubuntu.com/charmcraft/stable/">Charmcraft</a>, if your application follows the 12-factor methodology best practices, you can benefit from the Juju ecosystem out of the box.</p>
+<p>If you are developing a Spring Boot application we recommend you to try out the <a href="https://canonical.com/blog/devpack-spring-support-ubuntu">devpack support for Spring</a> and then follow <a href="https://documentation.ubuntu.com/charmcraft/latest/tutorial/kubernetes-charm-spring-boot/">this tutorial to write your Spring Boot charm</a>. </p>
+<p>But without further ado, let’s see how it all works by charming <a href="https://spring-petclinic.github.io/">spring-petclinic</a>. </p>
+<h1 class="wp-block-heading">Set up a developer machine with Canonical Kubernetes and Juju</h1>
+<p>We will start with a virtual machine created from scratch using <a href="https://canonical.com/multipass">Multipass</a> and prepare our development machine with the help of the <a href="https://github.com/canonical/concierge">Concierge</a> tool.</p>
+<p>Launch the new virtual machine and shell into it:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>multipass launch --cpus 4 --disk 30G --memory 4G --name blogpost 24.04</code>
+</pre>
+<pre class="p-code-snippet__block--icon"><code>multipass shell blogpost</code>
+</pre>
+</div>
+<p>We will provision the testing machine with Concierge, which will install and configure Rockcraft, Charmcraft, Canonical Kubernetes and Juju. Besides that, we will update the load balancer to serve under the machine’s main IP and install an OCI image registry:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>sudo snap install --classic concierge</code></pre>
+<pre class="p-code-snippet__block--icon"><code>sudo concierge prepare -p k8s --charmcraft-channel latest/edge</code></pre>
+<pre class="p-code-snippet__block--icon"><code>PREFSRC=$(ip -4 -j route get 2.2.2.2 | jq -r '.[] | .prefsrc')</code></pre>
+<pre class="p-code-snippet__block--icon"><code>sudo k8s set load-balancer.cidrs=$PREFSRC/32</code></pre>
+<pre class="p-code-snippet__block--icon"><code>curl https://raw.githubusercontent.com/canonical/spring-petclinic/refs/heads/resources/registry.yaml | kubectl apply -f - </code>
+</pre>
+</div>
+<h1 class="wp-block-heading">Get spring-petclinic application</h1>
+<p><a href="https://spring-petclinic.github.io/">spring-petclinic</a> is the app we’ll be charming. It’s a sample application created by the Spring team to demonstrate a real-world web app using the Spring Framework. </p>
+<p>Clone the spring-petclinic repository. </p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>git clone https://github.com/canonical/spring-petclinic.git</code>
+</pre>
+<pre class="p-code-snippet__block--icon"><code>cd spring-petclinic</code>
+</pre>
+</div>
+<p>Following the <a href="https://github.com/canonical/spring-petclinic">spring-petclinic repository instructions</a>, you can build a jar and run it with the command line. It is quite easy, but clearly not production ready, even the database in-memory.</p>
+<h1 class="wp-block-heading">Create the rock</h1>
+<p>Let’s prepare a rock – a compliant OCI image – for the application. We could use either Maven or Gradle to build the application, but for this example we will use Maven. From the spring-petclinic directory, remove the Gradle artifacts and initialize the rockcraft project:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>rm -rf build.gradle gradlew gradle</code></pre>
+<pre class="p-code-snippet__block--icon"><code>rockcraft init --profile spring-boot-framework</code>
+</pre>
+</div>
+<p>Pack the rock and upload it to the OCI registry :</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>ROCKCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=True rockcraft pack</code></pre>
+<pre class="p-code-snippet__block--icon"><code>rockcraft.skopeo copy --insecure-policy --dest-tls-verify=false oci-archive:spring-petclinic_0.1_amd64.rock docker://localhost:32000/spring-petclinic:0.1</code>
+</pre>
+</div>
+<p>At this point we have a fully compliant OCI image. But to fully integrate with the Juju ecosystem we need a charm, a software operator. </p>
+<h1 class="wp-block-heading">Create the charm</h1>
+<p>Let’s build it:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>mkdir charm</code></pre>
+<pre class="p-code-snippet__block--icon"><code>cd charm</code></pre>
+<pre class="p-code-snippet__block--icon"><code>charmcraft init --profile spring-boot-framework --name spring-petclinic</code>
+</pre>
+</div>
+<p>As we want to use PostgreSQL instead of an in-memory database, add the following lines to the file <code>charmcraft.yaml</code>:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__blocklanguage-yaml">
+<code><strong style="color: #204A87;">requires</strong>:
+  <strong style="color: #204A87;">postgresql</strong>:
+    <strong style="color: #204A87;">interface</strong>: postgresql_client
+    <strong style="color: #204A87;">optional</strong>: false
+    <strong style="color: #204A87;">limit</strong>: 1</code>
+</pre></div>
+<p>And we are ready to create a charm. Pack it:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=True charmcraft pack</code></pre>
+</div>
+<h1 class="wp-block-heading">Let’s test it</h1>
+<p>At this point we have a charm for spring-petclinic that will integrate seamlessly with PostgreSQL. </p>
+<p>Let’s test it with a new Juju model in a Kubernetes cloud:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>juju add-model spring-petclinic</code></pre>
+<pre class="p-code-snippet__block--icon"><code>juju deploy ./spring-petclinic_amd64.charm spring-petclinic --resource app-image=localhost:32000/spring-petclinic:0.1 --config app-profiles=postgres
+</code></pre>
+</div>
+<p>Deploy PostgreSQL and Traefik and integrate with spring-petclinic:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>juju deploy postgresql-k8s --trust</code></pre>
+<pre class="p-code-snippet__block--icon"><code>juju integrate spring-petclinic postgresql-k8s</code></pre>
+</div>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>juju deploy traefik-k8s --trust</code></pre>
+<pre class="p-code-snippet__block--icon"><code>juju integrate spring-petclinic traefik-k8s</code></pre>
+</div>
+<p>After a while, your production ready application will be ready for use! You can check it with the command <code>juju status</code>:</p>
+<figure class="wp-block-image size-full"><img alt="" height="646" loading="lazy" sizes="(min-width: 1676px) 1676px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1676/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1676/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F8199%2Fterminal_screenshot-deploy-spring-production-screenshot.png 1676w" width="1676"/></figure>
+<p>You can get the URL of the application with:</p>
+<div class="p-code-snippet">
+<pre class="p-code-snippet__block--icon"><code>juju run traefik-k8s/0 show-proxied-endpoints</code></pre>
+</div>
+<p>And just like that, you can use it!</p>
+<figure class="wp-block-image size-full"><img alt="" height="740" loading="lazy" sizes="(min-width: 1295px) 1295px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1295/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1295/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fd600%2Ffirefox_screenshot-1.png 1295w" width="1295"/></figure>
+<p>The application is running in a Kubernetes cluster, with Trafik acting as an ingress. Your spring-petclinic application is now using PostgreSQL to store its data. The Charmed PostgreSQL K8s has provided credentials for the database to the spring-petclinic application, and is ready to be operated in a production-grade environment. </p>
+<p>Not bad for a start.</p>
+<h1 class="wp-block-heading">Get in touch</h1>
+<p>Do you have a project or setup where you want to employ this solution? If you have any questions about the 12-factor tooling for Rockcraft and Charmcraft, reach out in our <a href="https://matrix.to/#/#12-factor-charms:ubuntu.com">Matrix Channel</a>.</p>
+<h1 class="wp-block-heading">What’s next?</h1>
 <ul>
-<li>Comes with an optimized kernel tailored for each cloud environment</li>
-<li>Certified across all supported virtual machine types and instance families</li>
-<li>Maintains the same deep cloud integration as standard Ubuntu Server, including support for telemetry, fleet management, and platform-specific services</li>
-</ul>
-<h2 class="wp-block-heading">How to get it</h2>
-<h3 class="wp-block-heading">On AWS:</h3>
-<ul>
-<li>Using AWS Marketplace by searching for “<a href="https://aws.amazon.com/marketplace/search/results?searchTerms=Minimal+Ubuntu+Pro&amp;CREATOR=565feec9-3d43-413e-9760-c651546613f2&amp;filters=CREATOR">Minimal Ubuntu Pro</a>”  </li>
-<li>Using AWS CLI:</li>
-</ul>
-<pre class="wp-block-code"><code>aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-minimal/$VERSION/stable/current/amd64/hvm/ebs-gp2/ami-id</code></pre>
-<p>Where <code>$VERSION</code> is one of 20.04, 22.04 or 24.04 (For 24.04 you need to change <code>ebs-gp2</code> to <code>ebs-gp3</code>)</p>
-<h3 class="wp-block-heading">On GCP:</h3>
-<ul>
-<li>Using Google Cloud Console by selecting “Ubuntu Pro” in the operating system selection and “<strong>Ubuntu 2x.04 LTS Minimal Pro</strong>” as the version.</li>
-<li>Using Google Cloud Shell and booting a VM, specifying “<code>image=projects/ubuntu-os-pro-cloud/global/images/ubuntu-minimal-pro…</code>”</li>
-</ul>
-<h3 class="wp-block-heading">On Azure:</h3>
-<ul>
-<li>Selecting <strong>Minimal Ubuntu Pro Azure</strong> Marketplace or Portal:
-<ul>
-<li>For 20.04 LTS, use the dedicated<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.0001-com-ubuntu-pro-minimal-focal"> Ubuntu Pro Minimal 20.04</a> listing.</li>
-<li>For 22.04 and 24.04 LTS, find the unified<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-22_04-lts"> Ubuntu 22.04 LTS</a> or<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-24_04-lts"> 24.04 LTS</a> offers and select the “<strong>Ubuntu Pro Minimal</strong>” plan.</li>
-</ul>
-</li>
-<li>Using CLI:</li>
-</ul>
-<pre class="wp-block-code"><code>az vm create \
-  --name $VIRTUAL_MACHINE_NAME \
-  --resource-group $RESOURCE_GROUP_NAME \
-  --image $UBUNTU_IMAGE_URN \
-  --generate-ssh-keys</code></pre>
-<p>Where <code>$UBUNTU_IMAGE_URN</code> is either:</p>
-<ul>
-<li><code>Canonical:0001-com-ubuntu-pro-minimal-focal:pro-minimal-20_04-lts:latest</code></li>
-<li><code>Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal:latest</code></li>
-<li><code>Canonical:ubuntu-24_04-lts:ubuntu-pro-minimal:latest</code></li>
-</ul>
-<h2 class="wp-block-heading">Next steps</h2>
-<p>Minimal Ubuntu Pro offers a powerful combination of performance, precision, and protection. It’s a practical solution for organizations seeking to scale confidently while adhering to the most stringent security and compliance standards. With Minimal Ubuntu Pro, you gain precise control over your environment, resulting in a minimal attack surface and expanded security coverage against critical and high-severity CVEs from the moment it’s deployed.</p>
-<p>Get Minimal Ubuntu Pro 24.04 on <a href="https://aws.amazon.com/marketplace/pp/prodview-4yqsoi5afvjqu">AWS</a> | <a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-24_04-lts">Azure</a> | <a href="https://console.cloud.google.com/compute/instancesAdd?imageId=5466964067713924514&amp;imageProjectId=ubuntu-os-pro-cloud">GPC</a> </p>
-<h2 class="wp-block-heading">Further reading</h2>
-<ul>
-<li><a href="https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/ubuntu-base-and-minimal-images/">Ubuntu base and minimal images – Public Cloud documentation</a></li>
-<li><a href="https://wiki.ubuntu.com/Minimal">What is Minimal Ubuntu</a></li>
+<li><a href="https://documentation.ubuntu.com/charmcraft/latest/tutorial/kubernetes-charm-spring-boot/">Follow the Spring Boot tutorial</a></li>
+<li><a href="https://documentation.ubuntu.com/charmcraft/stable/howto/manage-charms/#publish-a-charm-on-charmhub">Publish your charm in CharmHub</a></li>
 </ul>]]></description>
       <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>

@@ -6,9 +6,24 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Fri, 16 Jan 2026 01:59:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2026 01:54:01 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canonical Ubuntu and Ubuntu Pro now available on AWS European Sovereign Cloud</title>
+      <link>https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</guid>
+      <pubDate>Thu, 15 Jan 2026 22:06:23 GMT</pubDate>
+      <description><![CDATA[<p>January 15, 2026 – Canonical, the publisher of Ubuntu and provider of open source security, support, and services, announced today that it is a launch partner for the AWS European Sovereign Cloud, a new independent cloud for Europe, with Ubuntu and Ubuntu Pro now available.</p>
+<p>Canonical’s Ubuntu Pro delivers a securely designed, stable, and enterprise-ready foundation for open source innovation while providing customers with the same security, availability, and performance they expect from AWS. This enables customers to meet stringent operational autonomy and data residency requirements within the European Union (EU).</p>
+<p>The AWS European Sovereign Cloud is a fully featured, independently operated sovereign cloud backed by strong technical controls, sovereign assurances, and legal protections designed to meet the needs of European governments and enterprises. The AWS European Sovereign Cloud infrastructure is entirely located within the EU and operates independently from existing regions. Customers using the AWS European Sovereign Cloud will benefit from the full power of AWS including the same services portfolio, security, availability, performance, familiar architecture, APIs, and innovations such as the AWS Nitro System.</p>
+<p><em>“The AWS European Sovereign Cloud represents a significant step forward for organizations operating under EU regulatory frameworks,”</em> said Cindy Goldberg, VP Cloud and Silicon Partnerships at Canonical. <em> By combining the performance and the expanded security coverage of Ubuntu Pro with AWS’s sovereignty controls and technical assurances, we’re delivering the compliance support and innovation our customers need to accelerate their digital transformation while meeting stringent EU regulatory requirements.”</em></p>
+<p>Discover Ubuntu and Ubuntu Pro on the AWS European Sovereign Cloud today on the AWS EC2 console. Launch now on the <a href="https://eusc-de-east-1.console.amazonaws-eusc.eu/ec2/home?region=eusc-de-east-1#LaunchInstances:ami=ami-0a121bf2036630575">European Sovereign Cloud EC2 console</a>. </p>
+<h2 class="wp-block-heading">About Canonical </h2>
+<p>Canonical, the publisher of Ubuntu, provides open source security, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone.</p>
+<p>Learn more at https://canonical.com/</p>]]></description>
+      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
+    </item>
     <item>
       <title>REST API Development with Qt 6</title>
       <link>https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/</link>
@@ -73,15 +88,14 @@
 <p>One of the inconveniences of <code>QRestAccessManager</code> is that in Qashmere I use an external definition of the REST API from the Postman definition which includes the HTTP method. Because the <code>QRestAccessManager</code> provides strongly typed API for making requests I need to do something like:</p>
 
 
-
-<pre class="wp-block-code"><code>if (method == &#034;POST&#034;) {
-    rest.post(request, requestData, this, replyHandler);
-} else if (method == &#034;GET&#034;) {
-    rest.get(request, this, replyHandler);
-} else if (method == &#034;DELETE&#034;) {
-    rest.deleteResource(request, this, replyHandler);
-}</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">if (method == &quot;POST&quot;) {</div><div class="cm-line">    rest.post(request, requestData, this, replyHandler);</div><div class="cm-line">} else if (method == &quot;GET&quot;) {</div><div class="cm-line">    rest.get(request, this, replyHandler);</div><div class="cm-line">} else if (method == &quot;DELETE&quot;) {</div><div class="cm-line">    rest.deleteResource(request, this, replyHandler);</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <p>There is a <code>sendCustomRequest</code> class API which can be used with a string, but it does not have an overload for <code>QJsonDocument</code>, so the convenience of having the <code>Content-Type</code> header set is lost. This may be an oversight in the <code>QRestAccessManager</code> API.</p>
@@ -91,14 +105,14 @@
 <p>Another missing feature is URL parameter interpolation. Many REST APIs are described as something like <code>/v1/object/:object_id/cancel</code>, and it would be convenient to have a safe way to interpolate the parameters into the URL, such as:</p>
 
 
-
-<pre class="wp-block-code"><code>QUrl result = QRestAccessManager::interpolatePathParameters(
-    &#034;/v1/accounts/:account_id/object/:object_id/cancel&#034;, {
-        {&#034;account_id&#034;, &#034;acc_1234&#034;},
-        {&#034;object_id&#034;, &#034;obj_5678&#034;}
-    }
-);</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">QUrl result = QRestAccessManager::interpolatePathParameters(</div><div class="cm-line">    &quot;/v1/accounts/:account_id/object/:object_id/cancel&quot;, {</div><div class="cm-line">        {&quot;account_id&quot;, &quot;acc_1234&quot;},</div><div class="cm-line">        {&quot;object_id&quot;, &quot;obj_5678&quot;}</div><div class="cm-line">    }</div><div class="cm-line">);</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <p>This is needed to avoid bugs such as a user-supplied parameter containing a slash for example.</p>
@@ -112,36 +126,14 @@
 <p>In recent years I&#8217;ve been writing and reading more Typescript/Angular code which consumes REST services, and less C++. I&#8217;ve enjoyed the way <code>Promise</code>s work in that environment, allowing sequences of REST requests, for example, to be easy to write and read. A test of a pseudo API could <code>await</code> on requests to complete and invoke the next one with something like:</p>
 
 
-
-<pre class="wp-block-code"><code>requestFactory.setBaseURL(&#034;http://some_service.com&#034;);
-
-async testWorkflow(username: string, password: string) {
-
-    const loginRequest = requestFactory.makeRequest(&#034;/login&#034;);
-    const loginRequestData = new Map();
-    loginRequestData.setParam(&#034;username&#034;, username);
-    loginRequestData.setParam(&#034;password&#034;, password);
-    const loginResponse = await requestAPI.post(
-        loginRequest, loginRequestData);
-
-    const bearerToken = loginResponse.getData();
-    requestAPI.setBearerToken(bearerToken);
-
-    const listingRequest = requestFactory.makeRequest(&#034;/list_items&#034;);
-    const listingResponse = await requestAPI.get(listingRequest);
-
-    const listing = JSON.parse(listingResponse.getData());
-
-    const firstItemRequest = requestFactory.makeRequest(
-        &#034;/retrieve_item/:item_id&#034;, 
-        {
-            item_id: listing&#091;0].item_id
-        }
-    );
-
-    const firstItem = await requestAPI.get(firstItemRequest);
-}</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">requestFactory.setBaseURL(&quot;http://some_service.com&quot;);</div><div class="cm-line"></div><div class="cm-line">async testWorkflow(username: string, password: string) {</div><div class="cm-line"></div><div class="cm-line">    const loginRequest = requestFactory.makeRequest(&quot;/login&quot;);</div><div class="cm-line">    const loginRequestData = new Map();</div><div class="cm-line">    loginRequestData.setParam(&quot;username&quot;, username);</div><div class="cm-line">    loginRequestData.setParam(&quot;password&quot;, password);</div><div class="cm-line">    const loginResponse = await requestAPI.post(</div><div class="cm-line">        loginRequest, loginRequestData);</div><div class="cm-line"></div><div class="cm-line">    const bearerToken = loginResponse.getData();</div><div class="cm-line">    requestAPI.setBearerToken(bearerToken);</div><div class="cm-line"></div><div class="cm-line">    const listingRequest = requestFactory.makeRequest(&quot;/list_items&quot;);</div><div class="cm-line">    const listingResponse = await requestAPI.get(listingRequest);</div><div class="cm-line"></div><div class="cm-line">    const listing = JSON.parse(listingResponse.getData());</div><div class="cm-line"></div><div class="cm-line">    const firstItemRequest = requestFactory.makeRequest(</div><div class="cm-line">        &quot;/retrieve_item/:item_id&quot;, </div><div class="cm-line">        {</div><div class="cm-line">            item_id: listing[0].item_id</div><div class="cm-line">        }</div><div class="cm-line">    );</div><div class="cm-line"></div><div class="cm-line">    const firstItem = await requestAPI.get(firstItemRequest);</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <p>The availability of <code>async</code> functions and the <code>Promise</code> to await on make a test like this quite easy to write, and the in-application use of the API uses the same <code>Promise</code>s, so there is little friction between application code and test code.</p>
@@ -155,101 +147,27 @@ async testWorkflow(username: string, password: string) {
 <p>Using the methods in <code>QtFuture</code> however, we already have a way to create objects representing the response from a REST API. The result is similar to the Typescript example, but with different ergonomics, using <code>.then</code> instead of the <code>async</code> and <code>await</code> keywords.</p>
 
 
-
-<pre class="wp-block-code"><code>struct RestRequest
-{
-    QString method;
-    QString requestUrl;
-    QHttpHeaders headers;
-    QHash&lt;QString, QString&gt; urlParams;
-    QUrlQuery queryParams;
-    std::variant&lt;QUrlQuery, QJsonDocument&gt; requestData;
-};
-
-struct RestResponse
-{
-    QJsonDocument jsonDoc;
-    QHttpHeaders headers;
-    QNetworkReply::NetworkError error;
-    QUrl url;
-    int statusCode;
-};
-
-QFuture&lt;RestResponse&gt; makeRequest(RestRequest restRequest)
-{
-    auto url = interpolatePathParameters(
-        restRequest.requestUrl, 
-        restRequest.urlParams);
-
-    auto request = requestFactory.createRequest(url);
-
-    auto requestBodyDoc = extractRequestContent(restRequest.requestData);
-
-    auto requestBody = requestBodyDoc.toJson(QJsonDocument::Compact);
-
-    auto reply = qRestManager.sendCustomRequest(request,
-                                                restRequest.method.toUtf8(),
-                                                requestBody,
-                                                &#038;qnam,
-                                                &#091;](QRestReply &#038;) {});
-
-    return QtFuture::connect(reply, &#038;QNetworkReply::finished).then(
-        &#091;reply]() {
-            QRestReply restReply(reply);
-    
-            auto responseDoc = restReply.readJson();
-            if (!responseDoc) {
-                throw std::runtime_error(&#034;Failed to read response&#034;);
-            }
-    
-            RestResponse response;
-            response.jsonDoc = *responseDoc;
-            response.statusCode = restReply.httpStatus();
-            response.error = restReply.error();
-            response.headers = reply-&gt;headers();
-            response.url = reply-&gt;url();
-    
-            return response;
-        }
-    );
-}</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">struct RestRequest</div><div class="cm-line">{</div><div class="cm-line">    QString method;</div><div class="cm-line">    QString requestUrl;</div><div class="cm-line">    QHttpHeaders headers;</div><div class="cm-line">    QHash&lt;QString, QString&gt; urlParams;</div><div class="cm-line">    QUrlQuery queryParams;</div><div class="cm-line">    std::variant&lt;QUrlQuery, QJsonDocument&gt; requestData;</div><div class="cm-line">};</div><div class="cm-line"></div><div class="cm-line">struct RestResponse</div><div class="cm-line">{</div><div class="cm-line">    QJsonDocument jsonDoc;</div><div class="cm-line">    QHttpHeaders headers;</div><div class="cm-line">    QNetworkReply::NetworkError error;</div><div class="cm-line">    QUrl url;</div><div class="cm-line">    int statusCode;</div><div class="cm-line">};</div><div class="cm-line"></div><div class="cm-line">QFuture&lt;RestResponse&gt; makeRequest(RestRequest restRequest)</div><div class="cm-line">{</div><div class="cm-line">    auto url = interpolatePathParameters(</div><div class="cm-line">        restRequest.requestUrl, </div><div class="cm-line">        restRequest.urlParams);</div><div class="cm-line"></div><div class="cm-line">    auto request = requestFactory.createRequest(url);</div><div class="cm-line"></div><div class="cm-line">    auto requestBodyDoc = extractRequestContent(restRequest.requestData);</div><div class="cm-line"></div><div class="cm-line">    auto requestBody = requestBodyDoc.toJson(QJsonDocument::Compact);</div><div class="cm-line"></div><div class="cm-line">    auto reply = qRestManager.sendCustomRequest(request,</div><div class="cm-line">                                                restRequest.method.toUtf8(),</div><div class="cm-line">                                                requestBody,</div><div class="cm-line">                                                &amp;qnam,</div><div class="cm-line">                                                [](QRestReply &amp;) {});</div><div class="cm-line"></div><div class="cm-line">    return QtFuture::connect(reply, &amp;QNetworkReply::finished).then(</div><div class="cm-line">        [reply]() {</div><div class="cm-line">            QRestReply restReply(reply);</div><div class="cm-line">    </div><div class="cm-line">            auto responseDoc = restReply.readJson();</div><div class="cm-line">            if (!responseDoc) {</div><div class="cm-line">                throw std::runtime_error(&quot;Failed to read response&quot;);</div><div class="cm-line">            }</div><div class="cm-line">    </div><div class="cm-line">            RestResponse response;</div><div class="cm-line">            response.jsonDoc = *responseDoc;</div><div class="cm-line">            response.statusCode = restReply.httpStatus();</div><div class="cm-line">            response.error = restReply.error();</div><div class="cm-line">            response.headers = reply-&gt;headers();</div><div class="cm-line">            response.url = reply-&gt;url();</div><div class="cm-line">    </div><div class="cm-line">            return response;</div><div class="cm-line">        }</div><div class="cm-line">    );</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <p>The <code>QRestAccessManager</code> API requires the creation of a dummy response function when creating a custom request because it is not really designed to be used this way. The result is an API accepting a request and returning a <code>QFuture</code> with the <code>QJsonDocument</code> content. While it is possible for a REST endpoint to return something else, we can follow the Qt philosophy of making the most expected case as easy as possible, while leaving most of the rest possible another way. This utility makes writing unit tests relatively straightforward too:<br></p>
 
 
-
-<pre class="wp-block-code"><code>RemoteAPI remoteApi;
-
-remoteApi.setBaseUrl(QUrl(&#034;https://dog.ceo&#034;));
-
-auto responseFuture = remoteApi.makeRequest(
-    {&#034;GET&#034;,
-     &#034;api/breed/:breed/:sub_breed/images/random&#034;,
-     {},
-     {
-         {&#034;breed&#034;, &#034;wolfhound&#034;}, 
-         {&#034;sub_breed&#034;, &#034;irish&#034;}
-     }});
-
-QFutureWatcher&lt;RestResponse&gt; watcher;
-
-QSignalSpy spy(&#038;watcher, &#038;QFutureWatcherBase::finished);
-
-watcher.setFuture(responseFuture);
-
-QVERIFY(spy.wait(10000));
-
-auto jsonObject = responseFuture.result().jsonDoc.object();
-
-QCOMPARE(jsonObject&#091;&#034;status&#034;], &#034;success&#034;);
-
-QRegularExpression regex(
-    R&#034;(https://images\.dog\.ceo/breeds/wolfhound-irish/&#091;^.]+.jpg)&#034;);
-
-QVERIFY(regex.match(jsonObject&#091;&#034;message&#034;].toString()).hasMatch());</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">RemoteAPI remoteApi;</div><div class="cm-line"></div><div class="cm-line">remoteApi.setBaseUrl(QUrl(&quot;https://dog.ceo&quot;));</div><div class="cm-line"></div><div class="cm-line">auto responseFuture = remoteApi.makeRequest(</div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {</div><div class="cm-line">         {&quot;breed&quot;, &quot;wolfhound&quot;}, </div><div class="cm-line">         {&quot;sub_breed&quot;, &quot;irish&quot;}</div><div class="cm-line">     }});</div><div class="cm-line"></div><div class="cm-line">QFutureWatcher&lt;RestResponse&gt; watcher;</div><div class="cm-line"></div><div class="cm-line">QSignalSpy spy(&amp;watcher, &amp;QFutureWatcherBase::finished);</div><div class="cm-line"></div><div class="cm-line">watcher.setFuture(responseFuture);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(spy.wait(10000));</div><div class="cm-line"></div><div class="cm-line">auto jsonObject = responseFuture.result().jsonDoc.object();</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(jsonObject[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line"></div><div class="cm-line">QRegularExpression regex(</div><div class="cm-line">    R&quot;(https://images\.dog\.ceo/breeds/wolfhound-irish/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(regex.match(jsonObject[&quot;message&quot;].toString()).hasMatch());</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <p>The result is quite similar to the Typescript above, but only because we can use <code>spy.wait</code>. In application code, we still need to use <code>.then</code> with a callback, but we can additionally use <code>.onFailed</code> and <code>.onCanceled</code> instead of making multiple signal/slot connections. </p>
@@ -259,81 +177,14 @@ QVERIFY(regex.match(jsonObject&#091;&#034;message&#034;].toString()).hasMatch())
 <p>With the addition of <code>QtFuture::whenAll</code>, it is easy to make multiple REST requests at once and react when they are all finished, so perhaps something else has been gained too, compared to a signal/slot model:</p>
 
 
-
-<pre class="wp-block-code"><code>RemoteAPI remoteApi;
-
-remoteApi.setBaseUrl(QUrl(&#034;https://dog.ceo&#034;));
-
-auto responseFuture = remoteApi.requestMultiple({
-    {
-        &#034;GET&#034;,
-        &#034;api/breeds/list/all&#034;,
-    },
-
-    {&#034;GET&#034;,
-     &#034;api/breed/:breed/:sub_breed/images/random&#034;,
-     {},
-     {{&#034;breed&#034;, &#034;german&#034;}, {&#034;sub_breed&#034;, &#034;shepherd&#034;}}},
-
-    {&#034;GET&#034;,
-     &#034;api/breed/:breed/:sub_breed/images/random/:num_results&#034;,
-     {},
-     {{&#034;breed&#034;, &#034;wolfhound&#034;}, 
-     {&#034;sub_breed&#034;, &#034;irish&#034;}, 
-     {&#034;num_results&#034;, &#034;3&#034;}}},
-
-    {&#034;GET&#034;, &#034;api/breed/:breed/list&#034;, {}, {{&#034;breed&#034;, &#034;hound&#034;}}},
-});
-
-QFutureWatcher&lt;QList&lt;RestResponse&gt;&gt; watcher;
-
-QSignalSpy spy(&#038;watcher, &#038;QFutureWatcherBase::finished);
-
-watcher.setFuture(responseFuture);
-
-QVERIFY(spy.wait(10000));
-
-auto four_responses = responseFuture.result();
-
-QCOMPARE(four_responses.size(), 4);
-
-QCOMPARE(four_responses&#091;0].jsonDoc.object()&#091;&#034;status&#034;], &#034;success&#034;);
-QVERIFY(four_responses&#091;0].jsonDoc.object()&#091;&#034;message&#034;].
-    toObject()&#091;&#034;greyhound&#034;].isArray());
-
-QRegularExpression germanShepherdRegex(
-    R&#034;(https://images.dog.ceo/breeds/german-shepherd/&#091;^.]+.jpg)&#034;);
-
-QCOMPARE(four_responses&#091;1].jsonDoc.object()&#091;&#034;status&#034;], &#034;success&#034;);
-QVERIFY(germanShepherdRegex.match(
-    four_responses&#091;1].jsonDoc.object()&#091;&#034;message&#034;].toString()).hasMatch());
-
-QRegularExpression irishWolfhoundRegex(
-    R&#034;(https://images.dog.ceo/breeds/wolfhound-irish/&#091;^.]+.jpg)&#034;);
-
-QCOMPARE(four_responses&#091;2].jsonDoc.object()&#091;&#034;status&#034;], &#034;success&#034;);
-auto irishWolfhoundList = 
-    four_responses&#091;2].jsonDoc.object()&#091;&#034;message&#034;].toArray();
-QCOMPARE(irishWolfhoundList.size(), 3);
-
-QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList&#091;0].toString()).
-    hasMatch());
-QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList&#091;1].toString()).
-    hasMatch());
-QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList&#091;2].toString()).
-    hasMatch());
-
-QCOMPARE(four_responses&#091;3].jsonDoc.object()&#091;&#034;status&#034;], &#034;success&#034;);
-auto houndList = four_responses&#091;3].jsonDoc.object()&#091;&#034;message&#034;].toArray();
-QCOMPARE_GE(houndList.size(), 7);
-QVERIFY(houndList.contains(&#034;afghan&#034;));
-QVERIFY(houndList.contains(&#034;basset&#034;));
-QVERIFY(houndList.contains(&#034;blood&#034;));
-QVERIFY(houndList.contains(&#034;english&#034;));
-QVERIFY(houndList.contains(&#034;ibizan&#034;));
-QVERIFY(houndList.contains(&#034;plott&#034;));
-QVERIFY(houndList.contains(&#034;walker&#034;));</code></pre>
-
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">RemoteAPI remoteApi;</div><div class="cm-line"></div><div class="cm-line">remoteApi.setBaseUrl(QUrl(&quot;https://dog.ceo&quot;));</div><div class="cm-line"></div><div class="cm-line">auto responseFuture = remoteApi.requestMultiple({</div><div class="cm-line">    {</div><div class="cm-line">        &quot;GET&quot;,</div><div class="cm-line">        &quot;api/breeds/list/all&quot;,</div><div class="cm-line">    },</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {{&quot;breed&quot;, &quot;german&quot;}, {&quot;sub_breed&quot;, &quot;shepherd&quot;}}},</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random/:num_results&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {{&quot;breed&quot;, &quot;wolfhound&quot;}, </div><div class="cm-line">     {&quot;sub_breed&quot;, &quot;irish&quot;}, </div><div class="cm-line">     {&quot;num_results&quot;, &quot;3&quot;}}},</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;, &quot;api/breed/:breed/list&quot;, {}, {{&quot;breed&quot;, &quot;hound&quot;}}},</div><div class="cm-line">});</div><div class="cm-line"></div><div class="cm-line">QFutureWatcher&lt;QList&lt;RestResponse&gt;&gt; watcher;</div><div class="cm-line"></div><div class="cm-line">QSignalSpy spy(&amp;watcher, &amp;QFutureWatcherBase::finished);</div><div class="cm-line"></div><div class="cm-line">watcher.setFuture(responseFuture);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(spy.wait(10000));</div><div class="cm-line"></div><div class="cm-line">auto four_responses = responseFuture.result();</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses.size(), 4);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[0].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">QVERIFY(four_responses[0].jsonDoc.object()[&quot;message&quot;].</div><div class="cm-line">    toObject()[&quot;greyhound&quot;].isArray());</div><div class="cm-line"></div><div class="cm-line">QRegularExpression germanShepherdRegex(</div><div class="cm-line">    R&quot;(https://images.dog.ceo/breeds/german-shepherd/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[1].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">QVERIFY(germanShepherdRegex.match(</div><div class="cm-line">    four_responses[1].jsonDoc.object()[&quot;message&quot;].toString()).hasMatch());</div><div class="cm-line"></div><div class="cm-line">QRegularExpression irishWolfhoundRegex(</div><div class="cm-line">    R&quot;(https://images.dog.ceo/breeds/wolfhound-irish/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[2].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">auto irishWolfhoundList = </div><div class="cm-line">    four_responses[2].jsonDoc.object()[&quot;message&quot;].toArray();</div><div class="cm-line">QCOMPARE(irishWolfhoundList.size(), 3);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[0].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[1].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[2].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[3].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">auto houndList = four_responses[3].jsonDoc.object()[&quot;message&quot;].toArray();</div><div class="cm-line">QCOMPARE_GE(houndList.size(), 7);</div><div class="cm-line">QVERIFY(houndList.contains(&quot;afghan&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;basset&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;blood&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;english&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;ibizan&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;plott&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;walker&quot;));</div></code></pre>
+		</div>
+	</div>
+</div>
 
 
 <h2 class="wp-block-heading">setAutoDeleteReplies(false);</h2>
@@ -342,68 +193,6 @@ QVERIFY(houndList.contains(&#034;walker&#034;));</code></pre>
 
 <p>I attempted to use new API additions in recent Qt 6 versions to interact with a few real-world REST services. The additions are valuable, but it seems that there are a few places where improvements might be possible. My attempt to make the API feel closer to what developers in other environments might be accustomed to had some success, but I&#8217;m not sure <code>QFuture</code> is really intended to be used this way.<br>Do readers have any feedback? Would using QCoro improve the coroutine experience? Is it very unusual to create an application with QWidgets instead of QML these days? Should I have used PyQt and the python networking APIs?</p>]]></description>
       <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
-    </item>
-    <item>
-      <title>How to build DORA-ready infrastructure with verifiable provenance and reliable support</title>
-      <link>https://ubuntu.com//blog/build-dora-ready-infrastructure-with-verifiable-provenance</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/build-dora-ready-infrastructure-with-verifiable-provenance</guid>
-      <pubDate>Wed, 14 Jan 2026 09:53:42 GMT</pubDate>
-      <description><![CDATA[<p>The Digital Operational Resilience Act (DORA) came into force across the EU on January 17, 2025, fundamentally changing how financial institutions must approach infrastructure and technology assets resilience. Its requirements around ICT risk management, operational resilience, and third-party oversight signal a broader shift that will ripple across regulated industries worldwide.</p>
-<p>At its core, DORA demands something deceptively simple: organizations must know exactly what they’re running, where it came from, and how to fix it when something breaks. For technical teams managing complex stacks spanning bare metal, the OS, kernel, and applications, this translates into a hard requirement for provenance: transparent, verifiable lineage from source code all the way up.</p>
-<h2 class="wp-block-heading">The provenance problem: you can’t verify what you can’t see</h2>
-<p>Traditional vendor stacks create a fundamental compliance problem: they’re opaque by design. When you deploy a proprietary solution, you’re accepting someone else’s assurances about what’s inside. You can’t inspect the source code. You can’t verify the build process. You can’t independently validate that a security patch actually addresses the vulnerability it claims to fix.</p>
-<p>While Software Bills of Materials (SBOMs) have emerged as an important transparency tool and represent progress, they fail to solve this fundamental inspection problem. An SBOM tells you what components are present in proprietary software, but you still can’t examine the source code itself or verify the build process yourself. For regulated organizations facing requirements like DORA, this creates a compliance gap, where you can document dependencies but cannot truly verify their integrity.</p>
-<p>DORA explicitly requires financial entities to maintain oversight of their ICT infrastructure, including third-party dependencies. So, how do you maintain oversight of something you can’t inspect?</p>
-<p>Open source becomes essential here. With open source software:</p>
-<ul>
-<li>You get reproducible inspectability all the way down the supply chain</li>
-<li>You can trace every component back to the developer who wrote it</li>
-<li>You can verify builds</li>
-<li>You can audit changes</li>
-<li>You can understand exactly what’s running in your environment</li>
-</ul>
-<h2 class="wp-block-heading">The single developer problem (and why Ubuntu Pro matters)</h2>
-<p>Here’s the uncomfortable truth about modern infrastructure: critical components in your stack likely trace back to a single developer somewhere on the internet, maintaining a library in their spare time. An estimate, based on analysis of <a href="http://ecosyste.ms">ecosyste.ms</a> data, shows that a relatively small group, on the order of ten thousand people, supports the majority of the world’s open source software users. In the Tidelift 2024 State of the Open Source Maintainer survey, 61% of unpaid maintainers reported working alone on their projects. When the Heartbleed vulnerability was discovered in 2014, OpenSSL—used by 66% of web servers at the time—was maintained by just a handful of volunteers, only one working full time, with the project receiving about $2,000 in annual donations.</p>
-<p>These individual maintainers are doing heroic work. But from a resilience perspective, it’s a risk. What happens when that developer moves on? Gets burned out? Simply stops maintaining the package?</p>
-<p>The problem is worsening: in 2024, almost 60% of maintainers reported having quit or considered quitting their maintenance work, with many citing burnout, insufficient compensation, and overwhelming demands on their time.</p>
-<p>Investing in open source is a form of infrastructure security: it reduces your dependence on unpaid, solo maintainers and builds sustainable maintenance pipelines with professional support, timely security patching, and long-term viability. When enterprises pay for Ubuntu Pro, part of that funding flows back into the open source ecosystem through Canonical’s upstream engineering work and direct financial support for the projects Ubuntu depends on.​</p>
-<p>Canonical does not just repackage open source; our engineers contribute features and fixes upstream across the projects shipped in Ubuntu, and we commit security maintenance for components long after their upstream end of life, such as continuing to backport OpenSSL 1.1.1 fixes for supported Ubuntu releases. Ubuntu Pro packages this ecosystem investment into a single subscription: up to 15 years of security maintenance for thousands of open source packages, plus the assurance that Canonical is actively collaborating with and funding the communities behind them. Instead of betting your resilience on a single unpaid maintainer, you get a vendor whose business model is aligned with keeping that open source infrastructure secure and sustainable over the long term.</p>
-<h2 class="wp-block-heading">From responsibility to assurance: system-level, not vendor-level</h2>
-<p>There’s a fundamental difference between a vendor taking responsibility for their products and a platform providing assurance for your entire system.</p>
-<p>When an Ubuntu Pro customer from the financial industry asked, “How do we get all machines FIPS-enabled and CIS-compliant?”, that’s not a question about a single application. It’s a question about system-level security compliance across thousands of machines, down to the operating system and the metal beneath it.</p>
-<p>Ubuntu Pro answers this by providing a single, verifiable stack with end-to-end provenance. The focus shifts from trusting individual vendors to establishing a unified security posture where every layer is supported, patched, and verifiable.</p>
-<p>For finance organizations, this changes the conversation from “Do we trust this vendor?” to “Can we verify and validate our entire infrastructure up to the application layer?” The answer needs to be yes, and you need documentation to prove it.</p>
-<h2 class="wp-block-heading">The DORA advantage: knowing what you don’t know</h2>
-<p>Discovering what you don’t know proves more challenging than fixing known compliance issues. What packages are actually running in production? Which versions? What’s their patch status? What potential exposures might an auditor find during their next review?</p>
-<p>With Ubuntu Pro, you get continuous visibility, security maintenance and support:</p>
-<ul>
-<li>Complete inventory: Enumerate exactly what’s running across your infrastructure</li>
-<li>Provenance tracking: Every package has verifiable lineage back to source</li>
-<li>Continuous patching: Both main and universe repository packages receive security updates</li>
-<li>Compliance tooling: Built-in capabilities for CIS hardening, FIPS certification, and compliance reporting</li>
-</ul>
-<h2 class="wp-block-heading">Beyond compliance: building for what comes next</h2>
-<p>Think of compliance as the baseline, not the goal. While DORA is a regulatory requirement for financial services in the EU, smart organizations across industries are using it as a model for their own resilience programs. The principles it codifies, operational resilience, supply chain transparency, systematic risk management, are universal concerns.</p>
-<p>The trajectory is clear: more regulation, more scrutiny, more demands for transparency and provenance. When your industry’s equivalent of DORA arrives (and it will), you need infrastructure that can already demonstrate:</p>
-<ul>
-<li>Verifiable provenance for every component in your stack</li>
-<li>Long-term support commitments backed by professional teams</li>
-<li>System-level security compliance down to the OS and infrastructure layer</li>
-<li>Complete source code transparency and documented patching processes</li>
-</ul>
-<p>Ubuntu Pro applies these principles to open source infrastructure, combining transparent components with long-term security maintenance and support so your stack is ready for whatever comes next.</p>
-<p>Learn more about other security standards we support: <a href="https://ubuntu.com/security/security-standards">ubuntu.com/security/security-standards</a>.</p>
-<figure class="wp-block-pullquote"><blockquote><p><a href="https://ubuntu.com/contact-us/form?product=pro">Get in touch</a> or <a href="https://ubuntu.com/pro/free-trial">start a 30-day Ubuntu Pro free trial</a>.</p></blockquote></figure>
-<h3 class="wp-block-heading">References</h3>
-<ul>
-<li><a href="https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en">Digital Operational Resilience Act (DORA) – EIOPA</a></li>
-<li><a href="https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng">Regulation (EU) 2022/2554 – EUR-Lex</a></li>
-<li><a href="https://blog.tidelift.com/maintainer-burnout-is-real">Tidelift 2024 State of the Open Source Maintainer Report</a></li>
-<li><a href="https://socket.dev/blog/the-unpaid-backbone-of-open-source">The Unpaid Backbone of Open Source – Socket</a></li>
-<li><a href="https://www.forbes.com/sites/thebakersinstitute/2014/04/23/what-heartbleed-means-for-critical-infrastructure-2/">Critical infrastructure for the Web – Forbes</a></li>
-<li><a href="https://ubuntu.com/blog/canonical-thanks-dev-giving-back-to-open-source-developers">Canonical + thanks.dev</a></li>
-</ul>]]></description>
-      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>
     <item>
       <title>Shell features: List expansion</title>

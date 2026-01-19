@@ -6,9 +6,122 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sun, 18 Jan 2026 02:06:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 02:04:49 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Malware Peddlers Are Now Hijacking Snap Publisher Domains</title>
+      <link>https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/</link>
+      <guid isPermaLink="true">https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/</guid>
+      <pubDate>Sat, 17 Jan 2026 19:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>tl;dr</strong>: There&rsquo;s a relentless campaign by scammers to publish malware in the Canonical <a href="https://snapcraft.io/">Snap Store</a>. Some gets caught by automated filters, but plenty slips through. Recently, these miscreants have changed tactics - they&rsquo;re now registering expired domains belonging to legitimate snap publishers, taking over their accounts, and pushing malicious updates to previously trustworthy applications. This is a significant escalation.</p>
+<hr>
+<h2 id="context">Context</h2>
+<p>Snaps are compressed, cryptographically signed, revertable software packages for Linux desktops, servers, and embedded devices. They use standard security primitives in the Linux kernel alongside technology developed by Canonical for Ubuntu.</p>
+<p>Snaps are published in the Canonical-run Snap Store. Anyone can sign up for an account and, with relatively few roadblocks, publish a confined application. There are over 7,000 publicly published snaps from hundreds of developers.</p>
+<h2 id="yes-im-banging-this-drum-again">Yes, I&rsquo;m Banging This Drum Again</h2>
+<p>I have written about this topic before.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/exodus-blog.png"><img src="https://blog.popey.com/images/2026-01-17/exodus-blog_50pc.png" alt="Previous blogs"></a></p>
+<ul>
+<li><a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-490k-swindle/">Exodus Bitcoin Wallet: $490K Swindle</a> - February 2024</li>
+<li><a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-follow-up/">Exodus Bitcoin Wallet: Follow up 2.0</a> - February 2024</li>
+<li><a href="https://blog.popey.com/2024/03/exodus-wallet-part-three/">Guess Who&rsquo;s Back? Exodus Scam BitCoin Wallet Snap!</a> - March 2024</li>
+</ul>
+<p>I worked for Canonical between 2011 and 2021 as an Engineering Manager, Community Manager, and Developer Advocate. I was a strong advocate for snap packages and the Snap Store. While I left the company nearly five years ago, I still <a href="https://snapcraft.io/publisher/popey">maintain</a> nearly 50 packages in the Snap Store, with thousands of users.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/popey-publisher-page.png"><img src="https://blog.popey.com/images/2026-01-17/popey-publisher-page_50pc.png" alt="popey&rsquo;s publisher page"></a></p>
+<p>I also worked for <a href="https://anchore.com/">Anchore</a> until September 2025, where they sponsor development of two open-source, Apache-licensed security tools: <a href="https://github.com/anchore/syft">Syft</a> (an SBOM generator) and <a href="https://github.com/anchore/grype/">Grype</a> (a vulnerability scanner).</p>
+<p>I mention my employment history for transparency, and because knowledge from both roles informed this investigation.</p>
+<p><strong>Personally, I want the Snap Store to be successful, and for users to be confident that the packages they install are trustworthy and safe.</strong></p>
+<p>Currently, that confidence isn&rsquo;t warranted, which is a problem for desktop Linux users who install snap packages.</p>
+<p><strong>I report every bad snap I encounter, and I know other security professionals do the same - even though doing so results in no action for days sometimes.</strong></p>
+<h2 id="enter-snapscope">Enter SnapScope</h2>
+<p><a href="https://blog.popey.com/images/2026-01-17/snapscope.png"><img src="https://blog.popey.com/images/2026-01-17/snapscope_50pc.png" alt="SnapScope"></a></p>
+<p>I recently created <a href="https://snapscope.popey.com/">SnapScope</a> as part of a &ldquo;VibeCoding&rdquo; <a href="https://github.com/chainguard-demo/vibelympics">contest</a> run by some friends at <a href="https://www.chainguard.dev/">Chainguard</a>. They&rsquo;re good people doing great work - check them out.</p>
+<p>My original intention was to create a web app that generates an SBOM (Software Bill of Materials) for each snap using Syft, then produces a vulnerability report using Grype. Neither tool is perfect, and other tools exist, but I&rsquo;m familiar with these and they suited the contest nicely.</p>
+<p>While monitoring <a href="https://snapscope.popey.com/">SnapScope</a>, I was reminded of the malware problem. SnapScope wasn&rsquo;t <em>intended</em> to find malware - it was meant to identify outdated snaps with potential security issues. But I soon added features to highlight suspicious packages, so users could make informed decisions when searching for software.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/malware.png"><img src="https://blog.popey.com/images/2026-01-17/malware_50pc.png" alt="SnapScope"></a></p>
+<p><strong>To be clear</strong>: none of this should be seen as an attack on the Snap Store, Canonical, or the engineers working on these problems. I&rsquo;m raising awareness of an issue that exists, because I want it fixed.</p>
+<h2 id="the-scam">The Scam</h2>
+<p>The perpetrators - probably based in or near Croatia, based on data I&rsquo;ve been gathering - are constantly attempting to publish fake crypto wallet applications. The malware masquerades as genuine apps like Exodus, Ledger Live, or Trust Wallet. It asks users to enter their wallet recovery phrase, sends those credentials to the criminals, displays an error to the user, and by the time anyone realises what&rsquo;s happened, the wallet is empty.</p>
+<p>Whatever you think of cryptocurrency, these people are absolute dog shit.</p>
+<h2 id="the-cat-and-mouse-game">The Cat-and-Mouse Game</h2>
+<p>The Canonical Snap Store admins have attempted to stem the flow. However, as with many security issues, it&rsquo;s a relentless game of whack-a-mole.</p>
+<p>The scammers have tried various approaches to appear legitimate:</p>
+<p><strong>Initially</strong>, they just published authentic-looking applications with plausible screenshots and storefront pages. This was the approach I documented in my previous articles about the fake &ldquo;Exodus&rdquo; and &ldquo;Ledger Live&rdquo; apps.</p>
+<p><strong>Then</strong>, they started evading text filters by using similar-looking characters from other alphabets. For example, replacing the lowercase &ldquo;d&rdquo; in &ldquo;Ledger&rdquo; with the Armenian letter <a href="https://en.wikipedia.org/wiki/Zhe_(Armenian_letter)">Zhe</a> &ldquo;ժ&rdquo;, which at first glance passes for a Latin &ldquo;d&rdquo;. They also use <a href="https://en.wikipedia.org/wiki/Palochka">Palochka</a> &ldquo;ӏ&rdquo; which resembles a lowercase &ldquo;L&rdquo;.</p>
+<p><strong>More recently</strong>, they&rsquo;ve adopted a bait-and-switch approach:</p>
+<ol>
+<li>Register an innocuous, unrelated snap name like <a href="https://snapscope.popey.com/package/lemon-throw">lemon-throw</a>, <a href="https://snapscope.popey.com/package/alpha-hub">alpha-hub</a>, or <a href="https://snapscope.popey.com/package/tenor-freeze">tenor-freeze</a></li>
+<li>Publish something harmless - often claiming to be a game</li>
+<li>Wait for approval</li>
+<li>Push a second revision containing the fake crypto wallet app</li>
+</ol>
+<p>Some of us in the community diligently report these applications to Canonical, and after a period they get removed. But the sad fact is they keep getting through, and users could see, install, and be fooled by these malicious applications before anyone catches them. <a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-490k-swindle/">Déjà</a> <a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-follow-up/">vu</a>, <a href="https://blog.popey.com/2024/03/exodus-wallet-part-three/">much</a>?</p>
+<h2 id="following-the-telegram-trail">Following the Telegram Trail</h2>
+<p>Every so often, I download these dodgy snaps (<code>snap download badsnap</code>), unpack them (<code>unsquashfs badsnap.snap</code>), and have a poke around. Frequently it&rsquo;s the same codebase republished under a new name. Sometimes they vary the language or framework, but almost always follow the same pattern: an app rendering a web page that looks like a legitimate crypto wallet.</p>
+<p>I discovered that when launched, the applications ping this URL:</p>
+<p><em><a href="https://togogeo.com/trust.php?name=8888-8888">https://togogeo.com/trust.php?name=8888-8888</a></em></p>
+<p>This appears to be a connectivity test - if the victim has no internet connection or if <code>togogeo.com</code> is inaccessible, the application reports an error and refuses to continue. Makes sense from the scammers&rsquo; perspective: no point asking for credentials if you can&rsquo;t exfiltrate them.</p>
+<p>Initially, hitting this URL manually with <code>curl</code> returned something rather revealing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;status&#34;</span>: <span style="color:#e6db74">&#34;success&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Notification sent to Telegram: 8888-8888&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;telegram_response&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;ok&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;result&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;message_id&#34;</span>: <span style="color:#ae81ff">30111</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;from&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">7477383815</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;is_bot&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;SmartShieldBot&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;pandadrainerbot&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;chat&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">5915612669</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;ezzcash&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;ikaikaika101&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;private&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#ae81ff">1767464029</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;8888-8888&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Well, hello there <a href="https://t.me/ikaikaika101">@ikaikaika101</a>. Nice of them to leave their Telegram username in the response. They&rsquo;ve since changed this to return only an exclamation mark - clearly someone&rsquo;s reading my work, or at least noticed they were leaking operational details.</p>
+<p>They also used to have an avatar, but after I started poking the URL, they removed that from their Telegram account. Fancy that.</p>
+<p>If the user does enter their passphrase (valid or not), it gets sent in a subsequent request to a similar URL. By then, it&rsquo;s too late.</p>
+<h2 id="domain-squatting-the-new-low">Domain Squatting: The New Low</h2>
+<p>Just when you thought they&rsquo;d run out of tricks, they&rsquo;ve found another way in - and this one&rsquo;s particularly nasty.</p>
+<p>Rather than registering new accounts and hoping to slip through the filters, they&rsquo;ve started monitoring the Snap Store for published applications whose publishers&rsquo; domain registrations have lapsed. Think about it: a snap published years ago by <code>somedev@coolproject.tech</code>, where <code>coolproject.tech</code> expired and wasn&rsquo;t renewed.</p>
+<p>The scammers swoop in, register the expired domain, trigger a password reset on the Snap Store account, and <em>boom</em> - they now control a legitimate, trusted publisher account with an established history. No new account scrutiny. No &ldquo;New Publisher&rdquo; flags. Just an existing, seemingly trustworthy snap that suddenly gets a new revision containing their wallet-draining malware.</p>
+<p>I&rsquo;ve identified at least two domains this has happened with recently: <code>storewise.tech</code> and <code>vagueentertainment.com</code>. There are almost certainly more.</p>
+<p>This is a significant escalation. Previously, users could at least be wary of newly published snaps from fresh accounts. Now? That snap you installed three years ago from a reputable-looking publisher could push a malicious update tomorrow.</p>
+<h2 id="what-now">What Now?</h2>
+<p>I&rsquo;m not writing this to bury snaps or the Snap Store. I <em>want</em> this ecosystem to succeed - I still maintain nearly 50 packages there myself. But pretending there isn&rsquo;t a problem helps nobody.</p>
+<p>The domain takeover angle is particularly concerning because it undermines one of the few trust signals users had: publisher longevity. Canonical needs to address this, whether that&rsquo;s monitoring for domain expiry on publisher accounts, requiring additional verification for accounts that have been dormant, implementing mandatory two-factor authentication, or something else entirely. I don&rsquo;t have all the answers, but I know the current situation isn&rsquo;t sustainable.</p>
+<p><strong>If you&rsquo;re a snap publisher</strong>: keep your domain registration current, and enable two-factor authentication if you haven&rsquo;t already. Your lapsed domain could become someone else&rsquo;s attack vector.</p>
+<p><strong>If you&rsquo;re a snap user</strong>: be extremely cautious with cryptocurrency wallet applications from <em>any</em> source, not just the Snap Store. Check the publisher, check when the snap was last updated, and if something feels off, it probably is. Actually, scratch that - just don&rsquo;t install crypto wallet apps from app stores at all. Get them directly from the official project websites.</p>
+<p><strong>If you spot something dodgy</strong>: report it. Use the &ldquo;Report this app&rdquo; link at the bottom of the snap&rsquo;s store page. The community catching these before they catch users is the best defence we&rsquo;ve got right now.</p>
+<p>I&rsquo;ll keep monitoring via <a href="https://snapscope.popey.com/">SnapScope</a> and reporting what I find. Someone has to.</p>
+<p>Stay safe out there.</p>]]></description>
+      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
+    </item>
+    <item>
+      <title>HP battery not charging</title>
+      <link>https://dougiewougie.com/linux/hp-battery-not-charging/</link>
+      <guid isPermaLink="true">https://dougiewougie.com/linux/hp-battery-not-charging/</guid>
+      <pubDate>Sat, 17 Jan 2026 17:19:41 GMT</pubDate>
+      <description><![CDATA[<p>I&#8217;ve an <a href="https://support.hp.com/gb-en/product/details/hp-pavilion-14-laptop-pc-14-dv2000/model/2101006210?sku=6L7L7EA">HP Pavilion Laptop</a> (14-dv2500sa) &#8211; the touch screen doesn&#8217;t work with Linux, due to a UEFI issue. After updating UEFI, I noticed Fedora reporting the battery as empty when it clearly wasn&#8217;t (because it was still on).</p>
+
+
+
+<p>There&#8217;s a setting that reports the battery status, which defaulted to disabled, from what I gather it&#8217;s a soft battery disconnect for storage. No clue why it&#8217;s enabled by default but dear God the update process was painful.</p>
+
+
+
+<p>I&#8217;ve not got a laptop running Windows, so ended up using Boxes to run Windows just to create the USB key. Even that was tempremental as I had to choose a specific EFI key to boot from.</p>]]></description>
+      <source url="https://dougiewougie.com/category/linux/feed/">Dougie Richardson</source>
+    </item>
     <item>
       <title>Ubuntu Studio 25.04 Has Reached End-Of-Life (EOL)</title>
       <link>https://ubuntustudio.org/2026/01/ubuntu-studio-25-04-has-reached-end-of-life-eol/</link>
@@ -217,41 +330,6 @@
 
 <p>I attempted to use new API additions in recent Qt 6 versions to interact with a few real-world REST services. The additions are valuable, but it seems that there are a few places where improvements might be possible. My attempt to make the API feel closer to what developers in other environments might be accustomed to had some success, but I&#8217;m not sure <code>QFuture</code> is really intended to be used this way.<br>Do readers have any feedback? Would using QCoro improve the coroutine experience? Is it very unusual to create an application with QWidgets instead of QML these days? Should I have used PyQt and the python networking APIs?</p>]]></description>
       <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
-    </item>
-    <item>
-      <title>Shell features: List expansion</title>
-      <link>https://dougiewougie.com/linux/shell-features-list-expansion/</link>
-      <guid isPermaLink="true">https://dougiewougie.com/linux/shell-features-list-expansion/</guid>
-      <pubDate>Sun, 11 Jan 2026 16:29:07 GMT</pubDate>
-      <description><![CDATA[<p>I like list expansion:</p>
-
-
-
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create mutiple directories
-mkdir -p {src,data,app/{mobile,web}}</code></pre>
-
-
-
-<p>The <code>p</code> switch creates any &#8220;missing&#8221; parent directories and is idempotent (so if app exists it doesn&#8217;t complain and if not creates it).</p>
-
-
-
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create multiple files
-touch file_{1..5}.txt</code></pre>
-
-
-
-<p>Heck you can even combine it with tee!</p>
-
-
-
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create multiple Hello, World! files
-echo "Hello, world\!" | tee file_{1..5}.txt</code></pre>
-
-
-
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="622" src="https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1024x622.png" alt="" class="wp-image-3224" srcset="https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1024x622.png 1024w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-300x182.png 300w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-768x467.png 768w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1536x934.png 1536w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-2048x1245.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>]]></description>
-      <source url="https://dougiewougie.com/category/linux/feed/">Dougie Richardson</source>
     </item>
     <item>
       <title>I love KDE too much to retire! Snap beta releases trickling in. Stay tuned.</title>
@@ -1353,145 +1431,6 @@ python-certifi for the Python&nbsp;team.</p>
 
 <p>If you have ideas or feedback, reach out to us!</p>]]></description>
       <source url="http://news.launchpad.net/feed">Launchpad News</source>
-    </item>
-    <item>
-      <title>Think you can’t interpose static binaries with LD_PRELOAD? Think again!</title>
-      <link>https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</link>
-      <guid isPermaLink="true">https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</guid>
-      <pubDate>Thu, 20 Nov 2025 20:56:17 GMT</pubDate>
-      <description><![CDATA[<div class="wp-block-media-text alignwide is-vertically-aligned-center" style="grid-template-columns:21% auto"><figure class="wp-block-media-text__media"><img fetchpriority="high" decoding="async" width="4614" height="4001" src="https://balintreczey.hu/blog/wp-content/uploads/2023/04/firebuild-logo.svg" alt="" class="wp-image-853 size-thumbnail"/></figure><div class="wp-block-media-text__content">
-<p>Well, you are right, you can&#8217;t. At least not directly. This is well documented in many projects relying on interposing binaries, like faketime.</p>
-
-
-
-<p> </p>
-</div></div>
-
-
-
-<p></p>
-
-
-
-<p>But what if we could write something that would take a static binary, replace at least the direct syscalls with ones going through libc and load it with the dynamic linker? We are in luck, because the excellent QEMU project has a user space emulator! It can be compiled as a dynamically linked executable, honors LD_PRELOAD and uses the host libc&#8217;s syscall &#8211; well, at least sometimes. Sometimes syscalls just bypass libc.</p>
-
-
-
-<p>The missing piece was a way to make QEMU always take the interposable path and call the host libc instead of using an arch-specifix assembly routine (`safe_syscall_base`) to construct the syscall and going directly to the kernel. Luckily, this turned out to be doable. A small patch later, QEMU gained a switch that forces all syscalls through libc. Suddenly, our static binaries started looking a lot more dynamic!</p>
-
-
-
-<pre class="wp-block-code"><code>$ faketime '2008-12-24 08:15:42'  qemu-x86_64 ./test_static_clock_gettime
-2008-12-24 08:15:42.725404654
-$ file test_static_clock_gettime 
-test_clock_gettime: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, ...</code></pre>
-
-
-
-<p>With this in place, Firebuild can finally wrap even those secretive statically linked tools. QEMU runs them, libc catches their syscalls, <code>LD_PRELOAD</code> injects <code>libfirebuild.so</code>, and from there the usual interposition magic happens. The result: previously uncachable build steps can now be traced, cached, and shortcut just like their dynamic friends.</p>
-
-
-
-<p>There is one more problem though. Why would the static binaries deep in the build be run by QEMU? Firebuild also intercepts the `exec()` calls and now it rewrites them on the fly whenever the executed binary would be statically linked!</p>
-
-
-
-<pre class="wp-block-code"><code>$ firebuild -d comm bash -c ./test_static
-...
-FIREBUILD: fd 9.1: ({ExecedProcess 161077.1, running, "bash -c ./test_static", fds=&#91;0: {FileFD ofd={FileO
-FD #0 type=FD_PIPE_IN r} cloexec=false}, 1: {FileFD ofd={FileOFD #3 type=FD_PIPE_OUT w} {Pipe #0} close_o
-n_popen=false cloexec=false}, 2: {FileFD ofd={FileOFD #4 type=FD_PIPE_OUT w} {Pipe #1} close_on_popen=fal
-se cloexec=false}, 3: {FileFD NULL} /* times 2 */]})
-{
-    "&#91;FBBCOMM_TAG]": "exec",
-    "file": "test_static",
-    "// fd": null,
-    "// dirfd": null,
-    "arg": &#91;
-        "./test_static"
-    ],
-    "env": &#91;
-        "SHELL=/bin/bash",
- ...
-        "FB_SOCKET=/tmp/firebuild.cpMn75/socket",
-        "_=./test_static"
-    ],
-    "with_p": false,
-    "// path": null,
-    "utime_u": 0,
-    "stime_u": 1017
-}
-FIREBUILD: -> proc_ic_msg()  (message_processor.cc:782)  proc={ExecedProcess 161077.1, running, "bash -c 
-./test_static", fds=&#91;0: {FileFD ofd={FileOFD #0 type=FD_PIPE_IN r} cloexec=false}, 1: {FileFD ofd={FileOF
-D #3 type=FD_PIPE_OUT w} {Pipe #0} close_on_popen=false cloexec=false}, 2: {FileFD ofd={FileOFD #4 type=F
-D_PIPE_OUT w} {Pipe #1} close_on_popen=false cloexec=false}, 3: {FileFD NULL} /* times 2 */]}, fd_conn=9.
-1, tag=exec, ack_num=0
-FIREBUILD:   -> send_fbb()  (utils.cc:292)  conn=9.1, ack_num=0 fd_count=0
-Sending message with ancillary fds &#91;]:
-{
-    "&#91;FBBCOMM_TAG]": "rewritten_args",
-    "arg": &#91;
-        "/usr/bin/qemu-user-interposable",
-        "-libc-syscalls",
-        "./test_static"
-    ],
-    "path": "/usr/bin/qemu-user-interposable"
-}
-...
-FIREBUILD: -> accept_ic_conn()  (firebuild.cc:139)  listener=6
-...
-FIREBUILD: fd 9.2: ({Process NULL})
-{
-    "&#91;FBBCOMM_TAG]": "scproc_query",
-    "pid": 161077,
-    "ppid": 161073,
-    "cwd": "/home/rbalint/projects/firebuild/test",
-    "arg": &#91;
-        "/usr/bin/qemu-user-interposable",
-        "-libc-syscalls",
-        "./test_static"
-    ],
-    "env_var": &#91;
-        "CCACHE_DISABLE=1",
-...
-        "SHELL=/bin/bash",
-        "SHLVL=0",
-        "_=./test_static"
-    ],
-    "umask": "0002",
-    "jobserver_fds": &#91;],
-    "// jobserver_fifo": null,
-    "executable": "/usr/bin/qemu-user-interposable",
-    "// executed_path": null,
-    "// original_executed_path": null,
-    "libs": &#91;
-        "/lib/x86_64-linux-gnu/libatomic.so.1",
-        "/lib/x86_64-linux-gnu/libc.so.6",
-        "/lib/x86_64-linux-gnu/libglib-2.0.so.0",
-        "/lib/x86_64-linux-gnu/libm.so.6",
-        "/lib/x86_64-linux-gnu/libpcre2-8.so.0",
-        "/lib64/ld-linux-x86-64.so.2"
-    ],
-    "version": "0.8.5.1"
-}
-</code></pre>
-
-
-
-<p>The QEMU patch is <a href="https://lists.gnu.org/archive/html/qemu-devel/2025-11/msg02559.html">forwarded to qemu-devel</a>. If it lands, anyone using QEMU user-mode emulation could benefit — not just Firebuild.</p>
-
-
-
-<p>For Firebuild users, though, the impact is immediate. Toolchains that mix dynamic and static helpers? Cross-builds that pull in odd little statically linked utilities? Previously “invisible” steps in your builds? All now fair game for caching.</p>
-
-
-
-<p><a href="https://github.com/firebuild/firebuild/releases/tag/v0.8.5">Firebuild 0.8.5</a> ships this new capability out of the box. Just update, make sure you’re using a patched QEMU, and enjoy the feeling of watching even static binaries fall neatly into place in your cached build graph. Ubuntu users can get the prebuilt patched QEMU packages from the <a href="https://launchpad.net/~firebuild/+archive/ubuntu/stable">Firebuild PPA</a> already. </p>
-
-
-
-<p>Static binaries, welcome to the party!</p>]]></description>
-      <source url="https://balintreczey.hu/blog/tag/ubuntu/feed/">Balint Reczey</source>
     </item>
     <item>
       <title>GSoC 2025 Final Submission: Re-architecting PyCups for a Modern, Pythonic Future</title>
@@ -2747,63 +2686,6 @@ mirror and follow the instructions above.</p>]]></description>
       <pubDate>Thu, 20 Feb 2025 17:31:00 GMT</pubDate>
       <description><![CDATA[<p>The Open Source Initiative has two classes of board seats: Affiliate seats, and Individual Member seats.&nbsp;</p><p>In the upcoming election, each affiliate can nominate a candidate, and each affiliate can cast a vote for the Affiliate candidates, but there's only 1 Affiliate seat available. I initially expressed interest in being nominated as an Affiliate candidate via Debian. But since <a href="https://ebb.org/bkuhn/">Bradley Kuhn</a> is also running for an Affiliate seat with a similar platform to me, especially with regards to the OSAID, I decided to run as part of an aligned "ticket" as an Individual Member to avoid contention for the 1 Affiliate seat.</p><p>Bradley and I discussed running on a similar ticket around 8/9pm Pacific, and I submitted my candidacy around 9pm PT on 17 February.&nbsp;</p><p>I was dismayed when I received the following mail from <span style="white-space: normal;">Nick Vidal:</span></p><p></p><blockquote><span face="Arial, Helvetica, sans-serif" style="background-color: white; color: #222222; font-size: small;">Dear Luke,</span><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><span face="Arial, Helvetica, sans-serif" style="background-color: white; color: #222222; font-size: small;">Thank you for your interest in the OSI Board of Directors election. Unfortunately, we are unable to accept your application as it was submitted after the official deadline of Monday Feb 17 at 11:59 pm UTC. To ensure a fair process,<b> we must adhere to the deadline for all candidates.</b></span><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><span face="Arial, Helvetica, sans-serif" style="background-color: white; color: #222222; font-size: small;">We appreciate your enthusiasm and encourage you to stay engaged with OSI’s mission. We hope you’ll consider applying in the future or contributing in other meaningful ways.</span><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><span face="Arial, Helvetica, sans-serif" style="background-color: white; color: #222222; font-size: small;">Best regards,</span><br style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small;" /><span face="Arial, Helvetica, sans-serif" style="background-color: white; color: #222222; font-size: small;">OSI Election Teams</span></blockquote><p>Nowhere on the&nbsp;<a href="https://opensource.org/blog/osis-board-of-directors-in-2025-details-about-the-elections">"OSI’s board of directors in 2025: details about the elections"</a>&nbsp;page do they list a timezone for closure of nominations; they simply list Monday 17 February.&nbsp;</p><p>The OSI's contact address is in California, so it seems arbitrary and capricious to retroactively define all of these processes as being governed by UTC.</p><p>I was not able to participate in the "potential board director" info sessions accordingly, but people who attended heard that the importance of accommodating differing TZ's was discussed during the info session, and that OSI representatives mentioned they try to accommodate TZ's of everyone. This seems in sharp contrast with the above policy.&nbsp;</p><p>I urge the OSI to reconsider this policy and allow me to stand for an Individual seat in the current cycle.&nbsp;</p><p><b>Upd</b>, N.B.: to people writing about this, I use they/them pronouns</p><p></p>]]></description>
       <source url="http://blog.luke.wf/feeds/posts/default/-/ubuntu-planet/">Luke Faraone</source>
-    </item>
-    <item>
-      <title>Spotlighting Community Stories</title>
-      <link>https://blog.popey.com/2025/02/spotlighting-community-stories/</link>
-      <guid isPermaLink="true">https://blog.popey.com/2025/02/spotlighting-community-stories/</guid>
-      <pubDate>Thu, 13 Feb 2025 10:00:00 GMT</pubDate>
-      <description><![CDATA[<p>tl;dr I&rsquo;m hosting a <a href="https://anchore.zoom.us/j/84874186657">Community Spotlight Webinar</a> today at <a href="https://anchore.com/">Anchore</a> featuring <a href="https://www.linkedin.com/in/nicolas-vuillamy/">Nicolas Vuilamy</a> from the <a href="https://megalinter.io/latest/">MegaLinter</a> project. <a href="https://anchore.zoom.us/j/84874186657">Register here</a>.</p>
-<hr>
-<p>Throughout my career, I&rsquo;ve had the privilege of working with organizations that create widely-used open source tools. The popularity of these tools is evident through their impressive download statistics, strong community presence, and engagement both online and at events.</p>
-<p>During my time at <a href="https://canonical.com/">Canonical</a>, we saw the tremendous reach of <a href="https://ubuntu.com/">Ubuntu</a>, along with tools like <a href="https://canonical.com/lxd">LXD</a>, <a href="https://cloud-init.io/">cloud-init</a>, and yes, even <a href="https://snapcraft.io/">Snapcraft</a>.</p>
-<p>At <a href="https://www.influxdata.com/">Influxdata</a>, I was part of the <a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> team, where we witnessed substantial adoption through downloads and active usage, reflected in our vibrant <a href="https://www.repotrends.com/influxdata/telegraf">bug tracker</a>.</p>
-<p>Now at <a href="https://anchore.com/">Anchore</a>, we see widespread adoption of <a href="https://github.com/anchore/syft">Syft</a> for <a href="https://anchore.com/sbom">SBOM</a> generation and <a href="https://github.com/anchore/grype">Grype</a> for <a href="https://anchore.com/container-vulnerability-scanning/">vulnerability</a> scanning.</p>
-<p>What makes Syft and Grype particularly exciting, beyond their permissive licensing, consistent release cycle, dedicated developer team, and <a href="https://en.wikipedia.org/wiki/List_of_computing_mascots#/media/File:Syft_mascot.svg">distinctive</a> <a href="https://en.wikipedia.org/wiki/List_of_computing_mascots#/media/File:Grype_mascot.svg">mascots</a>, is how they serve as building blocks for other tools and services.</p>
-<p>Syft isn&rsquo;t just a standalone SBOM generator - it&rsquo;s a library that developers can integrate into their own tools. Some organizations even build their own SBOM generators and vulnerability tools directly from our open source foundation!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-scout version
-</span></span><span style="display:flex;"><span>      ⢀⢀⢀             ⣀⣀⡤⣔⢖⣖⢽⢝
-</span></span><span style="display:flex;"><span>   ⡠⡢⡣⡣⡣⡣⡣⡣⡢⡀    ⢀⣠⢴⡲⣫⡺⣜⢞⢮⡳⡵⡹⡅
-</span></span><span style="display:flex;"><span>  ⡜⡜⡜⡜⡜⡜⠜⠈⠈        ⠁⠙⠮⣺⡪⡯⣺⡪⡯⣺
-</span></span><span style="display:flex;"><span> ⢘⢜⢜⢜⢜⠜               ⠈⠪⡳⡵⣹⡪⠇
-</span></span><span style="display:flex;"><span> ⠨⡪⡪⡪⠂    ⢀⡤⣖⢽⡹⣝⡝⣖⢤⡀    ⠘⢝⢮⡚       _____                 _
-</span></span><span style="display:flex;"><span>  ⠱⡱⠁    ⡴⡫⣞⢮⡳⣝⢮⡺⣪⡳⣝⢦    ⠘⡵⠁      / ____| Docker        | |
-</span></span><span style="display:flex;"><span>   ⠁    ⣸⢝⣕⢗⡵⣝⢮⡳⣝⢮⡺⣪⡳⣣    ⠁      | <span style="color:#f92672">(</span>___   ___ ___  _   _| |_
-</span></span><span style="display:flex;"><span>        ⣗⣝⢮⡳⣝⢮⡳⣝⢮⡳⣝⢮⢮⡳            <span style="color:#ae81ff">\_</span>__ <span style="color:#ae81ff">\ </span>/ __/ _ <span style="color:#ae81ff">\|</span> | | | __|
-</span></span><span style="display:flex;"><span>   ⢀    ⢱⡳⡵⣹⡪⡳⣝⢮⡳⣝⢮⡳⡣⡏    ⡀       ____<span style="color:#f92672">)</span> | <span style="color:#f92672">(</span>_| <span style="color:#f92672">(</span>_<span style="color:#f92672">)</span> | |_| | |_
-</span></span><span style="display:flex;"><span>  ⢀⢾⠄    ⠫⣞⢮⡺⣝⢮⡳⣝⢮⡳⣝⠝    ⢠⢣⢂     |_____/ <span style="color:#ae81ff">\_</span>__<span style="color:#ae81ff">\_</span>__/ <span style="color:#ae81ff">\_</span>_,_|<span style="color:#ae81ff">\_</span>_|
-</span></span><span style="display:flex;"><span>  ⡼⣕⢗⡄    ⠈⠓⠝⢮⡳⣝⠮⠳⠙     ⢠⢢⢣⢣
-</span></span><span style="display:flex;"><span> ⢰⡫⡮⡳⣝⢦⡀              ⢀⢔⢕⢕⢕⢕⠅
-</span></span><span style="display:flex;"><span> ⡯⣎⢯⡺⣪⡳⣝⢖⣄⣀        ⡀⡠⡢⡣⡣⡣⡣⡣⡃
-</span></span><span style="display:flex;"><span>⢸⢝⢮⡳⣝⢮⡺⣪⡳⠕⠗⠉⠁    ⠘⠜⡜⡜⡜⡜⡜⡜⠜⠈
-</span></span><span style="display:flex;"><span>⡯⡳⠳⠝⠊⠓⠉             ⠈⠈⠈⠈
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>version: v1.13.0 <span style="color:#f92672">(</span>go1.22.5 - darwin/arm64<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>git commit: 7a85bab58d5c36a7ab08cd11ff574717f5de3ec2
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>$ syft /usr/local/bin/docker-scout | grep syft
-</span></span><span style="display:flex;"><span> ✔ Indexed file system /usr/local/bin/docker-scout
-</span></span><span style="display:flex;"><span> ✔ Cataloged contents f247ef0423f53cbf5172c34d2b3ef23d84393bd1d8e05f0ac83ec7d864396c1b
-</span></span><span style="display:flex;"><span>   ├── ✔ Packages                        <span style="color:#f92672">[</span><span style="color:#ae81ff">274</span> packages<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   ├── ✔ File digests                    <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> files<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   ├── ✔ File metadata                   <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> locations<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   └── ✔ Executables                     <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> executables<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>github.com/anchore/syft     v1.10.0     go-module
-</span></span></code></pre></div><p><em>(I find it delightfully meta to discover syft inside other tools using syft itself)</em></p>
-
-
-<center><a href="https://blog.popey.com/blog/images/2025-02-13/scooby-doo-meme.png"><img src="https://blog.popey.com/blog/images/2025-02-13/scooby-doo-meme.png" width="540" alt="A silly meme that isn't true at all :)"></a></center>
-
-<p>This collaborative building upon existing tools mirrors how <a href="https://linuxmint.com/">Linux</a> distributions often build upon other <a href="http://ubuntu.com/">Linux distributions</a>. Like Ubuntu and Telegraf, we see countless individuals and organizations creating innovative solutions that extend beyond the core capabilities of Syft and Grype. It&rsquo;s the essence of open source - a multiplier effect that comes from creating accessible, powerful tools.</p>
-<p>While we may not always know exactly how and where these tools are being used (and sometimes, rightfully so, it&rsquo;s not our business), there are many cases where developers and companies want to share their innovative implementations.</p>
-<p>I&rsquo;m particularly interested in these stories because they deserve to be shared. I&rsquo;ve been exploring public repositories like the GitHub network dependents for <a href="https://github.com/anchore/syft/network/dependents">syft</a>, <a href="https://github.com/anchore/grype/network/dependents">grype</a>, <a href="https://github.com/anchore/sbom-action/network/dependents">sbom-action</a>, and <a href="https://github.com/anchore/scan-action/network/dependents">scan-action</a> to discover where our tools are making an impact.</p>
-<p>The adoption has been remarkable!</p>
-<p>I reached out to several open source projects to learn about their implementations, and <a href="https://www.linkedin.com/in/nicolas-vuillamy/">Nicolas Vuilamy</a> from <a href="https://megalinter.io/latest/">MegaLinter</a> was the first to respond - which brings us full circle.</p>
-<p>Today, I&rsquo;m hosting our first <a href="https://anchore.zoom.us/j/84874186657">Community Spotlight Webinar</a> with Nicolas to share MegaLinter&rsquo;s story. <a href="https://anchore.zoom.us/j/84874186657">Register here</a> to join us!</p>
-<p>If you&rsquo;re building something interesting with <a href="https://github.com/anchore">Anchore Open Source</a> and would like to share your story, please <a href="https://popey.me/">get in touch</a>. 🙏</p>]]></description>
-      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
     </item>
     <item>
       <title>How to prevent TrackPoint or touchpad events from waking up ThinkPad T14 Gen 5 AMD from suspend</title>
@@ -6436,825 +6318,6 @@ More to come about <b>ubuntu-archive-assistant</b>. There are other subcommands 
 <a class="twitter-timeline" href="https://twitter.com/flisol_bogota?ref_src=twsrc%5Etfw" data-link-color="#E95F28">Tweets by flisol_bogota</a> </p>
 <p><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fjhosman.com%2Fen%2Flocoteams%2Fflisol-bogota-2018%2F&amp;linkname=Flisol%20Bogot%C3%A1%202018" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fjhosman.com%2Fen%2Flocoteams%2Fflisol-bogota-2018%2F&amp;linkname=Flisol%20Bogot%C3%A1%202018" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_tumblr" href="https://www.addtoany.com/add_to/tumblr?linkurl=https%3A%2F%2Fjhosman.com%2Fen%2Flocoteams%2Fflisol-bogota-2018%2F&amp;linkname=Flisol%20Bogot%C3%A1%202018" title="Tumblr" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_pinterest" href="https://www.addtoany.com/add_to/pinterest?linkurl=https%3A%2F%2Fjhosman.com%2Fen%2Flocoteams%2Fflisol-bogota-2018%2F&amp;linkname=Flisol%20Bogot%C3%A1%202018" title="Pinterest" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share#url=https%3A%2F%2Fjhosman.com%2Fen%2Flocoteams%2Fflisol-bogota-2018%2F&#038;title=Flisol%20Bogot%C3%A1%202018" data-a2a-url="https://jhosman.com/en/locoteams/flisol-bogota-2018/" data-a2a-title="Flisol Bogotá 2018"></a></p>]]></description>
       <source url="http://feeds.feedburner.com/Jhosmanenglish">Jhosman Lizarazo</source>
-    </item>
-    <item>
-      <title>Debugging the debugger</title>
-      <link>https://chriscoulson.me.uk/blog/?p=295</link>
-      <guid isPermaLink="true">https://chriscoulson.me.uk/blog/?p=295</guid>
-      <pubDate>Wed, 02 May 2018 21:02:46 GMT</pubDate>
-      <description><![CDATA[<p>I use gdb quite often, but until recently I&#8217;ve never really needed to understand how it works or debug it before. I thought I&#8217;d document a recent issue I decided to take a look at &#8211; perhaps someone else will find it interesting or useful.</p>
-<p>We run the rust testsuite when building rustc packages in Ubuntu. When preparing updates to rust 1.25 recently for Ubuntu 18.04 LTS, I hit a bunch of test failures on armhf which all looked very similar. Here&#8217;s an example test failure:</p>
-<pre><code>---- [debuginfo-gdb] debuginfo/borrowed-c-style-enum.rs stdout ----
-
-NOTE: compiletest thinks it is using GDB with native rust support
-executing "/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/stage2/bin/rustc" "/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/src/test/debuginfo/borrowed-c-style-enum.rs" "-L" "/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo" "--target=armv7-unknown-linux-gnueabihf" "-C" "prefer-dynamic" "-o" "/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf" "-Crpath" "-Zmiri" "-Zunstable-options" "-Lnative=/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/native/rust-test-helpers" "-g" "-L" "/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf.gdb.aux"
-------stdout------------------------------
-
-------stderr------------------------------
-
-------------------------------------------
-NOTE: compiletest thinks it is using GDB version 8001000
-executing "/usr/bin/gdb" "-quiet" "-batch" "-nx" "-command=/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.debugger.script"
-------stdout------------------------------
-GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
-Copyright (C) 2018 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "arm-linux-gnueabihf".
-Type "show configuration" for configuration details.
-For bug reporting instructions, please see:
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
-Find the GDB manual and other documentation resources online at:
-&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
-For help, type "help".
-Type "apropos word" to search for commands related to "word".
-Breakpoint 1 at 0xcc4: file /&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/src/test/debuginfo/borrowed-c-style-enum.rs, line 61.
-
-Program received signal SIGSEGV, Segmentation fault.
-0xf77c9f4e in ?? () from /lib/ld-linux-armhf.so.3
-
-------stderr------------------------------
-/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.debugger.script:10: Error in sourced command file:
-No symbol 'the_a_ref' in current context
-
-------------------------------------------
-
-error: line not found in debugger output: $1 = borrowed_c_style_enum::ABC::TheA
-status: exit code: 0
-command: "/usr/bin/gdb" "-quiet" "-batch" "-nx" "-command=/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.debugger.script"
-stdout:
-------------------------------------------
-GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
-Copyright (C) 2018 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "arm-linux-gnueabihf".
-Type "show configuration" for configuration details.
-For bug reporting instructions, please see:
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
-Find the GDB manual and other documentation resources online at:
-&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
-For help, type "help".
-Type "apropos word" to search for commands related to "word".
-Breakpoint 1 at 0xcc4: file /&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/src/test/debuginfo/borrowed-c-style-enum.rs, line 61.
-
-Program received signal SIGSEGV, Segmentation fault.
-0xf77c9f4e in ?? () from /lib/ld-linux-armhf.so.3
-
-------------------------------------------
-stderr:
-------------------------------------------
-/&lt;&lt;BUILDDIR&gt;&gt;/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.debugger.script:10: Error in sourced command file:
-No symbol 'the_a_ref' in current context
-
-------------------------------------------
-
-thread '[debuginfo-gdb] debuginfo/borrowed-c-style-enum.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:2891:9
-note: Run with `RUST_BACKTRACE=1` for a backtrace.
-</code></pre>
-<p>The failing tests are all running some commands in gdb, and the inferior (tracee) is crashing inside the dynamic loader (/lib/ld-linux-armhf.so.3) before running any rust code.</p>
-<p>I managed to recreate this test failure on an armhf box, but when I installed the debug symbols for the dynamic loader (contained in the libc6-dbg package) so that I could attempt to debug these crashes, the failing tests all started to pass.</p>
-<p>A quick search on the internet shows that I&#8217;m not the first person to hit this issue &#8211; for example, <a href="https://launchpad.net/bugs/1576432">this bug</a> reported in April 2016. According to the comments, the workaround is the same &#8211; installing the debug symbols for the dynamic loader (by installing the libc6-dbg package). This obviously isn&#8217;t right and I don&#8217;t particularly like walking away from something like this without understanding it, so I decided to spend some time trying to figure out what is going on.</p>
-<p>This first thing I did was to load the missing debug symbols manually in gdb after hitting the crash, in order to hopefully get a useful backtrace:</p>
-<pre><code>$ gdb build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf
-...
-(gdb) run                                           
-Starting program: /home/ubuntu/src/rustc/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf
-
-Program received signal SIGSEGV, Segmentation fault.
-0xf77c9f4e in ?? () from /lib/ld-linux-armhf.so.3
-(gdb) info sharedlibrary
-From        To          Syms Read   Shared Object Library                                                
-0xf77c7a40  0xf77dadd0  Yes (*)     /lib/ld-linux-armhf.so.3                                             
-0xf771ce90  0xf778e288  No          /home/ubuntu/src/rustc/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/../../stage2/lib/rustlib/armv7-unknown-linux-gnueabihf/lib/libstd-42d13165275d0302.so
-0xf76c91f0  0xf76d394c  No          /lib/arm-linux-gnueabihf/libgcc_s.so.1
-0xf75dad80  0xf7687a90  No          /lib/arm-linux-gnueabihf/libc.so.6
-0xf75b1a14  0xf75b2410  No          /lib/arm-linux-gnueabihf/libdl.so.2
-0xf759c810  0xf759edf0  No          /lib/arm-linux-gnueabihf/librt.so.1
-0xf757a210  0xf7585214  No          /lib/arm-linux-gnueabihf/libpthread.so.0
-(*): Shared library is missing debugging information.
-(gdb) add-symbol-file ~/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so 0xf77c7a40
-add symbol table from file "/home/ubuntu/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so" at
-        .text_addr = 0xf77c7a40
-(y or n) y
-Reading symbols from /home/ubuntu/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so...done.
-(gdb) bt full
-#0  dl_main (phdr=&lt;optimized out&gt;, phnum=&lt;optimized out&gt;, user_entry=&lt;optimized out&gt;, auxv=&lt;optimized out&gt;) at rtld.c:2275
-        cnt = 1
-        afct = 0x0
-        head = &lt;optimized out&gt;
-        ph = &lt;optimized out&gt;
-        mode = &lt;optimized out&gt;
-        main_map = &lt;optimized out&gt;
-        file_size = 4294899100
-        file = &lt;optimized out&gt;
-        has_interp = &lt;optimized out&gt;
-        i = &lt;optimized out&gt;
-        prelinked = &lt;optimized out&gt;
-        rtld_is_main = &lt;optimized out&gt;
-        tcbp = &lt;optimized out&gt;
-        __PRETTY_FUNCTION__ = &lt;error reading variable __PRETTY_FUNCTION__ (Cannot access memory at address 0x15810)&gt;
-        first_preload = &lt;optimized out&gt;
-        r = &lt;optimized out&gt;
-        rtld_ehdr = &lt;optimized out&gt;
-        rtld_phdr = &lt;optimized out&gt;
-        cnt = &lt;optimized out&gt;
-        need_security_init = &lt;optimized out&gt;
-        count_modids = &lt;optimized out&gt;
-        preloads = &lt;optimized out&gt;
-        npreloads = &lt;optimized out&gt;
-        preload_file = &lt;error reading variable preload_file (Cannot access memory at address 0x157fc)&gt;
-        rtld_multiple_ref = &lt;optimized out&gt;
-        was_tls_init_tp_called = &lt;optimized out&gt;&lt;/details&gt;
-#1  0xf77d76d0 in _dl_sysdep_start (start_argptr=start_argptr@entry=0xfffef6b1, dl_main=0xf77c872d &lt;dl_main&gt;) at ../elf/dl-sysdep.c:253
-        phdr = &lt;optimized out&gt;
-        phnum = &lt;optimized out&gt;
-        user_entry = 4197241
-        av = &lt;optimized out&gt;
-#2  0xf77c8260 in _dl_start_final (arg=0xfffef6b1) at rtld.c:414
-        start_addr = &lt;optimized out&gt;
-        start_addr = &lt;optimized out&gt;
-#3  _dl_start (arg=0xfffef6b1) at rtld.c:521
-        entry = &lt;optimized out&gt;
-#4  0xf77c7b90 in ?? () from /lib/ld-linux-armhf.so.3
-        library_path = &lt;error reading variable library_path (Cannot access memory at address 0x28920)&gt;
-        version_info = &lt;error reading variable version_info (Cannot access memory at address 0x28918)&gt;
-        any_debug = &lt;error reading variable any_debug (Cannot access memory at address 0x28914)&gt;
-        _dl_rtld_libname = &lt;error reading variable _dl_rtld_libname (Cannot access memory at address 0x298a8)&gt;
-        _dl_rtld_libname2 = &lt;error reading variable _dl_rtld_libname2 (Cannot access memory at address 0x298b4)&gt;
-        tls_init_tp_called = &lt;error reading variable tls_init_tp_called (Cannot access memory at address 0x29898)&gt;
-        audit_list = &lt;error reading variable audit_list (Cannot access memory at address 0x298a4)&gt;
-        preloadlist = &lt;error reading variable preloadlist (Cannot access memory at address 0x2891c)&gt;
-        _dl_skip_args = &lt;error reading variable _dl_skip_args (Cannot access memory at address 0x2994c)&gt;
-        audit_list_string = &lt;error reading variable audit_list_string (Cannot access memory at address 0x29968)&gt;
-        __stack_chk_guard = &lt;error reading variable __stack_chk_guard (Cannot access memory at address 0x28968)&gt;
-        _rtld_global = &lt;error reading variable _rtld_global (Cannot access memory at address 0x29060)&gt;
-        _rtld_global_ro = &lt;error reading variable _rtld_global_ro (Cannot access memory at address 0x28970)&gt;
-        _dl_argc = &lt;error reading variable _dl_argc (Cannot access memory at address 0x28910)&gt;
-        __GI__dl_argv = &lt;error reading variable __GI__dl_argv (Cannot access memory at address 0x29894)&gt;
-        __pointer_chk_guard_local = &lt;error reading variable __pointer_chk_guard_local (Cannot access memory at address 0x28964)&gt;
-</code></pre>
-<p>You can grab the glibc source and see that the dynamic loader ends up here in elf/rtld.c:</p>
-<pre><code>if (__glibc_unlikely (GLRO(dl_naudit) &gt; 0))
-  {
-    struct link_map *head = GL(dl_ns)[LM_ID_BASE]._ns_loaded;
-    /* Do not call the functions for any auditing object.  */
-    if (head-&gt;l_auditing == 0)
-      {
-        struct audit_ifaces *afct = GLRO(dl_audit);
-        for (unsigned int cnt = 0; cnt &lt; GLRO(dl_naudit); ++cnt)
-          {
-            if (afct-&gt;activity != NULL) // ##CRASHES HERE##
-              afct-&gt;activity (&amp;head-&gt;l_audit[cnt].cookie, LA_ACT_CONSISTENT);
-
-            afct = afct-&gt;next;
-          }
-      }
-  }
-</code></pre>
-<p>The reason for the crash is that <code>afct</code> is NULL:</p>
-<pre><code>(gdb) p $_siginfo
-$1 = {si_signo = 11, si_errno = 0, si_code = 1, _sifields = {_pad = {0, 56, 19628232, 19628288, -156661788, 0, 80, 19811416, -156663808, -157316581, 104, 1073741824, 19811416, 96, 19811408, 80, -156661788, 14, 
-      19551104, 96, 104, 13358248, 19551584, 19552160, 19552232, 19811488, 32, 128, 64}, _kill = {si_pid = 0, si_uid = 56}, _timer = {si_tid = 0, si_overrun = 56, si_sigval = {sival_int = 19628232, 
-        sival_ptr = 0x12b80c8}}, _rt = {si_pid = 0, si_uid = 56, si_sigval = {sival_int = 19628232, sival_ptr = 0x12b80c8}}, _sigchld = {si_pid = 0, si_uid = 56, si_status = 19628232, si_utime = 19628288, 
-      si_stime = -156661788}, _sigfault = {si_addr = 0x0}, _sigpoll = {si_band = 0, si_fd = 56}}}
-(gdb) p afct
-$2 = (struct audit_ifaces *) 0x0
-</code></pre>
-<p>A quick look through the dynamic loader code shows that this condition should be impossible to hit.</p>
-<p>As the crash doesn&#8217;t happen with debug symbols, I thought I would attempt to debug it without the symbols. First of all, I set a breakpoint at the start of <code>dl_main</code> by specifying it at offset 0xcec in the <code>.text</code> section:</p>
-<pre><code>$ gdb build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf
-...
-(gdb) starti
-Starting program: /home/ubuntu/src/rustc/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf
-
-Program stopped.
-0xf77c7b80 in ?? () from /lib/ld-linux-armhf.so.3
-(gdb) info sharedlibrary
-From        To          Syms Read   Shared Object Library
-0xf77c7a40  0xf77dadd0  Yes (*)     /lib/ld-linux-armhf.so.3
-(*): Shared library is missing debugging information.
-(gdb) break *0xf77c872c
-Breakpoint 1 at 0xf77c872c
-(gdb) cont
-Continuing.
-
-Program received signal SIGSEGV, Segmentation fault.
-0xf77da458 in ?? () from /lib/ld-linux-armhf.so.3
-</code></pre>
-<p>Huh? It&#8217;s now crashed at a different place, without hitting our breakpoint at the start of <code>dl_main</code>. Loading the debug symbols again shows us where:</p>
-<pre><code>(gdb) add-symbol-file ~/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so 0xf77c7a40
-add symbol table from file "/home/ubuntu/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so" at
-        .text_addr = 0xf77c7a40
-(y or n) y
-Reading symbols from /home/ubuntu/libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so...done.
-(gdb) bt
-#0  ?? () at ../sysdeps/arm/armv7/multiarch/memcpy_impl.S:654 from /lib/ld-linux-armhf.so.3
-#1  0xf77c871e in handle_ld_preload (preloadlist=&lt;optimized out&gt;, main_map=0x0) at rtld.c:848
-#2  0x00000000 in ?? ()
-Backtrace stopped: previous frame identical to this frame (corrupt stack?)
-</code></pre>
-<p>This doesn&#8217;t make much sense, but the fact that setting a breakpoint has altered the program flow is our first clue.</p>
-<p>On Linux, gdb interacts with the inferior using the <a href="http://man7.org/linux/man-pages/man2/ptrace.2.html">ptrace</a> system call. The next thing I wanted to try was running gdb in <a href="https://linux.die.net/man/1/strace">strace</a> in order to capture the ptrace syscalls, so that I could compare differences afterwards and see if I could find any more clues.</p>
-<p>I created the following simple gdb command file:</p>
-<pre><code>file /home/ubuntu/src/rustc/rustc-1.25.0+dfsg1+llvm/build/armv7-unknown-linux-gnueabihf/test/debuginfo/borrowed-c-style-enum.stage2-armv7-unknown-linux-gnueabihf
-run
-quit
-</code></pre>
-<p>I then ran gdb with this file inside strace, with the symbols for the dynamic loader installed. Here&#8217;s the log up until the point at which gdb calls <code>PTRACE_CONT</code>:</p>
-<pre><code>$ strace -t -eptrace gdb -quiet -batch -nx -command=~/test.script
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=21136, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
-...
-13:08:35 ptrace(PTRACE_GETREGS, 21137, NULL, 0xffd6afec) = 0
-13:08:35 ptrace(PTRACE_GETSIGINFO, 21137, NULL, {si_signo=SIGTRAP, si_code=SI_USER, si_pid=21137, si_uid=1000}) = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21137, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_CONT, 21137, 0x1, SIG_0) = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21137, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_GETREGS, 21137, NULL, 0xffd6afec) = 0
-13:08:35 ptrace(PTRACE_GETSIGINFO, 21137, NULL, {si_signo=SIGTRAP, si_code=SI_USER, si_pid=21137, si_uid=1000}) = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21138, si_uid=1000, si_status=SIGSTOP, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_SETOPTIONS, 21138, NULL, PTRACE_O_TRACESYSGOOD) = 0
-13:08:35 ptrace(PTRACE_SETOPTIONS, 21138, NULL, PTRACE_O_TRACEFORK) = 0
-13:08:35 ptrace(PTRACE_SETOPTIONS, 21138, NULL, PTRACE_O_TRACEFORK|PTRACE_O_TRACEVFORKDONE) = 0
-13:08:35 ptrace(PTRACE_CONT, 21138, NULL, SIG_0) = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21138, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_GETEVENTMSG, 21138, NULL, [21139]) = 0
-13:08:35 ptrace(PTRACE_KILL, 21139)     = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=21139, si_uid=1000, si_status=SIGKILL, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_SETOPTIONS, 21138, NULL, PTRACE_O_EXITKILL) = 0
-13:08:35 ptrace(PTRACE_KILL, 21138)     = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21138, si_uid=1000, si_status=SIGCHLD, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_KILL, 21138)     = 0
-13:08:35 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=21138, si_uid=1000, si_status=SIGKILL, si_utime=0, si_stime=0} ---
-13:08:35 ptrace(PTRACE_SETOPTIONS, 21137, NULL, PTRACE_O_TRACESYSGOOD|PTRACE_O_TRACEFORK|PTRACE_O_TRACEVFORK|PTRACE_O_TRACECLONE|PTRACE_O_TRACEEXEC|PTRACE_O_TRACEVFORKDONE|PTRACE_O_EXITKILL) = 0
-13:08:35 ptrace(PTRACE_GETREGSET, 21137, NT_PRSTATUS, [{iov_base=0xffd6b3b4, iov_len=72}]) = 0
-13:08:35 ptrace(PTRACE_GETVFPREGS, 21137, NULL, 0xffd6b298) = 0
-13:08:35 ptrace(PTRACE_GETREGSET, 21137, NT_PRSTATUS, [{iov_base=0xffd6b36c, iov_len=72}]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0x411efc, [NULL]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0x411efc, [NULL]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18bf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9a44, 0x4c18de01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9ef8, 0xf00cde01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cbf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb5b8, 0x603cde01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639bf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb220, 0x4639de01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5310, [0xbf00e71c]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5310, [0xbf00e71c]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5310, [0xbf00e71c]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5310, [0xbf00e71c]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5310, [0xbf00e71c]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5310, 0xde01e71c) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5bb0, 0x6d7bde01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5d90, [0xe681bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5d90, [0xe681bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5d90, [0xe681bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5d90, [0xe681bf00]) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5d90, [0xe681bf00]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5d90, 0xe681de01) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77c9a44, [0x4c18de01]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9a44, 0x4c18bf00) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb5b8, [0x603cde01]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb5b8, 0x603cbf00) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77cb220, [0x4639de01]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb220, 0x4639bf00) = 0
-13:08:35 ptrace(PTRACE_PEEKTEXT, 21137, 0xf77d5bb0, [0x6d7bde01]) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5bb0, 0x6d7bbf00) = 0
-13:08:35 ptrace(PTRACE_CONT, 21137, 0x1, SIG_0) = 0
-</code></pre>
-<p>First of all, notice that there are several <code>PTRACE_POKEDATA</code> calls. These are used by gdb to write to memory locations in the process that we&#8217;re debugging, eg, to set breakpoints. For more information about how breakpoints work in gdb, <a href="https://blog.0x972.info/?d=2014/11/13/10/40/50-how-does-a-debugger-work">this</a> blog post has some good information. Basically, gdb writes an invalid instruction to the breakpoint location and this causes a <code>SIGTRAP</code> when executed, which is intercepted by gdb. When you continue over the breakpoint, gdb writes the original instruction back, single-steps over it, re-writes the invalid instruction and then continues execution.</p>
-<p>This is an obvious way in which gdb can interfere with our process and make it crash, so I focused on these calls. I&#8217;ve filtered them out below:</p>
-<pre><code>13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9a44, 0x4c18de01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9ef8, 0xf00cde01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb5b8, 0x603cde01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb220, 0x4639de01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5310, 0xde01e71c) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5bb0, 0x6d7bde01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5d90, 0xe681de01) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77c9a44, 0x4c18bf00) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb5b8, 0x603cbf00) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77cb220, 0x4639bf00) = 0
-13:08:35 ptrace(PTRACE_POKEDATA, 21137, 0xf77d5bb0, 0x6d7bbf00) = 0
-</code></pre>
-<p>Notice that the first 7 of these write the same 2-byte sequence &#8211; 0xde01. These are breakpoints in code that is running in Thumb mode (see <code>arm_linux_thumb_le_breakpoint</code> in gdb/arm-linux-tdep.c in the gdb source code). 0xde01 in Thumb mode is an undefined instruction.</p>
-<p>(Note that the write to 0xf77d5310 is actually a breakpoint at 0xf77d5312, as 0xde01 appears in the 2 higher order bytes and this is little-endian).</p>
-<p>We aren&#8217;t inserting any breakpoints ourselves &#8211; these breakpoints are set automatically by gdb to monitor various events in the dynamic loader during startup. This is something I wasn&#8217;t aware of before debugging this.</p>
-<p>It may be useful to know how gdb determines the addresses on which to set breakpoints at startup. The dynamic loader exports various events as SystemTap probes, and data about these is stored in the <code>.note.stapsdt</code> ELF section. We can inspect this using <code>readelf</code>:</p>
-<pre><code>$ readelf -n /lib/ld-linux-armhf.so.3
-
-Displaying notes found in: .note.gnu.build-id                                                            
-  Owner                 Data size       Description                          
-  GNU                  0x00000014       NT_GNU_BUILD_ID (unique build ID bitstring)                      
-    Build ID: 3f3b9b4bfea2654f2cedf6db2d120b4e3a39ea7e                      
-
-Displaying notes found in: .note.stapsdt                                                                 
-  Owner                 Data size       Description 
-  stapsdt              0x00000032       NT_STAPSDT (SystemTap probe descriptors)                         
-    Provider: rtld                                           
-    Name: init_start                                
-    Location: 0x00002a44, Base: 0x00017b9c, Semaphore: 0x00000000                                        
-    Arguments: -4@.L1204 4@[r7, #52]                      
-  stapsdt              0x0000002e       NT_STAPSDT (SystemTap probe descriptors)                         
-    Provider: rtld                                  
-    Name: init_complete                                              
-    Location: 0x00002ef8, Base: 0x00017b9c, Semaphore: 0x00000000                                        
-    Arguments: -4@.L1207 4@r4                                           
-  stapsdt              0x0000002e       NT_STAPSDT (SystemTap probe descriptors)                         
-    Provider: rtld
-    Name: map_failed
-    Location: 0x00004220, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[sp, #20] 4@r5
-  stapsdt              0x00000035       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: map_start
-    Location: 0x000045b8, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[r7, #252] 4@[r7, #72]
-  stapsdt              0x0000003c       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: map_complete
-    Location: 0x0000e020, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[fp, #20] 4@[r7, #36] 4@r4
-  stapsdt              0x00000036       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: reloc_start
-    Location: 0x0000e09e, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[fp, #20] 4@[r7, #36]
-  stapsdt              0x0000003e       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: reloc_complete
-    Location: 0x0000e312, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[fp, #20] 4@[r7, #36] 4@r4
-  stapsdt              0x00000037       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: unmap_start
-    Location: 0x0000ebb0, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[r7, #104] 4@[r7, #80]
-  stapsdt              0x0000003a       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: unmap_complete
-    Location: 0x0000ed90, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: -4@[r7, #104] 4@[r7, #80]
-  stapsdt              0x00000029       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: setjmp
-    Location: 0x0001201c, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: 4@r0 -4@r1 4@r14
-  stapsdt              0x00000029       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: longjmp
-    Location: 0x00012088, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: 4@r0 -4@r1 4@r4
-  stapsdt              0x00000031       NT_STAPSDT (SystemTap probe descriptors)
-    Provider: rtld
-    Name: longjmp_target
-    Location: 0x000120ba, Base: 0x00017b9c, Semaphore: 0x00000000
-    Arguments: 4@r0 -4@r1 4@r14
-</code></pre>
-<p>GDB uses this information to map events to breakpoint addresses. You can read a bit more about gdb&#8217;s linker interface <a href="https://sourceware.org/gdb/wiki/LinkerInterface">here</a>, and more about userspace SystemTap probes <a href="https://sourceware.org/systemtap/wiki/UserSpaceProbeImplementation">here</a>.</p>
-<p>With a base address of 0xf77c7000, we can look at the <code>PTRACE_POKEDATA</code> calls and see that the addresses map to these probes:</p>
-<ul>
-<li>0xf77c9a44 => <code>init_start</code></li>
-<li>0xf77c9ef8 => <code>init_complete</code></li>
-<li>0xf77cb5b8 => <code>map_start</code></li>
-<li>0xf77cb220 => <code>map_failed</code></li>
-<li>0xf77d5312 => <code>reloc_complete</code></li>
-<li>0xf77d5bb0 => <code>unmap_start</code></li>
-<li>0xf77d5d90 => <code>unmap_complete</code></li>
-</ul>
-<p>This is consistent with the <code>probe_info</code> array in gdb/solib-svr4.c in the gdb source code.</p>
-<p>I then ran gdb inside strace again, this time without the symbols for the dynamic loader installed. Here&#8217;s the log up until the point at which the inferior process crashes:</p>
-<pre><code>$ strace -t -eptrace gdb -quiet -batch -nx -command=~/test.script
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=21098, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
-...
-13:01:50 ptrace(PTRACE_GETREGS, 21099, NULL, 0xffb84a9c) = 0                                                                                                                                                       
-13:01:50 ptrace(PTRACE_GETSIGINFO, 21099, NULL, {si_signo=SIGTRAP, si_code=SI_USER, si_pid=21099, si_uid=1000}) = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21099, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_CONT, 21099, 0x1, SIG_0) = 0                                                      
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21099, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_GETREGS, 21099, NULL, 0xffb84a9c) = 0
-13:01:50 ptrace(PTRACE_GETSIGINFO, 21099, NULL, {si_signo=SIGTRAP, si_code=SI_USER, si_pid=21099, si_uid=1000}) = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21100, si_uid=1000, si_status=SIGSTOP, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_SETOPTIONS, 21100, NULL, PTRACE_O_TRACESYSGOOD) = 0
-13:01:50 ptrace(PTRACE_SETOPTIONS, 21100, NULL, PTRACE_O_TRACEFORK) = 0
-13:01:50 ptrace(PTRACE_SETOPTIONS, 21100, NULL, PTRACE_O_TRACEFORK|PTRACE_O_TRACEVFORKDONE) = 0
-13:01:50 ptrace(PTRACE_CONT, 21100, NULL, SIG_0) = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21100, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_GETEVENTMSG, 21100, NULL, [21101]) = 0
-13:01:50 ptrace(PTRACE_KILL, 21101)     = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=21101, si_uid=1000, si_status=SIGKILL, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_SETOPTIONS, 21100, NULL, PTRACE_O_EXITKILL) = 0
-13:01:50 ptrace(PTRACE_KILL, 21100)     = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21100, si_uid=1000, si_status=SIGCHLD, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_KILL, 21100)     = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=21100, si_uid=1000, si_status=SIGKILL, si_utime=0, si_stime=0} ---
-13:01:50 ptrace(PTRACE_SETOPTIONS, 21099, NULL, PTRACE_O_TRACESYSGOOD|PTRACE_O_TRACEFORK|PTRACE_O_TRACEVFORK|PTRACE_O_TRACECLONE|PTRACE_O_TRACEEXEC|PTRACE_O_TRACEVFORKDONE|PTRACE_O_EXITKILL) = 0
-13:01:50 ptrace(PTRACE_GETREGSET, 21099, NT_PRSTATUS, [{iov_base=0xffb84e64, iov_len=72}]) = 0
-13:01:50 ptrace(PTRACE_GETVFPREGS, 21099, NULL, 0xffb84d48) = 0
-13:01:50 ptrace(PTRACE_GETREGSET, 21099, NT_PRSTATUS, [{iov_base=0xffb84e1c, iov_len=72}]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0x411efc, [NULL]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0x411efc, [NULL]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77c9a44, [0x4c18bf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77c9a44, [0x4c18bf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9a44, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77c9ef8, [0xf00cbf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9ef8, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77cb5b8, [0x603cbf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77cb5b8, [0x603cbf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb5b8, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77cb220, [0x4639bf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77cb220, [0x4639bf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb220, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5310, [0xbf00e71c]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5314, [0x4620e776]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5310, [0xbf00e71c]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5314, [0x4620e776]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5310, [0xbf00e71c]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5310, 0x1f0e71c) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5314, [0x4620e776]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5314, 0x4620e7f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5bb0, [0x6d7bbf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5bb0, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5d90, [0xe681bf00]) = 0
-13:01:50 ptrace(PTRACE_PEEKTEXT, 21099, 0xf77d5d90, [0xe681bf00]) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5d90, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9a44, 0x4c18bf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb5b8, 0x603cbf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb220, 0x4639bf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5bb0, 0x6d7bbf00) = 0
-13:01:50 ptrace(PTRACE_CONT, 21099, 0x1, SIG_0) = 0
-13:01:50 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=21099, si_uid=1000, si_status=SIGSEGV, si_utime=0, si_stime=0} ---
-</code></pre>
-<p>Focusing again on the <code>PTRACE_POKEDATA</code> calls:</p>
-<pre><code>13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9a44, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9ef8, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb5b8, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb220, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5310, 0x1f0e71c) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5314, 0x4620e7f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5bb0, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5d90, 0xe7f001f0) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77c9a44, 0x4c18bf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb5b8, 0x603cbf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77cb220, 0x4639bf00) = 0
-13:01:50 ptrace(PTRACE_POKEDATA, 21099, 0xf77d5bb0, 0x6d7bbf00) = 0
-</code></pre>
-<p>We see writes to the same 7 addresses where breakpoints were set during the first run, but now there&#8217;s a different byte sequence and an extra write. This time, gdb is writing a 4-byte sequence &#8211; 0xe7f001f0 to 6 addresses. These are breakpoints for code running in ARM mode (see <code>eabi_linux_arm_le_breakpoint</code> in gdb/arm-linux-tdep.c in the gdb source code). The 2 writes to 0xf77d5310 and 0xf77d5314 are a single breakpoint at 0xf77d5312 (there are 2 writes because it is not on a 4-byte boundary).</p>
-<p>Checking the ARMv7 reference manual shows that 0xe7f001f0 is an undefined instruction in ARM mode. However, this byte sequence is decoded as the following valid instructions in Thumb mode:</p>
-<pre><code>lsl r0, r6, #7
-b #-16
-</code></pre>
-<p>So, it takes the contents of r6, does a logical shift left by 7, writes it to r0 and then does an unconditional branch backwards by 16 bytes. This is quite likely going to cause our program (in this case, the dynamic loader) to go off the rails and crash with a less than useful stacktrace, which is the behaviour we&#8217;re seeing.</p>
-<h1>Why is this happening?</h1>
-<p>The next step was to figure out why gdb is inserting the ARM breakpoint instruction sequence instead of the Thumb one. To do this, I needed to understand where the breakpoints are written, and grepping the source code suggests the <code>PTRACE_POKEDATA</code> calls happen in <code>inf_ptrace_peek_poke</code> in gdb/inf-ptrace.c (actually, you won&#8217;t find <code>PTRACE_POKEDATA</code> here &#8211; it&#8217;s <code>PT_WRITE_D</code> which is defined in /usr/include/sys/ptrace.h).</p>
-<p>Running gdb inside gdb with the dynamic loader debug symbols installed and setting a breakpoint on <code>inf_ptrace_peek_poke</code> shows me the call stack. Note that I set a breakpoint by line number, as <code>inf_ptrace_peek_poke</code> is inlined and it was the only way I could get the conditional breakpoint to work:</p>
-<pre><code>$ gdb --args gdb --command=~/test.script
-...                                                                                                                                                                
-(gdb) break ./gdb/inf-ptrace.c:578 if writebuf != 0x0                                                                                                                                                              
-Breakpoint 1 at 0x51218: file ./gdb/inf-ptrace.c, line 578.                                                                                                                                                        
-(gdb) run                                                                                                                                                                                                          
-Starting program: /usr/bin/gdb --command=\~/test.script                                                                                                                                                            
-Cannot parse expression `.L1207 4@r4'.                                                                                                                                                                             
-warning: Probes-based dynamic linker interface failed.                                                   
-Reverting to original interface.                                                                                                                                                                                   
-
-[Thread debugging using libthread_db enabled]                                                                                                                                                                      
-Using host libthread_db library "/lib/arm-linux-gnueabihf/libthread_db.so.1".                                                                                                                                      
-GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git                                                         
-Copyright (C) 2018 Free Software Foundation, Inc.                                                        
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;                                                                                                                                      
-This is free software: you are free to change and redistribute it.                                                                                                                                                 
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"                                                                                                                                         
-and "show warranty" for details.                                                                                                                                                                                   
-This GDB was configured as "arm-linux-gnueabihf".                                                        
-Type "show configuration" for configuration details.                                                     
-For bug reporting instructions, please see:                                                              
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.                                                                 
-Find the GDB manual and other documentation resources online at:
-&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
-For help, type "help".
-Type "apropos word" to search for commands related to "word".
-
-Breakpoint 1, inf_ptrace_xfer_partial (ops=&lt;optimized out&gt;, object=&lt;optimized out&gt;, annex=&lt;optimized out&gt;, readbuf=0x0, writebuf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt;     "\001\336", offset=4152138308, len=2,
-    xfered_len=0xfffeee18) at ./gdb/inf-ptrace.c:578
-578     ./gdb/inf-ptrace.c: No such file or directory.
-(gdb) p/x offset
-$1 = 0xf77c9a44
-(gdb) bt
-#0  inf_ptrace_xfer_partial (ops=&lt;optimized out&gt;, object=&lt;optimized out&gt;, annex=&lt;optimized out&gt;, readbuf=0x0, writebuf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", offset=4152138308, len=2,
-    xfered_len=0xfffeee18) at ./gdb/inf-ptrace.c:578
-#1  0x00457512 in linux_xfer_partial (ops=0x8306e0, object=&lt;optimized out&gt;, annex=0x0, readbuf=0x0, writebuf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", offset=4152138308, len=2, xfered_len=0xfffeee18)
-    at ./gdb/linux-nat.c:4280
-#2  0x004576da in linux_nat_xfer_partial (ops=0x8306e0, object=TARGET_OBJECT_MEMORY, annex=&lt;optimized out&gt;, readbuf=0x0, writebuf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", offset=4152138308, len=2,
-    xfered_len=0xfffeee18) at ./gdb/linux-nat.c:3908
-#3  0x005f64f4 in raw_memory_xfer_partial (ops=ops@entry=0x8306e0, readbuf=readbuf@entry=0x0, writebuf=writebuf@entry=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", memaddr=4152138308, len=len@entry=2,
-    xfered_len=xfered_len@entry=0xfffeee18) at ./gdb/target.c:1064
-#4  0x005f6a98 in target_xfer_partial (ops=ops@entry=0x8306e0, object=object@entry=TARGET_OBJECT_RAW_MEMORY, annex=annex@entry=0x0, readbuf=readbuf@entry=0x0,
-    writebuf=writebuf@entry=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", offset=4152138308, len=&lt;optimized out&gt;, xfered_len=xfered_len@entry=0xfffeee18) at ./gdb/target.c:1298
-#5  0x005f7030 in target_write_partial (xfered_len=0xfffeee18, len=2, offset=&lt;optimized out&gt;, buf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", annex=0x0, object=TARGET_OBJECT_RAW_MEMORY, ops=0x8306e0)
-    at ./gdb/target.c:1554
-#6  target_write_with_progress (ops=0x8306e0, object=object@entry=TARGET_OBJECT_RAW_MEMORY, annex=annex@entry=0x0, buf=buf@entry=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", offset=4152138308,
-    len=len@entry=2, progress=progress@entry=0x0, baton=baton@entry=0x0) at ./gdb/target.c:1821
-#7  0x005f70d2 in target_write (len=2, offset=2, buf=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", annex=0x0, object=TARGET_OBJECT_RAW_MEMORY, ops=&lt;optimized out&gt;) at ./gdb/target.c:1847
-#8  target_write_raw_memory (memaddr=memaddr@entry=4152138308, myaddr=myaddr@entry=0x6b29fc &lt;arm_linux_thumb_le_breakpoint&gt; "\001\336", len=len@entry=2) at ./gdb/target.c:1473
-#9  0x00590c8e in default_memory_insert_breakpoint (gdbarch=&lt;optimized out&gt;, bp_tgt=0x9236f0) at ./gdb/mem-break.c:66
-#10 0x004de3aa in bkpt_insert_location (bl=0x923698) at ./gdb/breakpoint.c:12525
-#11 0x004e8426 in insert_bp_location (bl=bl@entry=0x923698, tmp_error_stream=tmp_error_stream@entry=0xfffef07c, disabled_breaks=disabled_breaks@entry=0xfffeefec,
-    hw_breakpoint_error=hw_breakpoint_error@entry=0xfffeeff0, hw_bp_error_explained_already=hw_bp_error_explained_already@entry=0xfffeeff4) at ./gdb/breakpoint.c:2553
-#12 0x004e9556 in insert_breakpoint_locations () at ./gdb/breakpoint.c:2977
-#13 update_global_location_list (insert_mode=insert_mode@entry=UGLL_MAY_INSERT) at ./gdb/breakpoint.c:12177
-#14 0x004ea0a0 in update_global_location_list_nothrow (insert_mode=UGLL_MAY_INSERT) at ./gdb/breakpoint.c:12215
-#15 0x004ea484 in create_solib_event_breakpoint_1 (insert_mode=UGLL_MAY_INSERT, address=address@entry=4152138308, gdbarch=gdbarch@entry=0x0) at ./gdb/breakpoint.c:7555
-#16 create_solib_event_breakpoint (gdbarch=gdbarch@entry=0x928fb0, address=address@entry=4152138308) at ./gdb/breakpoint.c:7562
-#17 0x004497bc in svr4_create_probe_breakpoints (objfile=0x933888, probes=0xfffef148, gdbarch=0x928fb0) at ./gdb/solib-svr4.c:2089
-#18 svr4_create_solib_event_breakpoints (gdbarch=0x928fb0, address=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:2173
-#19 0x00449c5c in enable_break (from_tty=&lt;optimized out&gt;, info=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:2465
-#20 svr4_solib_create_inferior_hook (from_tty=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:3057
-#21 0x0056bba6 in post_create_inferior (target=0x801084 &lt;current_target&gt;, from_tty=from_tty@entry=0) at ./gdb/infcmd.c:469
-#22 0x0056c736 in run_command_1 (args=&lt;optimized out&gt;, from_tty=0, run_how=RUN_NORMAL) at ./gdb/infcmd.c:665
-#23 0x00465334 in cmd_func (cmd=&lt;optimized out&gt;, args=&lt;optimized out&gt;, from_tty=&lt;optimized out&gt;) at ./gdb/cli/cli-decode.c:1886
-#24 0x006062a6 in execute_command (p=&lt;optimized out&gt;, p@entry=0x880f10 "run", from_tty=0) at ./gdb/top.c:630
-#25 0x00548760 in command_handler (command=0x880f10 "run") at ./gdb/event-top.c:583
-#26 0x00606a66 in read_command_file (stream=stream@entry=0x874ae0) at ./gdb/top.c:424
-#27 0x004684e2 in script_from_file (stream=stream@entry=0x874ae0, file=file@entry=0xfffef7d0 "~/test.script") at ./gdb/cli/cli-script.c:1592
-#28 0x004639bc in source_script_from_stream (file_to_open=0xfffef7d0 "~/test.script", file=0xfffef7d0 "~/test.script", stream=0x874ae0) at ./gdb/cli/cli-cmds.c:568
-#29 source_script_with_search (file=0xfffef7d0 "~/test.script", from_tty=&lt;optimized out&gt;, search_path=&lt;optimized out&gt;) at ./gdb/cli/cli-cmds.c:604
-#30 0x0058821a in catch_command_errors (command=0x463a89 &lt;source_script(char const*, int)&gt;, arg=0xfffef7d0 "~/test.script", from_tty=1) at ./gdb/main.c:379
-#31 0x00588ea0 in captured_main_1 (context=&lt;optimized out&gt;) at ./gdb/main.c:1125
-#32 captured_main (data=&lt;optimized out&gt;) at ./gdb/main.c:1147
-#33 gdb_main (args=&lt;optimized out&gt;) at ./gdb/main.c:1173
-#34 0x004343ac in main (argc=&lt;optimized out&gt;, argv=&lt;optimized out&gt;) at ./gdb/gdb.c:32
-</code></pre>
-<p>Frame 9 (<code>default_memory_insert_breakpoint</code>) looks like it will probably be interesting to us. Taking a look at what it does:</p>
-<pre><code>int
-default_memory_insert_breakpoint (struct gdbarch *gdbarch,
-                  struct bp_target_info *bp_tgt)
-{
-  CORE_ADDR addr = bp_tgt-&gt;placed_address;
-  const unsigned char *bp;
-  gdb_byte *readbuf;
-  int bplen;
-  int val;
-
-  /* Determine appropriate breakpoint contents and size for this address.  */
-  bp = gdbarch_sw_breakpoint_from_kind (gdbarch, bp_tgt-&gt;kind, &amp;bplen);
-
-  /* Save the memory contents in the shadow_contents buffer and then
-     write the breakpoint instruction.  */
-  readbuf = (gdb_byte *) alloca (bplen);
-  val = target_read_memory (addr, readbuf, bplen);
-  if (val == 0)
-    {
-       ...
-      bp_tgt-&gt;shadow_len = bplen;
-      memcpy (bp_tgt-&gt;shadow_contents, readbuf, bplen);
-
-      val = target_write_raw_memory (addr, bp, bplen);
-    }
-
-  return val;
-}
-</code></pre>
-<p>The call to <code>gdbarch_sw_breakpoint_from_kind</code> appears to return the bytes written for our breakpoint. <code>gdbarch_sw_breakpoint_from_kind</code> delegates to <code>arm_sw_breakpoint_from_kind</code> in gdb/arm-tdep.c. (The <code>gdbarch_</code> functions provides a way for architecture independent code in gdb to call functions specific to the architecture associated with the target). Taking a look at what this does:</p>
-<pre><code>static const gdb_byte *
-arm_sw_breakpoint_from_kind (struct gdbarch *gdbarch, int kind, int *size)
-{
-  struct gdbarch_tdep *tdep = gdbarch_tdep (gdbarch);
-
-  switch (kind)
-    {
-    case ARM_BP_KIND_ARM:
-      *size = tdep-&gt;arm_breakpoint_size;
-      return tdep-&gt;arm_breakpoint;
-    case ARM_BP_KIND_THUMB:
-      *size = tdep-&gt;thumb_breakpoint_size;
-      return tdep-&gt;thumb_breakpoint;
-    case ARM_BP_KIND_THUMB2:
-      *size = tdep-&gt;thumb2_breakpoint_size;
-      return tdep-&gt;thumb2_breakpoint;
-    default:
-      gdb_assert_not_reached ("unexpected arm breakpoint kind");
-    }
-}
-</code></pre>
-<p>So, <code>arm_breakpoint_from_kind</code> returns an ARM, Thumb or Thumb2 breakpoint instruction sequence depending on the value of <code>kind</code>. If we switch to frame 9, we should be able to inspect the value of <code>kind</code>:</p>
-<pre><code>(gdb) f 9
-#9  0x00590c8e in default_memory_insert_breakpoint (gdbarch=&lt;optimized out&gt;, bp_tgt=0x9236f0) at ./gdb/mem-break.c:66
-66      ./gdb/mem-break.c: No such file or directory.
-(gdb) p bp_tgt-&gt;kind
-$2 = 2
-</code></pre>
-<p>2 is <code>ARM_BP_KIND_THUMB</code>, so this appears to check out. Moving further up the stack, we find that <code>kind</code> is determined in frame 10 (<code>bkpt_insert_location</code> in gdb/breakpoint.c). Let&#8217;s have a look at what that does:</p>
-<pre><code>static int
-bkpt_insert_location (struct bp_location *bl)
-{
-  CORE_ADDR addr = bl-&gt;target_info.reqstd_address;
-
-  bl-&gt;target_info.kind = breakpoint_kind (bl, &amp;addr);
-  bl-&gt;target_info.placed_address = addr;
-
-  if (bl-&gt;loc_type == bp_loc_hardware_breakpoint)
-    return target_insert_hw_breakpoint (bl-&gt;gdbarch, &amp;bl-&gt;target_info);
-  else
-    return target_insert_breakpoint (bl-&gt;gdbarch, &amp;bl-&gt;target_info);
-}
-</code></pre>
-<p>This calls <code>breakpoint_kind</code>, which delegates to <code>arm_breakpoint_kind_from_pc</code> in gdb/arm-tdep.c via <code>gdbarch_breakpoint_kind_from_pc</code>. <code>arm_breakpoint_kind_from_pc</code> maps the breakpoint address to an instruction set and returns one of three values &#8211; <code>ARM_BP_KIND_ARM</code>, <code>ARM_BP_KIND_THUMB</code> or <code>ARM_BP_KIND_THUMB2</code>. From looking at <code>arm_breakpoint_kind_from_pc</code>, we can see the most interesting part is a call to <code>arm_pc_is_thumb</code>. Let&#8217;s have a look at how this works:</p>
-<pre><code>int
-arm_pc_is_thumb (struct gdbarch *gdbarch, CORE_ADDR memaddr)
-{
-  struct bound_minimal_symbol sym;
-  char type;
-  ...
-
-  /* If bit 0 of the address is set, assume this is a Thumb address.  */
-  if (IS_THUMB_ADDR (memaddr))
-    return 1;
-</code></pre>
-<p>So, first of all it checks whether bit 0 of the breakpoint address is set. Looking at the SystemTap probes in <code>.note.stapsdt</code> from our earlier <code>readelf</code> output, we can see that this is not the case for any probe. Following on:</p>
-<pre><code>  /* If the user wants to override the symbol table, let him.  */
-  if (strcmp (arm_force_mode_string, "arm") == 0)
-    return 0;
-  if (strcmp (arm_force_mode_string, "thumb") == 0)
-    return 1;
-
-  /* ARM v6-M and v7-M are always in Thumb mode.  */
-  if (gdbarch_tdep (gdbarch)-&gt;is_m)
-    return 1;
-</code></pre>
-<p>We&#8217;re not forcing the mode and this isn&#8217;t ARM v6-M or v7-M, so, continuing:</p>
-<pre><code>  /* If there are mapping symbols, consult them.  */
-  type = arm_find_mapping_symbol (memaddr, NULL);
-  if (type)
-    return type == 't';
-</code></pre>
-<p><code>arm_find_mapping_symbol</code> tries to find a mapping symbol associated with the breakpoint address. Mapping symbols are a special type of symbol used to identify transitions between ARM and Thumb instruction sets (see <a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0474f/CHDGFCDI.html">this</a> information). Breaking here in gdb shows that there isn&#8217;t a mapping symbol associated with the <code>init_start</code> probe:</p>
-<pre><code>(gdb) break ./gdb/arm-tdep.c:434
-Breakpoint 2 at 0x43ec3c: file ./gdb/arm-tdep.c, line 434.
-(gdb) run
-...
-
-Breakpoint 2, arm_pc_is_thumb (gdbarch=gdbarch@entry=0x928fb0, memaddr=memaddr@entry=4152138308) at ./gdb/arm-tdep.c:434
-434     ./gdb/arm-tdep.c: No such file or directory.
-(gdb) p/x memaddr
-$2 = 0xf77c9a44
-(gdb) p type
-$3 = 0 '\000'
-</code></pre>
-<p>So, continuing to the next step:</p>
-<pre><code>  /* Thumb functions have a "special" bit set in minimal symbols.  */
-  sym = lookup_minimal_symbol_by_pc (memaddr);
-  if (sym.minsym)
-    return (MSYMBOL_IS_SPECIAL (sym.minsym));
-</code></pre>
-<p><code>lookup_minimal_symbol_by_pc</code> tries to map the breakpoint address to a function symbol. <code>MSYMBOL_IS_SPECIAL(sym.minsym)</code> expands to <code>sym.minsym-&gt;target_flag_1</code> and is 1 if bit 0 of the symbol&#8217;s target address is set, indicating that the function is called in Thumb mode (see <code>arm_elf_make_msymbol_special</code> in gdb/arm-tdep.c for where this is set). Breaking here in gdb shows that this succeeds:</p>
-<pre><code>(gdb) break ./gdb/arm-tdep.c:439
-Breakpoint 3 at 0x43ec54: file ./gdb/arm-tdep.c, line 439.
-(gdb) cont
-Continuing.
-
-Breakpoint 3, arm_pc_is_thumb (gdbarch=gdbarch@entry=0x928fb0, memaddr=memaddr@entry=4152138308) at ./gdb/arm-tdep.c:439
-439     in ./gdb/arm-tdep.c
-(gdb) p sym.minsym
-$4 = (minimal_symbol *) 0x964278
-(gdb) p *sym.minsym
-$5 = {mginfo = {name = 0x952ff8 "dl_main", value = {ivalue = 5932, block = 0x172c, bytes = 0x172c &lt;error: Cannot access memory at address 0x172c&gt;, address = 5932, common_block = 0x172c, chain = 0x172c}, 
-    language_specific = {obstack = 0x0, demangled_name = 0x0}, language = language_auto, ada_mangled = 0, section = 10}, size = 10516, filename = 0x949a48 "rtld.c", type = mst_file_text, created_by_gdb = 0, 
-  target_flag_1 = 1, target_flag_2 = 0, has_size = 1, hash_next = 0x0, demangled_hash_next = 0x0}
-(gdb) p sym.minsym-&gt;target_flag_1
-$6 = 1
-</code></pre>
-<p>It indicates that the <code>init_start</code> probe is in <code>dl_main</code>, and that it is called in Thumb mode.</p>
-<p>We can use readelf to inspect the symbol table and verify that this is correct:</p>
-<pre><code>$ readelf -s libc6-syms/usr/lib/debug/lib/arm-linux-gnueabihf/ld-2.27.so | grep dl_main
-    42: 0000172d 10516 FUNC LOCAL DEFAULT 11 dl_main
-</code></pre>
-<p>Note that bit 0 of the target address is set.</p>
-<p>If <code>lookup_minimal_symbol_by_pc</code> fails, then we&#8217;re basically out of luck and <code>arm_pc_is_thumb</code> will return 0 (indicating that the breakpoint address is in an area that is executing ARM instructions). But this depends on the <code>.symtab</code> ELF section being present, so there is an obvious issue here as this is stripped from the binary in the build (and shipped in a separate debug object).</p>
-<p>I then ran gdb in gdb without the dynamic loader symbols installed and set a breakpoint on <code>default_memory_insert_breakpoint</code>:</p>
-<pre><code>$ gdb --args gdb --batch --command=~/test.script
-(gdb) set debug-file-directory /home/ubuntu/libc6-syms/usr/lib/debug/:/usr/lib/debug/                                                                                                                             
-(gdb) break default_memory_insert_breakpoint(gdbarch*, bp_target_info*)                                  
-Breakpoint 1 at 0x190c34: file ./gdb/mem-break.c, line 39.                                                                                                                                                         
-(gdb) run                                                                                                                                                                                                          
-Starting program: /usr/bin/gdb --batch --command=\~/test.script                                                                                                                                                    
-Cannot parse expression `.L1207 4@r4'.                                                                                                                                                                             
-warning: Probes-based dynamic linker interface failed.                                                   
-Reverting to original interface.                                                                         
-
-[Thread debugging using libthread_db enabled]                                                                                                                                                                      
-Using host libthread_db library "/lib/arm-linux-gnueabihf/libthread_db.so.1".                                                                                                                                      
-
-Breakpoint 1, default_memory_insert_breakpoint (gdbarch=0x9288c0, bp_tgt=0x922fe8) at ./gdb/mem-break.c:39
-39      ./gdb/mem-break.c: No such file or directory.
-(gdb) bt
-#0  default_memory_insert_breakpoint (gdbarch=0x9288c0, bp_tgt=0x922fe8) at ./gdb/mem-break.c:39         
-#1  0x004de3aa in bkpt_insert_location (bl=0x922f90) at ./gdb/breakpoint.c:12525
-#2  0x004e8426 in insert_bp_location (bl=bl@entry=0x922f90, tmp_error_stream=tmp_error_stream@entry=0xfffef07c, disabled_breaks=disabled_breaks@entry=0xfffeefec,
-    hw_breakpoint_error=hw_breakpoint_error@entry=0xfffeeff0, hw_bp_error_explained_already=hw_bp_error_explained_already@entry=0xfffeeff4) at ./gdb/breakpoint.c:2553
-#3  0x004e9556 in insert_breakpoint_locations () at ./gdb/breakpoint.c:2977
-#4  update_global_location_list (insert_mode=insert_mode@entry=UGLL_MAY_INSERT) at ./gdb/breakpoint.c:12177
-#5  0x004ea0a0 in update_global_location_list_nothrow (insert_mode=UGLL_MAY_INSERT) at ./gdb/breakpoint.c:12215
-#6  0x004ea484 in create_solib_event_breakpoint_1 (insert_mode=UGLL_MAY_INSERT, address=address@entry=4152138308, gdbarch=gdbarch@entry=0x0) at ./gdb/breakpoint.c:7555
-#7  create_solib_event_breakpoint (gdbarch=gdbarch@entry=0x9288c0, address=address@entry=4152138308) at ./gdb/breakpoint.c:7562
-#8  0x004497bc in svr4_create_probe_breakpoints (objfile=0x933238, probes=0xfffef148, gdbarch=0x9288c0) at ./gdb/solib-svr4.c:2089
-#9  svr4_create_solib_event_breakpoints (gdbarch=0x9288c0, address=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:2173
-#10 0x00449c5c in enable_break (from_tty=&lt;optimized out&gt;, info=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:2465
-#11 svr4_solib_create_inferior_hook (from_tty=&lt;optimized out&gt;) at ./gdb/solib-svr4.c:3057
-#12 0x0056bba6 in post_create_inferior (target=0x801084 &lt;current_target&gt;, from_tty=from_tty@entry=0) at ./gdb/infcmd.c:469
-#13 0x0056c736 in run_command_1 (args=&lt;optimized out&gt;, from_tty=0, run_how=RUN_NORMAL) at ./gdb/infcmd.c:665
-#14 0x00465334 in cmd_func (cmd=&lt;optimized out&gt;, args=&lt;optimized out&gt;, from_tty=&lt;optimized out&gt;) at ./gdb/cli/cli-decode.c:1886
-#15 0x006062a6 in execute_command (p=&lt;optimized out&gt;, p@entry=0x874758 "run", from_tty=0) at ./gdb/top.c:630
-#16 0x00548760 in command_handler (command=0x874758 "run") at ./gdb/event-top.c:583
-#17 0x00606a66 in read_command_file (stream=stream@entry=0x875da8) at ./gdb/top.c:424
-#18 0x004684e2 in script_from_file (stream=stream@entry=0x875da8, file=file@entry=0xfffef7d0 "~/test.script") at ./gdb/cli/cli-script.c:1592
-#19 0x004639bc in source_script_from_stream (file_to_open=0xfffef7d0 "~/test.script", file=0xfffef7d0 "~/test.script", stream=0x875da8) at ./gdb/cli/cli-cmds.c:568
-#20 source_script_with_search (file=0xfffef7d0 "~/test.script", from_tty=&lt;optimized out&gt;, search_path=&lt;optimized out&gt;) at ./gdb/cli/cli-cmds.c:604
-#21 0x0058821a in catch_command_errors (command=0x463a89 &lt;source_script(char const*, int)&gt;, arg=0xfffef7d0 "~/test.script", from_tty=0) at ./gdb/main.c:379
-#22 0x00588ea0 in captured_main_1 (context=&lt;optimized out&gt;) at ./gdb/main.c:1125
-#23 captured_main (data=&lt;optimized out&gt;) at ./gdb/main.c:1147
-#24 gdb_main (args=&lt;optimized out&gt;) at ./gdb/main.c:1173
-#25 0x004343ac in main (argc=&lt;optimized out&gt;, argv=&lt;optimized out&gt;) at ./gdb/gdb.c:32
-(gdb) p/x bp_tgt-&gt;placed_address
-$1 = 0xf77c9a44
-(gdb) p bp_tgt-&gt;kind
-$2 = 4
-</code></pre>
-<p>Sure enough, <code>default_memory_insert_breakpoint</code> is called this time with <code>kind == 4</code> (<code>ARM_BP_KIND_ARM</code>) which seems to be incorrect. Setting a breakpoint in <code>arm_pc_is_thumb</code> again, we can verify that the reason for this is that the call to <code>lookup_minimal_symbol_by_pc</code> fails:</p>
-<pre><code>(gdb) break ./gdb/arm-tdep.c:439                                                                                                                                                                                   
-Breakpoint 1 at 0x3ec54: file ./gdb/arm-tdep.c, line 439.                                                                                                                                                          
-(gdb) run
-Starting program: /usr/bin/gdb --command=\~/test.script                                                  
-Cannot parse expression `.L1207 4@r4'.                                                                   
-warning: Probes-based dynamic linker interface failed.                                                   
-Reverting to original interface.                    
-
-[Thread debugging using libthread_db enabled]       
-Using host libthread_db library "/lib/arm-linux-gnueabihf/libthread_db.so.1".
-GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
-Copyright (C) 2018 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "arm-linux-gnueabihf".
-Type "show configuration" for configuration details.
-For bug reporting instructions, please see:
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
-Find the GDB manual and other documentation resources online at:
-&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
-For help, type "help".
-Type "apropos word" to search for commands related to "word".
-
-Breakpoint 1, arm_pc_is_thumb (gdbarch=0x928fb0, memaddr=4152138308) at ./gdb/arm-tdep.c:439
-439     ./gdb/arm-tdep.c: No such file or directory.
-(gdb) p/x memaddr
-$1 = 0xf77c9a44
-(gdb) p sym.minsym
-$2 = (minimal_symbol *) 0x0
-</code></pre>
-<p>This results in <code>arm_pc_is_thumb</code> returning 0 and <code>arm_breakpoint_kind_from_pc</code> returning <code>ARM_BP_KIND_ARM</code>, which results in <code>arm_sw_breakpoint_from_kind</code> returning the wrong breakpoint instruction sequence.</p>
-<h1>TL;DR</h1>
-<p>GDB causes a crash in the dynamic loader (ld.so) on armv7 if ld.so has been stripped of its symbol table, because it is unable to correctly determine the appropriate instruction set when inserting probe event breakpoints.</p>
-<p>If you&#8217;ve got to the end of this (congratulations), then you&#8217;re probably going to be disappointed to hear that I&#8217;m not sure what the proper fix is &#8211; this isn&#8217;t really my area of expertise. For the rustc package, I just added a <code>Build-Depends: libc6-dbg [armhf]</code> as a workaround for now, and that might even be the correct fix. But, it&#8217;s certainly nicer to understand why it didn&#8217;t work in the first place.</p>
-<div class="bottomcontainerBox" style="">
-			<div style="float:left; width:85px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
-			<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fchriscoulson.me.uk%2Fblog%2F%3Fp%3D295&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:85px; height:21px;"></iframe></div>
-			<div style="float:left; width:80px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
-			<g:plusone size="medium" href="https://chriscoulson.me.uk/blog/?p=295"></g:plusone>
-			</div>
-			<div style="float:left; width:95px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chriscoulson.me.uk/blog/?p=295"  data-text="Debugging the debugger" data-count="horizontal" data-via="chrisccoulson"></a>
-			</div>			
-			</div><div style="clear:both"></div><div style="padding-bottom:4px;"></div>]]></description>
-      <source url="http://www.chriscoulson.me.uk/blog/?feed=rss2&amp;cat=3">Chris Coulson</source>
     </item>
     <item>
       <title>Spaces – uncomplicating your network</title>

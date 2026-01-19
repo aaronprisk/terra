@@ -1,124 +1,335 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu Planet</title>
+    <title>Planet Ubuntu</title>
     <link>https://ubuntu-community-team.github.io/terra/</link>
-    <description>Fresh posts from the Ubuntu Planet</description>
+    <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Wed, 14 Jan 2026 02:03:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 00:30:27 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Minimal Ubuntu Pro: lean images backed by enterprise-grade security</title>
-      <link>https://ubuntu.com//blog/minimal-ubuntu-pro-on-public-clouds</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/minimal-ubuntu-pro-on-public-clouds</guid>
-      <pubDate>Mon, 12 Jan 2026 15:07:56 GMT</pubDate>
-      <description><![CDATA[<h2 class="wp-block-heading">Deploy Minimal Ubuntu Pro across AWS, Azure, and Google Cloud</h2>
-<p>The security landscape is growing continually in complexity. Whatever industry you work in, your organization has to contend with evolving threats and ever-stricter compliance requirements, whilst at the same time facing pressure to build fast and scale smart. This is especially true when innovating on the public cloud.</p>
-<p>Minimal Ubuntu Pro is built to help you meet those challenges. </p>
-<h2 class="wp-block-heading">Minimized attack surface. Enhanced security.</h2>
-<p>Users of Ubuntu value its accessibility, robustness, and mature ecosystem. That’s why Canonical works with major cloud vendors to make optimized Ubuntu images available on their platforms. This includes Minimal Ubuntu – Ubuntu images which are optimized to have the smallest footprint possible and make security more straightforward. Minimal Ubuntu Pro builds on these images by making security in the public cloud more efficient.</p>
-<p>Ubuntu Pro is Canonical’s comprehensive subscription for open source security. Through Ubuntu Pro, organizations receive up to 15 years of security maintenance (with the legacy add-on), tools for compliance automation, and kernel live patching. Minimal Ubuntu Pro brings these features to Minimal Ubuntu, combined with a convenient, metered per-hour billing on Amazon EC2, Google GCP and Microsoft Azure. By bringing these two technologies together, customers can combine the smallest Ubuntu footprint with enterprise-grade security and compliance features. It is the perfect starting point for automated cloud deployments in your production environments. </p>
-<p>Whether you are deploying cloud workloads, containers, or regulated infrastructure, Minimal Ubuntu Pro offers a unique blend of minimalism, control, and long-term support, without sacrificing compatibility or flexibility.</p>
-<h2 class="wp-block-heading">Why security-aware companies choose Minimal Ubuntu Pro</h2>
-<p><strong>Perfect for cloud operations</strong></p>
-<p>Minimal Ubuntu Pro builds on the strengths of Minimal Ubuntu: the smallest Ubuntu base image for VMs and containers. Its lightweight design enables faster provisioning and scaling, with a 50% smaller image size and 40% faster boot times. At the same time, it retains optimizations for leading cloud hypervisors (AWS, GCP, Azure, KVM, LXD) through a custom kernel, drivers, and agents.</p>
-<p>If you’re running microservices, containerized applications, or ephemeral workloads, this is the image you want on the public cloud.</p>
-<p><strong>Tight control over installed software</strong></p>
-<p>Minimal Ubuntu Pro is fully compatible with the entire Ubuntu package ecosystem. Applications that already work on classic Ubuntu Server will retain full compatibility, provided dependencies are installed. You decide exactly what your environment includes, with the added benefit of extended security coverage for critical and high CVEs, including third-party open source packages, delivered through the Ubuntu Pro subscription.</p>
-<p>This fine-grained control is crucial for DevSecOps practices, automated CI/CD pipelines, and infrastructure-as-code workflows.</p>
-<p><strong>Reduced attack surface by design</strong></p>
-<p>Every unnecessary package is a potential risk. Minimal Ubuntu Pro ships with only the essential components required to boot and connect, dramatically reducing exposure. Fewer packages mean fewer CVEs to track, fewer patches to apply, and less overall maintenance. For example, documentation, text editors, and locale files are removed, leaving only what’s necessary to run your workloads.</p>
-<p>This makes Minimal Ubuntu Pro ideal for teams building golden images, zero-trust environments, or security-hardened cloud instances.</p>
-<p><strong>Enterprise-grade hardening and compliance</strong></p>
-<p>Ubuntu Pro unlocks advanced security and compliance features, including up to 15 years of CVE patching across both Main and Universe repositories for Ubuntu LTS releases, optional FIPS 140-3 certified cryptographic modules for government compliance, and CIS and DISA-STIG hardening profiles for regulated environments.</p>
-<p>Whether your target is FedRAMP, NIST, HIPAA, or another framework, Minimal Ubuntu Pro helps accelerate compliance with trusted tooling and validated configurations.</p>
-<h2 class="wp-block-heading">Available on all the major cloud platforms</h2>
-<p>Minimal Ubuntu Pro is available on AWS, Azure, and GCP. Whichever platform you choose to innovate on, Minimal Ubuntu Pro offers consistency and robustness:</p>
+      <title>Malware Peddlers Are Now Hijacking Snap Publisher Domains</title>
+      <link>https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/</link>
+      <guid isPermaLink="true">https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/</guid>
+      <pubDate>Sat, 17 Jan 2026 19:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>tl;dr</strong>: There&rsquo;s a relentless campaign by scammers to publish malware in the Canonical <a href="https://snapcraft.io/">Snap Store</a>. Some gets caught by automated filters, but plenty slips through. Recently, these miscreants have changed tactics - they&rsquo;re now registering expired domains belonging to legitimate snap publishers, taking over their accounts, and pushing malicious updates to previously trustworthy applications. This is a significant escalation.</p>
+<hr>
+<h2 id="context">Context</h2>
+<p>Snaps are compressed, cryptographically signed, revertable software packages for Linux desktops, servers, and embedded devices. They use standard security primitives in the Linux kernel alongside technology developed by Canonical for Ubuntu.</p>
+<p>Snaps are published in the Canonical-run Snap Store. Anyone can sign up for an account and, with relatively few roadblocks, publish a confined application. There are over 7,000 publicly published snaps from hundreds of developers.</p>
+<h2 id="yes-im-banging-this-drum-again">Yes, I&rsquo;m Banging This Drum Again</h2>
+<p>I have written about this topic before.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/exodus-blog.png"><img src="https://blog.popey.com/images/2026-01-17/exodus-blog_50pc.png" alt="Previous blogs"></a></p>
 <ul>
-<li>Comes with an optimized kernel tailored for each cloud environment</li>
-<li>Certified across all supported virtual machine types and instance families</li>
-<li>Maintains the same deep cloud integration as standard Ubuntu Server, including support for telemetry, fleet management, and platform-specific services</li>
+<li><a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-490k-swindle/">Exodus Bitcoin Wallet: $490K Swindle</a> - February 2024</li>
+<li><a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-follow-up/">Exodus Bitcoin Wallet: Follow up 2.0</a> - February 2024</li>
+<li><a href="https://blog.popey.com/2024/03/exodus-wallet-part-three/">Guess Who&rsquo;s Back? Exodus Scam BitCoin Wallet Snap!</a> - March 2024</li>
 </ul>
-<h2 class="wp-block-heading">How to get it</h2>
-<h3 class="wp-block-heading">On AWS:</h3>
-<ul>
-<li>Using AWS Marketplace by searching for “<a href="https://aws.amazon.com/marketplace/search/results?searchTerms=Minimal+Ubuntu+Pro&amp;CREATOR=565feec9-3d43-413e-9760-c651546613f2&amp;filters=CREATOR">Minimal Ubuntu Pro</a>”  </li>
-<li>Using AWS CLI:</li>
-</ul>
-<pre class="wp-block-code"><code>aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-minimal/$VERSION/stable/current/amd64/hvm/ebs-gp2/ami-id</code></pre>
-<p>Where <code>$VERSION</code> is one of 20.04, 22.04 or 24.04 (For 24.04 you need to change <code>ebs-gp2</code> to <code>ebs-gp3</code>)</p>
-<h3 class="wp-block-heading">On GCP:</h3>
-<ul>
-<li>Using Google Cloud Console by selecting “Ubuntu Pro” in the operating system selection and “<strong>Ubuntu 2x.04 LTS Minimal Pro</strong>” as the version.</li>
-<li>Using Google Cloud Shell and booting a VM, specifying “<code>image=projects/ubuntu-os-pro-cloud/global/images/ubuntu-minimal-pro…</code>”</li>
-</ul>
-<h3 class="wp-block-heading">On Azure:</h3>
-<ul>
-<li>Selecting <strong>Minimal Ubuntu Pro Azure</strong> Marketplace or Portal:
-<ul>
-<li>For 20.04 LTS, use the dedicated<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.0001-com-ubuntu-pro-minimal-focal"> Ubuntu Pro Minimal 20.04</a> listing.</li>
-<li>For 22.04 and 24.04 LTS, find the unified<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-22_04-lts"> Ubuntu 22.04 LTS</a> or<a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-24_04-lts"> 24.04 LTS</a> offers and select the “<strong>Ubuntu Pro Minimal</strong>” plan.</li>
-</ul>
-</li>
-<li>Using CLI:</li>
-</ul>
-<pre class="wp-block-code"><code>az vm create \
-  --name $VIRTUAL_MACHINE_NAME \
-  --resource-group $RESOURCE_GROUP_NAME \
-  --image $UBUNTU_IMAGE_URN \
-  --generate-ssh-keys</code></pre>
-<p>Where <code>$UBUNTU_IMAGE_URN</code> is either:</p>
-<ul>
-<li><code>Canonical:0001-com-ubuntu-pro-minimal-focal:pro-minimal-20_04-lts:latest</code></li>
-<li><code>Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal:latest</code></li>
-<li><code>Canonical:ubuntu-24_04-lts:ubuntu-pro-minimal:latest</code></li>
-</ul>
-<h2 class="wp-block-heading">Next steps</h2>
-<p>Minimal Ubuntu Pro offers a powerful combination of performance, precision, and protection. It’s a practical solution for organizations seeking to scale confidently while adhering to the most stringent security and compliance standards. With Minimal Ubuntu Pro, you gain precise control over your environment, resulting in a minimal attack surface and expanded security coverage against critical and high-severity CVEs from the moment it’s deployed.</p>
-<p>Get Minimal Ubuntu Pro 24.04 on <a href="https://aws.amazon.com/marketplace/pp/prodview-4yqsoi5afvjqu">AWS</a> | <a href="https://marketplace.microsoft.com/en-us/product/virtual-machines/canonical.ubuntu-24_04-lts">Azure</a> | <a href="https://console.cloud.google.com/compute/instancesAdd?imageId=5466964067713924514&amp;imageProjectId=ubuntu-os-pro-cloud">GPC</a> </p>
-<h2 class="wp-block-heading">Further reading</h2>
-<ul>
-<li><a href="https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/ubuntu-base-and-minimal-images/">Ubuntu base and minimal images – Public Cloud documentation</a></li>
-<li><a href="https://wiki.ubuntu.com/Minimal">What is Minimal Ubuntu</a></li>
-</ul>]]></description>
+<p>I worked for Canonical between 2011 and 2021 as an Engineering Manager, Community Manager, and Developer Advocate. I was a strong advocate for snap packages and the Snap Store. While I left the company nearly five years ago, I still <a href="https://snapcraft.io/publisher/popey">maintain</a> nearly 50 packages in the Snap Store, with thousands of users.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/popey-publisher-page.png"><img src="https://blog.popey.com/images/2026-01-17/popey-publisher-page_50pc.png" alt="popey&rsquo;s publisher page"></a></p>
+<p>I also worked for <a href="https://anchore.com/">Anchore</a> until September 2025, where they sponsor development of two open-source, Apache-licensed security tools: <a href="https://github.com/anchore/syft">Syft</a> (an SBOM generator) and <a href="https://github.com/anchore/grype/">Grype</a> (a vulnerability scanner).</p>
+<p>I mention my employment history for transparency, and because knowledge from both roles informed this investigation.</p>
+<p><strong>Personally, I want the Snap Store to be successful, and for users to be confident that the packages they install are trustworthy and safe.</strong></p>
+<p>Currently, that confidence isn&rsquo;t warranted, which is a problem for desktop Linux users who install snap packages.</p>
+<p><strong>I report every bad snap I encounter, and I know other security professionals do the same - even though doing so results in no action for days sometimes.</strong></p>
+<h2 id="enter-snapscope">Enter SnapScope</h2>
+<p><a href="https://blog.popey.com/images/2026-01-17/snapscope.png"><img src="https://blog.popey.com/images/2026-01-17/snapscope_50pc.png" alt="SnapScope"></a></p>
+<p>I recently created <a href="https://snapscope.popey.com/">SnapScope</a> as part of a &ldquo;VibeCoding&rdquo; <a href="https://github.com/chainguard-demo/vibelympics">contest</a> run by some friends at <a href="https://www.chainguard.dev/">Chainguard</a>. They&rsquo;re good people doing great work - check them out.</p>
+<p>My original intention was to create a web app that generates an SBOM (Software Bill of Materials) for each snap using Syft, then produces a vulnerability report using Grype. Neither tool is perfect, and other tools exist, but I&rsquo;m familiar with these and they suited the contest nicely.</p>
+<p>While monitoring <a href="https://snapscope.popey.com/">SnapScope</a>, I was reminded of the malware problem. SnapScope wasn&rsquo;t <em>intended</em> to find malware - it was meant to identify outdated snaps with potential security issues. But I soon added features to highlight suspicious packages, so users could make informed decisions when searching for software.</p>
+<p><a href="https://blog.popey.com/images/2026-01-17/malware.png"><img src="https://blog.popey.com/images/2026-01-17/malware_50pc.png" alt="SnapScope"></a></p>
+<p><strong>To be clear</strong>: none of this should be seen as an attack on the Snap Store, Canonical, or the engineers working on these problems. I&rsquo;m raising awareness of an issue that exists, because I want it fixed.</p>
+<h2 id="the-scam">The Scam</h2>
+<p>The perpetrators - probably based in or near Croatia, based on data I&rsquo;ve been gathering - are constantly attempting to publish fake crypto wallet applications. The malware masquerades as genuine apps like Exodus, Ledger Live, or Trust Wallet. It asks users to enter their wallet recovery phrase, sends those credentials to the criminals, displays an error to the user, and by the time anyone realises what&rsquo;s happened, the wallet is empty.</p>
+<p>Whatever you think of cryptocurrency, these people are absolute dog shit.</p>
+<h2 id="the-cat-and-mouse-game">The Cat-and-Mouse Game</h2>
+<p>The Canonical Snap Store admins have attempted to stem the flow. However, as with many security issues, it&rsquo;s a relentless game of whack-a-mole.</p>
+<p>The scammers have tried various approaches to appear legitimate:</p>
+<p><strong>Initially</strong>, they just published authentic-looking applications with plausible screenshots and storefront pages. This was the approach I documented in my previous articles about the fake &ldquo;Exodus&rdquo; and &ldquo;Ledger Live&rdquo; apps.</p>
+<p><strong>Then</strong>, they started evading text filters by using similar-looking characters from other alphabets. For example, replacing the lowercase &ldquo;d&rdquo; in &ldquo;Ledger&rdquo; with the Armenian letter <a href="https://en.wikipedia.org/wiki/Zhe_(Armenian_letter)">Zhe</a> &ldquo;ժ&rdquo;, which at first glance passes for a Latin &ldquo;d&rdquo;. They also use <a href="https://en.wikipedia.org/wiki/Palochka">Palochka</a> &ldquo;ӏ&rdquo; which resembles a lowercase &ldquo;L&rdquo;.</p>
+<p><strong>More recently</strong>, they&rsquo;ve adopted a bait-and-switch approach:</p>
+<ol>
+<li>Register an innocuous, unrelated snap name like <a href="https://snapscope.popey.com/package/lemon-throw">lemon-throw</a>, <a href="https://snapscope.popey.com/package/alpha-hub">alpha-hub</a>, or <a href="https://snapscope.popey.com/package/tenor-freeze">tenor-freeze</a></li>
+<li>Publish something harmless - often claiming to be a game</li>
+<li>Wait for approval</li>
+<li>Push a second revision containing the fake crypto wallet app</li>
+</ol>
+<p>Some of us in the community diligently report these applications to Canonical, and after a period they get removed. But the sad fact is they keep getting through, and users could see, install, and be fooled by these malicious applications before anyone catches them. <a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-490k-swindle/">Déjà</a> <a href="https://blog.popey.com/2024/02/exodus-bitcoin-wallet-follow-up/">vu</a>, <a href="https://blog.popey.com/2024/03/exodus-wallet-part-three/">much</a>?</p>
+<h2 id="following-the-telegram-trail">Following the Telegram Trail</h2>
+<p>Every so often, I download these dodgy snaps (<code>snap download badsnap</code>), unpack them (<code>unsquashfs badsnap.snap</code>), and have a poke around. Frequently it&rsquo;s the same codebase republished under a new name. Sometimes they vary the language or framework, but almost always follow the same pattern: an app rendering a web page that looks like a legitimate crypto wallet.</p>
+<p>I discovered that when launched, the applications ping this URL:</p>
+<p><em><a href="https://togogeo.com/trust.php?name=8888-8888">https://togogeo.com/trust.php?name=8888-8888</a></em></p>
+<p>This appears to be a connectivity test - if the victim has no internet connection or if <code>togogeo.com</code> is inaccessible, the application reports an error and refuses to continue. Makes sense from the scammers&rsquo; perspective: no point asking for credentials if you can&rsquo;t exfiltrate them.</p>
+<p>Initially, hitting this URL manually with <code>curl</code> returned something rather revealing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;status&#34;</span>: <span style="color:#e6db74">&#34;success&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Notification sent to Telegram: 8888-8888&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;telegram_response&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;ok&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;result&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;message_id&#34;</span>: <span style="color:#ae81ff">30111</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;from&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">7477383815</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;is_bot&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;SmartShieldBot&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;pandadrainerbot&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;chat&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">5915612669</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;ezzcash&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;ikaikaika101&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;private&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#ae81ff">1767464029</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;8888-8888&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Well, hello there <a href="https://t.me/ikaikaika101">@ikaikaika101</a>. Nice of them to leave their Telegram username in the response. They&rsquo;ve since changed this to return only an exclamation mark - clearly someone&rsquo;s reading my work, or at least noticed they were leaking operational details.</p>
+<p>They also used to have an avatar, but after I started poking the URL, they removed that from their Telegram account. Fancy that.</p>
+<p>If the user does enter their passphrase (valid or not), it gets sent in a subsequent request to a similar URL. By then, it&rsquo;s too late.</p>
+<h2 id="domain-squatting-the-new-low">Domain Squatting: The New Low</h2>
+<p>Just when you thought they&rsquo;d run out of tricks, they&rsquo;ve found another way in - and this one&rsquo;s particularly nasty.</p>
+<p>Rather than registering new accounts and hoping to slip through the filters, they&rsquo;ve started monitoring the Snap Store for published applications whose publishers&rsquo; domain registrations have lapsed. Think about it: a snap published years ago by <code>somedev@coolproject.tech</code>, where <code>coolproject.tech</code> expired and wasn&rsquo;t renewed.</p>
+<p>The scammers swoop in, register the expired domain, trigger a password reset on the Snap Store account, and <em>boom</em> - they now control a legitimate, trusted publisher account with an established history. No new account scrutiny. No &ldquo;New Publisher&rdquo; flags. Just an existing, seemingly trustworthy snap that suddenly gets a new revision containing their wallet-draining malware.</p>
+<p>I&rsquo;ve identified at least two domains this has happened with recently: <code>storewise.tech</code> and <code>vagueentertainment.com</code>. There are almost certainly more.</p>
+<p>This is a significant escalation. Previously, users could at least be wary of newly published snaps from fresh accounts. Now? That snap you installed three years ago from a reputable-looking publisher could push a malicious update tomorrow.</p>
+<h2 id="what-now">What Now?</h2>
+<p>I&rsquo;m not writing this to bury snaps or the Snap Store. I <em>want</em> this ecosystem to succeed - I still maintain nearly 50 packages there myself. But pretending there isn&rsquo;t a problem helps nobody.</p>
+<p>The domain takeover angle is particularly concerning because it undermines one of the few trust signals users had: publisher longevity. Canonical needs to address this, whether that&rsquo;s monitoring for domain expiry on publisher accounts, requiring additional verification for accounts that have been dormant, implementing mandatory two-factor authentication, or something else entirely. I don&rsquo;t have all the answers, but I know the current situation isn&rsquo;t sustainable.</p>
+<p><strong>If you&rsquo;re a snap publisher</strong>: keep your domain registration current, and enable two-factor authentication if you haven&rsquo;t already. Your lapsed domain could become someone else&rsquo;s attack vector.</p>
+<p><strong>If you&rsquo;re a snap user</strong>: be extremely cautious with cryptocurrency wallet applications from <em>any</em> source, not just the Snap Store. Check the publisher, check when the snap was last updated, and if something feels off, it probably is. Actually, scratch that - just don&rsquo;t install crypto wallet apps from app stores at all. Get them directly from the official project websites.</p>
+<p><strong>If you spot something dodgy</strong>: report it. Use the &ldquo;Report this app&rdquo; link at the bottom of the snap&rsquo;s store page. The community catching these before they catch users is the best defence we&rsquo;ve got right now.</p>
+<p>I&rsquo;ll keep monitoring via <a href="https://snapscope.popey.com/">SnapScope</a> and reporting what I find. Someone has to.</p>
+<p>Stay safe out there.</p>]]></description>
+      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
+    </item>
+    <item>
+      <title>HP battery not charging</title>
+      <link>https://dougiewougie.com/linux/hp-battery-not-charging/</link>
+      <guid isPermaLink="true">https://dougiewougie.com/linux/hp-battery-not-charging/</guid>
+      <pubDate>Sat, 17 Jan 2026 17:19:41 GMT</pubDate>
+      <description><![CDATA[<p>I&#8217;ve an <a href="https://support.hp.com/gb-en/product/details/hp-pavilion-14-laptop-pc-14-dv2000/model/2101006210?sku=6L7L7EA">HP Pavilion Laptop</a> (14-dv2500sa) &#8211; the touch screen doesn&#8217;t work with Linux, due to a UEFI issue. After updating UEFI, I noticed Fedora reporting the battery as empty when it clearly wasn&#8217;t (because it was still on).</p>
+
+
+
+<p>There&#8217;s a setting that reports the battery status, which defaulted to disabled, from what I gather it&#8217;s a soft battery disconnect for storage. No clue why it&#8217;s enabled by default but dear God the update process was painful.</p>
+
+
+
+<p>I&#8217;ve not got a laptop running Windows, so ended up using Boxes to run Windows just to create the USB key. Even that was tempremental as I had to choose a specific EFI key to boot from.</p>]]></description>
+      <source url="https://dougiewougie.com/category/linux/feed/">Dougie Richardson</source>
+    </item>
+    <item>
+      <title>Ubuntu Studio 25.04 Has Reached End-Of-Life (EOL)</title>
+      <link>https://ubuntustudio.org/2026/01/ubuntu-studio-25-04-has-reached-end-of-life-eol/</link>
+      <guid isPermaLink="true">https://ubuntustudio.org/2026/01/ubuntu-studio-25-04-has-reached-end-of-life-eol/</guid>
+      <pubDate>Fri, 16 Jan 2026 16:22:42 GMT</pubDate>
+      <description><![CDATA[<p>As of January 15, 2025, all flavors of Ubuntu 25.04, including Ubuntu Studio 25.04, codenamed &#8220;Plucky Puffin&#8221;, have reached end-of-life (EOL). There will be no more updates of any kind, including security updates, for this release of Ubuntu.</p>
+
+
+
+<p>If you have not already done so, please upgrade to Ubuntu Studio 25.10 via the instructions <a href="https://discourse.ubuntu.com/t/ubuntu-studio-25-10-release-notes/67578#p-175511-upgrading-to-ubuntu-studio-2510-5">provided here</a>. If you do not do so as soon as possible, you will lose the ability without additional advanced configuration.</p>
+
+
+
+<p>No single release of any operating system can be supported indefinitely, and Ubuntu Studio has no exception to this rule.</p>
+
+
+
+<p>Interim Ubuntu releases, meaning those that are between the Long-Term Support releases, are supported for 9 months and users are expected to upgrade after every release with a 3-month buffer following each release.</p>
+
+
+
+<p>Long-Term Support releases are identified by an even numbered year-of-release and a month-of-release of April (04). Hence, the most recent Long-Term Support release is 24.04 (YY.MM = 2024.April), and the next Long-Term Support release will be 26.04 (2026.April). LTS releases for official Ubuntu flavors (not Desktop or Server which are supported for five years) are three years, meaning LTS users are expected to upgrade after every LTS release with a one-year buffer.</p>]]></description>
+      <source url="http://ubuntustudio.org/category/planetubuntu/feed/">Ubuntu Studio</source>
+    </item>
+    <item>
+      <title>Canonical Ubuntu and Ubuntu Pro now available on AWS European Sovereign Cloud</title>
+      <link>https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</guid>
+      <pubDate>Thu, 15 Jan 2026 22:06:23 GMT</pubDate>
+      <description><![CDATA[<p>January 15, 2026 – Canonical, the publisher of Ubuntu and provider of open source security, support, and services, announced today that it is a launch partner for the AWS European Sovereign Cloud, a new independent cloud for Europe, with Ubuntu and Ubuntu Pro now available.</p>
+<p>Canonical’s Ubuntu Pro delivers a securely designed, stable, and enterprise-ready foundation for open source innovation while providing customers with the same security, availability, and performance they expect from AWS. This enables customers to meet stringent operational autonomy and data residency requirements within the European Union (EU).</p>
+<p>The AWS European Sovereign Cloud is a fully featured, independently operated sovereign cloud backed by strong technical controls, sovereign assurances, and legal protections designed to meet the needs of European governments and enterprises. The AWS European Sovereign Cloud infrastructure is entirely located within the EU and operates independently from existing regions. Customers using the AWS European Sovereign Cloud will benefit from the full power of AWS including the same services portfolio, security, availability, performance, familiar architecture, APIs, and innovations such as the AWS Nitro System.</p>
+<p><em>“The AWS European Sovereign Cloud represents a significant step forward for organizations operating under EU regulatory frameworks,”</em> said Cindy Goldberg, VP Cloud and Silicon Partnerships at Canonical. <em> By combining the performance and the expanded security coverage of Ubuntu Pro with AWS’s sovereignty controls and technical assurances, we’re delivering the compliance support and innovation our customers need to accelerate their digital transformation while meeting stringent EU regulatory requirements.”</em></p>
+<p>Discover Ubuntu and Ubuntu Pro on the AWS European Sovereign Cloud today on the AWS EC2 console. Launch now on the <a href="https://eusc-de-east-1.console.amazonaws-eusc.eu/ec2/home?region=eusc-de-east-1#LaunchInstances:ami=ami-0a121bf2036630575">European Sovereign Cloud EC2 console</a>. </p>
+<h2 class="wp-block-heading">About Canonical </h2>
+<p>Canonical, the publisher of Ubuntu, provides open source security, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone.</p>
+<p>Learn more at https://canonical.com/</p>]]></description>
       <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>
     <item>
-      <title>Shell features: List expansion</title>
-      <link>https://dougiewougie.com/linux/shell-features-list-expansion/</link>
-      <guid isPermaLink="true">https://dougiewougie.com/linux/shell-features-list-expansion/</guid>
-      <pubDate>Sun, 11 Jan 2026 16:29:07 GMT</pubDate>
-      <description><![CDATA[<p>I like list expansion:</p>
+      <title>REST API Development with Qt 6</title>
+      <link>https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/</link>
+      <guid isPermaLink="true">https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/</guid>
+      <pubDate>Wed, 14 Jan 2026 11:58:06 GMT</pubDate>
+      <description><![CDATA[<p>This post describes an experiment using Qt 6.7’s REST APIs to explore Stripe’s payment model, and what I learned building a small desktop developer tool.</p>
 
 
 
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create mutiple directories
-mkdir -p {src,data,app/{mobile,web}}</code></pre>
+<p>Recent Qt releases have included <a href="https://www.qt.io/blog/restful-client-applications-in-qt-6.7-and-forward">several conveniences</a> for developing clients of remote REST APIs. I recently tried it out with the <a href="https://docs.stripe.com/api">Stripe payments REST API</a> to get to grips with the Qt REST API in the real world. The overloading of the term <em>API</em> is unhelpful, I find, but hopefully not too confusing here.</p>
 
 
 
-<p>The <code>p</code> switch creates any &#8220;missing&#8221; parent directories and is idempotent (so if app exists it doesn&#8217;t complain and if not creates it).</p>
+<p>As with almost <a href="https://steveire.wordpress.com/2019/04/30/the-future-of-ast-matching-refactoring-tools-eurollvm-and-accu/">everything I try out</a>, I created Qt desktop tooling as a developer aid to exploring the Stripe API and its behavior. Naming things is hard, but given that I want to put a &#8220;Q&#8221; in the name, googling &#8220;cute stripes&#8221; gives lots of hits about fashion, and the other too-obvious-to-say pun, I&#8217;ve pushed it to GitHub as &#8220;<a href="https://github.com/steveire/qashmere">Qashmere</a>&#8220;:</p>
 
 
 
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create multiple files
-touch file_{1..5}.txt</code></pre>
+<figure class="wp-block-image size-large"><a href="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png"><img width="988" height="870" data-attachment-id="1761" data-permalink="https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/qashmere/" data-orig-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png" data-orig-size="988,870" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="qashmere" data-image-description="" data-image-caption="" data-medium-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=300" data-large-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=450" src="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=988" alt="" class="wp-image-1761" srcset="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png 988w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=150 150w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=300 300w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere.png?w=768 768w" sizes="(max-width: 988px) 100vw, 988px" /></a></figure>
 
 
 
-<p>Heck you can even combine it with tee!</p>
+<h2 class="wp-block-heading">setAlternatingRowColors(true);</h2>
 
 
 
-<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create multiple Hello, World! files
-echo "Hello, world\!" | tee file_{1..5}.txt</code></pre>
+<p>Developers using REST APIs will generally be familiar with existing tooling such as Postman and Bruno, for synthesizing calls to collections of REST APIs. Indeed, Qashmere uses the Stripe Postman JSON definition to present the collection of APIs and parameters. Such tools have scripting interfaces and state to create workflows that a client of the REST API needs to support, like &#8220;create a payment, get the id of the payment back from the REST API and then cancel the payment with the id&#8221;, or &#8220;create a payment, get the id of the payment back from the REST API and then confirm it by id with a given credit card&#8221;. </p>
 
 
 
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="622" src="https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1024x622.png" alt="" class="wp-image-3224" srcset="https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1024x622.png 1024w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-300x182.png 300w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-768x467.png 768w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-1536x934.png 1536w, https://dougiewougie.com/wp-content/uploads/2026/01/image-7-2048x1245.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>]]></description>
-      <source url="https://dougiewougie.com/category/linux/feed/">Dougie Richardson</source>
+<p>So why create Qashmere? In addition to REST APIs, Stripe maintains objects which change state over time. The objects remain at REST until acted on by an external force, and when such an action happens a notification is sent to clients about those state changes, giving them a chance to react. I wanted to be able to collect the REST requests/responses and the notified events and present them as they relate to the Stripe objects. Postman doesn&#8217;t know about events or about Stripe objects in particular, except that it is possible to write a script in Postman to extract the object which is part of a JSON payload. Postman also doesn&#8217;t know that if a Payment Intent is created, there are a subset of next steps which could be in a workflow, such as cancel, capture or confirm payment etc.</p>
+
+
+
+<p>Something that I discovered in the course of trying this out is that when I confirm a Payment Intent, a new Charge object is created and sent to me with the event notification system. Experimental experiences like that help build intuition.</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png"><img width="870" height="814" data-attachment-id="1763" data-permalink="https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/qashmere_2/" data-orig-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png" data-orig-size="870,814" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="qashmere_2" data-image-description="" data-image-caption="" data-medium-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=300" data-large-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=450" src="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=870" alt="" class="wp-image-1763" srcset="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png 870w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=150 150w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=300 300w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_2.png?w=768 768w" sizes="(max-width: 870px) 100vw, 870px" /></a></figure>
+
+
+
+<p>Stripe operates with real money, but it also provides for sandboxes where synthetic payments, customers etc can be created and processed with synthetic payment methods and cards. As Qashmere is only useful as a developer tool or learning aid, it only works with Stripe sandboxes.</p>
+
+
+
+<p>Events from Stripe are sent to pre-configured web servers owned by the client. The web servers need to have a public IP address, which is obviously not appropriate for a desktop application. A WebSocket API would be more suitable and indeed the stripe cli tool uses a WebSocket to receive events, but the WebSocket protocol is not documented or stable. Luckily the stripe cli tool can be used to relay events to another HTTP server, so Qashmere runs a <a href="https://doc.qt.io/qt-6/qhttpserver.html"><code>QHttpServer</code></a> for that purpose.</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png"><img width="1024" height="483" data-attachment-id="1754" data-permalink="https://steveire.wordpress.com/2026/01/14/rest-api-development-with-qt-6/qashmere_architecture-2/" data-orig-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png" data-orig-size="1379,651" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="qashmere_architecture" data-image-description="" data-image-caption="" data-medium-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=300" data-large-file="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=450" src="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=1024" alt="" class="wp-image-1754" srcset="https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=1024 1024w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=150 150w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=300 300w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png?w=768 768w, https://steveire.wordpress.com/wp-content/uploads/2026/01/qashmere_architecture-1.png 1379w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+
+
+
+<h2 class="wp-block-heading">Implementation with Qt REST API</h2>
+
+
+
+<p>The <a href="https://doc.qt.io/qt-6/qrestreply.html"><code>QRestReply</code></a> wraps a <code>QNetworkReply</code> pointer and provides convenience API for accessing the HTTP return code and for creating a <a href="https://doc.qt.io/qt-6/qjsondocument.html"><code>QJsonDocument</code></a> from the body of the response. It must be created manually if using <code>QNetworkAccessManager</code> directly. However the new <a href="https://doc.qt.io/qt-6/qrestaccessmanager.html"><code>QRestAccessManager</code></a> wraps a <code>QNetworkAccessManager</code> pointer, again to provide convenience APIs and overloads for making requests that are needed in REST APIs (though some less common verbs like <code>OPTIONS</code> and <code>TRACE</code> are not built-in). The <code>QRestAccessManager</code> has conveniences like overloads that provide a way to supply callbacks which already take the <code>QRestReply</code> wrapper object as a parameter. If using a <code>QJsonDocument</code> request overload, the &#8220;<code>application/json</code>&#8221; <code>Content-Type</code> is automatically set in the header.</p>
+
+
+
+<p>One of the inconveniences of <code>QRestAccessManager</code> is that in Qashmere I use an external definition of the REST API from the Postman definition which includes the HTTP method. Because the <code>QRestAccessManager</code> provides strongly typed API for making requests I need to do something like:</p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">if (method == &quot;POST&quot;) {</div><div class="cm-line">    rest.post(request, requestData, this, replyHandler);</div><div class="cm-line">} else if (method == &quot;GET&quot;) {</div><div class="cm-line">    rest.get(request, this, replyHandler);</div><div class="cm-line">} else if (method == &quot;DELETE&quot;) {</div><div class="cm-line">    rest.deleteResource(request, this, replyHandler);</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<p>There is a <code>sendCustomRequest</code> class API which can be used with a string, but it does not have an overload for <code>QJsonDocument</code>, so the convenience of having the <code>Content-Type</code> header set is lost. This may be an oversight in the <code>QRestAccessManager</code> API.</p>
+
+
+
+<p>Another missing feature is URL parameter interpolation. Many REST APIs are described as something like <code>/v1/object/:object_id/cancel</code>, and it would be convenient to have a safe way to interpolate the parameters into the URL, such as:</p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">QUrl result = QRestAccessManager::interpolatePathParameters(</div><div class="cm-line">    &quot;/v1/accounts/:account_id/object/:object_id/cancel&quot;, {</div><div class="cm-line">        {&quot;account_id&quot;, &quot;acc_1234&quot;},</div><div class="cm-line">        {&quot;object_id&quot;, &quot;obj_5678&quot;}</div><div class="cm-line">    }</div><div class="cm-line">);</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<p>This is needed to avoid bugs such as a user-supplied parameter containing a slash for example.</p>
+
+
+
+<h2 class="wp-block-heading">Coding Con Currency</h2>
+
+
+
+<p>In recent years I&#8217;ve been writing and reading more Typescript/Angular code which consumes REST services, and less C++. I&#8217;ve enjoyed the way <code>Promise</code>s work in that environment, allowing sequences of REST requests, for example, to be easy to write and read. A test of a pseudo API could <code>await</code> on requests to complete and invoke the next one with something like:</p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">requestFactory.setBaseURL(&quot;http://some_service.com&quot;);</div><div class="cm-line"></div><div class="cm-line">async testWorkflow(username: string, password: string) {</div><div class="cm-line"></div><div class="cm-line">    const loginRequest = requestFactory.makeRequest(&quot;/login&quot;);</div><div class="cm-line">    const loginRequestData = new Map();</div><div class="cm-line">    loginRequestData.setParam(&quot;username&quot;, username);</div><div class="cm-line">    loginRequestData.setParam(&quot;password&quot;, password);</div><div class="cm-line">    const loginResponse = await requestAPI.post(</div><div class="cm-line">        loginRequest, loginRequestData);</div><div class="cm-line"></div><div class="cm-line">    const bearerToken = loginResponse.getData();</div><div class="cm-line">    requestAPI.setBearerToken(bearerToken);</div><div class="cm-line"></div><div class="cm-line">    const listingRequest = requestFactory.makeRequest(&quot;/list_items&quot;);</div><div class="cm-line">    const listingResponse = await requestAPI.get(listingRequest);</div><div class="cm-line"></div><div class="cm-line">    const listing = JSON.parse(listingResponse.getData());</div><div class="cm-line"></div><div class="cm-line">    const firstItemRequest = requestFactory.makeRequest(</div><div class="cm-line">        &quot;/retrieve_item/:item_id&quot;, </div><div class="cm-line">        {</div><div class="cm-line">            item_id: listing[0].item_id</div><div class="cm-line">        }</div><div class="cm-line">    );</div><div class="cm-line"></div><div class="cm-line">    const firstItem = await requestAPI.get(firstItemRequest);</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<p>The availability of <code>async</code> functions and the <code>Promise</code> to await on make a test like this quite easy to write, and the in-application use of the API uses the same <code>Promise</code>s, so there is little friction between application code and test code.</p>
+
+
+
+<p>I wanted to see if I can recreate something like that based on the Qt networking APIs. I briefly tried using C++20 coroutines because they would allow a style closer to <code>async</code>/<code>await</code>, but the integration friction with existing Qt types was higher than I wanted for an experiment.</p>
+
+
+
+<p>Using the methods in <code>QtFuture</code> however, we already have a way to create objects representing the response from a REST API. The result is similar to the Typescript example, but with different ergonomics, using <code>.then</code> instead of the <code>async</code> and <code>await</code> keywords.</p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">struct RestRequest</div><div class="cm-line">{</div><div class="cm-line">    QString method;</div><div class="cm-line">    QString requestUrl;</div><div class="cm-line">    QHttpHeaders headers;</div><div class="cm-line">    QHash&lt;QString, QString&gt; urlParams;</div><div class="cm-line">    QUrlQuery queryParams;</div><div class="cm-line">    std::variant&lt;QUrlQuery, QJsonDocument&gt; requestData;</div><div class="cm-line">};</div><div class="cm-line"></div><div class="cm-line">struct RestResponse</div><div class="cm-line">{</div><div class="cm-line">    QJsonDocument jsonDoc;</div><div class="cm-line">    QHttpHeaders headers;</div><div class="cm-line">    QNetworkReply::NetworkError error;</div><div class="cm-line">    QUrl url;</div><div class="cm-line">    int statusCode;</div><div class="cm-line">};</div><div class="cm-line"></div><div class="cm-line">QFuture&lt;RestResponse&gt; makeRequest(RestRequest restRequest)</div><div class="cm-line">{</div><div class="cm-line">    auto url = interpolatePathParameters(</div><div class="cm-line">        restRequest.requestUrl, </div><div class="cm-line">        restRequest.urlParams);</div><div class="cm-line"></div><div class="cm-line">    auto request = requestFactory.createRequest(url);</div><div class="cm-line"></div><div class="cm-line">    auto requestBodyDoc = extractRequestContent(restRequest.requestData);</div><div class="cm-line"></div><div class="cm-line">    auto requestBody = requestBodyDoc.toJson(QJsonDocument::Compact);</div><div class="cm-line"></div><div class="cm-line">    auto reply = qRestManager.sendCustomRequest(request,</div><div class="cm-line">                                                restRequest.method.toUtf8(),</div><div class="cm-line">                                                requestBody,</div><div class="cm-line">                                                &amp;qnam,</div><div class="cm-line">                                                [](QRestReply &amp;) {});</div><div class="cm-line"></div><div class="cm-line">    return QtFuture::connect(reply, &amp;QNetworkReply::finished).then(</div><div class="cm-line">        [reply]() {</div><div class="cm-line">            QRestReply restReply(reply);</div><div class="cm-line">    </div><div class="cm-line">            auto responseDoc = restReply.readJson();</div><div class="cm-line">            if (!responseDoc) {</div><div class="cm-line">                throw std::runtime_error(&quot;Failed to read response&quot;);</div><div class="cm-line">            }</div><div class="cm-line">    </div><div class="cm-line">            RestResponse response;</div><div class="cm-line">            response.jsonDoc = *responseDoc;</div><div class="cm-line">            response.statusCode = restReply.httpStatus();</div><div class="cm-line">            response.error = restReply.error();</div><div class="cm-line">            response.headers = reply-&gt;headers();</div><div class="cm-line">            response.url = reply-&gt;url();</div><div class="cm-line">    </div><div class="cm-line">            return response;</div><div class="cm-line">        }</div><div class="cm-line">    );</div><div class="cm-line">}</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<p>The <code>QRestAccessManager</code> API requires the creation of a dummy response function when creating a custom request because it is not really designed to be used this way. The result is an API accepting a request and returning a <code>QFuture</code> with the <code>QJsonDocument</code> content. While it is possible for a REST endpoint to return something else, we can follow the Qt philosophy of making the most expected case as easy as possible, while leaving most of the rest possible another way. This utility makes writing unit tests relatively straightforward too:<br></p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">RemoteAPI remoteApi;</div><div class="cm-line"></div><div class="cm-line">remoteApi.setBaseUrl(QUrl(&quot;https://dog.ceo&quot;));</div><div class="cm-line"></div><div class="cm-line">auto responseFuture = remoteApi.makeRequest(</div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {</div><div class="cm-line">         {&quot;breed&quot;, &quot;wolfhound&quot;}, </div><div class="cm-line">         {&quot;sub_breed&quot;, &quot;irish&quot;}</div><div class="cm-line">     }});</div><div class="cm-line"></div><div class="cm-line">QFutureWatcher&lt;RestResponse&gt; watcher;</div><div class="cm-line"></div><div class="cm-line">QSignalSpy spy(&amp;watcher, &amp;QFutureWatcherBase::finished);</div><div class="cm-line"></div><div class="cm-line">watcher.setFuture(responseFuture);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(spy.wait(10000));</div><div class="cm-line"></div><div class="cm-line">auto jsonObject = responseFuture.result().jsonDoc.object();</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(jsonObject[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line"></div><div class="cm-line">QRegularExpression regex(</div><div class="cm-line">    R&quot;(https://images\.dog\.ceo/breeds/wolfhound-irish/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(regex.match(jsonObject[&quot;message&quot;].toString()).hasMatch());</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<p>The result is quite similar to the Typescript above, but only because we can use <code>spy.wait</code>. In application code, we still need to use <code>.then</code> with a callback, but we can additionally use <code>.onFailed</code> and <code>.onCanceled</code> instead of making multiple signal/slot connections. </p>
+
+
+
+<p>With the addition of <code>QtFuture::whenAll</code>, it is easy to make multiple REST requests at once and react when they are all finished, so perhaps something else has been gained too, compared to a signal/slot model:</p>
+
+
+<div class="wp-block-code">
+	<div class="cm-editor">
+		<div class="cm-scroller">
+			
+<pre><code><div class="cm-line">RemoteAPI remoteApi;</div><div class="cm-line"></div><div class="cm-line">remoteApi.setBaseUrl(QUrl(&quot;https://dog.ceo&quot;));</div><div class="cm-line"></div><div class="cm-line">auto responseFuture = remoteApi.requestMultiple({</div><div class="cm-line">    {</div><div class="cm-line">        &quot;GET&quot;,</div><div class="cm-line">        &quot;api/breeds/list/all&quot;,</div><div class="cm-line">    },</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {{&quot;breed&quot;, &quot;german&quot;}, {&quot;sub_breed&quot;, &quot;shepherd&quot;}}},</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;,</div><div class="cm-line">     &quot;api/breed/:breed/:sub_breed/images/random/:num_results&quot;,</div><div class="cm-line">     {},</div><div class="cm-line">     {{&quot;breed&quot;, &quot;wolfhound&quot;}, </div><div class="cm-line">     {&quot;sub_breed&quot;, &quot;irish&quot;}, </div><div class="cm-line">     {&quot;num_results&quot;, &quot;3&quot;}}},</div><div class="cm-line"></div><div class="cm-line">    {&quot;GET&quot;, &quot;api/breed/:breed/list&quot;, {}, {{&quot;breed&quot;, &quot;hound&quot;}}},</div><div class="cm-line">});</div><div class="cm-line"></div><div class="cm-line">QFutureWatcher&lt;QList&lt;RestResponse&gt;&gt; watcher;</div><div class="cm-line"></div><div class="cm-line">QSignalSpy spy(&amp;watcher, &amp;QFutureWatcherBase::finished);</div><div class="cm-line"></div><div class="cm-line">watcher.setFuture(responseFuture);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(spy.wait(10000));</div><div class="cm-line"></div><div class="cm-line">auto four_responses = responseFuture.result();</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses.size(), 4);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[0].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">QVERIFY(four_responses[0].jsonDoc.object()[&quot;message&quot;].</div><div class="cm-line">    toObject()[&quot;greyhound&quot;].isArray());</div><div class="cm-line"></div><div class="cm-line">QRegularExpression germanShepherdRegex(</div><div class="cm-line">    R&quot;(https://images.dog.ceo/breeds/german-shepherd/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[1].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">QVERIFY(germanShepherdRegex.match(</div><div class="cm-line">    four_responses[1].jsonDoc.object()[&quot;message&quot;].toString()).hasMatch());</div><div class="cm-line"></div><div class="cm-line">QRegularExpression irishWolfhoundRegex(</div><div class="cm-line">    R&quot;(https://images.dog.ceo/breeds/wolfhound-irish/[^.]+.jpg)&quot;);</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[2].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">auto irishWolfhoundList = </div><div class="cm-line">    four_responses[2].jsonDoc.object()[&quot;message&quot;].toArray();</div><div class="cm-line">QCOMPARE(irishWolfhoundList.size(), 3);</div><div class="cm-line"></div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[0].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[1].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line">QVERIFY(irishWolfhoundRegex.match(irishWolfhoundList[2].toString()).</div><div class="cm-line">    hasMatch());</div><div class="cm-line"></div><div class="cm-line">QCOMPARE(four_responses[3].jsonDoc.object()[&quot;status&quot;], &quot;success&quot;);</div><div class="cm-line">auto houndList = four_responses[3].jsonDoc.object()[&quot;message&quot;].toArray();</div><div class="cm-line">QCOMPARE_GE(houndList.size(), 7);</div><div class="cm-line">QVERIFY(houndList.contains(&quot;afghan&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;basset&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;blood&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;english&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;ibizan&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;plott&quot;));</div><div class="cm-line">QVERIFY(houndList.contains(&quot;walker&quot;));</div></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<h2 class="wp-block-heading">setAutoDeleteReplies(false);</h2>
+
+
+
+<p>I attempted to use new API additions in recent Qt 6 versions to interact with a few real-world REST services. The additions are valuable, but it seems that there are a few places where improvements might be possible. My attempt to make the API feel closer to what developers in other environments might be accustomed to had some success, but I&#8217;m not sure <code>QFuture</code> is really intended to be used this way.<br>Do readers have any feedback? Would using QCoro improve the coroutine experience? Is it very unusual to create an application with QWidgets instead of QML these days? Should I have used PyQt and the python networking APIs?</p>]]></description>
+      <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
     </item>
     <item>
       <title>I love KDE too much to retire! Snap beta releases trickling in. Stay tuned.</title>
@@ -765,70 +976,6 @@ A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustrado
 <div align="center"><a href="/images/journalpics/122025/olf_cake.jpg"><img decoding="async" src="/images/journalpics/122025/olf_cake_sm.jpg"></a></div>
 <p>In what is perhaps one of my shortest conference trips, I flew out at 5AM the next morning to get home by midday on Sunday. It left me pretty tired, but it was worth it.</p>]]></description>
       <source url="http://princessleia.com/journal/?cat=2&amp;feed=rss2">Elizabeth K. Joseph</source>
-    </item>
-    <item>
-      <title>Coming to 26.04 LTS: Three Layouts</title>
-      <link>https://ubuntustudio.org/2025/12/coming-to-26-04-lts-three-layouts/</link>
-      <guid isPermaLink="true">https://ubuntustudio.org/2025/12/coming-to-26-04-lts-three-layouts/</guid>
-      <pubDate>Thu, 11 Dec 2025 18:41:20 GMT</pubDate>
-      <description><![CDATA[<h2>Xfce Legacy</h2>
-
-
-
-<p>A lot of people have asked us why Ubuntu Studio comes with a panel on top as the default. For that, it&#8217;s a simple answer: Legacy.</p>
-
-
-
-<p>When Ubuntu Studio 12.04 LTS (Precise Pangolin) released over 13 years ago, it was released with a top panel by default as that was the default for our desktop envirionment: Xfce.</p>
-
-
-
-<p>Fast-forward eight years to 20.10 and Xfce was no longer our default desktop environment: we had switched to KDE&#8217;s Plasma Desktop. Plasma has a bottom panel by default, similar to Windows. However, to ease the transition for our long-time users, we kept the panel on top by default, resizing it to be similar to the default top panel of Xfce.</p>
-
-
-
-<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://ubuntustudio.org/wp-content/uploads/2025/12/e9d5/VirtualBox_ISOTest_10_12_2025_18_42_41.jpg" alt="" class="wp-image-3053" width="640" height="400"/></figure>
-
-
-
-<h2>A macOS-Like Layout</h2>
-
-
-
-<p>With 25.10&#8217;s release, we included an additional layout: two panels. One panel is on top with a global menu, and the bottom contains some default applications, a trash can, and a full-screen application launcher. This is a way to feel familiar to those with a similar layout from where they may be coming from, being an operating system for creativity: macOS.</p>
-
-
-
-<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://ubuntustudio.org/wp-content/uploads/2025/12/1df5/VirtualBox_ISOTest_10_12_2025_18_45_35.png" alt="" class="wp-image-3050" width="640" height="400"/></figure>
-
-
-
-<h2>Familiarity and Traditionalism: Windows-like Layout</h2>
-
-
-
-<p>Starting with 26.04 LTS, we&#8217;ll also include one more layout: a bottom, Windows 10-like layout. This is to ease the transition for those coming from Windows, and due to popular request and reports.</p>
-
-
-
-<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://ubuntustudio.org/wp-content/uploads/2025/12/9220/VirtualBox_ISOTest_10_12_2025_18_43_35.jpg" alt="" class="wp-image-3052" width="640" height="400"/></figure>
-
-
-
-<h2>Should We Change The Default?</h2>
-
-
-
-<p>It has been 13 years since we defaulted to a top panel, but is that the right idea anymore?</p>
-
-
-
-<p>Right now, on the Ubuntu Discourse, <a href="https://discourse.ubuntu.com/t/coming-to-ubuntu-studio-26-04-lts-three-layouts/">we have a poll</a> to decide if we should change the default layout starting with 26.04 LTS. This will not affect layouts for anyone upgrading from a prior release, but only new installations or new users going forward.</p>
-
-
-
-<p>If you would like to participate in the poll, <a href="https://discourse.ubuntu.com/t/coming-to-ubuntu-studio-26-04-lts-three-layouts/">head on over to the Ubuntu Discourse and cast a vote</a>!</p>]]></description>
-      <source url="http://ubuntustudio.org/category/planetubuntu/feed/">Ubuntu Studio</source>
     </item>
     <item>
       <title>Addressing Linux's Missing PKI Infrastructure</title>
@@ -2680,63 +2827,6 @@ mirror and follow the instructions above.</p>]]></description>
       <source url="http://blog.luke.wf/feeds/posts/default/-/ubuntu-planet/">Luke Faraone</source>
     </item>
     <item>
-      <title>Spotlighting Community Stories</title>
-      <link>https://blog.popey.com/2025/02/spotlighting-community-stories/</link>
-      <guid isPermaLink="true">https://blog.popey.com/2025/02/spotlighting-community-stories/</guid>
-      <pubDate>Thu, 13 Feb 2025 10:00:00 GMT</pubDate>
-      <description><![CDATA[<p>tl;dr I&rsquo;m hosting a <a href="https://anchore.zoom.us/j/84874186657">Community Spotlight Webinar</a> today at <a href="https://anchore.com/">Anchore</a> featuring <a href="https://www.linkedin.com/in/nicolas-vuillamy/">Nicolas Vuilamy</a> from the <a href="https://megalinter.io/latest/">MegaLinter</a> project. <a href="https://anchore.zoom.us/j/84874186657">Register here</a>.</p>
-<hr>
-<p>Throughout my career, I&rsquo;ve had the privilege of working with organizations that create widely-used open source tools. The popularity of these tools is evident through their impressive download statistics, strong community presence, and engagement both online and at events.</p>
-<p>During my time at <a href="https://canonical.com/">Canonical</a>, we saw the tremendous reach of <a href="https://ubuntu.com/">Ubuntu</a>, along with tools like <a href="https://canonical.com/lxd">LXD</a>, <a href="https://cloud-init.io/">cloud-init</a>, and yes, even <a href="https://snapcraft.io/">Snapcraft</a>.</p>
-<p>At <a href="https://www.influxdata.com/">Influxdata</a>, I was part of the <a href="https://www.influxdata.com/time-series-platform/telegraf/">Telegraf</a> team, where we witnessed substantial adoption through downloads and active usage, reflected in our vibrant <a href="https://www.repotrends.com/influxdata/telegraf">bug tracker</a>.</p>
-<p>Now at <a href="https://anchore.com/">Anchore</a>, we see widespread adoption of <a href="https://github.com/anchore/syft">Syft</a> for <a href="https://anchore.com/sbom">SBOM</a> generation and <a href="https://github.com/anchore/grype">Grype</a> for <a href="https://anchore.com/container-vulnerability-scanning/">vulnerability</a> scanning.</p>
-<p>What makes Syft and Grype particularly exciting, beyond their permissive licensing, consistent release cycle, dedicated developer team, and <a href="https://en.wikipedia.org/wiki/List_of_computing_mascots#/media/File:Syft_mascot.svg">distinctive</a> <a href="https://en.wikipedia.org/wiki/List_of_computing_mascots#/media/File:Grype_mascot.svg">mascots</a>, is how they serve as building blocks for other tools and services.</p>
-<p>Syft isn&rsquo;t just a standalone SBOM generator - it&rsquo;s a library that developers can integrate into their own tools. Some organizations even build their own SBOM generators and vulnerability tools directly from our open source foundation!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-scout version
-</span></span><span style="display:flex;"><span>      ⢀⢀⢀             ⣀⣀⡤⣔⢖⣖⢽⢝
-</span></span><span style="display:flex;"><span>   ⡠⡢⡣⡣⡣⡣⡣⡣⡢⡀    ⢀⣠⢴⡲⣫⡺⣜⢞⢮⡳⡵⡹⡅
-</span></span><span style="display:flex;"><span>  ⡜⡜⡜⡜⡜⡜⠜⠈⠈        ⠁⠙⠮⣺⡪⡯⣺⡪⡯⣺
-</span></span><span style="display:flex;"><span> ⢘⢜⢜⢜⢜⠜               ⠈⠪⡳⡵⣹⡪⠇
-</span></span><span style="display:flex;"><span> ⠨⡪⡪⡪⠂    ⢀⡤⣖⢽⡹⣝⡝⣖⢤⡀    ⠘⢝⢮⡚       _____                 _
-</span></span><span style="display:flex;"><span>  ⠱⡱⠁    ⡴⡫⣞⢮⡳⣝⢮⡺⣪⡳⣝⢦    ⠘⡵⠁      / ____| Docker        | |
-</span></span><span style="display:flex;"><span>   ⠁    ⣸⢝⣕⢗⡵⣝⢮⡳⣝⢮⡺⣪⡳⣣    ⠁      | <span style="color:#f92672">(</span>___   ___ ___  _   _| |_
-</span></span><span style="display:flex;"><span>        ⣗⣝⢮⡳⣝⢮⡳⣝⢮⡳⣝⢮⢮⡳            <span style="color:#ae81ff">\_</span>__ <span style="color:#ae81ff">\ </span>/ __/ _ <span style="color:#ae81ff">\|</span> | | | __|
-</span></span><span style="display:flex;"><span>   ⢀    ⢱⡳⡵⣹⡪⡳⣝⢮⡳⣝⢮⡳⡣⡏    ⡀       ____<span style="color:#f92672">)</span> | <span style="color:#f92672">(</span>_| <span style="color:#f92672">(</span>_<span style="color:#f92672">)</span> | |_| | |_
-</span></span><span style="display:flex;"><span>  ⢀⢾⠄    ⠫⣞⢮⡺⣝⢮⡳⣝⢮⡳⣝⠝    ⢠⢣⢂     |_____/ <span style="color:#ae81ff">\_</span>__<span style="color:#ae81ff">\_</span>__/ <span style="color:#ae81ff">\_</span>_,_|<span style="color:#ae81ff">\_</span>_|
-</span></span><span style="display:flex;"><span>  ⡼⣕⢗⡄    ⠈⠓⠝⢮⡳⣝⠮⠳⠙     ⢠⢢⢣⢣
-</span></span><span style="display:flex;"><span> ⢰⡫⡮⡳⣝⢦⡀              ⢀⢔⢕⢕⢕⢕⠅
-</span></span><span style="display:flex;"><span> ⡯⣎⢯⡺⣪⡳⣝⢖⣄⣀        ⡀⡠⡢⡣⡣⡣⡣⡣⡃
-</span></span><span style="display:flex;"><span>⢸⢝⢮⡳⣝⢮⡺⣪⡳⠕⠗⠉⠁    ⠘⠜⡜⡜⡜⡜⡜⡜⠜⠈
-</span></span><span style="display:flex;"><span>⡯⡳⠳⠝⠊⠓⠉             ⠈⠈⠈⠈
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>version: v1.13.0 <span style="color:#f92672">(</span>go1.22.5 - darwin/arm64<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>git commit: 7a85bab58d5c36a7ab08cd11ff574717f5de3ec2
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>$ syft /usr/local/bin/docker-scout | grep syft
-</span></span><span style="display:flex;"><span> ✔ Indexed file system /usr/local/bin/docker-scout
-</span></span><span style="display:flex;"><span> ✔ Cataloged contents f247ef0423f53cbf5172c34d2b3ef23d84393bd1d8e05f0ac83ec7d864396c1b
-</span></span><span style="display:flex;"><span>   ├── ✔ Packages                        <span style="color:#f92672">[</span><span style="color:#ae81ff">274</span> packages<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   ├── ✔ File digests                    <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> files<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   ├── ✔ File metadata                   <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> locations<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>   └── ✔ Executables                     <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> executables<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>github.com/anchore/syft     v1.10.0     go-module
-</span></span></code></pre></div><p><em>(I find it delightfully meta to discover syft inside other tools using syft itself)</em></p>
-
-
-<center><a href="https://blog.popey.com/blog/images/2025-02-13/scooby-doo-meme.png"><img src="https://blog.popey.com/blog/images/2025-02-13/scooby-doo-meme.png" width="540" alt="A silly meme that isn't true at all :)"></a></center>
-
-<p>This collaborative building upon existing tools mirrors how <a href="https://linuxmint.com/">Linux</a> distributions often build upon other <a href="http://ubuntu.com/">Linux distributions</a>. Like Ubuntu and Telegraf, we see countless individuals and organizations creating innovative solutions that extend beyond the core capabilities of Syft and Grype. It&rsquo;s the essence of open source - a multiplier effect that comes from creating accessible, powerful tools.</p>
-<p>While we may not always know exactly how and where these tools are being used (and sometimes, rightfully so, it&rsquo;s not our business), there are many cases where developers and companies want to share their innovative implementations.</p>
-<p>I&rsquo;m particularly interested in these stories because they deserve to be shared. I&rsquo;ve been exploring public repositories like the GitHub network dependents for <a href="https://github.com/anchore/syft/network/dependents">syft</a>, <a href="https://github.com/anchore/grype/network/dependents">grype</a>, <a href="https://github.com/anchore/sbom-action/network/dependents">sbom-action</a>, and <a href="https://github.com/anchore/scan-action/network/dependents">scan-action</a> to discover where our tools are making an impact.</p>
-<p>The adoption has been remarkable!</p>
-<p>I reached out to several open source projects to learn about their implementations, and <a href="https://www.linkedin.com/in/nicolas-vuillamy/">Nicolas Vuilamy</a> from <a href="https://megalinter.io/latest/">MegaLinter</a> was the first to respond - which brings us full circle.</p>
-<p>Today, I&rsquo;m hosting our first <a href="https://anchore.zoom.us/j/84874186657">Community Spotlight Webinar</a> with Nicolas to share MegaLinter&rsquo;s story. <a href="https://anchore.zoom.us/j/84874186657">Register here</a> to join us!</p>
-<p>If you&rsquo;re building something interesting with <a href="https://github.com/anchore">Anchore Open Source</a> and would like to share your story, please <a href="https://popey.me/">get in touch</a>. 🙏</p>]]></description>
-      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
-    </item>
-    <item>
       <title>How to prevent TrackPoint or touchpad events from waking up ThinkPad T14 Gen 5 AMD from suspend</title>
       <link>https://nobuto-m.github.io/post/2025/how-to-prevent-trackpoint-events-from-waking-up-thinkpad-t14-gen-5-amd-from-suspend/</link>
       <guid isPermaLink="true">https://nobuto-m.github.io/post/2025/how-to-prevent-trackpoint-events-from-waking-up-thinkpad-t14-gen-5-amd-from-suspend/</guid>
@@ -4006,25 +4096,6 @@ whenever they want. The images from the linked directory should be
 fairly good, and <a href="https://openqa.opensuse.org/group_overview/100">test automation</a> with openQA has been started upon as well.</p>
 <p>You can try out the <a href="https://documentation.suse.com/alp/all/single-html/alp/index.html#reference-available-alp-workloads">other</a> example workloads that are available just as well.</p>]]></description>
       <source url="http://losca.blogspot.com/feeds/posts/default/-/ubuntu?alt=rss">Timo Jyrinki</source>
-    </item>
-    <item>
-      <title>Grantlee version 5.3.1 now available</title>
-      <link>https://steveire.wordpress.com/2022/11/11/grantlee-version-5-3-1-now-available/</link>
-      <guid isPermaLink="true">https://steveire.wordpress.com/2022/11/11/grantlee-version-5-3-1-now-available/</guid>
-      <pubDate>Fri, 11 Nov 2022 20:55:50 GMT</pubDate>
-      <description><![CDATA[<p>I&#8217;ve just made a new 5.3.1 release of Grantlee. The <a href="https://steveire.wordpress.com/2022/09/10/grantlee-version-5-3-now-available/">5.3.0 release</a> had some build issues with Qt 6 which should now be resolved with <a href="https://github.com/steveire/grantlee/releases/tag/v5.3.1">version 5.3.1</a>.</p>
-
-<p>Unlike previous releases, this release will not appear on <a href="http://www.grantlee.org/downloads/" rel="nofollow">http://www.grantlee.org/downloads/</a>. I&#8217;ll be turning off grantlee.org soon. All previous releases have already been uploaded to <a href="https://github.com/steveire/grantlee/releases" rel="nofollow">https://github.com/steveire/grantlee/releases</a>.</p>
-
-<p>The continuation of Grantlee for Qt 6 is happening as <a href="https://invent.kde.org/libraries/ktexttemplate">KTextTemplate</a> so as not to be constrained by my lack of availability. I&#8217;ll only make new Grantlee patch releases as needed to fix any issues that come up in the meantime.</p>
-
-<p>Many thanks to the KDE community for taking up stewardship and ownership of this library!</p>
-
-
-
-
-<p></p>]]></description>
-      <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
     </item>
     <item>
       <title>Clipboard content to file. New app</title>

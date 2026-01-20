@@ -6,9 +6,59 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Mon, 19 Jan 2026 00:30:27 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 00:28:10 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Showcasing open design in action: Loughborough University design students explore open source projects</title>
+      <link>https://ubuntu.com//blog/showcasing-open-design-in-action-loughborough-university-design-students-explore-open-source-projects</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/showcasing-open-design-in-action-loughborough-university-design-students-explore-open-source-projects</guid>
+      <pubDate>Mon, 19 Jan 2026 11:09:04 GMT</pubDate>
+      <description><![CDATA[<figure class="wp-block-image size-full"><img alt="" height="372" loading="lazy" sizes="(min-width: 660px) 660px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_660/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F42a7%2Fimage.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F42a7%2Fimage.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F42a7%2Fimage.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F42a7%2Fimage.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_660/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F42a7%2Fimage.png 660w" width="660"/></figure>
+<p>Last year, we collaborated with two design student teams from Loughborough University in the UK. These students were challenged to work on open source project briefs. Team 1 focused on non-code contributions, while Team 2’s brief was to create a unified documentation experience, giving them a chance to apply their design skills to real-world problems within the open source ecosystem.</p>
+<p>We reached out to <a href="https://www.lboro.ac.uk/schools/design-creative-arts/" rel="noreferrer noopener" target="_blank">Loughborough University School of Design and Creative Arts</a> because there is a real need for non-code contributions in the open source ecosystem. Design thinking, which goes beyond the code to consider the user experience, is paramount if we want open source to thrive and gain ever more widespread adoption. Each team tackled a unique challenge that reflects the growing need for design thinking in open source, where developers have traditionally led, but where a better user experience is now urgently needed.</p>
+<p>This post celebrates their thoughtful work, sharing reflections from their design journey, and invites others to consider contributing to open source projects!</p>
+<p>Interested in checking out the project briefs yourself? The briefs are open for anyone to explore, think about, and attempt to solve. Whether you’re thinking of ideas, writing them on a napkin, or developing your solution, there are no limitations to your creativity here! <a href="https://assets.ubuntu.com/v1/7bd9c15e-project_briefs_for_universities.pdf" rel="noreferrer noopener" target="_blank">Get the briefs here</a> (PDF).</p>
+<h1 class="wp-block-heading">Team 1: Improving design approachability in open source</h1>
+<p>Project brief: Increase designer participation in open source projects and contributing non-code contributions.<br/><br/>Objective: Help improve how designers engage with open source projects by lowering barriers to entry and encouraging more meaningful design contributions.<br/></p>
+<p>Team members: <a href="https://www.linkedin.com/in/mirunaalini-meera-alagarajah-3755211b3/" rel="noreferrer noopener" target="_blank">Mirunaalini Alagarajah</a>, <a href="https://www.linkedin.com/in/giridharpabbati/" rel="noreferrer noopener" target="_blank">Giridhar pabbati</a>, <a href="https://www.linkedin.com/in/jiarui-he-579796336/" rel="noreferrer noopener" target="_blank">Jiarui He</a>, Lechen Zou, <a href="https://sdcapgshow2025.lboro.ac.uk/student/clara-lin/" rel="noreferrer noopener" target="_blank">Clara Lin</a></p>
+<p><br/>Check out their <a href="https://assets.ubuntu.com/v1/52567bad-final_slides_cocreate_5_canonical_compressed.pdf" rel="noreferrer noopener" target="_blank">project presentation</a>!</p>
+<h2 class="wp-block-heading">Reflection from the team</h2>
+<h4 class="wp-block-heading">What was it like working on a real open source design challenge?</h4>
+<p>This project really challenged us as a team, testing our collaboration, adaptability, and time management skills. Tackling a real client brief helped us engage more deeply with the problem and understand its real-world context. Working with Canonical was particularly motivating, as it gave us the sense that our efforts were contributing to something genuinely impactful.</p>
+<h4 class="wp-block-heading">What surprised you most about open source?</h4>
+<p>As a team, we realised we hadn’t truly thought about the various barriers designers encounter when engaging with open source projects. We also found it fascinating that many designers are quite protective of their work, which makes open sharing a real challenge. It created a unique tension –everyone wanted to learn from others, but few felt comfortable giving their work away for free.</p>
+<h4 class="wp-block-heading">What design decision did your team focus on and why?</h4>
+<p>We used insights from our user research to guide our design direction, ensuring that each decision was grounded in evidence. Prototyping allowed us to test various design details and components, which helped us refine our approach and gain a much clearer sense of direction. As a team, we brought diverse backgrounds and skill sets—those with stronger design experience naturally took the lead in developing and refining the visual aspects of the project.</p>
+<h4 class="wp-block-heading">How has this experience influenced how you think about design and collaboration?</h4>
+<p>On reflection, there were many possible directions we could have taken, but in hindsight, grounding our decisions in user insights and continuous testing helped align the team around a clear vision. Regular client feedback was invaluable in refining our approach and ensuring we stayed true to user needs. Additionally, leveraging each team member’s strengths allowed us to work more efficiently and make the most of our diverse skills. Overall, it was a valuable experience that taught us how to collaborate rapidly and effectively to address a real-world brief.</p>
+<h1 class="wp-block-heading">Team 2: Unifying Juju’s documentation ecosystem</h1>
+<p>Project brief: Improve the accessibility, clarity, and cohesiveness of Juju’s documentation to enhance user experience and encourage adoption.<br/><br/>Objective: Reimagining how users discover and learn about Juju (Canonical’s open source application orchestration engine for the deployment, integration, and lifecycle management) by improving the documentation experience. </p>
+<p>Team members:<a href="https://sharvarirai.framer.website/" rel="noreferrer noopener" target="_blank"> Sharvari Rai</a>, <a href="https://www.linkedin.com/in/bavraj-virdi-120030254/" rel="noreferrer noopener" target="_blank">Bavraj Virdi</a>, <a href="https://www.linkedin.com/in/xinya-wang-79297b390/" rel="noreferrer noopener" target="_blank">Xinya Wang</a>, <a href="https://www.linkedin.com/in/siying-fan-324508368/" rel="noreferrer noopener" target="_blank">Siying Fan</a>, <a href="https://www.linkedin.com/in/qingwan-yu-b138a8368/" rel="noreferrer noopener" target="_blank">Qingwan</a><a href="https://www.linkedin.com/in/qingwan-yu-b138a8368/"> Yu<br/><br/></a>Check out their <a href="https://www.figma.com/deck/sl4Je3lBfLQIAHLTKVVJsK/Canonical?node-id=1-126&amp;viewport=-88%2C-46%2C0.52&amp;t=mKdUYsomHF7yzYyI-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" rel="noreferrer noopener" target="_blank">project presentation</a>!</p>
+<h2 class="wp-block-heading">Reflection from the team</h2>
+<h4 class="wp-block-heading">What were your first impressions about the problem space?</h4>
+<p>When we were first introduced to the project, our initial reaction was that the brief felt highly technical and complex, with unfamiliar terms like charms, operators, and Kubernetes. As none of us came from a technical or programming background, the documentation space felt like a challenge for us was the learning curve of diving in and understanding what is in the documentation and what it means. We struggled to identify a clear starting point and to understand the overall purpose of Juju beyond the jargon. Since the platform is mainly aimed at developers, it was difficult at first to relate to or imagine user needs. Despite that, this initial confusion actually helped us empathise with potential users facing similar barriers, and it highlighted the importance of clarity and structure in the documentation. </p>
+<h4 class="wp-block-heading">What was your approach to designing a more unified documentation experience?</h4>
+<p>Our approach began with breaking down the brief into simpler terms and mapping the current documentation ecosystem so we could better understand the challenges. As a team, we created personas for both new and experienced users, which helped us think about different entry points and the level of guidance each group might need. We then sketched user journeys to highlight pain points and challenges. From there, we focused on developing a single, structured information architecture with clearer pathways for learning and troubleshooting.  The aim was to allow users to move confidently between different sections without having to relearn how to navigate each time. </p>
+<h4 class="wp-block-heading">What were the biggest challenges your team encountered during the project?</h4>
+<p>The main challenge was the steep learning curve of immersing ourselves in the technical complexity of the Juju ecosystem and its vast open source documentation, especially since most of us came from non-technical backgrounds. We had to quickly grasp the product and its entire linked ecosystem. As direct access to real users was limited, we relied heavily on secondary data, community forums, and the creation of personas to accurately map realistic pain points. Our constant goal was to balance technical accuracy with the required user-centred clarity, which pushed us to fundamentally rethink how developer documentation can effectively guide users without overwhelming them. </p>
+<h4 class="wp-block-heading">What skills or takeaways are you bringing with you from this experience?</h4>
+<p>This project was a major lesson in how to embrace and navigate ambiguity. This was a truly crucial learning experience when dealing with an unfamiliar domain, evolving product documentation, and diverse stakeholder needs. We significantly strengthened our ability to translate dense technical research into clear, actionable design recommendations. We also honed our communication and collaboration skills as a team, successfully aligning our user-focused vision with Canonical’s roadmap. Most importantly, we learned that user advocacy is vital even in highly technical environments, and that our focus is ultimately on humanising complex systems.</p>
+<h1 class="wp-block-heading">🎉Congratulations to both teams!</h1>
+<p>We would like to thank and congratulate both teams for their creativity, thoughtful research, and commitment to enhancing open source experiences through design. They approached complex, open-ended problems with maturity and curiosity, and their outcomes were both inspiring and practical. </p>
+<p>Their fresh perspectives also reminded us of the value of questioning assumptions and looking at familiar challenges through new eyes, reinforcing how much we as practitioners can learn from emerging designers.</p>
+<p>We hope these projects have not only added valuable work to their portfolios but also opened doors to future engagement with open source communities. We encourage them (and any other designer out there) to continue exploring open source, contributing through design, and helping shape more inclusive, user-friendly technologies!</p>
+<h1 class="wp-block-heading">Interested in running a project like this?</h1>
+<p>Are you part of a university looking to bring open source design into your curriculum? <a href="https://canonical.design/blog/open-design-the-opportunity-design-students-didnt-know-they-were-missing" rel="noreferrer noopener" target="_blank">We’re looking for academic partners</a> who want to give students meaningful, real-world experiences while contributing to the global open source ecosystem.</p>
+<p>Reach out at <a href="mailto:opendesign@canonical.com" rel="noreferrer noopener" target="_blank">opendesign@canonical.com</a></p>
+<p>Learn more at <a href="https://canonical.design/blog/open-design-the-opportunity-design-students-didnt-know-they-were-missing" rel="noreferrer noopener" target="_blank">Canonical.design</a></p>
+<p></p>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<h3 class="wp-block-heading"><strong>Join the Canonical design team</strong></h3>
+<p>We’re looking for designers who care about craft and how systems work under the hood. At Canonical, design sits at the intersection of UX, engineering, and open source where we shape cohesive, accessible experiences across cloud, desktop, and IoT products.</p>
+<p>If you enjoy solving complex problems and turning technical depth into clarity, explore our open roles: <strong><a href="https://canonical.com/careers/web-and-design" rel="noreferrer noopener" target="_blank">canonical.com/careers</a></strong></p>]]></description>
+      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
+    </item>
     <item>
       <title>Malware Peddlers Are Now Hijacking Snap Publisher Domains</title>
       <link>https://blog.popey.com/2026/01/malware-purveyors-taking-over-published-snap-email-domains/</link>
@@ -145,21 +195,6 @@
 
 <p>Long-Term Support releases are identified by an even numbered year-of-release and a month-of-release of April (04). Hence, the most recent Long-Term Support release is 24.04 (YY.MM = 2024.April), and the next Long-Term Support release will be 26.04 (2026.April). LTS releases for official Ubuntu flavors (not Desktop or Server which are supported for five years) are three years, meaning LTS users are expected to upgrade after every LTS release with a one-year buffer.</p>]]></description>
       <source url="http://ubuntustudio.org/category/planetubuntu/feed/">Ubuntu Studio</source>
-    </item>
-    <item>
-      <title>Canonical Ubuntu and Ubuntu Pro now available on AWS European Sovereign Cloud</title>
-      <link>https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</guid>
-      <pubDate>Thu, 15 Jan 2026 22:06:23 GMT</pubDate>
-      <description><![CDATA[<p>January 15, 2026 – Canonical, the publisher of Ubuntu and provider of open source security, support, and services, announced today that it is a launch partner for the AWS European Sovereign Cloud, a new independent cloud for Europe, with Ubuntu and Ubuntu Pro now available.</p>
-<p>Canonical’s Ubuntu Pro delivers a securely designed, stable, and enterprise-ready foundation for open source innovation while providing customers with the same security, availability, and performance they expect from AWS. This enables customers to meet stringent operational autonomy and data residency requirements within the European Union (EU).</p>
-<p>The AWS European Sovereign Cloud is a fully featured, independently operated sovereign cloud backed by strong technical controls, sovereign assurances, and legal protections designed to meet the needs of European governments and enterprises. The AWS European Sovereign Cloud infrastructure is entirely located within the EU and operates independently from existing regions. Customers using the AWS European Sovereign Cloud will benefit from the full power of AWS including the same services portfolio, security, availability, performance, familiar architecture, APIs, and innovations such as the AWS Nitro System.</p>
-<p><em>“The AWS European Sovereign Cloud represents a significant step forward for organizations operating under EU regulatory frameworks,”</em> said Cindy Goldberg, VP Cloud and Silicon Partnerships at Canonical. <em> By combining the performance and the expanded security coverage of Ubuntu Pro with AWS’s sovereignty controls and technical assurances, we’re delivering the compliance support and innovation our customers need to accelerate their digital transformation while meeting stringent EU regulatory requirements.”</em></p>
-<p>Discover Ubuntu and Ubuntu Pro on the AWS European Sovereign Cloud today on the AWS EC2 console. Launch now on the <a href="https://eusc-de-east-1.console.amazonaws-eusc.eu/ec2/home?region=eusc-de-east-1#LaunchInstances:ami=ami-0a121bf2036630575">European Sovereign Cloud EC2 console</a>. </p>
-<h2 class="wp-block-heading">About Canonical </h2>
-<p>Canonical, the publisher of Ubuntu, provides open source security, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone.</p>
-<p>Learn more at https://canonical.com/</p>]]></description>
-      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>
     <item>
       <title>REST API Development with Qt 6</title>
@@ -332,6 +367,452 @@
       <source url="https://steveire.wordpress.com/feed/?mrss=off">Stephen Kelly</source>
     </item>
     <item>
+      <title>Ubuntu Weekly Newsletter Issue 927</title>
+      <link>https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-927/74886</link>
+      <guid isPermaLink="true">https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-927/74886</guid>
+      <pubDate>Mon, 12 Jan 2026 20:42:31 GMT</pubDate>
+      <description><![CDATA[<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/6/d63398e98cbe354ca8e8a1e00de6c541a45b4a01.png" data-download-href="/uploads/short-url/uyUIYtIeNMaruYP5jnBE03PL4iZ.png?dl=1" title="header"><img src="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/6/d63398e98cbe354ca8e8a1e00de6c541a45b4a01.png" alt="header" data-base62-sha1="uyUIYtIeNMaruYP5jnBE03PL4iZ" width="522" height="111"></a></div><p></p>
+<h1><a name="p-194106-ubuntu-weekly-news-1" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-weekly-news-1"></a>Ubuntu Weekly News</h1>
+<h2><a name="p-194106-uwn-issue-927-january-11-17-2026-2" class="anchor" href="https://discourse.ubuntu.com#p-194106-uwn-issue-927-january-11-17-2026-2"></a>UWN Issue 927 January 11-17 2026.</h2>
+<p>Welcome to the Ubuntu Weekly Newsletter, Issue 927 for the week of January 11 - 17, 2026.</p>
+<h2><a name="p-194106-in-this-issue-3" class="anchor" href="https://discourse.ubuntu.com#p-194106-in-this-issue-3"></a>In this Issue</h2>
+<ul>
+<li>Ubuntu 25.04 (Plucky Puffin) reached End of Life on 15th January 2026</li>
+<li>Ubuntu Stats</li>
+<li>Hot in Support</li>
+<li>Other Meeting Reports</li>
+<li>Upcoming Meetings and Events</li>
+<li>Ubuntu Circles! (LoCo) News</li>
+<li>Ubuntu Nepal’s Year End Contributors Meetup</li>
+<li>Ubuntu Circles! (LoCo) Events</li>
+<li>A new Ubuntu wiki, Part 2: Features</li>
+<li>Ubuntu Server Gazette – Issue 11 – AI-bots shall eat my docs…</li>
+<li>Other Community News</li>
+<li>Ubuntu Cloud News</li>
+<li>Canonical News</li>
+<li>In the Blogosphere</li>
+<li>Featured Audio and Video</li>
+<li>Updates and Security for Ubuntu 22.04, 24.04, 25.04 and 25.10</li>
+<li>Archives</li>
+<li>Further News</li>
+<li>Conclusion</li>
+<li>Credits</li>
+<li>Glossary of Terms</li>
+<li>Get Involved</li>
+<li>Feedback</li>
+<li>And much more!</li>
+</ul>
+<h2><a name="p-194106-general-community-news-4" class="anchor" href="https://discourse.ubuntu.com#p-194106-general-community-news-4"></a>General Community News</h2>
+<h3><a name="p-194106-ubuntu-2504-plucky-puffin-reached-end-of-life-on-15th-january-2026-5" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2504-plucky-puffin-reached-end-of-life-on-15th-january-2026-5"></a>Ubuntu 25.04 (Plucky Puffin) reached End of Life on 15th January 2026</h3>
+<p>Ural Tunaboyu of the Ubuntu Release team (on mailing list, Utkarsh Gupta reports on Ubuntu Discourse) announces the ‘End of Life’ for Ubuntu 25.04. We’re referred to the prior warning wherein Ubuntu 25.04 was released on the 17th of April 2025; it had a good nine months of supported life which has now ended. The effects of EOL, and a link for release-upgrading to Ubuntu 25.10, and more are provided.</p>
+<p><a href="https://lists.ubuntu.com/archives/ubuntu-announce/2026-January/000320.html">https://lists.ubuntu.com/archives/ubuntu-announce/2026-January/000320.html</a></p>
+<ul>
+<li>
+<p><a href="https://discourse.ubuntu.com/t/ubuntu-25-04-plucky-puffin-reached-end-of-life-on-15th-january-2026/75079">https://discourse.ubuntu.com/t/ubuntu-25-04-plucky-puffin-reached-end-of-life-on-15th-january-2026/75079</a></p>
+<ul>
+<li>Edubuntu 25.04 has reached End-Of-Life (EOL) - <a href="https://discourse.ubuntu.com/t/edubuntu-25-04-has-reached-end-of-life-eol/75096">https://discourse.ubuntu.com/t/edubuntu-25-04-has-reached-end-of-life-eol/75096</a></li>
+<li>Ubuntu Studio 25.04 Has Reached End-Of-Life (EOL) - <a href="https://ubuntustudio.org/2026/01/ubuntu-studio-25-04-has-reached-end-of-life-eol/">https://ubuntustudio.org/2026/01/ubuntu-studio-25-04-has-reached-end-of-life-eol/</a></li>
+</ul>
+</li>
+<li>
+<p>Ubuntu 25.04 “Plucky Puffin” Reached End of Life, Upgrade to Ubuntu 25.10 - <a href="https://9to5linux.com/ubuntu-25-04-plucky-puffin-reached-end-of-life-upgrade-to-ubuntu-25-10">https://9to5linux.com/ubuntu-25-04-plucky-puffin-reached-end-of-life-upgrade-to-ubuntu-25-10</a></p>
+</li>
+</ul>
+<h2><a name="p-194106-ubuntu-stats-6" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-stats-6"></a>Ubuntu Stats</h2>
+<h3><a name="p-194106-bug-stats-7" class="anchor" href="https://discourse.ubuntu.com#p-194106-bug-stats-7"></a>Bug Stats</h3>
+<ul>
+<li>Open: 144253 (+104)</li>
+<li>Critical: 313 (0)</li>
+<li>Unconfirmed: 74035 (+52)</li>
+</ul>
+<p>As always, the Bug Squad needs more help. If you want to get started, please see: <a href="https://wiki.ubuntu.com/BugSquad">https://wiki.ubuntu.com/BugSquad</a></p>
+<h3><a name="p-194106-translations-8" class="anchor" href="https://discourse.ubuntu.com#p-194106-translations-8"></a>Translations</h3>
+<ul>
+<li>Albanian: 98.86% (3986/106)</li>
+<li>Swedish: 98.62% (4829/685)</li>
+<li>Ukrainian: 89.17% (38012/1580)</li>
+<li>German: 87.13% (45196/131)</li>
+<li>French: 85.74% (50084/7505)</li>
+</ul>
+<h2><a name="p-194106-hot-in-support-9" class="anchor" href="https://discourse.ubuntu.com#p-194106-hot-in-support-9"></a>Hot in Support</h2>
+<h3><a name="p-194106-ubuntu-community-discourse-trending-top-5-threads-10" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-community-discourse-trending-top-5-threads-10"></a>Ubuntu Community Discourse Trending Top 5 Threads</h3>
+<ul>
+<li>Downgrading Ubuntu version - <a href="https://discourse.ubuntu.com/t/downgrading-ubuntu-version/74800">https://discourse.ubuntu.com/t/downgrading-ubuntu-version/74800</a></li>
+<li>Issue with Repositories - <a href="https://discourse.ubuntu.com/t/issue-with-repositories/74867">https://discourse.ubuntu.com/t/issue-with-repositories/74867</a></li>
+<li>26.04 last update renders system unusable - <a href="https://discourse.ubuntu.com/t/26-04-last-update-renders-system-unusable/74925">https://discourse.ubuntu.com/t/26-04-last-update-renders-system-unusable/74925</a></li>
+<li>New to Linux - Keyboard INOP after Suspend / Lock Screen - GRUB? - <a href="https://discourse.ubuntu.com/t/new-to-linux-keyboard-inop-after-suspend-lock-screen-grub/74946">https://discourse.ubuntu.com/t/new-to-linux-keyboard-inop-after-suspend-lock-screen-grub/74946</a></li>
+<li>PHP files do not show in Filezilla - <a href="https://discourse.ubuntu.com/t/php-files-do-not-show-in-filezilla/74980">https://discourse.ubuntu.com/t/php-files-do-not-show-in-filezilla/74980</a></li>
+</ul>
+<p>Find more support at: <a href="https://discourse.ubuntu.com/c/support-and-help/306">https://discourse.ubuntu.com/c/support-and-help/306</a></p>
+<h3><a name="p-194106-ask-ubuntu-top-5-questions-11" class="anchor" href="https://discourse.ubuntu.com#p-194106-ask-ubuntu-top-5-questions-11"></a>Ask Ubuntu Top 5 Questions</h3>
+<ul>
+<li>What to do if accidently made a typo when doing an <code>echo</code> to <code>.bashrc</code>? - <a href="https://askubuntu.com/questions/1562853/what-to-do-if-accidently-made-a-typo-when-doing-an-echo-to-bashrc">https://askubuntu.com/questions/1562853/what-to-do-if-accidently-made-a-typo-when-doing-an-echo-to-bashrc</a></li>
+<li>Add an image on top of a PDF page - <a href="https://askubuntu.com/questions/1562930/add-an-image-on-top-of-a-pdf-page">https://askubuntu.com/questions/1562930/add-an-image-on-top-of-a-pdf-page</a></li>
+<li>Iptables “-t nat -j LOG” inconsistent with other distros - <a href="https://askubuntu.com/questions/1562825/iptables-t-nat-j-log-inconsistent-with-other-distros">https://askubuntu.com/questions/1562825/iptables-t-nat-j-log-inconsistent-with-other-distros</a></li>
+<li>How do i optimize the swap usage? - <a href="https://askubuntu.com/questions/1562819/how-do-i-optimize-the-swap-usage">https://askubuntu.com/questions/1562819/how-do-i-optimize-the-swap-usage</a></li>
+<li>Installation by pip or pip3 or pipx to beware a consistant system - <a href="https://askubuntu.com/questions/1562785/installation-by-pip-or-pip3-or-pipx-to-beware-a-consistant-system">https://askubuntu.com/questions/1562785/installation-by-pip-or-pip3-or-pipx-to-beware-a-consistant-system</a></li>
+</ul>
+<p>Ask (and answer!) questions at: <a href="https://askubuntu.com/">https://askubuntu.com/</a></p>
+<h2><a name="p-194106-other-meeting-reports-12" class="anchor" href="https://discourse.ubuntu.com#p-194106-other-meeting-reports-12"></a>Other Meeting Reports</h2>
+<ul>
+<li>Foundations Team Updates - 2026-01-15 - <a href="https://discourse.ubuntu.com/t/foundations-team-updates-2026-01-15/75019/">https://discourse.ubuntu.com/t/foundations-team-updates-2026-01-15/75019/</a></li>
+</ul>
+<h2><a name="p-194106-upcoming-meetings-and-events-13" class="anchor" href="https://discourse.ubuntu.com#p-194106-upcoming-meetings-and-events-13"></a>Upcoming Meetings and Events</h2>
+<ul>
+<li>Starcraft Clinics (2nd option) - Monday 19 January, 11:00 - 11:50 AM - <a href="https://meet.google.com/ixc-nucm-hjn">https://meet.google.com/ixc-nucm-hjn</a></li>
+<li>Ubuntu HPC weekly community call: Wednesday 21 January, 4:30 AM - 6:00 PM - <a href="https://meet.jit.si/Ubuntu-HPC">https://meet.jit.si/Ubuntu-HPC</a> | <a href="https://matrix.to/#/#hpc:ubuntu.com" rel="noopener nofollow ugc">https://matrix.to/#/#hpc:ubuntu.com</a></li>
+<li>Mir Office Hours: THU, 14 January, 5:15 - 6:00 PM CET - <a href="https://meet.google.com/kty-otcc-ucx">https://meet.google.com/kty-otcc-ucx</a> | <a href="https://discourse.ubuntu.com/t/mir-office-hours-2026-01-14-16-15utc/74639">https://discourse.ubuntu.com/t/mir-office-hours-2026-01-14-16-15utc/74639</a></li>
+<li>Starcraft Clinics (1st option): Thursday 15 January, 3:00 - 4:00 PM - <a href="https://meet.google.com/ixc-nucm-hjn">https://meet.google.com/ixc-nucm-hjn</a></li>
+</ul>
+<p>Times shown are UTC unless otherwise specified. For more details and further dates please visit: <a href="https://ubuntu.com/community">https://ubuntu.com/community</a> | <a href="https://discourse.ubuntu.com/upcoming-events">https://discourse.ubuntu.com/upcoming-events</a></p>
+<h2><a name="p-194106-ubuntu-circles-loco-news-14" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-circles-loco-news-14"></a>Ubuntu Circles! (LoCo) News</h2>
+<h3><a name="p-194106-ubuntu-nepals-year-end-contributors-meetup-15" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-nepals-year-end-contributors-meetup-15"></a>Ubuntu Nepal’s Year End Contributors Meetup</h3>
+<p>Aaditya Singh has written up a report on the ‘Year End Contributors Meetup’ for Ubuntu Nepal. Along with photos, we’re briefly told about the meetup.</p>
+<p><a href="https://discourse.ubuntu.com/t/ubuntu-nepals-year-end-contributors-meetup/75076">https://discourse.ubuntu.com/t/ubuntu-nepals-year-end-contributors-meetup/75076</a></p>
+<h2><a name="p-194106-ubuntu-circles-loco-events-16" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-circles-loco-events-16"></a>Ubuntu Circles! (LoCo) Events</h2>
+<p>The following LoCo team events are currently scheduled in the next two weeks:</p>
+<ul>
+<li>Arizona LoCo: Virtual Tempe Ubuntu Hour on line; 22 January, 1900 - 2000 - BigBlue Button, <a href="https://bbb.azloco.net">https://bbb.azloco.net</a></li>
+<li>Atlanta Linux Enthusiasts: Linux In-Person Help Session; 22 January, 5:00 PM CST - <a href="https://www.heylo.com/event/2d72ad07-508d-40e6-add9-5760d23150c3">https://www.heylo.com/event/2d72ad07-508d-40e6-add9-5760d23150c3</a></li>
+<li>Atlanta Linux Enthusiasts: Linux Help Session (Online) - Jitsi; 25 January, 2 PM CST - <a href="https://www.heylo.com/event/939da418-e14c-4b56-aa2e-c90f418ed1e4">https://www.heylo.com/event/939da418-e14c-4b56-aa2e-c90f418ed1e4</a></li>
+<li>Atlanta Linux Enthusiasts: Linux In-Person Help Session; Wings and Things Tyrone, GA; Thursday, 29 January, 5:00 PM PM CST - <a href="https://www.heylo.com/event/74c6f9c8-1172-411e-b67f-31519b1a018b">https://www.heylo.com/event/74c6f9c8-1172-411e-b67f-31519b1a018b</a></li>
+<li>Arizona LoCo: AZLOCO Team Meeting on IRC.libera.chat; 1 February, 2100-2130 - IRC channel <a class="hashtag-cooked" href="https://discourse.ubuntu.com/tag/ubuntu" data-type="tag" data-slug="ubuntu" data-id="126" data-style-type="icon" data-icon="tag"><span class="hashtag-icon-placeholder"><svg class="fa d-icon d-icon-square-full svg-icon svg-node"><use href="#square-full"></use></svg></span><span>ubuntu</span></a>.us.az</li>
+</ul>
+<p>Looking beyond the next two weeks? Visit the respective Circles!/LoCo Team calendar to browse upcoming events.</p>
+<p>Please also see:</p>
+<ul>
+<li>Ubuntu Arizona LoCo: <a href="https://discourse.ubuntu.com/t/upcoming-events-for-azloco/38466">https://discourse.ubuntu.com/t/upcoming-events-for-azloco/38466</a></li>
+<li>Atlanta Linux Enthusiasts: <a href="https://ale.org/">https://ale.org/</a></li>
+<li>Registered LoCo contacts: <a href="https://discourse.ubuntu.com/c/locos/129">https://discourse.ubuntu.com/c/locos/129</a></li>
+</ul>
+<h2><a name="p-194106-the-hub-17" class="anchor" href="https://discourse.ubuntu.com#p-194106-the-hub-17"></a>The Hub</h2>
+<h3><a name="p-194106-a-new-ubuntu-wiki-part-2-features-18" class="anchor" href="https://discourse.ubuntu.com#p-194106-a-new-ubuntu-wiki-part-2-features-18"></a>A new Ubuntu wiki, Part 2: Features</h3>
+<p>Shane Crowley updates us on the new Ubuntu Wiki project. This post discusses the wiki engine choice, Ubuntu theming and some features that have been tested. A call for feedback, for example features wanted, is made so that ideas can be factored into the planning and testing. We’re told the wiki engine will be MediaWiki, shown some screenshots of new wiki pages, and more. This is a detailed post, with public alpha expected later in 2026.</p>
+<p><a href="https://discourse.ubuntu.com/t/a-new-ubuntu-wiki-part-2-features/74916/">https://discourse.ubuntu.com/t/a-new-ubuntu-wiki-part-2-features/74916/</a></p>
+<h3><a name="p-194106-ubuntu-server-gazette-issue-11-ai-bots-shall-eat-my-docs-19" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-server-gazette-issue-11-ai-bots-shall-eat-my-docs-19"></a>Ubuntu Server Gazette – Issue 11 – AI-bots shall eat my docs…</h3>
+<p>Sally Makin starts with her telling us how she lost time trying to use AI to help create a title. She gives thanks to a colleague and the Server team who helped her with this post. This post discusses various large language models (LLM) in regards to their use with documentation. We’re given details and comparisons, including times in this somewhat extensive study. Numerous pitfalls are mentioned; Sally concludes that using AI is mostly in the setup, with payments often appearing in the back end.</p>
+<p><a href="https://discourse.ubuntu.com/t/ubuntu-server-gazette-issue-11-ai-bots-shall-eat-my-docs/75029">https://discourse.ubuntu.com/t/ubuntu-server-gazette-issue-11-ai-bots-shall-eat-my-docs/75029</a></p>
+<h2><a name="p-194106-other-community-news-20" class="anchor" href="https://discourse.ubuntu.com#p-194106-other-community-news-20"></a>Other Community News</h2>
+<h3><a name="p-194106-kde-plasma-66-beta-released-with-plasma-login-manager-plasma-setup-21" class="anchor" href="https://discourse.ubuntu.com#p-194106-kde-plasma-66-beta-released-with-plasma-login-manager-plasma-setup-21"></a>KDE Plasma 6.6 Beta Released With Plasma Login Manager, Plasma Setup</h3>
+<p>Michael Larabel informs us that the KDE Plasma 6.6 desktop is available in beta form. We’re given details, a screenshot, and a link to KDE’s website should we need more.</p>
+<p><a href="https://www.phoronix.com/news/KDE-Plasma-6.6-Beta">https://www.phoronix.com/news/KDE-Plasma-6.6-Beta</a></p>
+<h2><a name="p-194106-ubuntu-cloud-news-22" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-cloud-news-22"></a>Ubuntu Cloud News</h2>
+<ul>
+<li>Minimal Ubuntu Pro: lean images backed by enterprise-grade security - <a href="https://canonical.com/blog/minimal-ubuntu-pro-on-public-clouds">https://canonical.com/blog/minimal-ubuntu-pro-on-public-clouds</a>
+<ul>
+<li>Minimal Ubuntu Pro expands Canonical’s cloud security offerings - <a href="https://www.helpnetsecurity.com/2026/01/13/canonical-minimal-ubuntu-pro/">https://www.helpnetsecurity.com/2026/01/13/canonical-minimal-ubuntu-pro/</a></li>
+</ul>
+</li>
+<li>Deploy your Spring Boot application to production - <a href="https://ubuntu.com//blog/deploy-spring-application-to-production">https://ubuntu.com//blog/deploy-spring-application-to-production</a></li>
+<li>Canonical Ubuntu and Ubuntu Pro now available on AWS European Sovereign Cloud - <a href="https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud">https://ubuntu.com//blog/ubuntu-aws-european-sovereign-cloud</a></li>
+</ul>
+<h2><a name="p-194106-canonical-news-23" class="anchor" href="https://discourse.ubuntu.com#p-194106-canonical-news-23"></a>Canonical News</h2>
+<ul>
+<li>How to build DORA-ready infrastructure with verifiable provenance and reliable support - <a href="https://ubuntu.com//blog/build-dora-ready-infrastructure-with-verifiable-provenance">https://ubuntu.com//blog/build-dora-ready-infrastructure-with-verifiable-provenance</a></li>
+</ul>
+<h2><a name="p-194106-in-the-blogosphere-24" class="anchor" href="https://discourse.ubuntu.com#p-194106-in-the-blogosphere-24"></a>In the Blogosphere</h2>
+<h3><a name="p-194106-wine-11-is-here-with-big-improvements-for-windows-apps-on-linux-25" class="anchor" href="https://discourse.ubuntu.com#p-194106-wine-11-is-here-with-big-improvements-for-windows-apps-on-linux-25"></a>Wine 11 is here with big improvements for Windows apps on Linux</h3>
+<p>Jordan Gloor tells us of the release of Wine 11.0 and its improvements. Jordan gives us details, which includes better Wayland support, and more.</p>
+<p><a href="https://www.howtogeek.com/wine-11-is-here-with-big-improvements-for-windows-apps-on-linux/">https://www.howtogeek.com/wine-11-is-here-with-big-improvements-for-windows-apps-on-linux/</a></p>
+<ul>
+<li>Wine 11.0 Brings Ntsync Support, Complete WoW64 + Other Changes - <a href="https://www.omgubuntu.co.uk/2026/01/wine-11-0-released">https://www.omgubuntu.co.uk/2026/01/wine-11-0-released</a></li>
+<li>Wine 11 runs Windows apps in Linux and macOS better than ever - <a href="https://www.theregister.com/2026/01/15/wine_11_arrives_faster_and/">https://www.theregister.com/2026/01/15/wine_11_arrives_faster_and/</a></li>
+</ul>
+<h3><a name="p-194106-ubuntu-2604-mass-rebuild-touches-all-archive-packages-26" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2604-mass-rebuild-touches-all-archive-packages-26"></a>Ubuntu 26.04 Mass Rebuild Touches All Archive Packages</h3>
+<p>Joey Sneddon tells us why there is an “above-average amount of updates” coming to our Ubuntu resolute systems (if we’re running it), and warns us that most aren’t new features, just package rebuilds. We’re told it isn’t the whole package repository, but given details on which packages are included and more.</p>
+<p><a href="https://www.omgubuntu.co.uk/2026/01/ubuntu-2604-resolute-archive-rebuild">https://www.omgubuntu.co.uk/2026/01/ubuntu-2604-resolute-archive-rebuild</a></p>
+<h3><a name="p-194106-gnome-mutter-50-alpha-released-with-x11-backend-removed-27" class="anchor" href="https://discourse.ubuntu.com#p-194106-gnome-mutter-50-alpha-released-with-x11-backend-removed-27"></a>GNOME Mutter 50 Alpha Released With X11 Backend Removed</h3>
+<p>Michael Larabel writes about the “50.alpha” tags, and how they’ve excluded the X11 back-end, given that the focus is “exclusively on the Wayland session”. We’re given details on the effect and more.</p>
+<p><a href="https://www.phoronix.com/news/GNOME-Mutter-Shell-50-Alpha">https://www.phoronix.com/news/GNOME-Mutter-Shell-50-Alpha</a></p>
+<h3><a name="p-194106-linux-70-to-expand-temperature-reporting-for-intel-graphics-cards-28" class="anchor" href="https://discourse.ubuntu.com#p-194106-linux-70-to-expand-temperature-reporting-for-intel-graphics-cards-28"></a>Linux 7.0 To Expand Temperature Reporting For Intel Graphics Cards</h3>
+<p>Michael Larabel informs us of expanded GPU temperature reporting capabilities coming in future kernels (6.20~7.0). We’re given some details of the latest drm-xe-next pull request, with a link should we need more.</p>
+<p><a href="https://www.phoronix.com/news/Linux-7.0-Intel-GPU-Temperature">https://www.phoronix.com/news/Linux-7.0-Intel-GPU-Temperature</a></p>
+<h3><a name="p-194106-grub-214-bootloader-released-with-erofs-support-shim-loader-protocol-29" class="anchor" href="https://discourse.ubuntu.com#p-194106-grub-214-bootloader-released-with-erofs-support-shim-loader-protocol-29"></a>GRUB 2.14 Bootloader Released With EROFS Support, Shim Loader Protocol</h3>
+<p>Michael Larabel explores the Grub 2.14 bootloader release. We’re given some details of new features (EROFS and more), enhancements (LVM &amp; EFI support and more), a list of the release highlights, and a link to the mailing list announcement.</p>
+<p><a href="https://www.phoronix.com/news/GRUB-2.14-Released">https://www.phoronix.com/news/GRUB-2.14-Released</a></p>
+<ul>
+<li>Grub boot-loader 2.14 Released with Argon2 &amp; TPM 2.0 Key Protector - <a href="https://ubuntuhandbook.org/index.php/2026/01/grub-boot-loader-2-14-released-with-argon2-tpm-2-0-key-protector/">https://ubuntuhandbook.org/index.php/2026/01/grub-boot-loader-2-14-released-with-argon2-tpm-2-0-key-protector/</a></li>
+</ul>
+<h3><a name="p-194106-gnome-493-desktop-released-with-more-improvements-and-bug-fixes-30" class="anchor" href="https://discourse.ubuntu.com#p-194106-gnome-493-desktop-released-with-more-improvements-and-bug-fixes-30"></a>GNOME 49.3 Desktop Released with More Improvements and Bug Fixes</h3>
+<p>Marius Nestor writes about the GNOME 49.3 desktop release. Various improvements and bug fixes are mentioned with a link to the release announcement page, and more. We’re also told of the release of GNOME 48.8 and its more ‘limited’ changes with a link for more provided there too.</p>
+<p><a href="https://9to5linux.com/gnome-49-3-desktop-released-with-more-improvements-and-bug-fixes">https://9to5linux.com/gnome-49-3-desktop-released-with-more-improvements-and-bug-fixes</a></p>
+<h3><a name="p-194106-ubuntu-2604-aims-to-deliver-better-nvidia-wayland-performance-atop-gnome-31" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2604-aims-to-deliver-better-nvidia-wayland-performance-atop-gnome-31"></a>Ubuntu 26.04 Aims To Deliver Better NVIDIA Wayland Performance Atop GNOME</h3>
+<p>Michael Larabel tells us about new NVIDIA graphics performance improvements we should have when Ubuntu 26.04 LTS releases. With a quote from (Daniel van Vugt), a Mutter merge request and subsequent comments (acknowledging improvements) details are provided. We’re also told even if these improvements don’t make it to Mutter 50, they’re expected to remain in Ubuntu 26.04 LTS.</p>
+<p><a href="https://www.phoronix.com/news/Ubuntu-26.04-Faster-NVIDIA">https://www.phoronix.com/news/Ubuntu-26.04-Faster-NVIDIA</a></p>
+<h3><a name="p-194106-nvidia-590-being-made-available-for-ubuntu-220424042510-32" class="anchor" href="https://discourse.ubuntu.com#p-194106-nvidia-590-being-made-available-for-ubuntu-220424042510-32"></a>NVIDIA 590 being Made Available for Ubuntu 22.04|24.04|25.10</h3>
+<p>Ji m blogs that NVIDIA 590 is available for users of Ubuntu 22.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 25.10. We’re told of its build for the Ubuntu multiverse repository, and whilst it doesn’t include “big new features”, we are told of performance improvements. We’re warned of some hardware that is no longer supported by this driver, and how to ensure we can install this if we want it.</p>
+<p><a href="https://ubuntuhandbook.org/index.php/2026/01/nvidia-590-being-made-available-for-ubuntu-22-0424-0425-10/">https://ubuntuhandbook.org/index.php/2026/01/nvidia-590-being-made-available-for-ubuntu-22-0424-0425-10/</a></p>
+<h2><a name="p-194106-featured-audio-and-video-33" class="anchor" href="https://discourse.ubuntu.com#p-194106-featured-audio-and-video-33"></a>Featured Audio and Video</h2>
+<h3><a name="p-194106-linux-user-space-wayland-is-the-future-of-linux-even-kde-plasma-agrees-34" class="anchor" href="https://discourse.ubuntu.com#p-194106-linux-user-space-wayland-is-the-future-of-linux-even-kde-plasma-agrees-34"></a>Linux User Space: Wayland Is the Future of Linux, Even KDE Plasma Agrees</h3>
+<p>“The KDE team has announced that X11 will soon (2027) be unsupported on Plasma and become Wayland-only rather than Wayland-first. Steam Deck is already there for the most part with Gamescope, and between normal installs of newer Plasma, Steam Deck, Kubuntu and Bazzite, Plasma is growing by the minute. Wayland is inevitable!”</p>
+<p><a href="https://tilvids.com/w/7keL8LDrZ2WEDwhyCG2feY">https://tilvids.com/w/7keL8LDrZ2WEDwhyCG2feY</a></p>
+<h2><a name="p-194106-updates-and-security-for-ubuntu-2204-2404-2504-and-2510-35" class="anchor" href="https://discourse.ubuntu.com#p-194106-updates-and-security-for-ubuntu-2204-2404-2504-and-2510-35"></a>Updates and Security for Ubuntu 22.04, 24.04, 25.04 and 25.10</h2>
+<h3><a name="p-194106-security-updates-36" class="anchor" href="https://discourse.ubuntu.com#p-194106-security-updates-36"></a>Security Updates</h3>
+<ul>
+<li>[USN-7952-1] libheif vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010080.html" class="inline-onebox">[USN-7952-1] libheif vulnerabilities</a></li>
+<li>[USN-7953-1] PHP vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010081.html" class="inline-onebox">[USN-7953-1] PHP vulnerabilities</a></li>
+<li>[USN-7951-1] Python vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010082.html" class="inline-onebox">[USN-7951-1] Python vulnerability</a></li>
+<li>[USN-7954-1] Libtasn1 vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010083.html" class="inline-onebox">[USN-7954-1] Libtasn1 vulnerabilities</a></li>
+<li>[USN-7955-1] urllib3 vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010084.html" class="inline-onebox">[USN-7955-1] urllib3 vulnerability</a></li>
+<li>[USN-7922-5] Linux kernel (IoT) vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010085.html" class="inline-onebox">[USN-7922-5] Linux kernel (IoT) vulnerabilities</a></li>
+<li>[USN-7927-2] urllib3 regression - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010086.html" class="inline-onebox">[USN-7927-2] urllib3 regression</a></li>
+<li>[USN-7956-1] Google Guest Agent vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010087.html" class="inline-onebox">[USN-7956-1] Google Guest Agent vulnerability</a></li>
+<li>[USN-7957-1] WebKitGTK vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010088.html" class="inline-onebox">[USN-7957-1] WebKitGTK vulnerabilities</a></li>
+<li>[USN-7927-3] urllib3 regression - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010089.html" class="inline-onebox">[USN-7927-3] urllib3 regression</a></li>
+<li>[USN-7958-1] AngularJS vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010090.html" class="inline-onebox">[USN-7958-1] AngularJS vulnerabilities</a></li>
+<li>[USN-7961-1] Erlang vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010091.html" class="inline-onebox">[USN-7961-1] Erlang vulnerability</a></li>
+<li>[USN-7963-1] libpng vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010092.html" class="inline-onebox">[USN-7963-1] libpng vulnerabilities</a></li>
+<li>[USN-7959-1] klibc vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010093.html" class="inline-onebox">[USN-7959-1] klibc vulnerabilities</a></li>
+<li>[USN-7960-1] Rack vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010094.html" class="inline-onebox">[USN-7960-1] Rack vulnerabilities</a></li>
+<li>[USN-7962-1] cpp-httplib vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010095.html" class="inline-onebox">[USN-7962-1] cpp-httplib vulnerability</a></li>
+<li>[USN-7965-1] SimGear vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010097.html" class="inline-onebox">[USN-7965-1] SimGear vulnerability</a></li>
+<li>[USN-7964-1] Git vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010098.html" class="inline-onebox">[USN-7964-1] Git vulnerabilities</a></li>
+<li>[USN-7916-2] python-apt regression - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010099.html" class="inline-onebox">[USN-7916-2] python-apt regression</a></li>
+</ul>
+<h3><a name="p-194106-ubuntu-2204-updates-37" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2204-updates-37"></a>Ubuntu 22.04 Updates</h3>
+<ul>
+<li>php8.1 8.1.2-1ubuntu2.23 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043520.html" class="inline-onebox">[ubuntu/jammy-security] php8.1 8.1.2-1ubuntu2.23 (Accepted)</a></li>
+<li>python3.10 3.10.12-1~22.04.13 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043521.html" class="inline-onebox">[ubuntu/jammy-security] python3.10 3.10.12-1~22.04.13 (Accepted)</a></li>
+<li>linux-firmware 20220329.git681281e4-0ubuntu3.41 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043524.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-firmware 20220329.git681281e4-0ubuntu3.41 (Accepted)</a></li>
+<li>libtasn1-6 4.18.0-4ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043525.html" class="inline-onebox">[ubuntu/jammy-security] libtasn1-6 4.18.0-4ubuntu0.2 (Accepted)</a></li>
+<li>python-urllib3 1.26.5-1~exp1ubuntu0.5 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043526.html" class="inline-onebox">[ubuntu/jammy-security] python-urllib3 1.26.5-1~exp1ubuntu0.5 (Accepted)</a></li>
+<li>sosreport 4.10.2-0ubuntu0~22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043529.html" class="inline-onebox">[ubuntu/jammy-proposed] sosreport 4.10.2-0ubuntu0~22.04.1 (Accepted)</a></li>
+<li>google-guest-agent 20250116.00-0ubuntu1~22.04.2 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043530.html" class="inline-onebox">[ubuntu/jammy-security] google-guest-agent 20250116.00-0ubuntu1~22.04.2 (Accepted)</a></li>
+<li>webkit2gtk 2.50.4-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043532.html" class="inline-onebox">[ubuntu/jammy-security] webkit2gtk 2.50.4-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>angular.js 1.8.2-2ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043534.html" class="inline-onebox">[ubuntu/jammy-security] angular.js 1.8.2-2ubuntu0.1 (Accepted)</a></li>
+<li>klibc 2.0.10-4ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043535.html" class="inline-onebox">[ubuntu/jammy-security] klibc 2.0.10-4ubuntu0.2 (Accepted)</a></li>
+<li>linux 5.15.0-170.180 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043538.html" class="inline-onebox">[ubuntu/jammy-proposed] linux 5.15.0-170.180 (Accepted)</a></li>
+<li>linux-meta 5.15.0.170.159 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043539.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-meta 5.15.0.170.159 (Accepted)</a></li>
+<li>linux-signed 5.15.0-170.180 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043540.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-signed 5.15.0-170.180 (Accepted)</a></li>
+<li>linux-restricted-signatures 5.15.0-170.180 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043541.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-restricted-signatures 5.15.0-170.180 (Accepted)</a></li>
+<li>linux-restricted-modules 5.15.0-170.180 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043542.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-restricted-modules 5.15.0-170.180 (Accepted)</a></li>
+<li>libpng1.6 1.6.37-3ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043543.html" class="inline-onebox">[ubuntu/jammy-security] libpng1.6 1.6.37-3ubuntu0.3 (Accepted)</a></li>
+<li>openldap 2.5.20+dfsg-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043544.html" class="inline-onebox">[ubuntu/jammy-proposed] openldap 2.5.20+dfsg-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>ruby-rack 2.1.4-5ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043546.html" class="inline-onebox">[ubuntu/jammy-security] ruby-rack 2.1.4-5ubuntu1.2 (Accepted)</a></li>
+<li>fabric-manager-535 535.288.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043548.html" class="inline-onebox">[ubuntu/jammy-proposed] fabric-manager-535 535.288.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>fabric-manager-570 570.211.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043549.html" class="inline-onebox">[ubuntu/jammy-proposed] fabric-manager-570 570.211.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>libnvidia-nscq-535 535.288.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043550.html" class="inline-onebox">[ubuntu/jammy-proposed] libnvidia-nscq-535 535.288.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>libnvidia-nscq-570 570.211.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043551.html" class="inline-onebox">[ubuntu/jammy-proposed] libnvidia-nscq-570 570.211.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>nvidia-imex-570 570.211.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043552.html" class="inline-onebox">[ubuntu/jammy-proposed] nvidia-imex-570 570.211.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>nvidia-graphics-drivers-535 535.288.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043553.html" class="inline-onebox">[ubuntu/jammy-proposed] nvidia-graphics-drivers-535 535.288.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>nvidia-graphics-drivers-570 570.211.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043554.html" class="inline-onebox">[ubuntu/jammy-proposed] nvidia-graphics-drivers-570 570.211.01-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>nvidia-graphics-drivers-580 580.126.09-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043555.html" class="inline-onebox">[ubuntu/jammy-proposed] nvidia-graphics-drivers-580 580.126.09-0ubuntu0.22.04.1 (Accepted)</a></li>
+<li>nvidia-graphics-drivers-535-server 535.288.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043556.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043556.html</a></li>
+<li>nvidia-graphics-drivers-570-server 570.211.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043557.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043557.html</a></li>
+<li>haproxy 2.4.30-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043558.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043558.html</a></li>
+<li>fabric-manager-580 580.126.09-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043559.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043559.html</a></li>
+<li>fabric-manager-590 590.48.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043560.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043560.html</a></li>
+<li>libnvidia-nscq-580 580.126.09-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043561.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043561.html</a></li>
+<li>libnvidia-nscq-590 590.48.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043562.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043562.html</a></li>
+<li>nvidia-imex-580 580.126.09-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043563.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043563.html</a></li>
+<li>nvidia-imex-590 590.48.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043564.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043564.html</a></li>
+<li>nvidia-graphics-drivers-590 590.48.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043565.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043565.html</a></li>
+<li>nvidia-graphics-drivers-580-server 580.126.09-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043566.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043566.html</a></li>
+<li>nvidia-graphics-drivers-590-server 590.48.01-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043567.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043567.html</a></li>
+</ul>
+<p>End of Standard Support: April 2027</p>
+<h3><a name="p-194106-ubuntu-2404-updates-38" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2404-updates-38"></a>Ubuntu 24.04 Updates</h3>
+<ul>
+<li>libheif 1.17.6-1ubuntu4.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052769.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052769.html</a></li>
+<li>php8.3 8.3.6-0ubuntu0.24.04.6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052771.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052771.html</a></li>
+<li>python3.12 3.12.3-1ubuntu0.10 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052772.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052772.html</a></li>
+<li>linux-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052775.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052775.html</a></li>
+<li>linux-meta-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052776.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052776.html</a></li>
+<li>linux-signed-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052777.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052777.html</a></li>
+<li>linux-restricted-signatures-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052778.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052778.html</a></li>
+<li>linux-restricted-modules-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052779.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052779.html</a></li>
+<li>libtasn1-6 4.19.0-3ubuntu0.24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052780.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052780.html</a></li>
+<li>linux-meta-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052781.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052781.html</a></li>
+<li>linux-signed-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052782.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052782.html</a></li>
+<li>linux-restricted-signatures-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052783.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052783.html</a></li>
+<li>linux-restricted-modules-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052784.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052784.html</a></li>
+<li>linux-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052785.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052785.html</a></li>
+<li>python-urllib3 2.0.7-1ubuntu0.4 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052786.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052786.html</a></li>
+<li>dahdi-linux 1:2.11.1.0.20170917~dfsg-8.4ubuntu5.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052788.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052788.html</a></li>
+<li>v4l2loopback 0.12.7-2ubuntu5.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052789.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052789.html</a></li>
+<li>python-urllib3 2.0.7-1ubuntu0.5 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052791.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052791.html</a></li>
+<li>linux-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052792.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052792.html</a></li>
+<li>linux-meta-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052793.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052793.html</a></li>
+<li>linux-signed-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052794.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052794.html</a></li>
+<li>linux-restricted-signatures-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052795.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052795.html</a></li>
+<li>linux-restricted-modules-aws-6.17 6.17.0-1005.5~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052796.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052796.html</a></li>
+<li>gdm3 46.2-1ubuntu1~24.04.6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052798.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052798.html</a></li>
+<li>gnome-remote-desktop 46.3-0ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052799.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052799.html</a></li>
+<li>ceph 19.2.3-0ubuntu0.24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052800.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052800.html</a></li>
+<li>sosreport 4.10.2-0ubuntu0~24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052801.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052801.html</a></li>
+<li>google-guest-agent 20250116.00-0ubuntu1~24.04.3 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052802.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052802.html</a></li>
+<li>webkit2gtk 2.50.4-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052804.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052804.html</a></li>
+<li>python-urllib3 2.0.7-1ubuntu0.6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052805.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052805.html</a></li>
+<li>webkit2gtk 2.50.4-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052806.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052806.html</a></li>
+<li>angular.js 1.8.3-1ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052808.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052808.html</a></li>
+<li>klibc 2.0.13-4ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052809.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052809.html</a></li>
+<li>erlang 1:25.3.2.8+dfsg-1ubuntu4.6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052812.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052812.html</a></li>
+<li>linux 6.8.0-100.100 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052814.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052814.html</a></li>
+<li>linux-meta 6.8.0-100.100 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052815.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052815.html</a></li>
+<li>linux-signed 6.8.0-100.100 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052816.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052816.html</a></li>
+<li>linux-restricted-modules 6.8.0-100.100 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052817.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052817.html</a></li>
+<li>linux-restricted-signatures 6.8.0-100.100 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052818.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052818.html</a></li>
+<li>libpng1.6 1.6.43-5ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052819.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052819.html</a></li>
+<li>openldap 2.6.10+dfsg-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052820.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052820.html</a></li>
+<li>numactl 2.0.18-1ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052822.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052822.html</a></li>
+<li>rust-time 0.3.31-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052823.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052823.html</a></li>
+<li>devscripts 2.23.7ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052824.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052824.html</a></li>
+<li>thermald 2.5.6-2ubuntu0.24.04.3 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052825.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052825.html</a></li>
+<li>ruby-rack 2.2.7-1ubuntu0.5 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052826.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052826.html</a></li>
+<li>fabric-manager-535 535.288.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052828.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052828.html</a></li>
+<li>fabric-manager-570 570.211.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052829.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052829.html</a></li>
+<li>libnvidia-nscq-535 535.288.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052830.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052830.html</a></li>
+<li>libnvidia-nscq-570 570.211.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052831.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052831.html</a></li>
+<li>nvidia-imex-570 570.211.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052832.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052832.html</a></li>
+<li>nvidia-graphics-drivers-535 535.288.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052833.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052833.html</a></li>
+<li>nvidia-graphics-drivers-570 570.211.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052834.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052834.html</a></li>
+<li>nvidia-graphics-drivers-580 580.126.09-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052835.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052835.html</a></li>
+<li>nvidia-graphics-drivers-535-server 535.288.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052836.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052836.html</a></li>
+<li>nvidia-graphics-drivers-570-server 570.211.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052837.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052837.html</a></li>
+<li>haproxy 2.8.16-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052838.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052838.html</a></li>
+<li>multipath-tools 0.9.4-5ubuntu8.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052839.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052839.html</a></li>
+<li>fabric-manager-580 580.126.09-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052840.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052840.html</a></li>
+<li>fabric-manager-590 590.48.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052841.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052841.html</a></li>
+<li>libnvidia-nscq-580 580.126.09-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052842.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052842.html</a></li>
+<li>libnvidia-nscq-590 590.48.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052843.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052843.html</a></li>
+<li>nvidia-imex-580 580.126.09-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052844.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052844.html</a></li>
+<li>nvidia-imex-590 590.48.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052845.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052845.html</a></li>
+<li>nvidia-graphics-drivers-590 590.48.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052846.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052846.html</a></li>
+<li>nvidia-graphics-drivers-580-server 580.126.09-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052847.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052847.html</a></li>
+<li>nvidia-graphics-drivers-590-server 590.48.01-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052848.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052848.html</a></li>
+<li>dotnet10 10.0.101-10.0.1-0ubuntu1~24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052849.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052849.html</a></li>
+<li>keystone 2:25.0.0-0ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052850.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052850.html</a></li>
+<li>rustc-1.89 1.89.0+dfsg~24.04-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052851.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052851.html</a></li>
+<li>nvidia-graphics-drivers-535-server 535.288.01-0ubuntu0.24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052853.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052853.html</a></li>
+</ul>
+<p>End of standard support: April 2029</p>
+<h3><a name="p-194106-ubuntu-2504-updates-39" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2504-updates-39"></a>Ubuntu 25.04 Updates</h3>
+<ul>
+<li>libheif 1.19.7-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017929.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017929.html</a></li>
+<li>php8.4 8.4.5-1ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017931.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017931.html</a></li>
+<li>python3.13 3.13.3-1ubuntu0.5 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017932.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017932.html</a></li>
+<li>libtasn1-6 4.20.0-2ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017935.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017935.html</a></li>
+<li>python-urllib3 2.3.0-2ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017936.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017936.html</a></li>
+<li>python-urllib3 2.3.0-2ubuntu0.4 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017939.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017939.html</a></li>
+<li>sos 4.10.2-0ubuntu0~25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017941.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017941.html</a></li>
+<li>google-guest-agent 20250116.00-0ubuntu2.2 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017942.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017942.html</a></li>
+<li>webkit2gtk 2.50.4-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017944.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017944.html</a></li>
+<li>python-urllib3 2.3.0-2ubuntu0.5 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017945.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017945.html</a></li>
+<li>angular.js 1.8.3-1ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017948.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017948.html</a></li>
+<li>klibc 2.0.13-4ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017949.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017949.html</a></li>
+<li>cpp-httplib 0.18.7-1ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017952.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017952.html</a></li>
+<li>libpng1.6 1.6.47-1.1ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017953.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017953.html</a></li>
+<li>fabric-manager-535 535.288.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017956.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017956.html</a></li>
+<li>fabric-manager-570 570.211.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017957.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017957.html</a></li>
+<li>libnvidia-nscq-535 535.288.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017958.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017958.html</a></li>
+<li>libnvidia-nscq-570 570.211.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017959.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017959.html</a></li>
+<li>nvidia-imex-570 570.211.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017960.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017960.html</a></li>
+<li>nvidia-graphics-drivers-570 570.211.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017961.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017961.html</a></li>
+<li>nvidia-graphics-drivers-580 580.126.09-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017962.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017962.html</a></li>
+<li>nvidia-graphics-drivers-535-server 535.288.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017963.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017963.html</a></li>
+<li>nvidia-graphics-drivers-570-server 570.211.01-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017964.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017964.html</a></li>
+<li>fabric-manager-580 580.126.09-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017965.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017965.html</a></li>
+<li>libnvidia-nscq-580 580.126.09-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017966.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017966.html</a></li>
+<li>nvidia-imex-580 580.126.09-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017967.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017967.html</a></li>
+<li>nvidia-graphics-drivers-580-server 580.126.09-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017968.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017968.html</a></li>
+<li>nvidia-graphics-drivers-535-server 535.288.01-0ubuntu0.25.04.2 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017969.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017969.html</a></li>
+</ul>
+<p>End of Life: 15 January 2026</p>
+<h3><a name="p-194106-ubuntu-2510-updates-40" class="anchor" href="https://discourse.ubuntu.com#p-194106-ubuntu-2510-updates-40"></a>Ubuntu 25.10 Updates</h3>
+<ul>
+<li>libheif 1.20.2-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010477.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010477.html</a></li>
+<li>php8.4 8.4.11-1ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010479.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010479.html</a></li>
+<li>python3.13 3.13.7-1ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010480.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010480.html</a></li>
+<li>python3.14 3.14.0-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010481.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010481.html</a></li>
+<li>linux-signed-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010485.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010485.html</a></li>
+<li>linux-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010486.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010486.html</a></li>
+<li>linux-meta-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010487.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010487.html</a></li>
+<li>linux-restricted-signatures-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010488.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010488.html</a></li>
+<li>linux-restricted-modules-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010489.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010489.html</a></li>
+<li>linux-signed-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010490.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010490.html</a></li>
+<li>linux-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010491.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010491.html</a></li>
+<li>linux-meta-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010492.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010492.html</a></li>
+<li>linux-restricted-signatures-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010493.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010493.html</a></li>
+<li>linux-restricted-modules-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010494.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010494.html</a></li>
+<li>libtasn1-6 4.20.0-2ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010495.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010495.html</a></li>
+<li>python-urllib3 2.3.0-3ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010496.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010496.html</a></li>
+<li>dahdi-linux 1:3.1.0+git20230717~dfsg-10.1ubuntu1~25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010498.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010498.html</a></li>
+<li>python-urllib3 2.3.0-3ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010500.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010500.html</a></li>
+<li>crash 8.0.6-1ubuntu2.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010502.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010502.html</a></li>
+<li>ceph 19.2.3-0ubuntu1.25.10.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010503.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010503.html</a></li>
+<li>sos 4.10.2-0ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010504.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010504.html</a></li>
+<li>google-guest-agent 20250506.01-0ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010505.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010505.html</a></li>
+<li>webkit2gtk 2.50.4-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010507.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010507.html</a></li>
+<li>python-urllib3 2.3.0-3ubuntu0.4 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010508.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010508.html</a></li>
+<li>klibc 2.0.14-1ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010511.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010511.html</a></li>
+<li>linux 6.17.0-14.14 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010513.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010513.html</a></li>
+<li>linux-signed 6.17.0-14.14 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010514.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010514.html</a></li>
+<li>linux-restricted-signatures 6.17.0-14.14 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010515.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010515.html</a></li>
+<li>linux-meta 6.17.0-14.14 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010516.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010516.html</a></li>
+<li>linux-restricted-modules 6.17.0-14.14 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010517.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010517.html</a></li>
+<li>openldap 2.6.10+dfsg-1ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010518.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010518.html</a></li>
+<li>cpp-httplib 0.18.7-1ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010519.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010519.html</a></li>
+<li>libpng1.6 1.6.50-1ubuntu0.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010520.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010520.html</a></li>
+<li>ruby-rack 3.1.16-0.1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010523.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010523.html</a></li>
+<li>nvidia-graphics-drivers-580 580.126.09-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010525.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010525.html</a></li>
+<li>haproxy 3.0.12-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010526.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010526.html</a></li>
+<li>fabric-manager-580 580.126.09-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010527.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010527.html</a></li>
+<li>fabric-manager-590 590.48.01-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010528.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010528.html</a></li>
+<li>libnvidia-nscq-580 580.126.09-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010529.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010529.html</a></li>
+<li>libnvidia-nscq-590 590.48.01-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010530.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010530.html</a></li>
+<li>nvidia-imex-580 580.126.09-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010531.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010531.html</a></li>
+<li>nvidia-imex-590 590.48.01-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010532.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010532.html</a></li>
+<li>nvidia-graphics-drivers-590 590.48.01-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010533.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010533.html</a></li>
+<li>nvidia-graphics-drivers-580-server 580.126.09-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010534.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010534.html</a></li>
+<li>nvidia-graphics-drivers-590-server 590.48.01-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010535.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010535.html</a></li>
+<li>dotnet10 10.0.101-10.0.1-0ubuntu1~25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010536.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010536.html</a></li>
+<li>rust-sudo-rs 0.2.8-1ubuntu5.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010537.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010537.html</a></li>
+<li>tzdata 2025b-3ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010538.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010538.html</a></li>
+</ul>
+<p>End of Life: July 2026</p>
+<h2><a name="p-194106-subscribe-41" class="anchor" href="https://discourse.ubuntu.com#p-194106-subscribe-41"></a>Subscribe</h2>
+<p>Get your copy of the Ubuntu Weekly Newsletter delivered each week to you via email at: <a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-news">https://lists.ubuntu.com/mailman/listinfo/ubuntu-news</a></p>
+<p>Or follow us via our various social media presences:</p>
+<ul>
+<li><a href="https://www.facebook.com/UbuntuWeeklyNewsletter">https://www.facebook.com/UbuntuWeeklyNewsletter</a></li>
+<li><a href="https://twitter.com/Ubuntu_News">https://twitter.com/Ubuntu_News</a></li>
+<li><a href="https://t.me/ubuntunewsletter">https://t.me/ubuntunewsletter</a> (Telegram)</li>
+</ul>
+<h2><a name="p-194106-archives-42" class="anchor" href="https://discourse.ubuntu.com#p-194106-archives-42"></a>Archives</h2>
+<p>For recent issues of the Ubuntu Weekly Newsletter <a href="https://discourse.ubuntu.com/c/uwn/uwn-issues/419">Issue 786 &amp; later please visit our Discourse page:</a> or <a href="https://ubuntu.com/community/uwn/">our Portal page:</a> that is easier to read. The older WIKI issues (809 and earlier) are available at<a href="https://wiki.ubuntu.com/UbuntuWeeklyNewsletter/Archive">: UbuntuWeeklyNewsletter/Archive</a>.</p>
+<h2><a name="p-194106-further-news-43" class="anchor" href="https://discourse.ubuntu.com#p-194106-further-news-43"></a>Further News</h2>
+<p>As always you can find more Ubuntu news and announcements at:</p>
+<ul>
+<li><a href="https://ubuntu.com/blog/">https://ubuntu.com/blog/</a></li>
+<li><a href="https://ubuntu.com/community">https://ubuntu.com/community</a></li>
+</ul>
+<h2><a name="p-194106-conclusion-44" class="anchor" href="https://discourse.ubuntu.com#p-194106-conclusion-44"></a>Conclusion</h2>
+<p>Thank you for reading the Ubuntu Weekly Newsletter.</p>
+<p>See you next week!</p>
+<h2><a name="p-194106-credits-45" class="anchor" href="https://discourse.ubuntu.com#p-194106-credits-45"></a>Credits</h2>
+<p>The Ubuntu Weekly Newsletter is brought to you by:</p>
+<ul>
+<li>Krytarik Raido</li>
+<li>Bashing-om</li>
+<li>Chris Guiver</li>
+<li>Wild Man</li>
+<li>irihapeti</li>
+<li>And many others</li>
+</ul>
+<h2><a name="p-194106-glossary-of-terms-46" class="anchor" href="https://discourse.ubuntu.com#p-194106-glossary-of-terms-46"></a>Glossary of Terms</h2>
+<p>Other acronyms can be found at: <a href="https://discourse.ubuntu.com/t/glossary-uwn/42405">https://discourse.ubuntu.com/t/glossary-uwn/42405</a></p>
+<h2><a name="p-194106-get-involved-47" class="anchor" href="https://discourse.ubuntu.com#p-194106-get-involved-47"></a>Get Involved</h2>
+<p>The Ubuntu community consists of individuals and teams, working on different aspects of the distribution, giving advice and technical support, and helping to promote Ubuntu to a wider audience. No contribution is too small, and anyone can help. It’s your chance to get in on all the community fun associated with developing and promoting Ubuntu. More on this at: <a href="https://community.ubuntu.com/contribute/">https://community.ubuntu.com/contribute/</a></p>
+<p>Or get involved with the Ubuntu Weekly Newsletter team! We always need summary writers and editors, if you’re interested, learn more at: <a href="https://discourse.ubuntu.com/t/joining-the-ubuntu-weekly-newsletter-team/40929">https://discourse.ubuntu.com/t/joining-the-ubuntu-weekly-newsletter-team/40929</a></p>
+<h2><a name="p-194106-feedback-48" class="anchor" href="https://discourse.ubuntu.com#p-194106-feedback-48"></a>Feedback</h2>
+<p>This document is maintained by the Ubuntu Weekly News Team. If you have a story idea or suggestions for the Weekly Newsletter, join the Ubuntu News Team mailing list at <a href="https://lists.ubuntu.com/mailman/listinfo/Ubuntu-news-team">https://lists.ubuntu.com/mailman/listinfo/Ubuntu-news-team</a> and submit it. Ideas can also be added to the wiki at <a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-ideas/40053/">https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-ideas/40053/</a> . If you’d like to contribute to a future issue of the Ubuntu Weekly Newsletter, please feel free to edit the appropriate wiki page. If you have any technical support questions, please check <a href="https://community.ubuntu.com/help-information/">https://community.ubuntu.com/help-information/</a> for more information on where to get help.</p>
+<p>Except where otherwise noted, this issue of the Ubuntu Weekly Newsletter is licensed under a Creative Commons Attribution ShareAlike 3.0 License.</p>
+<p><img src="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/b/dbf59da03627b1c1aed30432a2467c245b8cfbf1.png" alt="CCL" data-base62-sha1="vnQNj6QVCJUCgWWL8t8nrPszYqJ" width="88" height="31"></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-927/74886">Read full topic</a></p>]]></description>
+      <source url="https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss">Ubuntu Weekly News</source>
+    </item>
+    <item>
       <title>I love KDE too much to retire! Snap beta releases trickling in. Stay tuned.</title>
       <link>https://www.scarlettgatelymoore.dev/i-love-kde-too-much-to-retire-snap-beta-releases-trickling-in-stay-tuned/</link>
       <guid isPermaLink="true">https://www.scarlettgatelymoore.dev/i-love-kde-too-much-to-retire-snap-beta-releases-trickling-in-stay-tuned/</guid>
@@ -384,415 +865,6 @@ Os separadores de péssima qualidade foram tocados ao vivo e sem rede pelo Migue
 Este episódio está licenciado nos termos da licença: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">cujo texto integral pode ser lido aqui</a>. Estamos abertos a licenciar para permitir outros tipos de utilização, <a href="https://podcastubuntuportugal.org/contactos">contactem-nos</a> para validação e autorização.
 A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustradora e autora de BD. Podem ficar a conhecer melhor a <a href="https://ciberlandia.pt/@shizamura">Shizamura na Ciberlândia</a> e no <a href="https://sarilho.net/">seu sítio web</a>.</p>]]></description>
       <source url="https://podcastubuntuportugal.org/feed/podcast/index.xml">Podcast Ubuntu Portugal</source>
-    </item>
-    <item>
-      <title>Ubuntu Weekly Newsletter Issue 926</title>
-      <link>https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-926/74558</link>
-      <guid isPermaLink="true">https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-926/74558</guid>
-      <pubDate>Mon, 05 Jan 2026 21:18:05 GMT</pubDate>
-      <description><![CDATA[<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/6/d63398e98cbe354ca8e8a1e00de6c541a45b4a01.png" data-download-href="/uploads/short-url/uyUIYtIeNMaruYP5jnBE03PL4iZ.png?dl=1" title="header"><img src="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/6/d63398e98cbe354ca8e8a1e00de6c541a45b4a01.png" alt="header" data-base62-sha1="uyUIYtIeNMaruYP5jnBE03PL4iZ" width="522" height="111"></a></div><p></p>
-<h1><a name="p-193101-ubuntu-weekly-news-1" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-weekly-news-1"></a>Ubuntu Weekly News</h1>
-<h2><a name="p-193101-uwn-issue-926-january-4-10-2026-2" class="anchor" href="https://discourse.ubuntu.com#p-193101-uwn-issue-926-january-4-10-2026-2"></a>UWN Issue 926 January 4-10 2026.</h2>
-<p>Welcome to the Ubuntu Weekly Newsletter, Issue 926 for the week of January 4 - 10, 2026.</p>
-<h2><a name="p-193101-in-this-issue-3" class="anchor" href="https://discourse.ubuntu.com#p-193101-in-this-issue-3"></a>In this Issue</h2>
-<ul>
-<li>Ubuntu 25.04 (Plucky Puffin) reaches End of Life on 15th January 2026</li>
-<li>London called, and the world answered: creating a Summit without borders</li>
-<li>Welcome New Members and Developers</li>
-<li>Ubuntu Stats</li>
-<li>Hot in Support</li>
-<li>Rocks Public Journal; 2026-01-09</li>
-<li>Other Meeting Reports</li>
-<li>Upcoming Meetings and Events</li>
-<li>Ubuntu Circles! (LoCo) News</li>
-<li>First Ubuntu community meeting of 2026 in Lagos</li>
-<li>Official Event Report on UbuCon Asia 2025</li>
-<li>Ubuntu Kenya Summit</li>
-<li>Ubuntu Circles! (LoCo) Events</li>
-<li>Call for testing: ubuntu-frame, mir-test-tools (Mir 2.25.2 update)</li>
-<li>Call for Testing: Steam snap for arm64</li>
-<li>Canonical News</li>
-<li>In the Blogosphere</li>
-<li>Featured Audio and Video</li>
-<li>Updates and Security for Ubuntu 22.04, 24.04, 25.04 and 25.10</li>
-<li>And much more!</li>
-</ul>
-<h2><a name="p-193101-general-community-news-4" class="anchor" href="https://discourse.ubuntu.com#p-193101-general-community-news-4"></a>General Community News</h2>
-<h3><a name="p-193101-ubuntu-2504-plucky-puffin-reaches-end-of-life-on-15th-january-2026-5" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-2504-plucky-puffin-reaches-end-of-life-on-15th-january-2026-5"></a>Ubuntu 25.04 (Plucky Puffin) reaches End of Life on 15th January 2026</h3>
-<p>Florent ‘Skia’ Jacquet reminds us that Ubuntu 25.04 [an interim release] was released back on 17 April 2025, and will thus reach its end of life in a few days. We’re given details of what this means, a link so users can understand how they can upgrade their systems to Ubuntu 25.10, and more.</p>
-<p><a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010065.html">https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010065.html</a></p>
-<ul>
-<li>Ubuntu 25.04 (Plucky Puffin) Officially Nears End of Life - <a href="https://linuxiac.com/ubuntu-25-04-plucky-puffin-officially-nears-end-of-life/">https://linuxiac.com/ubuntu-25-04-plucky-puffin-officially-nears-end-of-life/</a></li>
-<li>Ubuntu 25.04 Support Ends Soon on January 15th, 2026 - <a href="https://ubuntuhandbook.org/index.php/2026/01/ubuntu-25-04-support-ends/">https://ubuntuhandbook.org/index.php/2026/01/ubuntu-25-04-support-ends/</a></li>
-</ul>
-<h3><a name="p-193101-london-called-and-the-world-answered-creating-a-summit-without-borders-6" class="anchor" href="https://discourse.ubuntu.com#p-193101-london-called-and-the-world-answered-creating-a-summit-without-borders-6"></a>London called, and the world answered: creating a Summit without borders</h3>
-<p>Mauro Gaspari writes about the Ubuntu Summit 25.10. Mauro gives us a brief comparison between the in-person events of the past, and what happened at this online summit, featuring Lorenzo’s Music, Sylvia Ritter’s artwork, and “audacious talks”. This year’s Summit was presented as extended events held all around the globe. A number of photos are shown, a brief glimpse is given of some of the talks, before a thank you is given to everyone who was involved. The post closes with mention of the coming Ubuntu Summit 26.04, giving us a link to submit a talk proposal.</p>
-<p><a href="https://ubuntu.com//blog/london-called-and-the-world-answered-creating-a-summit-without-borders">https://ubuntu.com//blog/london-called-and-the-world-answered-creating-a-summit-without-borders</a></p>
-<ul>
-<li>Ubuntu 25.10 Summit Extended – Namibia - <a href="https://discourse.ubuntu.com/t/ubuntu-25-10-summit-extended-namibia/74741/">https://discourse.ubuntu.com/t/ubuntu-25-10-summit-extended-namibia/74741/</a></li>
-</ul>
-<h3><a name="p-193101-welcome-new-members-and-developers-7" class="anchor" href="https://discourse.ubuntu.com#p-193101-welcome-new-members-and-developers-7"></a>Welcome New Members and Developers</h3>
-<ul>
-<li>Mitchell Augustin (mitchellaugustin); Contributing Developer - <a href="https://lists.ubuntu.com/archives/devel-permissions/2026-January/002929.html">https://lists.ubuntu.com/archives/devel-permissions/2026-January/002929.html</a></li>
-</ul>
-<p>Congratulations to this contributor!</p>
-<h2><a name="p-193101-ubuntu-stats-8" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-stats-8"></a>Ubuntu Stats</h2>
-<h3><a name="p-193101-bug-stats-9" class="anchor" href="https://discourse.ubuntu.com#p-193101-bug-stats-9"></a>Bug Stats</h3>
-<ul>
-<li>Open: 144149 (+19)</li>
-<li>Critical: 313 (-4)</li>
-<li>Unconfirmed: 73983 (+6)</li>
-</ul>
-<p>As always, the Bug Squad needs more help. If you want to get started, please see: <a href="https://wiki.ubuntu.com/BugSquad">https://wiki.ubuntu.com/BugSquad</a></p>
-<h3><a name="p-193101-translations-10" class="anchor" href="https://discourse.ubuntu.com#p-193101-translations-10"></a>Translations</h3>
-<ul>
-<li>Albanian: 98.86% (3986/106)</li>
-<li>Swedish: 98.35% (5785/691)</li>
-<li>Ukrainian: 89.17% (38012/1585)</li>
-<li>German: 87.13% (45196/265)</li>
-<li>French: 85.74% (50084/6262)</li>
-</ul>
-<h2><a name="p-193101-hot-in-support-11" class="anchor" href="https://discourse.ubuntu.com#p-193101-hot-in-support-11"></a>Hot in Support</h2>
-<h3><a name="p-193101-ubuntu-community-discourse-trending-top-5-threads-12" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-community-discourse-trending-top-5-threads-12"></a>Ubuntu Community Discourse Trending Top 5 Threads</h3>
-<ul>
-<li>Help repairing GRUB on LUKS-encrypted volume - <a href="https://discourse.ubuntu.com/t/help-repairing-grub-on-luks-encrypted-volume/74253">https://discourse.ubuntu.com/t/help-repairing-grub-on-luks-encrypted-volume/74253</a></li>
-<li>Brave browser snap issues - <a href="https://discourse.ubuntu.com/t/brave-browser-snap-issues/74783">https://discourse.ubuntu.com/t/brave-browser-snap-issues/74783</a></li>
-<li>Unable to boot - <a href="https://discourse.ubuntu.com/t/unable-to-boot/74787">https://discourse.ubuntu.com/t/unable-to-boot/74787</a></li>
-<li>Downgrading Ubuntu version - <a href="https://discourse.ubuntu.com/t/downgrading-ubuntu-version/74800">https://discourse.ubuntu.com/t/downgrading-ubuntu-version/74800</a></li>
-<li>Ubuntu 24.04 – Blackscreen without nomodeset (ASUS B650, AMD iGPU + Intel Arc) - <a href="https://discourse.ubuntu.com/t/ubuntu-24-04-blackscreen-without-nomodeset-asus-b650-amd-igpu-intel-arc/74805">https://discourse.ubuntu.com/t/ubuntu-24-04-blackscreen-without-nomodeset-asus-b650-amd-igpu-intel-arc/74805</a></li>
-</ul>
-<p>Find more support at: <a href="https://discourse.ubuntu.com/c/support-and-help/306">https://discourse.ubuntu.com/c/support-and-help/306</a></p>
-<h3><a name="p-193101-ask-ubuntu-top-5-questions-13" class="anchor" href="https://discourse.ubuntu.com#p-193101-ask-ubuntu-top-5-questions-13"></a>Ask Ubuntu Top 5 Questions</h3>
-<ul>
-<li>How do I partially rename bulk files all at once? - <a href="https://askubuntu.com/questions/1562547/how-do-i-partially-rename-bulk-files-all-at-once">https://askubuntu.com/questions/1562547/how-do-i-partially-rename-bulk-files-all-at-once</a></li>
-<li>How to set a static Ethernet connection name that doesn’t change when adding and removing PCIe devices? - <a href="https://askubuntu.com/questions/1562639/how-to-set-a-static-ethernet-connection-name-that-doesnt-change-when-adding-and">https://askubuntu.com/questions/1562639/how-to-set-a-static-ethernet-connection-name-that-doesnt-change-when-adding-and</a></li>
-<li>Ubuntu clients joined to Windows AD: users can log in but cannot access their personal SMB home directories - <a href="https://askubuntu.com/questions/1562579/ubuntu-clients-joined-to-windows-ad-users-can-log-in-but-cannot-access-their-pe">https://askubuntu.com/questions/1562579/ubuntu-clients-joined-to-windows-ad-users-can-log-in-but-cannot-access-their-pe</a></li>
-<li>Data is not written on external flash drives by default, only when using “sync” in the terminal - <a href="https://askubuntu.com/questions/1562561/data-is-not-written-on-external-flash-drives-by-default-only-when-using-sync">https://askubuntu.com/questions/1562561/data-is-not-written-on-external-flash-drives-by-default-only-when-using-sync</a></li>
-<li>Broken packages after 22.04 → 24.04 upgrade? - <a href="https://askubuntu.com/questions/1562533/broken-packages-after-22-04-24-04-upgrade">https://askubuntu.com/questions/1562533/broken-packages-after-22-04-24-04-upgrade</a></li>
-</ul>
-<p>Ask (and answer!) questions at: <a href="https://askubuntu.com/">https://askubuntu.com/</a></p>
-<h2><a name="p-193101-meeting-reports-14" class="anchor" href="https://discourse.ubuntu.com#p-193101-meeting-reports-14"></a>Meeting Reports</h2>
-<h3><a name="p-193101-rocks-public-journal-2026-01-09-15" class="anchor" href="https://discourse.ubuntu.com#p-193101-rocks-public-journal-2026-01-09-15"></a>Rocks Public Journal; 2026-01-09</h3>
-<p>New rocks for Go (<code>1.22-24.04</code>), PHP (<code>8.3-24.04</code>), and Rust (<code>1.75-24.04</code>) have been published to Docker Hub and ECR.</p>
-<h2><a name="p-193101-other-meeting-reports-16" class="anchor" href="https://discourse.ubuntu.com#p-193101-other-meeting-reports-16"></a>Other Meeting Reports</h2>
-<ul>
-<li>This Week in Matrix 2026-01-05 - <a href="https://matrix.org/blog/2026/01/05/this-week-in-matrix-2026-01-05/">https://matrix.org/blog/2026/01/05/this-week-in-matrix-2026-01-05/</a></li>
-<li>Foundations Team Updates - 2026-01-08 - <a href="https://discourse.ubuntu.com/t/foundations-team-updates-2026-01-08/74694">https://discourse.ubuntu.com/t/foundations-team-updates-2026-01-08/74694</a></li>
-</ul>
-<h2><a name="p-193101-upcoming-meetings-and-events-17" class="anchor" href="https://discourse.ubuntu.com#p-193101-upcoming-meetings-and-events-17"></a>Upcoming Meetings and Events</h2>
-<ul>
-<li>Ubuntu HPC weekly community call: Wednesday 14 January, 4:30 AM - 6:00 PM - <a href="https://meet.jit.si/Ubuntu-HPC">https://meet.jit.si/Ubuntu-HPC</a> | <a href="https://matrix.to/#/#hpc:ubuntu.com" rel="noopener nofollow ugc">https://matrix.to/#/#hpc:ubuntu.com</a></li>
-<li>Mir Office Hours: THU, 14 January, 5:15 - 6:00 PM CET - <a href="https://meet.google.com/kty-otcc-ucx">https://meet.google.com/kty-otcc-ucx</a> | <a href="https://discourse.ubuntu.com/t/mir-office-hours-2026-01-14-16-15utc/74639">https://discourse.ubuntu.com/t/mir-office-hours-2026-01-14-16-15utc/74639</a></li>
-<li>Starcraft Clinics (1st option): Thursday 15 January, 3:00 - 4:00 PM - <a href="https://meet.google.com/ixc-nucm-hjn">https://meet.google.com/ixc-nucm-hjn</a></li>
-</ul>
-<p>Times shown are UTC unless otherwise specified. For more details and further dates please visit: <a href="https://ubuntu.com/community">https://ubuntu.com/community</a> | <a href="https://discourse.ubuntu.com/upcoming-events">https://discourse.ubuntu.com/upcoming-events</a></p>
-<h2><a name="p-193101-ubuntu-circles-loco-news-18" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-circles-loco-news-18"></a>Ubuntu Circles! (LoCo) News</h2>
-<h3><a name="p-193101-first-ubuntu-community-meeting-of-2026-in-lagos-19" class="anchor" href="https://discourse.ubuntu.com#p-193101-first-ubuntu-community-meeting-of-2026-in-lagos-19"></a>First Ubuntu community meeting of 2026 in Lagos</h3>
-<p>Bright Adams (mrbite) of Ubuntu Nigeria informs us of the “first community meeting of the year on the 31st of January, 2026” in Lagos. We’re given the location, told to expect big things, and that the theme is “from users to contributors”.</p>
-<p><a href="https://discourse.ubuntu.com/t/first-ubuntu-community-meeting-of-2026-in-lagos/74578">https://discourse.ubuntu.com/t/first-ubuntu-community-meeting-of-2026-in-lagos/74578</a></p>
-<h3><a name="p-193101-official-event-report-on-ubucon-asia-2025-20" class="anchor" href="https://discourse.ubuntu.com#p-193101-official-event-report-on-ubucon-asia-2025-20"></a>Official Event Report on UbuCon Asia 2025</h3>
-<p>Aaditya Singh has given us the Official Event Report on UbuCon Asia 2025. This is an extensive report, which includes charts and other metrics.</p>
-<p><a href="https://discourse.ubuntu.com/t/official-event-report-on-ubucon-asia-2025/74630/">https://discourse.ubuntu.com/t/official-event-report-on-ubucon-asia-2025/74630/</a></p>
-<h3><a name="p-193101-ubuntu-kenya-summit-21" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-kenya-summit-21"></a>Ubuntu Kenya Summit</h3>
-<p>Doreen Peace Nangira Wanyama from Ubuntu Kenya tells us a UbuCon Africa is ‘in the plans’. To ensure this is a success, this post asks us what we’d like to see or topics we’d like covered, with feedback most welcome.</p>
-<p><a href="https://discourse.ubuntu.com/t/ubuntu-kenya-summit/74728">https://discourse.ubuntu.com/t/ubuntu-kenya-summit/74728</a></p>
-<h2><a name="p-193101-ubuntu-circles-loco-events-22" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-circles-loco-events-22"></a>Ubuntu Circles! (LoCo) Events</h2>
-<p>The following LoCo team events are currently scheduled in the next two weeks:</p>
-<ul>
-<li>Atlanta Linux Enthusiasts: Linux In-Person Help Session; Wings and Things Tyrone, GA; Thursday, 15 January, 5:00 PM PM CST - <a href="https://www.heylo.com/event/2a85c693-ab47-4b5e-891a-e008105a77ec">https://www.heylo.com/event/2a85c693-ab47-4b5e-891a-e008105a77ec</a></li>
-<li>Arizona LoCo: Virtual Installfest/Linux Workshop on line; 17 January, 1000-1600 - Big Blue Button, <a href="https://bbb.azloco.net">https://bbb.azloco.net</a> (co-hosted with the Phoenix Linux User Group)</li>
-<li>Atlanta Linux Enthusiasts: Linux Help Session (Online) - Jitsi; 18 January, 2 PM CST - <a href="https://www.heylo.com/event/571d8d70-d355-4fd8-a659-87698e7f4cf5">https://www.heylo.com/event/571d8d70-d355-4fd8-a659-87698e7f4cf5</a></li>
-<li>Arizona LoCo: Virtual Tempe Ubuntu Hour on line; 22 January, 1900 - 2000 - BigBlue Button, <a href="https://bbb.azloco.net">https://bbb.azloco.net</a></li>
-<li>Atlanta Linux Enthusiasts: Linux In-Person Help Session; 22 January, 5:00 PM CST - <a href="https://www.heylo.com/event/2d72ad07-508d-40e6-add9-5760d23150c3">https://www.heylo.com/event/2d72ad07-508d-40e6-add9-5760d23150c3</a></li>
-</ul>
-<p>Looking beyond the next two weeks? Visit the respective Circles!/LoCo Team calendar to browse upcoming events.</p>
-<p>Please also see:</p>
-<ul>
-<li>Atlanta Linux Enthusiasts: <a href="https://ale.org/">https://ale.org/</a></li>
-<li>Ubuntu Arizona LoCo: <a href="https://discourse.ubuntu.com/t/upcoming-events-for-azloco/38466">https://discourse.ubuntu.com/t/upcoming-events-for-azloco/38466</a></li>
-<li>Registered LoCo contacts: <a href="https://discourse.ubuntu.com/c/locos/129">https://discourse.ubuntu.com/c/locos/129</a></li>
-</ul>
-<h2><a name="p-193101-the-hub-23" class="anchor" href="https://discourse.ubuntu.com#p-193101-the-hub-23"></a>The Hub</h2>
-<h3><a name="p-193101-call-for-testing-ubuntu-frame-mir-test-tools-mir-2252-update-24" class="anchor" href="https://discourse.ubuntu.com#p-193101-call-for-testing-ubuntu-frame-mir-test-tools-mir-2252-update-24"></a>Call for testing: ubuntu-frame, mir-test-tools (Mir 2.25.2 update)</h3>
-<p>Michał Sawicz tells us that following Mir 2.25 release, the mir-test-tools and ubuntu-frame snaps have been updated. We’re given version details, some highlights to Ubuntu Frame, and told how to test them. If testers don’t report any problems, they’ll be promoted to 24/stable in a week.</p>
-<p><a href="https://discourse.ubuntu.com/t/call-for-testing-ubuntu-frame-mir-test-tools-mir-2-25-2-update/74640">https://discourse.ubuntu.com/t/call-for-testing-ubuntu-frame-mir-test-tools-mir-2-25-2-update/74640</a></p>
-<h3><a name="p-193101-call-for-testing-steam-snap-for-arm64-25" class="anchor" href="https://discourse.ubuntu.com#p-193101-call-for-testing-steam-snap-for-arm64-25"></a>Call for Testing: Steam snap for arm64</h3>
-<p>Mitchell Augustin tell us of the months of work building the arm64 Steam snap which is now available for broader testing. We’re given some details of its build, and told we should treat this build as a ‘beta’; in the details we are told how we can test it. A list of games tested, and brief hardware details are included along with some performance stats. We’re asked to let the team know how it performs on our devices.</p>
-<p><a href="https://discourse.ubuntu.com/t/call-for-testing-steam-snap-for-arm64/74719">https://discourse.ubuntu.com/t/call-for-testing-steam-snap-for-arm64/74719</a></p>
-<ul>
-<li>Canonical Builds Steam Snap For Ubuntu ARM64 Leveraging FEX - <a href="https://www.phoronix.com/news/Steam-Snap-ARM64-FEX">https://www.phoronix.com/news/Steam-Snap-ARM64-FEX</a></li>
-</ul>
-<h2><a name="p-193101-canonical-news-26" class="anchor" href="https://discourse.ubuntu.com#p-193101-canonical-news-26"></a>Canonical News</h2>
-<ul>
-<li>Canonical announces Ubuntu support for the NVIDIA Rubin platform - <a href="https://canonical.com/blog/nvidia-vera-rubin-ubuntu-support">https://canonical.com/blog/nvidia-vera-rubin-ubuntu-support</a></li>
-</ul>
-<h2><a name="p-193101-in-the-blogosphere-27" class="anchor" href="https://discourse.ubuntu.com#p-193101-in-the-blogosphere-27"></a>In the Blogosphere</h2>
-<h3><a name="p-193101-gnu-ddrescue-130-orders-of-magnitude-better-in-recovery-from-drives-with-a-dead-head-28" class="anchor" href="https://discourse.ubuntu.com#p-193101-gnu-ddrescue-130-orders-of-magnitude-better-in-recovery-from-drives-with-a-dead-head-28"></a>GNU ddrescue 1.30 “Orders of Magnitude” Better In Recovery From Drives With A Dead Head</h3>
-<p>Michael Larabel reminds us what GNU ddrescue is, before moving to announce the new GNU ddrescue 1.30 release. We’re given a ‘headline change’ quote highlighting how much faster it now is.</p>
-<p><a href="https://www.phoronix.com/news/GNU-ddrescue-1.30">https://www.phoronix.com/news/GNU-ddrescue-1.30</a></p>
-<h3><a name="p-193101-big-gpu-kernel-update-headed-to-ubuntu-2404-lts-29" class="anchor" href="https://discourse.ubuntu.com#p-193101-big-gpu-kernel-update-headed-to-ubuntu-2404-lts-29"></a>Big GPU &amp; Kernel Update Headed to Ubuntu 24.04 LTS</h3>
-<p>Joey Sneddon writes about the coming new HWE kernel for Ubuntu 24.04(.4) LTS. We’re reminded of the features (in Ubuntu 25.10) that will soon be available for Ubuntu 24.04 LTS users.</p>
-<p><a href="https://www.omgubuntu.co.uk/2026/01/ubuntu-24-04-4-lts-hwe-update-kernel-mesa">https://www.omgubuntu.co.uk/2026/01/ubuntu-24-04-4-lts-hwe-update-kernel-mesa</a></p>
-<h3><a name="p-193101-kde-frameworks-622-fixes-multiple-clipboard-related-issues-on-wayland-30" class="anchor" href="https://discourse.ubuntu.com#p-193101-kde-frameworks-622-fixes-multiple-clipboard-related-issues-on-wayland-30"></a>KDE Frameworks 6.22 Fixes Multiple Clipboard-Related Issues on Wayland</h3>
-<p>Marius Nestor informs us of the KDE Frameworks 6.22 released by the KDE Project. We’ve been walked through some fixes in this release, as well as given a link to the official release announcement.</p>
-<p><a href="https://9to5linux.com/kde-frameworks-6-22-fixes-multiple-clipboard-related-issues-on-wayland">https://9to5linux.com/kde-frameworks-6-22-fixes-multiple-clipboard-related-issues-on-wayland</a></p>
-<h3><a name="p-193101-budgie-1010-released-officially-migrated-from-x11-to-wayland-31" class="anchor" href="https://discourse.ubuntu.com#p-193101-budgie-1010-released-officially-migrated-from-x11-to-wayland-31"></a>Budgie 10.10 Released: Officially Migrated From X11 To Wayland</h3>
-<p>Michael Larabel reports the release of the Budgie 10.10 desktop. The quote from Budgie GitHub: “This release marks our official migration from X11 to Wayland” highlights the work started last November. Michael provides the link to GitHub for the download.</p>
-<p><a href="https://www.phoronix.com/news/Budgie-10.10-Released">https://www.phoronix.com/news/Budgie-10.10-Released</a></p>
-<h2><a name="p-193101-featured-audio-and-video-32" class="anchor" href="https://discourse.ubuntu.com#p-193101-featured-audio-and-video-32"></a>Featured Audio and Video</h2>
-<h3><a name="p-193101-ubuntu-portugal-podcast-episode-370-insanus-ianuariusepisode-33" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-portugal-podcast-episode-370-insanus-ianuariusepisode-33"></a>Ubuntu Portugal Podcast: Episode 370 - Insanus IanuariusEpisode</h3>
-<p>“Qual é o pior que pode acontecer para começar o ano, quando juntamos o David Negreira, Tiago Carrondo, Miguel e Diogo Constantino? Deboche total, pois claro, num podcast sobre carros eléctricos, baterias, painéis solares, Home Assistant e outras cenas. No meio do caos e confusão conseguimos falar brevemente de aventuras tecnológicas, teclados com luzes LGBT, osciloscópios de meter na língua, intelijumência artificial local para escrever código, discos IDE cheios de pó, a merdificação geral da Internet, financeirização da economia e mais além.”</p>
-<p><a href="https://podcastubuntuportugal.org/e370/">https://podcastubuntuportugal.org/e370/</a></p>
-<h2><a name="p-193101-updates-and-security-for-ubuntu-2204-2404-2504-and-2510-34" class="anchor" href="https://discourse.ubuntu.com#p-193101-updates-and-security-for-ubuntu-2204-2404-2504-and-2510-34"></a>Updates and Security for Ubuntu 22.04, 24.04, 25.04 and 25.10</h2>
-<h3><a name="p-193101-security-updates-35" class="anchor" href="https://discourse.ubuntu.com#p-193101-security-updates-35"></a>Security Updates</h3>
-<ul>
-<li>[USN-7941-1] WebKitGTK vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010064.html" class="inline-onebox">[USN-7941-1] WebKitGTK vulnerabilities</a></li>
-<li>[USN-7942-1] GLib vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010066.html" class="inline-onebox">[USN-7942-1] GLib vulnerabilities</a></li>
-<li>[USN-7922-4] Linux kernel (Raspberry Pi) vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010067.html" class="inline-onebox">[USN-7922-4] Linux kernel (Raspberry Pi) vulnerabilities</a></li>
-<li>[USN-7945-1] Libxslt vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010068.html" class="inline-onebox">[USN-7945-1] Libxslt vulnerability</a></li>
-<li>[USN-7943-1] libcaca vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010069.html" class="inline-onebox">[USN-7943-1] libcaca vulnerability</a></li>
-<li>[USN-7944-1] Net-SNMP vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010070.html" class="inline-onebox">[USN-7944-1] Net-SNMP vulnerability</a></li>
-<li>[USN-7047-1] libvirt vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010071.html" class="inline-onebox">[USN-7047-1] libvirt vulnerabilities</a></li>
-<li>[USN-7946-1] GnuPG vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010075.html" class="inline-onebox">[USN-7946-1] GnuPG vulnerability</a></li>
-<li>[USN-7948-1] GPSd vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010072.html" class="inline-onebox">[USN-7948-1] GPSd vulnerabilities</a></li>
-<li>[USN-7949-1] Sodium vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010073.html" class="inline-onebox">[USN-7949-1] Sodium vulnerability</a></li>
-<li>[USN-7946-2] GnuPG vulnerability - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010074.html" class="inline-onebox">[USN-7946-2] GnuPG vulnerability</a></li>
-<li>[USN-7950-1] Tornado vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010076.html" class="inline-onebox">[USN-7950-1] Tornado vulnerabilities</a></li>
-<li>[USN-7928-5] Linux kernel (KVM) vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010077.html" class="inline-onebox">[USN-7928-5] Linux kernel (KVM) vulnerabilities</a></li>
-<li>[USN-7931-5] Linux kernel (Raspberry Pi) vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010078.html">https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010078.html</a></li>
-<li>[USN-7940-2] Linux kernel (Azure, N-Series) vulnerabilities - <a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2026-January/010079.html" class="inline-onebox">[USN-7940-2] Linux kernel (Azure, N-Series) vulnerabilities</a></li>
-</ul>
-<h3><a name="p-193101-ubuntu-2204-updates-36" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-2204-updates-36"></a>Ubuntu 22.04 Updates</h3>
-<ul>
-<li>webkit2gtk 2.50.3-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043490.html" class="inline-onebox">[ubuntu/jammy-security] webkit2gtk 2.50.3-0ubuntu0.22.04.1 (Accepted)</a></li>
-<li>linux 5.15.0-167.177 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043492.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043492.html</a></li>
-<li>linux-signed 5.15.0-167.177 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043493.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-signed 5.15.0-167.177 (Accepted)</a></li>
-<li>linux-meta 5.15.0.167.161 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043494.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-meta 5.15.0.167.161 (Accepted)</a></li>
-<li>linux-restricted-signatures 5.15.0-167.177 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043495.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-restricted-signatures 5.15.0-167.177 (Accepted)</a></li>
-<li>linux-restricted-modules 5.15.0-167.177 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043496.html" class="inline-onebox">[ubuntu/jammy-proposed] linux-restricted-modules 5.15.0-167.177 (Accepted)</a></li>
-<li>glib2.0 2.72.4-0ubuntu2.7 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043497.html" class="inline-onebox">[ubuntu/jammy-security] glib2.0 2.72.4-0ubuntu2.7 (Accepted)</a></li>
-<li>libcaca 0.99.beta19-2.2ubuntu4.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043499.html" class="inline-onebox">[ubuntu/jammy-security] libcaca 0.99.beta19-2.2ubuntu4.1 (Accepted)</a></li>
-<li>net-snmp 5.9.1+dfsg-1ubuntu2.9 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043501.html" class="inline-onebox">[ubuntu/jammy-security] net-snmp 5.9.1+dfsg-1ubuntu2.9 (Accepted)</a></li>
-<li>libxslt 1.1.34-4ubuntu0.22.04.5 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043502.html" class="inline-onebox">[ubuntu/jammy-security] libxslt 1.1.34-4ubuntu0.22.04.5 (Accepted)</a></li>
-<li>snapd 2.73+ubuntu22.04 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043503.html" class="inline-onebox">[ubuntu/jammy-updates] snapd 2.73+ubuntu22.04 (Accepted)</a></li>
-<li>gnupg2 2.2.27-3ubuntu2.5 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043506.html" class="inline-onebox">[ubuntu/jammy-security] gnupg2 2.2.27-3ubuntu2.5 (Accepted)</a></li>
-<li>linux-meta-kvm 5.15.0.1090.86 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043508.html" class="inline-onebox">[ubuntu/jammy-security] linux-meta-kvm 5.15.0.1090.86 (Accepted)</a></li>
-<li>linux-kvm 5.15.0-1090.95 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043509.html" class="inline-onebox">[ubuntu/jammy-security] linux-kvm 5.15.0-1090.95 (Accepted)</a></li>
-<li>linux-signed-kvm 5.15.0-1090.95 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043510.html" class="inline-onebox">[ubuntu/jammy-security] linux-signed-kvm 5.15.0-1090.95 (Accepted)</a></li>
-<li>libvirt 8.0.0-1ubuntu7.15 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043511.html">https://lists.ubuntu.com/archives/jammy-changes/2026-January/043511.html</a></li>
-<li>gpsd 3.22-4ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043512.html" class="inline-onebox">[ubuntu/jammy-security] gpsd 3.22-4ubuntu2.1 (Accepted)</a></li>
-<li>libsodium 1.0.18-1ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043513.html" class="inline-onebox">[ubuntu/jammy-security] libsodium 1.0.18-1ubuntu0.22.04.1 (Accepted)</a></li>
-<li>network-manager 1.36.6-0ubuntu2.2 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043517.html" class="inline-onebox">[ubuntu/jammy-updates] network-manager 1.36.6-0ubuntu2.2 (Accepted)</a></li>
-<li>ubuntu-drivers-common 1:0.9.6.2~0.22.04.10 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043518.html" class="inline-onebox">[ubuntu/jammy-updates] ubuntu-drivers-common 1:0.9.6.2~0.22.04.10 (Accepted)</a></li>
-<li>haproxy 2.4.30-0ubuntu0.22.04.1 - <a href="https://lists.ubuntu.com/archives/jammy-changes/2026-January/043519.html" class="inline-onebox">[ubuntu/jammy-proposed] haproxy 2.4.30-0ubuntu0.22.04.1 (Accepted)</a></li>
-</ul>
-<p>End of Standard Support: April 2027</p>
-<h3><a name="p-193101-ubuntu-2404-updates-37" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-2404-updates-37"></a>Ubuntu 24.04 Updates</h3>
-<ul>
-<li>webkit2gtk 2.50.3-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052659.html" class="inline-onebox">[ubuntu/noble-security] webkit2gtk 2.50.3-0ubuntu0.24.04.1 (Accepted)</a></li>
-<li>linux-hwe-6.17 6.17.0-11.11~24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052661.html" class="inline-onebox">[ubuntu/noble-proposed] linux-hwe-6.17 6.17.0-11.11~24.04.1 (Accepted)</a></li>
-<li>linux-signed-hwe-6.17 6.17.0-11.11~24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052662.html" class="inline-onebox">[ubuntu/noble-proposed] linux-signed-hwe-6.17 6.17.0-11.11~24.04.1 (Accepted)</a></li>
-<li>linux-meta-hwe-6.17 6.17.0-11.11~24.04.1+1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052663.html" class="inline-onebox">[ubuntu/noble-proposed] linux-meta-hwe-6.17 6.17.0-11.11~24.04.1+1 (Accepted)</a></li>
-<li>linux-restricted-signatures-hwe-6.17 6.17.0-11.11~24.04.1+2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052664.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052664.html</a></li>
-<li>linux-restricted-modules-hwe-6.17 6.17.0-11.11~24.04.1+2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052665.html" class="inline-onebox">[ubuntu/noble-proposed] linux-restricted-modules-hwe-6.17 6.17.0-11.11~24.04.1+2 (Accepted)</a></li>
-<li>linux-firmware 20240318.git3b128b60-0ubuntu2.22 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052666.html" class="inline-onebox">[ubuntu/noble-updates] linux-firmware 20240318.git3b128b60-0ubuntu2.22 (Accepted)</a></li>
-<li>glib2.0 2.80.0-6ubuntu3.6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052667.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052667.html</a></li>
-<li>linux-nvidia-tegra 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052669.html" class="inline-onebox">[ubuntu/noble-proposed] linux-nvidia-tegra 6.8.0-1014.14 (Accepted)</a></li>
-<li>linux-meta-nvidia-tegra 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052670.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052670.html</a></li>
-<li>linux-signed-nvidia-tegra 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052671.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052671.html</a></li>
-<li>linux-restricted-modules-nvidia-tegra 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052672.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052672.html</a></li>
-<li>linux-restricted-signatures-nvidia-tegra 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052673.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052673.html</a></li>
-<li>linux-nvidia-tegra-modules 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052674.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052674.html</a></li>
-<li>linux-nvidia-tegra-modules-signed 6.8.0-1014.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052675.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052675.html</a></li>
-<li>libcaca 0.99.beta20-4ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052676.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052676.html</a></li>
-<li>net-snmp 5.9.4+dfsg-1.1ubuntu3.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052678.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052678.html</a></li>
-<li>libxslt 1.1.39-0exp1ubuntu0.24.04.3 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052679.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052679.html</a></li>
-<li>snapd 2.73+ubuntu24.04 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052680.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052680.html</a></li>
-<li>linux 6.8.0-93.95 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052683.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052683.html</a></li>
-<li>linux-meta 6.8.0-93.95 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052684.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052684.html</a></li>
-<li>linux-signed 6.8.0-93.95 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052685.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052685.html</a></li>
-<li>linux-restricted-signatures 6.8.0-93.95 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052686.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052686.html</a></li>
-<li>linux-restricted-modules 6.8.0-93.95 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052687.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052687.html</a></li>
-<li>software-properties 0.99.49.4 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052688.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052688.html</a></li>
-<li>skanpage 23.08.5-0ubuntu5 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052689.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052689.html</a></li>
-<li>ivsc-driver 0~git202311021215.73a044d9-0ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052690.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052690.html</a></li>
-<li>xtrx-dkms 0.0.1+git20190320.5ae3a3e-3.2ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052691.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052691.html</a></li>
-<li>sl-modem 2.9.11~20110321-19ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052692.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052692.html</a></li>
-<li>oss4 4.2-build2020-1ubuntu3.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052693.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052693.html</a></li>
-<li>openrazer 3.7.0+dfsg-1ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052694.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052694.html</a></li>
-<li>rapiddisk 9.1.0-3ubuntu1~24.04.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052695.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052695.html</a></li>
-<li>gnupg2 2.4.4-2ubuntu17.4 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052696.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052696.html</a></li>
-<li>mutter 46.2-1ubuntu0.24.04.14 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052697.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052697.html</a></li>
-<li>linux-meta-oem-6.17 6.17.0-1008.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052699.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052699.html</a></li>
-<li>linux-signed-oem-6.17 6.17.0-1008.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052700.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052700.html</a></li>
-<li>linux-oem-6.17 6.17.0-1008.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052701.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052701.html</a></li>
-<li>linux-restricted-modules-oem-6.17 6.17.0-1008.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052702.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052702.html</a></li>
-<li>linux-restricted-signatures-oem-6.17 6.17.0-1008.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052703.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052703.html</a></li>
-<li>linux-meta-nvidia-tegra 6.8.0-1013.13 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052704.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052704.html</a></li>
-<li>linux-signed-nvidia-tegra 6.8.0-1013.13+2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052705.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052705.html</a></li>
-<li>linux-restricted-modules-nvidia-tegra 6.8.0-1013.13 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052706.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052706.html</a></li>
-<li>linux-nvidia-tegra 6.8.0-1013.13 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052707.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052707.html</a></li>
-<li>linux-restricted-signatures-nvidia-tegra 6.8.0-1013.13 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052708.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052708.html</a></li>
-<li>linux-nvidia-tegra-modules 6.8.0-1013.13+2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052709.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052709.html</a></li>
-<li>linux-nvidia-tegra-modules-signed 6.8.0-1013.13+2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052710.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052710.html</a></li>
-<li>linux-meta-raspi 6.8.0-1044.48 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052711.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052711.html</a></li>
-<li>linux-raspi 6.8.0-1044.48 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052712.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052712.html</a></li>
-<li>linux-meta-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052713.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052713.html</a></li>
-<li>linux-signed-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052714.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052714.html</a></li>
-<li>linux-restricted-modules-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052715.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052715.html</a></li>
-<li>linux-restricted-signatures-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052716.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052716.html</a></li>
-<li>linux-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052717.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052717.html</a></li>
-<li>linux-meta-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052718.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052718.html</a></li>
-<li>linux-signed-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052719.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052719.html</a></li>
-<li>linux-restricted-signatures-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052720.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052720.html</a></li>
-<li>linux-restricted-modules-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052721.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052721.html</a></li>
-<li>linux-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052722.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052722.html</a></li>
-<li>libvirt 10.0.0-2ubuntu8.11 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052723.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052723.html</a></li>
-<li>alsa-ucm-conf 1.2.10-1ubuntu5.8 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052724.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052724.html</a></li>
-<li>openvpn-dco-dkms 0.0+git20231103-1ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052725.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052725.html</a></li>
-<li>libsodium 1.0.18-1ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052727.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052727.html</a></li>
-<li>linux-meta-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052729.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052729.html</a></li>
-<li>linux-signed-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052730.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052730.html</a></li>
-<li>linux-restricted-modules-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052731.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052731.html</a></li>
-<li>linux-restricted-signatures-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052732.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052732.html</a></li>
-<li>linux-oem-6.17 6.17.0-1009.9 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052733.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052733.html</a></li>
-<li>linux-apfs-rw 0.3.2-0ubuntu6.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052734.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052734.html</a></li>
-<li>openblas 0.3.26+ds-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052735.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052735.html</a></li>
-<li>dm-writeboost 2.2.16-0.1ubuntu2.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052736.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052736.html</a></li>
-<li>linux-meta-raspi 6.8.0-1044.48 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052737.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052737.html</a></li>
-<li>linux-raspi 6.8.0-1044.48 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052738.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052738.html</a></li>
-<li>linux-meta-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052739.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052739.html</a></li>
-<li>linux-signed-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052740.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052740.html</a></li>
-<li>linux-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052741.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052741.html</a></li>
-<li>linux-restricted-modules-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052742.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052742.html</a></li>
-<li>linux-restricted-signatures-azure-nvidia 6.8.0-1029.32 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052743.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052743.html</a></li>
-<li>linux-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052744.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052744.html</a></li>
-<li>linux-meta-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052745.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052745.html</a></li>
-<li>linux-signed-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052746.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052746.html</a></li>
-<li>linux-restricted-signatures-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052747.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052747.html</a></li>
-<li>linux-restricted-modules-oem-6.14 6.14.0-1019.19 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052748.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052748.html</a></li>
-<li>evdi 1.14.2+dfsg-1ubuntu1.4 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052749.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052749.html</a></li>
-<li>python-tornado 6.4.0-1ubuntu0.4 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052750.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052750.html</a></li>
-<li>gpsd 3.25-3ubuntu3.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052751.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052751.html</a></li>
-<li>usbio-drivers 0~git202312141918.78ffb706-0ubuntu2.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052753.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052753.html</a></li>
-<li>network-manager 1.46.0-1ubuntu2.5 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052754.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052754.html</a></li>
-<li>digimend-dkms 12-1ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052755.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052755.html</a></li>
-<li>iptables-netflow 2.6-6ubuntu2.3 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052756.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052756.html</a></li>
-<li>jool 4.1.11-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052757.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052757.html</a></li>
-<li>rtpengine 11.5.1.18-1ubuntu1.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052758.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052758.html</a></li>
-<li>haproxy 2.8.16-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052759.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052759.html</a></li>
-<li>boost1.83 1.83.0-2.1ubuntu3.2 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052760.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052760.html</a></li>
-<li>lttng-modules 2.14.0-1ubuntu1.1~24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052762.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052762.html</a></li>
-<li>u-boot 2025.10-0ubuntu0.24.04.1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052763.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052763.html</a></li>
-<li>skanpage 23.08.5-0ubuntu6 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052764.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052764.html</a></li>
-<li>linux-signed-nvidia-tegra 6.8.0-1014.14+1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052765.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052765.html</a></li>
-<li>linux-nvidia-tegra-modules 6.8.0-1014.14+1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052766.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052766.html</a></li>
-<li>linux-nvidia-tegra-modules-signed 6.8.0-1014.14+1 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052767.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052767.html</a></li>
-<li>linux-firmware 20240318.git3b128b60-0ubuntu2.23 - <a href="https://lists.ubuntu.com/archives/noble-changes/2026-January/052768.html">https://lists.ubuntu.com/archives/noble-changes/2026-January/052768.html</a></li>
-</ul>
-<p>End of standard support: April 2029</p>
-<h3><a name="p-193101-ubuntu-2504-updates-38" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-2504-updates-38"></a>Ubuntu 25.04 Updates</h3>
-<ul>
-<li>webkit2gtk 2.50.3-0ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017907.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017907.html</a></li>
-<li>glib2.0 2.84.1-1ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017909.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017909.html</a></li>
-<li>libcaca 0.99.beta20-5ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017911.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017911.html</a></li>
-<li>net-snmp 5.9.4+dfsg-1.1ubuntu7.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017913.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017913.html</a></li>
-<li>libxslt 1.1.39-0exp1ubuntu4.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017914.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017914.html</a></li>
-<li>snapd 2.73+ubuntu25.04 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017915.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017915.html</a></li>
-<li>gnupg2 2.4.4-2ubuntu23.2 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017918.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017918.html</a></li>
-<li>libvirt 11.0.0-2ubuntu6.5 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017920.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017920.html</a></li>
-<li>alsa-ucm-conf 1.2.12-1ubuntu1.4 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017921.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017921.html</a></li>
-<li>gpsd 3.25-5ubuntu1.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017922.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017922.html</a></li>
-<li>libsodium 1.0.18-1ubuntu0.25.04.1 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017923.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017923.html</a></li>
-<li>python-tornado 6.4.2-1ubuntu0.25.04.3 - <a href="https://lists.ubuntu.com/archives/plucky-changes/2026-January/017925.html">https://lists.ubuntu.com/archives/plucky-changes/2026-January/017925.html</a></li>
-</ul>
-<p>End of Life: 15 January 2026</p>
-<h3><a name="p-193101-ubuntu-2510-updates-39" class="anchor" href="https://discourse.ubuntu.com#p-193101-ubuntu-2510-updates-39"></a>Ubuntu 25.10 Updates</h3>
-<ul>
-<li>webkit2gtk 2.50.3-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010429.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010429.html</a></li>
-<li>linux 6.17.0-11.11 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010431.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010431.html</a></li>
-<li>linux-signed 6.17.0-11.11 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010432.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010432.html</a></li>
-<li>linux-meta 6.17.0-11.11 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010433.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010433.html</a></li>
-<li>linux-restricted-signatures 6.17.0-11.11 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010434.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010434.html</a></li>
-<li>linux-restricted-modules 6.17.0-11.11 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010435.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010435.html</a></li>
-<li>linux-firmware 20250901.git993ff19b-0ubuntu1.5 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010436.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010436.html</a></li>
-<li>glib2.0 2.86.0-2ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010437.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010437.html</a></li>
-<li>libcaca 0.99.beta20-5ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010439.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010439.html</a></li>
-<li>net-snmp 5.9.4+dfsg-2ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010441.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010441.html</a></li>
-<li>snapd 2.73+ubuntu25.10 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010442.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010442.html</a></li>
-<li>sl-modem 2.9.11~20110321-20ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010444.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010444.html</a></li>
-<li>rapiddisk 9.2.0-2~25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010445.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010445.html</a></li>
-<li>gnupg2 2.4.8-2ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010446.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010446.html</a></li>
-<li>rhythmbox 3.4.8-1ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010447.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010447.html</a></li>
-<li>network-manager 1.52.0-1ubuntu3.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010448.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010448.html</a></li>
-<li>gdm3 49.0.1-1ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010449.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010449.html</a></li>
-<li>linux-meta-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010451.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010451.html</a></li>
-<li>linux-signed-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010452.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010452.html</a></li>
-<li>linux-restricted-signatures-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010453.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010453.html</a></li>
-<li>linux-restricted-modules-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010454.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010454.html</a></li>
-<li>linux-meta-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010455.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010455.html</a></li>
-<li>linux-signed-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010456.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010456.html</a></li>
-<li>linux-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010457.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010457.html</a></li>
-<li>linux-restricted-signatures-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010458.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010458.html</a></li>
-<li>linux-restricted-modules-azure-fde 6.17.0-1003.3 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010459.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010459.html</a></li>
-<li>linux-azure 6.17.0-1006.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010460.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010460.html</a></li>
-<li>libvirt 11.6.0-1ubuntu3.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010461.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010461.html</a></li>
-<li>alsa-ucm-conf 1.2.12-1ubuntu2.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010462.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010462.html</a></li>
-<li>openvpn-dco-dkms 0.0+git20250801-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010463.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010463.html</a></li>
-<li>gpsd 3.25-5ubuntu1.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010464.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010464.html</a></li>
-<li>libsodium 1.0.18-1ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010465.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010465.html</a></li>
-<li>thermald 2.5.9-1ubuntu0.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010467.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010467.html</a></li>
-<li>python-tornado 6.4.2-3ubuntu0.2 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010468.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010468.html</a></li>
-<li>gpsd 3.25-5ubuntu1.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010469.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010469.html</a></li>
-<li>haproxy 3.0.12-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010471.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010471.html</a></li>
-<li>boost1.83 1.83.0-5ubuntu1.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010472.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010472.html</a></li>
-<li>libreoffice 4:25.8.4-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010474.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010474.html</a></li>
-<li>u-boot 2025.10-0ubuntu0.25.10.1 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010475.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010475.html</a></li>
-<li>linux-firmware 20250901.git993ff19b-0ubuntu1.6 - <a href="https://lists.ubuntu.com/archives/questing-changes/2026-January/010476.html">https://lists.ubuntu.com/archives/questing-changes/2026-January/010476.html</a></li>
-</ul>
-<p>End of Life: July 2026</p>
-<h2><a name="p-193101-subscribe-40" class="anchor" href="https://discourse.ubuntu.com#p-193101-subscribe-40"></a>Subscribe</h2>
-<p>Get your copy of the Ubuntu Weekly Newsletter delivered each week to you via email at: <a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-news">https://lists.ubuntu.com/mailman/listinfo/ubuntu-news</a></p>
-<p>Or follow us via our various social media presences:</p>
-<ul>
-<li><a href="https://www.facebook.com/UbuntuWeeklyNewsletter">https://www.facebook.com/UbuntuWeeklyNewsletter</a></li>
-<li><a href="https://twitter.com/Ubuntu_News">https://twitter.com/Ubuntu_News</a></li>
-<li><a href="https://t.me/ubuntunewsletter">https://t.me/ubuntunewsletter</a> (Telegram)</li>
-</ul>
-<h2><a name="p-193101-archives-41" class="anchor" href="https://discourse.ubuntu.com#p-193101-archives-41"></a>Archives</h2>
-<p>For recent issues of the Ubuntu Weekly Newsletter <a href="https://discourse.ubuntu.com/c/uwn/uwn-issues/419">Issue 786 &amp; later please visit our Discourse page:</a> or <a href="https://ubuntu.com/community/uwn/">our Portal page:</a> that is easier to read. The older WIKI issues (809 and earlier) are available at<a href="https://wiki.ubuntu.com/UbuntuWeeklyNewsletter/Archive">: UbuntuWeeklyNewsletter/Archive</a>.</p>
-<h2><a name="p-193101-further-news-42" class="anchor" href="https://discourse.ubuntu.com#p-193101-further-news-42"></a>Further News</h2>
-<p>As always you can find more Ubuntu news and announcements at:</p>
-<ul>
-<li><a href="https://ubuntu.com/blog/">https://ubuntu.com/blog/</a></li>
-<li><a href="https://ubuntu.com/community">https://ubuntu.com/community</a></li>
-</ul>
-<h2><a name="p-193101-conclusion-43" class="anchor" href="https://discourse.ubuntu.com#p-193101-conclusion-43"></a>Conclusion</h2>
-<p>Thank you for reading the Ubuntu Weekly Newsletter.</p>
-<p>See you next week!</p>
-<h2><a name="p-193101-credits-44" class="anchor" href="https://discourse.ubuntu.com#p-193101-credits-44"></a>Credits</h2>
-<p>The Ubuntu Weekly Newsletter is brought to you by:</p>
-<ul>
-<li>Krytarik Raido</li>
-<li>Bashing-om</li>
-<li>Chris Guiver</li>
-<li>Wild Man</li>
-<li>Cristovao Cordeiro (cjdc) - Rocks</li>
-<li>irihapeti</li>
-<li>And many others</li>
-</ul>
-<h2><a name="p-193101-glossary-of-terms-45" class="anchor" href="https://discourse.ubuntu.com#p-193101-glossary-of-terms-45"></a>Glossary of Terms</h2>
-<p>Other acronyms can be found at: <a href="https://discourse.ubuntu.com/t/glossary-uwn/42405">https://discourse.ubuntu.com/t/glossary-uwn/42405</a></p>
-<h2><a name="p-193101-get-involved-46" class="anchor" href="https://discourse.ubuntu.com#p-193101-get-involved-46"></a>Get Involved</h2>
-<p>The Ubuntu community consists of individuals and teams, working on different aspects of the distribution, giving advice and technical support, and helping to promote Ubuntu to a wider audience. No contribution is too small, and anyone can help. It’s your chance to get in on all the community fun associated with developing and promoting Ubuntu. More on this at: <a href="https://community.ubuntu.com/contribute/">https://community.ubuntu.com/contribute/</a></p>
-<p>Or get involved with the Ubuntu Weekly Newsletter team! We always need summary writers and editors, if you’re interested, learn more at: <a href="https://discourse.ubuntu.com/t/joining-the-ubuntu-weekly-newsletter-team/40929">https://discourse.ubuntu.com/t/joining-the-ubuntu-weekly-newsletter-team/40929</a></p>
-<h2><a name="p-193101-feedback-47" class="anchor" href="https://discourse.ubuntu.com#p-193101-feedback-47"></a>Feedback</h2>
-<p>This document is maintained by the Ubuntu Weekly News Team. If you have a story idea or suggestions for the Weekly Newsletter, join the Ubuntu News Team mailing list at <a href="https://lists.ubuntu.com/mailman/listinfo/Ubuntu-news-team">https://lists.ubuntu.com/mailman/listinfo/Ubuntu-news-team</a> and submit it. Ideas can also be added to the wiki at <a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-ideas/40053/">https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-ideas/40053/</a> . If you’d like to contribute to a future issue of the Ubuntu Weekly Newsletter, please feel free to edit the appropriate wiki page. If you have any technical support questions, please check <a href="https://community.ubuntu.com/help-information/">https://community.ubuntu.com/help-information/</a> for more information on where to get help.</p>
-<p>Except where otherwise noted, this issue of the Ubuntu Weekly Newsletter is licensed under a Creative Commons Attribution ShareAlike 3.0 License.</p>
-<p><img src="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/b/dbf59da03627b1c1aed30432a2467c245b8cfbf1.png" alt="CCL" data-base62-sha1="vnQNj6QVCJUCgWWL8t8nrPszYqJ" width="88" height="31"></p>
-            <p><small>1 post - 1 participant</small></p>
-            <p><a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-926/74558">Read full topic</a></p>]]></description>
-      <source url="https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss">Ubuntu Weekly News</source>
     </item>
     <item>
       <title>Flipping the cube: 2025 is over</title>

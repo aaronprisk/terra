@@ -6,9 +6,129 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Wed, 21 Jan 2026 02:02:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jan 2026 02:03:29 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing with AI on Ubuntu</title>
+      <link>https://jnsgr.uk/2026/01/developing-with-ai-on-ubuntu/</link>
+      <guid isPermaLink="true">https://jnsgr.uk/2026/01/developing-with-ai-on-ubuntu/</guid>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<blockquote>
+<p>This article was originally posted <a href="https://discourse.ubuntu.com/t/developing-with-ai-on-ubuntu/75299" target="_blank" rel="noreferrer">on the Ubuntu Discourse</a>, and is reposted here. I welcome comments and further discussion in that thread.</p></blockquote>
+<p>AI-assisted tooling is becoming more and more common in the workflows of engineers at all experience levels. As I see it, our challenge is one of consideration, enablement and constraint. We must enable those who opt-in to safely and responsibly harness the power of these tools, while respecting those who do not wish to have their platform defined or overwhelmed by this class of software.</p>
+<p>The use of AI is a divisive topic among the tech community. I find myself a little in both camps, somewhere between sceptic and advocate. While I&rsquo;m quick to acknowledge the negative impacts that the use of LLMs <em>can have</em> on open source projects, I&rsquo;m also surrounded by examples where it has been used responsibly to great effect.</p>
+<p>Examples of this include <a href="https://filippo.io" target="_blank" rel="noreferrer">Filippo</a>&rsquo;s article <a href="https://words.filippo.io/claude-debugging/" target="_blank" rel="noreferrer">debugging low-level cryptography with Claude Code</a>, <a href="https://mitchellh.com" target="_blank" rel="noreferrer">Mitchell</a>&rsquo;s article on <a href="https://mitchellh.com/writing/non-trivial-vibing" target="_blank" rel="noreferrer">Vibing a Non-Trivial Ghostty Feature</a>, and <a href="https://github.com/crawshaw" target="_blank" rel="noreferrer">David</a>&rsquo;s article <a href="https://crawshaw.io/blog/programming-with-agents" target="_blank" rel="noreferrer">How I Program with Agents</a>. These articles come from engineers with proven expertise in careful, precise software engineering, yet they share an important sentiment: AI-assisted tools can be a remarkable force-multiplier when used <em>in conjunction</em> with their lived experience, but care must still be taken to avoid poor outcomes.</p>
+<p>The aim of this post is not to convince you to use AI in your work, but rather to introduce the elements of Ubuntu that make it a first-class platform for safe, efficient experimentation and development. My goals for AI and Ubuntu are currently focused on enabling those who want to develop responsibly with AI tools, without negatively impacting the experience of those who&rsquo;d prefer not to opt-in.</p>
+<h3 id="hardware--drivers" class="relative group">Hardware &amp; Drivers <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#hardware--drivers" aria-label="Anchor">#</a></span></h3><p>AI-specific silicon is moving just as fast as AI software tooling, and without constant work to integrate drivers and userspace tools into Ubuntu, it would be impossible to efficiently utilise this specialised hardware.</p>
+<p>Last year we announced that we will ship both <a href="https://canonical.com/blog/canonical-announces-it-will-support-and-distribute-nvidia-cuda-in-ubuntu" target="_blank" rel="noreferrer">NVIDIA&rsquo;s CUDA</a> and <a href="https://canonical.com/blog/canonical-amd-rocm-ai-ml-hpc-libraries" target="_blank" rel="noreferrer">AMD&rsquo;s ROCm</a> in the Ubuntu archive for Ubuntu 26.04 LTS, in addition to our previous work on <a href="https://snapcraft.io/publisher/openvino" target="_blank" rel="noreferrer">OpenVINO</a>. This will make installing the latest drivers and toolkits easier and more secure, with no third-party software repositories. Distributing this software as part of Ubuntu enables us to be proactive in the delivery of security updates and the demonstration of provenance.</p>
+<p>Our work is not limited to AMD and NVIDIA; we recently <a href="https://canonical.com/blog/ubuntu-ga-for-qualcomm-dragonwing" target="_blank" rel="noreferrer">announced</a> support for Qualcomm&rsquo;s <a href="https://www.qualcomm.com/dragonwing" target="_blank" rel="noreferrer">Dragonwing</a> platforms and others. You can read more about our silicon partner projects <a href="https://canonical.com/partners/silicon" target="_blank" rel="noreferrer">on our website</a>.</p>
+<h3 id="inference-snaps" class="relative group">Inference Snaps <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#inference-snaps" aria-label="Anchor">#</a></span></h3><p>At the <a href="https://ubuntu.com/summit" target="_blank" rel="noreferrer">Ubuntu Summit 25.10</a>, we <a href="https://canonical.com/blog/canonical-releases-inference-snaps" target="_blank" rel="noreferrer">released</a> &ldquo;Inference Snaps&rdquo; into the wild, which provide a hassle-free mechanism for obtaining the “famous model” you want to work with, but automatically receive a version of that model which is optimised for the silicon in your machine. This removes the need to spend hours on <a href="https://huggingface.co/" target="_blank" rel="noreferrer">HuggingFace</a> identifying the correct model to download that matches with your hardware, and obviates the need for in-depth understanding of model quantisation and tuning when getting started.</p>
+<p>Each of our inference snaps provide a consistent experience: you need only learn the basics once, but can apply those skills to different models as they emerge, whether you&rsquo;re on a laptop or a server.</p>
+<p>At the time of writing, we&rsquo;ve published <code>beta</code> quality snaps for <a href="https://snapcraft.io/qwen-vl" target="_blank" rel="noreferrer">qwen-vl</a>, <a href="https://snapcraft.io/deepseek-r1" target="_blank" rel="noreferrer">deepseek-r1</a> and <a href="https://snapcraft.io/gemma3" target="_blank" rel="noreferrer">gemma3</a>. You can find a current list of snaps <a href="https://documentation.ubuntu.com/inference-snaps/reference/snaps/" target="_blank" rel="noreferrer">in the documentation</a>, along with the silicon-optimised variants.</p>
+<h3 id="sandboxing-agents" class="relative group">Sandboxing Agents <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sandboxing-agents" aria-label="Anchor">#</a></span></h3><p>While many start their journey in a web browser chatting to <a href="https://chat.com" target="_blank" rel="noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noreferrer">Claude</a>, <a href="https://gemini.google.com/app" target="_blank" rel="noreferrer">Gemini</a>, <a href="https://perplexity.ai" target="_blank" rel="noreferrer">Perplexity</a> or one of the myriad of alternatives, many developers will find &ldquo;agentic&rdquo; tools such as <a href="https://github.com/features/copilot" target="_blank" rel="noreferrer">Copilot</a>, <a href="https://openai.com/codex/" target="_blank" rel="noreferrer">Codex</a>, <a href="https://claude.com/product/claude-code" target="_blank" rel="noreferrer">Claude Code</a> or <a href="https://ampcode.com/" target="_blank" rel="noreferrer">Amp</a> quite attractive. In my experience, agents are a clear level-up in an LLM&rsquo;s capability for developers, but they can still make poor decisions and are generally safer to run in sandboxed environment at the time of writing.</p>
+<p>Where a traditional chat-based AI tool responds reactively to user prompts within a single conversation, an agent operates (semi-)autonomously to pursue goals. It perceives its environment, plans, makes decisions and can call out to external tools and services to achieve those goals. If you grant permission, an agent can read and understand your code, implement features, troubleshoot bugs, optimise performance and many other tasks. The catch is that they often need <em>access to your system</em> - whether that be to modify files or run commands.</p>
+<p>Issues such as accidental file deletion, or the inclusion of a spurious (and potentially compromised) dependency are an inevitable failure mode of the current generation of agents due to how they&rsquo;re trained (see the <a href="https://www.reddit.com/r/ClaudeAI/comments/1pgxckk/claude_cli_deleted_my_entire_home_directory_wiped/" target="_blank" rel="noreferrer">Reddit post</a> about Claude Code deleting a user&rsquo;s home directory).</p>
+<h4 id="my-agent-sandboxes-itself" class="relative group">My agent sandboxes itself! <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#my-agent-sandboxes-itself" aria-label="Anchor">#</a></span></h4><p>Some of you will be reading this wondering why additional sandboxing is required, since many of the popular agents <a href="https://code.claude.com/docs/en/sandboxing" target="_blank" rel="noreferrer">advertise their own sandboxing</a>. The fact that some agents include some measures to protect the user&rsquo;s machine is of course a good thing. The touted benefits include filesystem isolation by restricting the agent to a specific directory, or prompting for approval before modifying files. Some agents also include network sandboxing to restrict network access to a list of approved domains, or by using a custom proxy to impose rules on outbound traffic.</p>
+<p>On Linux, these agent-imposed sandboxes are often implemented with <a href="https://github.com/containers/bubblewrap" target="_blank" rel="noreferrer">bubblewrap</a>, which is &ldquo;a tool for constructing sandbox environments&rdquo;, but note that the upstream project&rsquo;s README includes <a href="https://github.com/containers/bubblewrap#sandbox-security" target="_blank" rel="noreferrer">a section</a> which states that it is <em>not</em> a &ldquo;ready-made sandbox with a specific security policy&rdquo;. <code>bubblewrap</code> is a relatively low-level tool that must be given its configuration, which in this case is provided <em>by the agent</em>.</p>
+<p>The limitation upon these tools is the shared kernel - a severe kernel exploit could enable an agent to escape from its sandbox. Of course, such vulnerabilities are rare, but note that even if the sandboxing technologies do their job, agents often run in the context of the user&rsquo;s session, meaning they inherit environment variables which could contain sensitive information. They&rsquo;re also agent specific: Claude Code&rsquo;s sandboxing won&rsquo;t help you if you&rsquo;re using <a href="https://cursor.com/" target="_blank" rel="noreferrer">Cursor</a> or <a href="https://antigravity.google/" target="_blank" rel="noreferrer">Antigravity</a>.</p>
+<p>Depending on your threat model and the project you&rsquo;re working on, you may deem the built-in sandboxing of coding agents to be sufficient, but there are other options available to Ubuntu users that provide either different, or additional protection&hellip;</p>
+<h4 id="sandbox-with-lxd-containers" class="relative group">Sandbox with LXD containers <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sandbox-with-lxd-containers" aria-label="Anchor">#</a></span></h4><p>Canonical&rsquo;s <a href="https://canonical.com/lxd" target="_blank" rel="noreferrer">LXD</a> works out-of-the-box on Ubuntu, and is a great way to sandbox an agent into a disposable environment where the blast radius is limited should the agent make a mistake. My personal workflow is to create an Ubuntu container (or VM) with my project directory mounted. This way, I can edit my code directly on my filesystem with my preferred (already configured) editor, but have the agent run inside the container.</p>
+<p>For example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Initialise the container</span>
+</span></span><span class="line"><span class="cl">lxc init ubuntu:noble dev
+</span></span><span class="line"><span class="cl"><span class="c1"># Mount my project directory into the container</span>
+</span></span><span class="line"><span class="cl">lxc config device add -q dev datadir disk <span class="nv">source</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/my-project&#34;</span> <span class="nv">path</span><span class="o">=</span>/home/ubuntu/project
+</span></span><span class="line"><span class="cl"><span class="c1"># Start the container</span>
+</span></span><span class="line"><span class="cl">lxc start dev
+</span></span><span class="line"><span class="cl"><span class="c1"># Get a shell inside the container as the &#39;ubuntu&#39; user</span>
+</span></span><span class="line"><span class="cl">lxc <span class="nb">exec</span> dev -- sudo -u ubuntu -i bash
+</span></span><span class="line"><span class="cl"><span class="c1"># Run a command in the container</span>
+</span></span><span class="line"><span class="cl">lxc <span class="nb">exec</span> dev -- sudo -u ubuntu -i bash -c <span class="s2">&#34;cd project; claude&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can learn more about LXD in the official <a href="https://documentation.ubuntu.com/lxd/stable-5.21/" target="_blank" rel="noreferrer">documentation</a> and <a href="https://documentation.ubuntu.com/lxd/stable-5.21/tutorial/first_steps/#first-steps" target="_blank" rel="noreferrer">tutorial</a>, as well as specific instructions on <a href="https://ubuntu.com/tutorials/gpu-data-processing-inside-lxd#1-overview" target="_blank" rel="noreferrer">enabling GPU data processing in containers/VMs</a>. I&rsquo;ve written <a href="https://jnsgr.uk/2024/06/desktop-vms-lxd-multipass/" target="_blank" rel="noreferrer">previously</a> about my use of LXD in development.</p>
+<p>With LXD, you can choose between running your sandbox as a container or a VM, depending on your project&rsquo;s needs. If I&rsquo;m working on a project that requires Kubernetes or similar, I use a VM, but for lighter projects I use system containers, preferring their lower overhead.</p>
+<h4 id="sandbox-with-lxd-vms" class="relative group">Sandbox with LXD VMs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sandbox-with-lxd-vms" aria-label="Anchor">#</a></span></h4><p>LXD is best known for its ability to run &ldquo;system containers&rdquo;, which are somewhat analogous to Docker/OCI containers, but rather than being focused on a single application (and dependencies), a system container essentially runs an entire Ubuntu user-space (including <code>systemd</code>, etc.). Like OCI containers, however, system containers share the kernel with the host.</p>
+<p>In some situations, you may seek more isolation from your host machine by running tools inside a virtual machine with their own kernel. LXD makes this simple - you can follow the same commands as above, but add <code>--vm</code> to the <code>init</code> command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Initialise the virtual machine</span>
+</span></span><span class="line"><span class="cl">lxc init --vm ubuntu:noble dev
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can also configure the virtual machine&rsquo;s CPU, memory and disk requirements. A simple example is below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lxc init --vm ubuntu:noble dev <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span> -c limits.cpu<span class="o">=</span><span class="m">8</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span> -c limits.memory<span class="o">=</span>8GiB <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span> -d root,size<span class="o">=</span>100GiB
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can find more details on instance configuration in the <a href="https://documentation.ubuntu.com/lxd/stable-5.21/howto/instances_configure/" target="_blank" rel="noreferrer">LXD documentation</a>.</p>
+<h4 id="sandbox-with-multipass" class="relative group">Sandbox with Multipass <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sandbox-with-multipass" aria-label="Anchor">#</a></span></h4><p><a href="https://multipass.run/" target="_blank" rel="noreferrer">Multipass</a> provides on-demand access to Ubuntu VMs from any workstation - whether that workstation is running Linux, macOS or Windows. It is designed to replicate, in a lightweight way, the experience of provisioning a simple Ubuntu VM on a cloud.</p>
+<p>Multipass&rsquo; scope is more limited than LXD, but for many users it provides a simple on-ramp for development with Ubuntu. Where it lacks advanced features like GPU passthrough, it boasts a simplified CLI and a first-class <a href="https://documentation.ubuntu.com/multipass/latest/reference/gui-client/" target="_blank" rel="noreferrer">GUI client</a>.</p>
+<p>To get started similarly to the LXD example above, try the following:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Install Multipass</span>
+</span></span><span class="line"><span class="cl">sudo snap install multipass
+</span></span><span class="line"><span class="cl"><span class="c1"># Launch an instance</span>
+</span></span><span class="line"><span class="cl">multipass launch noble -n dev
+</span></span><span class="line"><span class="cl"><span class="c1"># Mount your project directory</span>
+</span></span><span class="line"><span class="cl">multipass mount ~/my-project dev:/home/ubuntu/project
+</span></span><span class="line"><span class="cl"><span class="c1"># Get a shell in the instance</span>
+</span></span><span class="line"><span class="cl">multipass shell dev
+</span></span><span class="line"><span class="cl"><span class="c1"># Run a command in the instance</span>
+</span></span><span class="line"><span class="cl">multipass <span class="nb">exec</span> dev -- claude
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can find more details on how to configure and manage instances <a href="https://documentation.ubuntu.com/multipass/latest/" target="_blank" rel="noreferrer">in the docs</a>.</p>
+<h4 id="sandbox-with-wsl" class="relative group">Sandbox with WSL <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sandbox-with-wsl" aria-label="Anchor">#</a></span></h4><p>If you&rsquo;re on Windows, <a href="https://documentation.ubuntu.com/wsl/stable/tutorials/develop-with-ubuntu-wsl/" target="_blank" rel="noreferrer">development with WSL</a> includes first-class <a href="https://documentation.ubuntu.com/wsl/stable/howto/gpu-cuda/" target="_blank" rel="noreferrer">support for GPU acceleration</a>, and is even supported for use with the <a href="https://ubuntu.com/blog/accelerate-ai-development-with-ubuntu-and-nvidia-ai-workbench" target="_blank" rel="noreferrer">NVIDIA AI Workbench</a>, <a href="https://docs.nvidia.com/nim/wsl2/latest/getting-started.html" target="_blank" rel="noreferrer">NVIDIA NIM</a> and <a href="https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl" target="_blank" rel="noreferrer">CUDA</a>.</p>
+<p>Ubuntu is the default Linux distribution for WSL, and you can find more information about how to set up and use Ubuntu on WSL in <a href="https://documentation.ubuntu.com/wsl/stable/" target="_blank" rel="noreferrer">our documentation</a>. WSL benefits from all the same technologies as a &ldquo;regular&rdquo; Ubuntu install, including the ability to use Snaps, Docker and LXD.</p>
+<p>For the enterprise developer, we recently announced <a href="https://canonical.com/blog/canonical-announces-ubuntu-pro-for-wsl" target="_blank" rel="noreferrer">Ubuntu Pro for WSL</a>, as well as the ability to manage WSL instances <a href="https://documentation.ubuntu.com/landscape/how-to-guides/wsl-integration/manage-wsl-instances/" target="_blank" rel="noreferrer">using Landscape</a>, making it easier to get access to first-class developer tooling with Ubuntu on your corporate machine.</p>
+<h3 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h3><p>While opinion remains divided on the value and impact of current AI tooling, its presence in modern development workflows and its demands on underlying compute infrastructure are difficult to ignore.</p>
+<p>Developers who wish to experiment need reliable access to modern hardware, predictable tooling, and strong isolation boundaries. Ubuntu’s role is not to dictate how these tools are used, but to provide a stable and dependable platform on which they can be explored and deployed safely, without compromising security, provenance, or the day-to-day experience of those who choose to opt out.</p>
+<p>In addition to powering development workflows, Ubuntu makes for a dependable production operating system for your workloads. We&rsquo;re building <a href="https://documentation.ubuntu.com/canonical-kubernetes/latest/" target="_blank" rel="noreferrer">Canonical Kubernetes</a> with first-class GPU support, <a href="https://canonical.com/mlops/kubeflow" target="_blank" rel="noreferrer">Kubeflow</a> and <a href="https://canonical.com/mlops/mlflow" target="_blank" rel="noreferrer">MLFlow</a> for model training and serving and a suite of applications like <a href="https://canonical.com/data/postgresql" target="_blank" rel="noreferrer">PostgreSQL</a>, <a href="https://canonical.com/data/mysql" target="_blank" rel="noreferrer">MySQL</a>, <a href="https://canonical.com/data/opensearch" target="_blank" rel="noreferrer">Opensearch</a>, as well as other data-centric tools such as <a href="https://canonical.com/data/kafka" target="_blank" rel="noreferrer">Kafka</a> and <a href="https://canonical.com/data/spark" target="_blank" rel="noreferrer">Spark</a> that can be deployed with full <a href="https://ubuntu.com/pro" target="_blank" rel="noreferrer">Ubuntu Pro</a> support. Let me know if you&rsquo;d find value in a follow-up post on those topics!</p>]]></description>
+      <source url="https://jnsgr.uk/tags/ubuntu/index.xml">Jon Seager</source>
+    </item>
     <item>
       <title>Showcasing open design in action: Loughborough University design students explore open source projects</title>
       <link>https://ubuntu.com//blog/showcasing-open-design-in-action-loughborough-university-design-students-explore-open-source-projects</link>
@@ -44,11 +164,11 @@
 <p>The main challenge was the steep learning curve of immersing ourselves in the technical complexity of the Juju ecosystem and its vast open source documentation, especially since most of us came from non-technical backgrounds. We had to quickly grasp the product and its entire linked ecosystem. As direct access to real users was limited, we relied heavily on secondary data, community forums, and the creation of personas to accurately map realistic pain points. Our constant goal was to balance technical accuracy with the required user-centred clarity, which pushed us to fundamentally rethink how developer documentation can effectively guide users without overwhelming them. </p>
 <h4 class="wp-block-heading">What skills or takeaways are you bringing with you from this experience?</h4>
 <p>This project was a major lesson in how to embrace and navigate ambiguity. This was a truly crucial learning experience when dealing with an unfamiliar domain, evolving product documentation, and diverse stakeholder needs. We significantly strengthened our ability to translate dense technical research into clear, actionable design recommendations. We also honed our communication and collaboration skills as a team, successfully aligning our user-focused vision with Canonical’s roadmap. Most importantly, we learned that user advocacy is vital even in highly technical environments, and that our focus is ultimately on humanising complex systems.</p>
-<h1 class="wp-block-heading">🎉Congratulations to both teams!</h1>
+<h2 class="wp-block-heading">🎉Congratulations to both teams!</h2>
 <p>We would like to thank and congratulate both teams for their creativity, thoughtful research, and commitment to enhancing open source experiences through design. They approached complex, open-ended problems with maturity and curiosity, and their outcomes were both inspiring and practical. </p>
 <p>Their fresh perspectives also reminded us of the value of questioning assumptions and looking at familiar challenges through new eyes, reinforcing how much we as practitioners can learn from emerging designers.</p>
 <p>We hope these projects have not only added valuable work to their portfolios but also opened doors to future engagement with open source communities. We encourage them (and any other designer out there) to continue exploring open source, contributing through design, and helping shape more inclusive, user-friendly technologies!</p>
-<h1 class="wp-block-heading">Interested in running a project like this?</h1>
+<h2 class="wp-block-heading">Interested in running a project like this?</h2>
 <p>Are you part of a university looking to bring open source design into your curriculum? <a href="https://canonical.design/blog/open-design-the-opportunity-design-students-didnt-know-they-were-missing" rel="noreferrer noopener" target="_blank">We’re looking for academic partners</a> who want to give students meaningful, real-world experiences while contributing to the global open source ecosystem.</p>
 <p>Reach out at <a href="mailto:opendesign@canonical.com" rel="noreferrer noopener" target="_blank">opendesign@canonical.com</a></p>
 <p>Learn more at <a href="https://canonical.design/blog/open-design-the-opportunity-design-students-didnt-know-they-were-missing" rel="noreferrer noopener" target="_blank">Canonical.design</a></p>
@@ -154,7 +274,7 @@
 <p><strong>If you spot something dodgy</strong>: report it. Use the &ldquo;Report this app&rdquo; link at the bottom of the snap&rsquo;s store page. The community catching these before they catch users is the best defence we&rsquo;ve got right now.</p>
 <p>I&rsquo;ll keep monitoring via <a href="https://snapscope.popey.com/">SnapScope</a> and reporting what I find. Someone has to.</p>
 <p>Stay safe out there.</p>]]></description>
-      <source url="https://popey.com/blog/post/index.xml">Alan Pope</source>
+      <source url="https://blog.popey.com/post/index.xml">Alan Pope</source>
     </item>
     <item>
       <title>HP battery not charging</title>
@@ -1048,84 +1168,6 @@ A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustrado
 <div align="center"><a href="/images/journalpics/122025/olf_cake.jpg"><img decoding="async" src="/images/journalpics/122025/olf_cake_sm.jpg"></a></div>
 <p>In what is perhaps one of my shortest conference trips, I flew out at 5AM the next morning to get home by midday on Sunday. It left me pretty tired, but it was worth it.</p>]]></description>
       <source url="http://princessleia.com/journal/?cat=2&amp;feed=rss2">Elizabeth K. Joseph</source>
-    </item>
-    <item>
-      <title>Addressing Linux's Missing PKI Infrastructure</title>
-      <link>https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/</link>
-      <guid isPermaLink="true">https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/</guid>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[<blockquote>
-<p>This article was originally posted <a href="https://discourse.ubuntu.com/t/addressing-linuxs-missing-pki-infrastructure/73314" target="_blank" rel="noreferrer">on the Ubuntu Discourse</a>, and is reposted here. I welcome comments and further discussion in that thread.</p></blockquote>
-<p>Earlier this year, <a href="https://lwn.net/" target="_blank" rel="noreferrer">LWN</a> featured an excellent article titled &ldquo;<a href="https://lwn.net/Articles/1033809/" target="_blank" rel="noreferrer">Linux&rsquo;s missing CRL infrastructure</a>&rdquo;. The article highlighted a number of key issues surrounding traditional Public Key Infrastructure (PKI), but critically noted how even the available measures are effectively ignored by the majority of system-level software on Linux.</p>
-<p>One of the motivators for the discussion is that the Online Certificate Status Protocol (OCSP) will cease to be supported by Let&rsquo;s Encrypt. The remaining alternative is to use Certificate Revocation Lists (CRLs), yet there is little or no support for managing (or even querying) these lists in most Linux system utilities.</p>
-<p>To solve this, I&rsquo;m happy to share that in partnership with <a href="https://github.com/rustls/rustls" target="_blank" rel="noreferrer">rustls</a> maintainers <a href="https://dirkjan.ochtman.nl/" target="_blank" rel="noreferrer">Dirkjan Ochtman</a> and <a href="https://jbp.io/" target="_blank" rel="noreferrer">Joe Birr-Pixton</a>, we&rsquo;re starting the development of upki: a universal PKI tool. This project initially aims to close the revocation gap through the combination of a new system utility and eventual library support for common TLS/SSL libraries such as <a href="https://openssl-library.org/" target="_blank" rel="noreferrer">OpenSSL</a>, <a href="https://gnutls.org/" target="_blank" rel="noreferrer">GnuTLS</a> and <a href="https://github.com/rustls/rustls" target="_blank" rel="noreferrer">rustls</a>.</p>
-<h2 id="the-problem" class="relative group">The Problem <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-problem" aria-label="Anchor">#</a></span></h2><p>Online Certificate Authorities responsible for issuing TLS certificates have long had mechanisms for revoking known bad certificates. What constitutes a known bad certificate varies, but generally it means a certificate was issued either in error, or by a malicious actor of some form. There have been two primary mechanisms for this revocation: <a href="https://datatracker.ietf.org/doc/html/rfc5280" target="_blank" rel="noreferrer">Certificate Revocation Lists</a> (CRLs) and the <a href="https://datatracker.ietf.org/doc/html/rfc6960" target="_blank" rel="noreferrer">Online Certificate Status Protocol</a> (OCSP).</p>
-<p>In July 2024, <a href="https://letsencrypt.org/" target="_blank" rel="noreferrer">Let’s Encrypt</a> <a href="https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls.html" target="_blank" rel="noreferrer">announced</a> the deprecation of support for the Online Certificate Status Protocol (OCSP). This wasn&rsquo;t entirely unexpected - the protocol has suffered from privacy defects which leak the browsing habits of users to Certificate Authorities. Various implementations have also suffered reliability issues that forced most implementers to adopt &ldquo;soft-fail&rdquo; policies, rendering the checks largely ineffective.</p>
-<p>The deprecation of OCSP leaves us with CRLs. Both Windows and macOS rely on operating system components to centralise the fetching and parsing of CRLs, but Linux has traditionally delegated this responsibility to individual applications. This is done most effectively in browsers such as Mozilla Firefox, Google Chrome and Chromium, but this has been achieved with bespoke infrastructure.</p>
-<p>However, Linux itself has fallen short by not providing consistent revocation checking infrastructure for the rest of userspace - tools such as curl, system package managers and language runtimes lack a unified mechanism to process this data.</p>
-<p>The ideal solution to this problem, which is slowly <a href="https://letsencrypt.org/2025/12/02/from-90-to-45.html" target="_blank" rel="noreferrer">becoming more prevalent</a>, is to issue short-lived credentials with an expiration of 10 days or less, somewhat removing the need for complicated revocation infrastructure, but reducing certificate lifetimes is happening slowly and requires significant automation.</p>
-<h2 id="crlite" class="relative group">CRLite <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#crlite" aria-label="Anchor">#</a></span></h2><p>There are several key challenges with CRLs in practice - the size of the list has grown dramatically as the web has scaled, and one must collate CRLs from all relevant certificate authorities in order to be useful. CRLite was originally proposed by researchers at IEEE S&amp;P and subsequently adopted in Mozilla Firefox. It offers a pragmatic solution to the problem of distributing large CRL datasets to client machines.</p>
-<p>In a recent <a href="https://hacks.mozilla.org/2025/08/crlite-fast-private-and-comprehensive-certificate-revocation-checking-in-firefox/" target="_blank" rel="noreferrer">blog post</a>, Mozilla outlined how their CRLite implementation meant that on average users &ldquo;downloaded 300kB of revocation data per day, a 4MB snapshot every 45 days and a sequence of &ldquo;delta-updates&rdquo; in-between&rdquo;, which amounts to CRLite being 1000x more bandwidth-efficient than daily CRL downloads.</p>
-<p>At its core, CRLite is a data structure compressing the full set of web-PKI revocations into a compact, efficiently queryable form. You can find more information about CRLite&rsquo;s design and implementation on <a href="https://blog.mozilla.org/security/tag/crlite/" target="_blank" rel="noreferrer">Mozilla&rsquo;s Security Blog</a>.</p>
-<h2 id="introducing-upki" class="relative group">Introducing upki <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introducing-upki" aria-label="Anchor">#</a></span></h2><p>Following our work on <a href="https://jnsgr.uk/2025/03/carefully-but-purposefully-oxidising-ubuntu/" target="_blank" rel="noreferrer">oxidizing Ubuntu</a>, <a href="https://dirkjan.ochtman.nl/" target="_blank" rel="noreferrer">Dirkjan</a> reached out to me with a proposal to introduce a system-level utility backed by CRLite to non-browser users.</p>
-<p>upki will be an open source project, initially packaged for Ubuntu but available to all Linux distributions, and likely portable to other Unix-like operating systems. Written in Rust, upki supports three roles:</p>
-<ul>
-<li>
-<p><strong>Server-side mirroring tool</strong>: responsible for downloading and mirroring the CRLite filters provided by Mozilla, enabling us to operate independent CDN infrastructure for CRLite users, and serving them to clients. This will insulate upki from changes in the Mozilla backend, and enable standing up an independent data source if required. The server-side tool will manifest as a service that periodically checks the Mozilla Firefox CRLite filters, downloads and validates the files, and serves them.</p>
-</li>
-<li>
-<p><strong>Client-side sync tool</strong>: run regularly by a systemd-timer, network-up events or similar, this tool ensures the contents of the CDN are reflected in the on-disk filter cache. This will be extremely low on bandwidth and CPU usage assuming everything is up to date.</p>
-</li>
-<li>
-<p><strong>Client-side query tool</strong>: a CLI interface for querying revocation data. This will be useful for monitoring and deployment workflows, as well as for users without a good C FFI.</p>
-</li>
-</ul>
-<p>The latter two roles are served by a single Rust binary that runs in different modes depending on how it is invoked. The server-side tool will be a separate binary, since its use will be much less widespread. Under the hood, all of this will be powered by Rust library crates that can be integrated in other projects via crates.io.</p>
-<p>For the initial release, Canonical will stand up the backend infrastructure required to mirror and serve the CRLite data for upki users, though the backend will be configurable. This prevents unbounded load on Mozilla’s infrastructure and ensures long-term stability even if Firefox’s internal formats evolve.</p>
-<p><a href="01.png">
-<figure>
-<picture
-class="mx-auto my-0 rounded-md"
->
-<source
-srcset="https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_7aea390858f05c60.webp 330w,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_9154481d5f03e512.webp 660w
-,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_a307b065b53523ff.webp 1024w
-,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_deff65263f4ce937.webp 1320w
-"
-sizes="100vw"
-type="image/webp"
-/>
-<img
-width="1720"
-height="1670"
-class="mx-auto my-0 rounded-md"
-alt="architecture diagram for upki"
-loading="lazy" decoding="async"
-src="https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_8d3d8de37b1371ed.png" srcset="https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_35c62a8a93ce37c3.png 330w,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_8d3d8de37b1371ed.png 660w
-,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_5589b1a5b35835.png 1024w
-,https://jnsgr.uk/2025/12/addressing-linuxs-missing-pki-infra/01_hu_3dea963df0028e69.png 1320w
-"
-sizes="100vw"
-/>
-</picture>
-</figure>
-</a></p>
-<h2 id="ecosystem-compatibility" class="relative group">Ecosystem Compatibility <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecosystem-compatibility" aria-label="Anchor">#</a></span></h2><p>So far we&rsquo;ve covered the introduction of a new Rust binary (and crate) for supporting the fetching, serving and querying of CRL data, but that doesn&rsquo;t provide much service to the existing ecosystem of Linux applications and libraries in the problem statement.</p>
-<p>The upki project will also provide a shared object library for a stable ABI that allows C and C-FFI programs to make revocation queries, using the contents of the on-disk filter cache.</p>
-<p>Once <code>upki</code> is released and available, work can begin on integrating existing crypto libraries such as OpenSSL, GNUtls and rustls. This will be performed through the shared object library by means of an optional callback mechanism these libraries can use to check the revocation lists before establishing a connection to a given server with a certificate.</p>
-<h2 id="timeline" class="relative group">Timeline <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#timeline" aria-label="Anchor">#</a></span></h2><p>While we&rsquo;ve been discussing this project for a couple of months, ironing out the details of funding and design, work will soon begin on the initial implementation of upki.</p>
-<p>Our aim is to make upki available as an opt-in preview for the release of Ubuntu 26.04 LTS, meaning we&rsquo;ll need to complete the implementation of the server/client functionality, and bootstrap the mirroring/serving infrastructure at Canonical before April 2026.</p>
-<p>In the following Ubuntu release cycle, the run up to Ubuntu 26.10, we&rsquo;ll aim to ship the tool by default on Ubuntu systems, and begin work on integration with the likes of NSS, OpenSSL, GNUtls and rustls.</p>
-<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2><p>Linux has a clear gap in its handling of revocation data for PKIs. Over the coming months we&rsquo;re hoping to address that gap by developing upki not just for Ubuntu, but for the entire ecosystem. Thanks to Mozilla&rsquo;s work on CRLite, and the expertise of Dirkjan and Joe, we&rsquo;re confident that we&rsquo;ll deliver a resilient and efficient solution that should make a meaningful contribution to systems security across the web.</p>
-<p>If you&rsquo;d like to do more reading on the subject, I&rsquo;d recommend the following:</p>
-<ul>
-<li><strong>LWN.net:</strong> <a href="https://lwn.net/Articles/1033809/" target="_blank" rel="noreferrer">Linux&rsquo;s missing CRL infrastructure</a></li>
-<li><strong>Mozilla Security Blog:</strong> <a href="https://blog.mozilla.org/security/2020/01/09/crlite-part-1-all-web-pki-revocations-compressed/" target="_blank" rel="noreferrer">CRLite Part 1: All Web PKI Revocations Compressed</a></li>
-<li><strong>Mozilla Security Blog:</strong> <a href="https://blog.mozilla.org/security/2020/01/09/crlite-part-2-end-to-end-design/" target="_blank" rel="noreferrer">CRLite Part 2: End-to-End Design</a></li>
-<li><strong>Let’s Encrypt:</strong> <a href="https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls.html" target="_blank" rel="noreferrer">Replacing OCSP with CRLs</a></li>
-<li><strong>IEEE Symposium on Security &amp; Privacy:</strong> <a href="https://www.google.com/search?q=https://ieeexplore.ieee.org/document/7958572" target="_blank" rel="noreferrer">CRLite: A Scalable System for Pushing All TLS Revocations to All Browsers</a></li>
-</ul>]]></description>
-      <source url="https://jnsgr.uk/tags/ubuntu/index.xml">Jon Seager</source>
     </item>
     <item>
       <title>Fix Broken Updates: uCareSystem New Release uCareSystem v25.12</title>
@@ -7385,74 +7427,6 @@ $2 = (minimal_symbol *) 0x0
 <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPTo9V_gGem-79f_xmI9JYztYxHjcu8JaW57Xk_JeibNNWbZZ6Fv6lFF2bHIjLWPbrNnnM4asO-g9cuC2n2DMF9N2bdUp9tuayTNA-g4B1mtgX0K3h1XHSME7gTkTSSHMd1D03bAiflS8/s1600/gci_mentor+-+a2667f67-55ab-4c9b-8b41-df3c99eef6e8.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="850" data-original-width="1100" height="494" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPTo9V_gGem-79f_xmI9JYztYxHjcu8JaW57Xk_JeibNNWbZZ6Fv6lFF2bHIjLWPbrNnnM4asO-g9cuC2n2DMF9N2bdUp9tuayTNA-g4B1mtgX0K3h1XHSME7gTkTSSHMd1D03bAiflS8/s640/gci_mentor+-+a2667f67-55ab-4c9b-8b41-df3c99eef6e8.jpg" width="640" /></a></div>
 <br />]]></description>
       <source url="http://carla-sella.blogspot.it/rss.xml">Carla Sella</source>
-    </item>
-    <item>
-      <title>Magic URLs in the Ubuntu ecosystem</title>
-      <link>https://tribaal.io/magic-urls.html</link>
-      <guid isPermaLink="true">https://tribaal.io/magic-urls.html</guid>
-      <pubDate>Wed, 13 Dec 2017 09:05:00 GMT</pubDate>
-      <description><![CDATA[<p>Because of the distributed nature of Ubuntu development, it is sometimes a
-little difficult for me to keep track of the "special" URLs for various
-actions or reports that I'm regularly interested in.</p>
-<p>Therefore I started gathering them in my personal wiki (I use the excellent
-<a href="http://zim-wiki.org/">"zim" desktop wiki</a>), and realized some of my colleagues
-and friends would be interested in that list as well. I'll do my best to keep
-this blog post up-to-date as I discover new ones.</p>
-<p><img alt="A magic book" src="https://tribaal.io/images/magic.png" title="Not quite a list of spells"></p>
-<p>If you know of other candidates for this list, please don't hesitate to <a href="https://twitter.com/3baal">get in
-touch</a>!</p>
-<p>Behold, tribaal's "secret URL" list!</p>
-<h3>Pending SRUs</h3>
-<p>Once a package has been uploaded to a -proposed pocket, it needs to be verified
-as per <a href="https://wiki.ubuntu.com/StableReleaseUpdates">the SRU process</a>.
-Packages pending
-<a href="https://wiki.ubuntu.com/QATeam/PerformingSRUVerification">verification</a> end up
-in this list.</p>
-<p><a href="https://people.canonical.com/~ubuntu-archive/pending-sru.html">https://people.canonical.com/~ubuntu-archive/pending-sru.html</a></p>
-<h3>Sponsorship queue</h3>
-<p>People who don't have upload rights for the package they fixed need to request
-sponsorship. This queue is the place to check if you're waiting for someone to
-pick it up and upload it.</p>
-<p><a href="http://reqorts.qa.ubuntu.com/reports/sponsoring/">http://reqorts.qa.ubuntu.com/reports/sponsoring/</a></p>
-<h3>Upload queue</h3>
-<p>A log of what got uploaded (and to which pocket) for a particular release, and
-also a queue of packages that have been uploaded and are now waiting for review
-before entering the archive.</p>
-<p>For the active development release this is for brand new packages, for frozen
-releases these are SRU packages. Once approved at this step, the packages
-enter -proposed.</p>
-<p><a href="https://launchpad.net/ubuntu/xenial/+queue?queue_state=1">https://launchpad.net/ubuntu/xenial/+queue?queue_state=1</a></p>
-<h3>The launchpad build farm</h3>
-<p>A list of all the builders Launchpad currently has, broken down by
-architecture. You can look at jobs being built in real time, and the occupation
-level of the whole build farm in here as well.</p>
-<p><a href="https://launchpad.net/builders">https://launchpad.net/builders</a></p>
-<h3>Proposed migration excuses</h3>
-<p>For the currently in-development Ubuntu release, packages are first uploaded to
--proposed, then a set of conditions need to be met before it can be promoted to
-the released pockets. The list of packages that have failed this automatic
-migration and the reason why they haven't can be found on this page.</p>
-<p><a href="https://people.canonical.com/~ubuntu-archive/proposed-migration/update_excuses.html">https://people.canonical.com/~ubuntu-archive/proposed-migration/update_excuses.html</a></p>
-<h3>Merge-O-matic</h3>
-<p>Not really a "magic" URL, but this system gathers information and lists for the
-automatic merging system, that merges debian packages to the development
-release of Ubuntu.</p>
-<p><a href="https://merges.ubuntu.com/">https://merges.ubuntu.com/</a></p>
-<h3>Transitions tracker</h3>
-<p>This page tracks transitions, which are toolchain changes or other package
-updates with "lots" of dependencies. This tracks the dependencies build status.</p>
-<p><a href="https://people.canonical.com/~ubuntu-archive/transitions/html/">https://people.canonical.com/~ubuntu-archive/transitions/html/</a></p>
-<h3>Component mismatches</h3>
-<p>This file tracks which packages are depended upon by packages in main via the
-"Recommends" stanza. Some more documentation is available in the <a href="https://wiki.ubuntu.com/ArchiveAdministration#Component_Mismatches_and_Changing_Overrides">Archive Admin
-section of the ubuntu wiki</a>.</p>
-<p><a href="http://people.canonical.com/~ubuntu-archive/component-mismatches.txt">http://people.canonical.com/~ubuntu-archive/component-mismatches.txt</a></p>
-<p>A similar file is generated with proposed enabled.</p>
-<p><a href="http://people.canonical.com/~ubuntu-archive/component-mismatches-proposed.txt">http://people.canonical.com/~ubuntu-archive/component-mismatches-proposed.txt</a></p>
-<h3>Kernel SRU workflow</h3>
-<p>A page tracking the state of various kernel SRUs</p>
-<p><a href="http://kernel.ubuntu.com/sru/kernel-sru-workflow.html">http://kernel.ubuntu.com/sru/kernel-sru-workflow.html</a></p>]]></description>
-      <source url="https://tribaal.io/feeds/ubuntu">Chris Glass</source>
     </item>
     <item>
       <title>Preparing for Xubuntu 18.04</title>

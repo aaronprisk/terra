@@ -6,7 +6,7 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Mon, 26 Jan 2026 02:09:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 02:05:54 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -1843,63 +1843,63 @@ to achieve, or I missed some of the goals.</p>
       <link>https://ericheickmeyer.com/2025/10/09/why-i-wont-be-attending-or-speaking-at-ubuntu-summit-25-10/</link>
       <guid isPermaLink="true">https://ericheickmeyer.com/2025/10/09/why-i-wont-be-attending-or-speaking-at-ubuntu-summit-25-10/</guid>
       <pubDate>Thu, 09 Oct 2025 22:01:09 GMT</pubDate>
-      <description><![CDATA[<p>Ubuntu Summit&#8217;s decision to go exclusively online, with the exception of those speaking at the Summit in London, UK, is anti-collaborative and turns its back on the very people who make Ubuntu what it is: its community of volunteers and developers. Ubuntu Summit was created from the dust of the Ubuntu Developer Summit in 2022 to recognize the community. It no longer serves that purpose.</p>
+      <description><![CDATA[<p class="wp-block-paragraph">Ubuntu Summit&#8217;s decision to go exclusively online, with the exception of those speaking at the Summit in London, UK, is anti-collaborative and turns its back on the very people who make Ubuntu what it is: its community of volunteers and developers. Ubuntu Summit was created from the dust of the Ubuntu Developer Summit in 2022 to recognize the community. It no longer serves that purpose.</p>
 
 
 
-<p>As many know, I have been the lead of Ubuntu Studio for more than 7 years. I&#8217;m the longest-tenured Ubuntu Studio lead. I owe much of the foundation that was built to my predecessors: Luke Yelavich (founder), Scott Lavender, Kaj Ailomaa, and Set Halstrom. It is a true labor of love for me, and is the foundation for much of what I do.</p>
+<p class="wp-block-paragraph">As many know, I have been the lead of Ubuntu Studio for more than 7 years. I&#8217;m the longest-tenured Ubuntu Studio lead. I owe much of the foundation that was built to my predecessors: Luke Yelavich (founder), Scott Lavender, Kaj Ailomaa, and Set Halstrom. It is a true labor of love for me, and is the foundation for much of what I do.</p>
 
 
 
-<p>I have worked myself through the ranks of Ubuntu, becoming a small-time packager for a small set of Ubuntu packages, then the Ubuntu Studio packageset, moving up to MOTU (Master of the Universe). I also served on the Ubuntu Community Council and am a current Discourse moderator.</p>
+<p class="wp-block-paragraph">I have worked myself through the ranks of Ubuntu, becoming a small-time packager for a small set of Ubuntu packages, then the Ubuntu Studio packageset, moving up to MOTU (Master of the Universe). I also served on the Ubuntu Community Council and am a current Discourse moderator.</p>
 
 
 
-<p>Community and the love of people is a huge motivation for me. Granted, for those first four years, I hadn&#8217;t ever met the people I was collaborating with to make Ubuntu Studio what it is.</p>
+<p class="wp-block-paragraph">Community and the love of people is a huge motivation for me. Granted, for those first four years, I hadn&#8217;t ever met the people I was collaborating with to make Ubuntu Studio what it is.</p>
 
 
 
-<p>Then in August 2022, I was invited to attend the first ever Ubuntu Summit 2022 in Prague, Czechia. Having never travelled abroad before and never having even been off the continent of North America, itself a challenge as getting a U.S. passport is neither cheap nor easy, I was reluctant at first. Then I managed to get my passport, as well as the funds and passports to bring my wife and son to Ubuntu Summit.</p>
+<p class="wp-block-paragraph">Then in August 2022, I was invited to attend the first ever Ubuntu Summit 2022 in Prague, Czechia. Having never travelled abroad before and never having even been off the continent of North America, itself a challenge as getting a U.S. passport is neither cheap nor easy, I was reluctant at first. Then I managed to get my passport, as well as the funds and passports to bring my wife and son to Ubuntu Summit.</p>
 
 
 
-<p>That experience changed my life and the life of my entire family. My son, 10 at the time, was the youngest registered attendee. My wife was inspired to bring back Edubuntu, which had been defunct for nine long years by the time it was revived that following spring.</p>
+<p class="wp-block-paragraph">That experience changed my life and the life of my entire family. My son, 10 at the time, was the youngest registered attendee. My wife was inspired to bring back Edubuntu, which had been defunct for nine long years by the time it was revived that following spring.</p>
 
 
 
-<p>These are the things that happen when you have personal connections with people. If you&#8217;ve never read the book before, I encourage you to read <em><a href="https://www.nurturingparenting.com/images/cmsfiles/hardwired_to_connect.pdf">Hardwired to Connect</a></em>, which is a research paper published by a bunch of scientists. In essence, it says that people&#8217;s brains are wired, from birth, to engage in communities in for personal, in-person connections. It&#8217;s a scientific study that took years and is an excellent introduction to why we are the way we are.</p>
+<p class="wp-block-paragraph">These are the things that happen when you have personal connections with people. If you&#8217;ve never read the book before, I encourage you to read <em><a href="https://www.nurturingparenting.com/images/cmsfiles/hardwired_to_connect.pdf">Hardwired to Connect</a></em>, which is a research paper published by a bunch of scientists. In essence, it says that people&#8217;s brains are wired, from birth, to engage in communities in for personal, in-person connections. It&#8217;s a scientific study that took years and is an excellent introduction to why we are the way we are.</p>
 
 
 
-<p>Much of my education revolves around the very idea of building personal communities, which is one reason I was appalled when Ubuntu Summit, starting with 25.10, while it would be twice a year, it would be online-only except for the speakers. Having spoken at the past three, I was planning to take a year off from speaking, while still being there to represent as an Ubuntu Flavor Lead with my wife, also a now Flavor Lead.</p>
+<p class="wp-block-paragraph">Much of my education revolves around the very idea of building personal communities, which is one reason I was appalled when Ubuntu Summit, starting with 25.10, while it would be twice a year, it would be online-only except for the speakers. Having spoken at the past three, I was planning to take a year off from speaking, while still being there to represent as an Ubuntu Flavor Lead with my wife, also a now Flavor Lead.</p>
 
 
 
-<p>If it weren&#8217;t for that initial Ubuntu Summit, in person, my wife and son would not have been as interested or as involved as they are today. The subsequent years only strengthened that involvement. </p>
+<p class="wp-block-paragraph">If it weren&#8217;t for that initial Ubuntu Summit, in person, my wife and son would not have been as interested or as involved as they are today. The subsequent years only strengthened that involvement. </p>
 
 
 
-<p>Now, it&#8217;s going to be an online-focused approach. I get it. It&#8217;s cheaper and easier. Also, those attending online were just watching a livestream anyhow. The Local Communities (LoCos) can get together on their own if they want to do a big event. It&#8217;s easier to reach more people if you do everything online.</p>
+<p class="wp-block-paragraph">Now, it&#8217;s going to be an online-focused approach. I get it. It&#8217;s cheaper and easier. Also, those attending online were just watching a livestream anyhow. The Local Communities (LoCos) can get together on their own if they want to do a big event. It&#8217;s easier to reach more people if you do everything online.</p>
 
 
 
-<p><strong><em>Except it&#8217;s not.</em></strong></p>
+<p class="wp-block-paragraph"><strong><em>Except it&#8217;s not.</em></strong></p>
 
 
 
-<p>For instance, the nearest active LoCo to me, in the Seattle-Tacoma area, is the Southern California LoCo. Meetups with them are logistically impossible. Same if I were to go to the Arizona LoCo; it&#8217;s just not possible. Most of the states in the United States are huge, so if there were one LoCo per state, it wouldn&#8217;t be correct. To be honest, I have no desire, time, or energy left to start and lead a LoCo in my area. Besides that, there used to be one for my state, but it&#8217;s long gone.</p>
+<p class="wp-block-paragraph">For instance, the nearest active LoCo to me, in the Seattle-Tacoma area, is the Southern California LoCo. Meetups with them are logistically impossible. Same if I were to go to the Arizona LoCo; it&#8217;s just not possible. Most of the states in the United States are huge, so if there were one LoCo per state, it wouldn&#8217;t be correct. To be honest, I have no desire, time, or energy left to start and lead a LoCo in my area. Besides that, there used to be one for my state, but it&#8217;s long gone.</p>
 
 
 
-<p>Furthermore, with the exception of me and my wife, us flavor leads are scattered to the globe. It used to be that we would meet online throughout the year every other month and then meet together once a year at Ubuntu Summit. That&#8217;s gone now.</p>
+<p class="wp-block-paragraph">Furthermore, with the exception of me and my wife, us flavor leads are scattered to the globe. It used to be that we would meet online throughout the year every other month and then meet together once a year at Ubuntu Summit. That&#8217;s gone now.</p>
 
 
 
-<p>Again, I get it. Canonical is a company that is and always has been majority remote work. Except for one thing: they get together <strong>twice a year</strong> in-person, and are even given T-Shirts to celebrate the immediately-prior release <em>which was partially built by volunteers</em>. Those of us who give our time, energy, and effort to the Ubuntu community aren&#8217;t given that in-person experience, let alone a T-Shirt. The very lifeblood of what makes Ubuntu so great isn&#8217;t given the ability to meet in-person. That&#8217;s been stripped from us, and it came as a complete surprise.</p>
+<p class="wp-block-paragraph">Again, I get it. Canonical is a company that is and always has been majority remote work. Except for one thing: they get together <strong>twice a year</strong> in-person, and are even given T-Shirts to celebrate the immediately-prior release <em>which was partially built by volunteers</em>. Those of us who give our time, energy, and effort to the Ubuntu community aren&#8217;t given that in-person experience, let alone a T-Shirt. The very lifeblood of what makes Ubuntu so great isn&#8217;t given the ability to meet in-person. That&#8217;s been stripped from us, and it came as a complete surprise.</p>
 
 
 
-<p>I&#8217;m not without ideas for solutions to problems, though. Rather than be completely destructive in this post, I can be constructive. My solution to this would be a compromise:</p>
+<p class="wp-block-paragraph">I&#8217;m not without ideas for solutions to problems, though. Rather than be completely destructive in this post, I can be constructive. My solution to this would be a compromise:</p>
 
 
 
@@ -1917,23 +1917,23 @@ to achieve, or I missed some of the goals.</p>
 
 
 
-<p>I don&#8217;t think this is too much to ask. The reward of personal connections when doing something remote for most of the year is a small price to pay, no matter the cost. Personal connections are tantamount to a healthy community.</p>
+<p class="wp-block-paragraph">I don&#8217;t think this is too much to ask. The reward of personal connections when doing something remote for most of the year is a small price to pay, no matter the cost. Personal connections are tantamount to a healthy community.</p>
 
 
 
-<p>I think my compromise would prevent the Summit from dying just like the Ubuntu Developer Summit did once it went online-only. The way I see it is with the current status-quo, history is repeating itself.</p>
+<p class="wp-block-paragraph">I think my compromise would prevent the Summit from dying just like the Ubuntu Developer Summit did once it went online-only. The way I see it is with the current status-quo, history is repeating itself.</p>
 
 
 
-<p>I&#8217;m sure people at Canonical don&#8217;t see it this way because they meet with the people they work with the most twice a year. Those of us from the Ubuntu community that are developers aren&#8217;t given that luxury. We&#8217;re not even given that luxury once a year now. We&#8217;re not even given a T-Shirt!</p>
+<p class="wp-block-paragraph">I&#8217;m sure people at Canonical don&#8217;t see it this way because they meet with the people they work with the most twice a year. Those of us from the Ubuntu community that are developers aren&#8217;t given that luxury. We&#8217;re not even given that luxury once a year now. We&#8217;re not even given a T-Shirt!</p>
 
 
 
-<p>Am I angry? A little. Do I feel betrayed by the very community I have given so much to over the years? Absolutely. Either way, I believe an online-only Summit is anti-collaborative in that it removes personal connections from the equation, which goes against the very fiber of my being.</p>
+<p class="wp-block-paragraph">Am I angry? A little. Do I feel betrayed by the very community I have given so much to over the years? Absolutely. Either way, I believe an online-only Summit is anti-collaborative in that it removes personal connections from the equation, which goes against the very fiber of my being.</p>
 
 
 
-<p>Thank you for reading this, and I hope this reaches the people I&#8217;m trying to reach and have it speak for those who either won&#8217;t speak-up or don&#8217;t think they can make a difference.</p>]]></description>
+<p class="wp-block-paragraph">Thank you for reading this, and I hope this reaches the people I&#8217;m trying to reach and have it speak for those who either won&#8217;t speak-up or don&#8217;t think they can make a difference.</p>]]></description>
       <source url="https://ericheickmeyer.com/category/planet-ubuntu/feed/">Erich Eickmeyer</source>
     </item>
     <item>
@@ -2405,15 +2405,15 @@ be able to extend my test suite to all major platforms and operating systems.</p
       <link>https://toabctl.wordpress.com/2025/07/31/streamline-root-filesystem-modifications-with-chimg/</link>
       <guid isPermaLink="true">https://toabctl.wordpress.com/2025/07/31/streamline-root-filesystem-modifications-with-chimg/</guid>
       <pubDate>Thu, 31 Jul 2025 18:15:36 GMT</pubDate>
-      <description><![CDATA[<p>During the last year I developed as a side project a new tool called <a href="https://github.com/canonical/chimg/">chimg</a> . That tool is useful to modify a given rootfs chroot directory in a declarative way. It can replace a kernel within a chroot, preseed snaps, install debian packages, add PPAs and more (documentation is in git but not yet published).</p>
+      <description><![CDATA[<p class="wp-block-paragraph">During the last year I developed as a side project a new tool called <a href="https://github.com/canonical/chimg/">chimg</a> . That tool is useful to modify a given rootfs chroot directory in a declarative way. It can replace a kernel within a chroot, preseed snaps, install debian packages, add PPAs and more (documentation is in git but not yet published).</p>
 
 
 
-<p>The nice thing about this is, that this tool can be integrated into <a href="https://launchpad.net/livecd-rootfs">livecd-rootfs</a> (the tool that is usually used to build Ubuntu images) or future tools which might use the craft framework to build images. <code>chimg</code> automatically detects already bind-mounted filesystems (eg. <code>/sys</code>, <code>/proc</code>, &#8230;), detects already preseeded snaps and usually does that same thing that <code>livecd-rootfs</code> currently does when eg. replacing an already installed kernel.</p>
+<p class="wp-block-paragraph">The nice thing about this is, that this tool can be integrated into <a href="https://launchpad.net/livecd-rootfs">livecd-rootfs</a> (the tool that is usually used to build Ubuntu images) or future tools which might use the craft framework to build images. <code>chimg</code> automatically detects already bind-mounted filesystems (eg. <code>/sys</code>, <code>/proc</code>, &#8230;), detects already preseeded snaps and usually does that same thing that <code>livecd-rootfs</code> currently does when eg. replacing an already installed kernel.</p>
 
 
 
-<p>Install <code>chimg</code> with:</p>
+<p class="wp-block-paragraph">Install <code>chimg</code> with:</p>
 
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate">
@@ -2421,7 +2421,7 @@ sudo snap install chimg --classic
 </pre></div>
 
 
-<p>An example configuration (eg. <code>config.yaml</code>) to modify a rootfs chroot directory looks like this:</p>
+<p class="wp-block-paragraph">An example configuration (eg. <code>config.yaml</code>) to modify a rootfs chroot directory looks like this:</p>
 
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: yaml; title: ; notranslate">
@@ -2451,7 +2451,7 @@ cmds_post:
 </pre></div>
 
 
-<p>This config (stored in <code>config.yaml</code> in this example) can be applied to a newly created (or existing) root filesystem directory. Let&#8217;s create one in <code>/tmp/chimg-noble</code>:</p>
+<p class="wp-block-paragraph">This config (stored in <code>config.yaml</code> in this example) can be applied to a newly created (or existing) root filesystem directory. Let&#8217;s create one in <code>/tmp/chimg-noble</code>:</p>
 
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate">
@@ -2459,7 +2459,7 @@ sudo mmdebstrap --variant=apt --verbose noble /tmp/chimg-noble
 </pre></div>
 
 
-<p>Let&#8217;s apply the config changes now:</p>
+<p class="wp-block-paragraph">Let&#8217;s apply the config changes now:</p>
 
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate">
@@ -2467,11 +2467,11 @@ sudo chimg --log-console chrootfs config.yaml /tmp/chimg-noble
 </pre></div>
 
 
-<p>That&#8217;s it. The modifications are now applied to the <code>/tmp/chimg-noble</code> directory.</p>
+<p class="wp-block-paragraph">That&#8217;s it. The modifications are now applied to the <code>/tmp/chimg-noble</code> directory.</p>
 
 
 
-<p></p>]]></description>
+<p class="wp-block-paragraph"></p>]]></description>
       <source url="https://toabctl.wordpress.com/category/planet-ubuntu/feed/?mrss=off">Thomas Bechtold</source>
     </item>
     <item>

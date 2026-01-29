@@ -6,9 +6,102 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Wed, 28 Jan 2026 02:02:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 02:24:05 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing Incus 6.21</title>
+      <link>https://stgraber.org/2026/01/27/announcing-incus-6-21/</link>
+      <guid isPermaLink="true">https://stgraber.org/2026/01/27/announcing-incus-6-21/</guid>
+      <pubDate>Tue, 27 Jan 2026 06:33:08 GMT</pubDate>
+      <description><![CDATA[<p>The Incus team is pleased to announce the release of Incus 6.21!</p>
+
+
+
+<p>We’re starting 2026 with a couple of security fixes, but that’s not all, we’re also introducing some long requested CLI improvements, made SR-IOV easier to use with network cards, improved startup performance and more!</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://linuxcontainers.org/incus/try-it/"><img fetchpriority="high" decoding="async" width="1024" height="556" src="https://stgraber.org/wp-content/uploads/2026/01/image-1024x556.png" alt="" class="wp-image-1839" srcset="https://stgraber.org/wp-content/uploads/2026/01/image-1024x556.png 1024w, https://stgraber.org/wp-content/uploads/2026/01/image-300x163.png 300w, https://stgraber.org/wp-content/uploads/2026/01/image-768x417.png 768w, https://stgraber.org/wp-content/uploads/2026/01/image.png 1112w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+
+
+
+<p>This release includes two security fixes:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://github.com/advisories/GHSA-x6jc-phwx-hp32">CVE-2026-23953</a> (Newline injection in environment variable)</li>
+
+
+
+<li><a href="https://github.com/advisories/GHSA-7f67-crqm-jgh7">CVE-2026-23954</a> (Arbitrary file read/write through templates)</li>
+</ul>
+
+
+
+<p>On the feature front, the highlights for this release are:</p>
+
+
+
+<ul class="wp-block-list">
+<li>New &#8220;incus wait&#8221; command</li>
+
+
+
+<li>Automatic SR-IOV network VF selection</li>
+
+
+
+<li>Support for detaching and disconnecting network interfaces</li>
+
+
+
+<li>Parallel instance startup</li>
+
+
+
+<li>Source subnet restrictions through OIDC claims</li>
+
+
+
+<li>Better DNS SOA handling in network zones</li>
+
+
+
+<li>Forceful (recursive) directory deletion in file REST API</li>
+</ul>
+
+
+
+<p>The full announcement and changelog can be <a href="https://discuss.linuxcontainers.org/t/incus-6-21-has-been-released/26005" target="_blank" rel="noreferrer noopener">found here</a>.<br>And for those who prefer videos, here&#8217;s the release <a href="https://www.youtube.com/watch?v=MhF7jgkqqyU">overview video</a>:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Introducing Incus 6.21!" width="640" height="360" src="https://www.youtube.com/embed/MhF7jgkqqyU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p>You can take the latest release of Incus up for a spin through our online demo service at: <a href="https://linuxcontainers.org/incus/try-it/" target="_blank" rel="noreferrer noopener">https://linuxcontainers.org/incus/try-it/</a></p>
+
+
+
+<p>And as always, my company is offering commercial support on Incus, ranging from by-the-hour support contracts to one-off services on things like initial migration from LXD, review of your deployment to squeeze the most out of Incus or even feature sponsorship. You&#8217;ll find all details of that here: <a href="https://zabbly.com/incus">https://zabbly.com/incus</a></p>
+
+
+
+<p>Donations towards my work on this and other open source projects is also always appreciated, you can  find me on <a href="https://github.com/sponsors/stgraber">Github Sponsors</a>, <a href="https://patreon.com/stgraber">Patreon</a> and <a href="https://ko-fi.com/stgraber">Ko-fi</a>.</p>
+
+
+
+<p>Enjoy!</p>
+
+
+<p><!-- /wp:post-content --></p>]]></description>
+      <source url="https://stgraber.org/category/planet-ubuntu/feed/">Stéphane Graber</source>
+    </item>
     <item>
       <title>How to avoid package End of Life through backporting </title>
       <link>https://ubuntu.com//blog/how-to-avoid-package-end-of-life-through-backporting</link>
@@ -1172,73 +1265,6 @@ A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustrado
 
 <p class="has-small-font-size">We have also released <a href="https://doi.org/10.7910/DVN/E0RYJ4">replication materials for the paper</a>, including all the data and code used to conduct the analysis and compile the paper itself.</p>]]></description>
       <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
-    </item>
-    <item>
-      <title>Announcing Incus 6.20</title>
-      <link>https://stgraber.org/2025/12/22/announcing-incus-6-20/</link>
-      <guid isPermaLink="true">https://stgraber.org/2025/12/22/announcing-incus-6-20/</guid>
-      <pubDate>Mon, 22 Dec 2025 17:32:49 GMT</pubDate>
-      <description><![CDATA[<p>The Incus team is pleased to announce the release of Incus 6.20!</p>
-
-
-
-<p>This is the last release of 2025 and a shorter development cycle so we don’t end up releasing right in the middle of the holidays!</p>
-
-
-
-<figure class="wp-block-image size-large"><a href="https://stgraber.org/wp-content/uploads/2025/12/image-1.png"><img fetchpriority="high" decoding="async" width="1024" height="569" src="https://stgraber.org/wp-content/uploads/2025/12/image-1-1024x569.png" alt="" class="wp-image-1830" srcset="https://stgraber.org/wp-content/uploads/2025/12/image-1-1024x569.png 1024w, https://stgraber.org/wp-content/uploads/2025/12/image-1-300x167.png 300w, https://stgraber.org/wp-content/uploads/2025/12/image-1-768x427.png 768w, https://stgraber.org/wp-content/uploads/2025/12/image-1.png 1307w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
-
-
-
-<p>The highlights for this release are:</p>
-
-
-
-<ul class="wp-block-list">
-<li>QCOW2 formatted volumes on clustered LVM</li>
-
-
-
-<li>Standalone incus cluster join command</li>
-
-
-
-<li>Configuration file for the VM agent</li>
-
-
-
-<li>Reverse DNS records in OVN</li>
-</ul>
-
-
-
-<p>The full announcement and changelog can be <a href="https://discuss.linuxcontainers.org/t/incus-6-20-has-been-released/25635" target="_blank" rel="noreferrer noopener">found here</a>.<br>And for those who prefer videos, here&#8217;s the release <a href="https://www.youtube.com/watch?v=MR4NdoW6rCA">overview video</a>:</p>
-
-
-
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe title="Introducing Incus 6.20!" width="640" height="360" src="https://www.youtube.com/embed/MR4NdoW6rCA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div></figure>
-
-
-
-<p>You can take the latest release of Incus up for a spin through our online demo service at: <a href="https://linuxcontainers.org/incus/try-it/" target="_blank" rel="noreferrer noopener">https://linuxcontainers.org/incus/try-it/</a></p>
-
-
-
-<p>And as always, my company is offering commercial support on Incus, ranging from by-the-hour support contracts to one-off services on things like initial migration from LXD, review of your deployment to squeeze the most out of Incus or even feature sponsorship. You&#8217;ll find all details of that here: <a href="https://zabbly.com/incus">https://zabbly.com/incus</a></p>
-
-
-
-<p>Donations towards my work on this and other open source projects is also always appreciated, you can  find me on <a href="https://github.com/sponsors/stgraber">Github Sponsors</a>, <a href="https://patreon.com/stgraber">Patreon</a> and <a href="https://ko-fi.com/stgraber">Ko-fi</a>.</p>
-
-
-
-<p>Enjoy!</p>
-
-
-<p><!-- /wp:post-content --></p>]]></description>
-      <source url="https://stgraber.org/category/planet-ubuntu/feed/">Stéphane Graber</source>
     </item>
     <item>
       <title>Finally back at OLF!</title>

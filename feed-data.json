@@ -1,5 +1,20 @@
 [
   {
+    "sourceName": "Benjamin Mako Hill",
+    "sourceUrl": "http://mako.cc/copyrighteous/?flav=rss",
+    "title": "Dialogue",
+    "link": "https://mako.cc/copyrighteous/dialogue",
+    "date": "2026-01-31T10:59:24.000Z",
+    "snippet": "Me: Do you want your coffee in a Japanese or Western style tea cup?\n\n\n\nM: Yunomi.\n\n\n\nMe: Apparently not as well as you think I do!",
+    "contentHtml": "<p>Me: Do you want your coffee in a Japanese or Western style tea cup?</p>\n\n\n\n<p>M: <a href=\"https://en.wikipedia.org/wiki/Yunomi\">Yunomi</a>.</p>\n\n\n\n<p>Me: Apparently not as well as you think I do!</p>\n\n\n\n<p></p>",
+    "author": "Benjamin Mako Hill",
+    "categories": [
+      "Blog Posts",
+      "reflections"
+    ],
+    "imageUrl": null
+  },
+  {
     "sourceName": "Stuart Langridge",
     "sourceUrl": "http://feeds.feedburner.com/kryogenix",
     "title": "fifty",
@@ -161,23 +176,6 @@
       "snaps",
       "Software",
       "Software development"
-    ],
-    "imageUrl": null
-  },
-  {
-    "sourceName": "Benjamin Mako Hill",
-    "sourceUrl": "http://mako.cc/copyrighteous/?flav=rss",
-    "title": "Effects of Algorithmic Flagging on Fairness: Quasi-experimental Evidence from Wikipedia",
-    "link": "https://mako.cc/copyrighteous/effects-of-algorithmic-flagging-on-fairness-quasi-experimental-evidence-from-wikipedia",
-    "date": "2026-01-03T12:34:32.000Z",
-    "snippet": "Note: I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This particular post is closely based on a previously published post by Nate TeBlunthuis from the Community Data Science Blog.\n\n\n\nMany online platforms are adopting AI and machine l...",
-    "contentHtml": "<p class=\"has-small-font-size\"><em><strong>Note:</strong> I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This particular post is closely based on <a href=\"https://blog.communitydata.science/effects-of-algorithmic-flagging-on-fairness-quasi-experimental-evidence-from-wikipedia/\">a previously published post</a> by <a href=\"https://teblunthuis.cc/\">Nate TeBlunthuis</a> from <a href=\"https://blog.communitydata.science/\">the Community Data Science Blog</a>.</em></p>\n\n\n\n<p>Many online platforms are adopting AI and machine learning as a tool to maintain order and high-quality information in the face of massive influxes of user-generated content. Of course, AI algorithms can be inaccurate, biased, or unfair. How do signals from AI predictions shape the fairness of online content moderation? How can we measure an algorithmic flagging system&#8217;s effects?</p>\n\n\n\n<p>In our <a href=\"https://dl.acm.org/doi/10.1145/3449130\">paper published at CSCW</a>, Nate TeBlunthuis, together with myself and Aaron Halfaker, analyzed the <em><a href=\"https://www.mediawiki.org/wiki/ORES/RCFilters\">RCFilters</a></em> system: an add-on to Wikipedia that highlights and filters edits that <a href=\"https://www.mediawiki.org/wiki/ORES\">a machine learning</a> algorithm <a href=\"https://www.mediawiki.org/wiki/ORES\">called ORES</a> identifies as likely to be damaging to Wikipedia. This system has been deployed on large Wikipedia language editions and is similar to other algorithmic flagging systems that are becoming increasingly widespread. Our work measures the causal effect of being flagged in the RCFilters user interface.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img fetchpriority=\"high\" decoding=\"async\" width=\"1024\" height=\"233\" src=\"https://mako.cc/copyrighteous/wp-content/uploads/2022/07/ores-1024x233.png\" alt=\"\" class=\"wp-image-1447\" srcset=\"https://mako.cc/copyrighteous/wp-content/uploads/2022/07/ores-1024x233.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/ores-300x68.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/ores-768x175.png 768w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/ores.png 1117w\" sizes=\"(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px\" /><figcaption class=\"wp-element-caption\">Screenshot of Wikipedia edit metadata on Special:RecentChanges with RCFilters enabled. Highlighted edits with a colored circle to the left side of other metadata are flagged by ORES. Different circle and highlight colors (white, yellow, orange, and red in the figure) correspond to different levels of confidence that the edit is damaging. RCFilters does not specifically flag edits by new accounts or unregistered editors, but does support filtering changes by editor types.</figcaption></figure>\n\n\n\n<p>Our work takes advantage of the fact that RCFilters, like many algorithmic flagging systems, create <em>discontinuities</em> in the relationship between the probability that a moderator should take action and whether a moderator actually does.  This happens because the output of machine learning systems like ORES is typically a <em>continuous score</em> (in RCFilters, an estimated probability that a Wikipedia edit is damaging), while the flags (in RCFilters, the yellow, orange, or red highlights) are either on or off and are triggered when the score crosses some arbitrary threshold.  As a result, edits slightly above the threshold are both more visible to moderators and appear more likely to be damaging than edits slightly below.  Even though edits on either side of the threshold have virtually the same likelihood of truly being damaging, the flagged edits are substantially more likely to be reverted. This fact lets us use a method called <em><a href=\"https://en.wikipedia.org/wiki/Regression_discontinuity_design\">regression discontinuity</a></em> to make causal estimates of the effect of being flagged in RCFilters.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" width=\"1024\" height=\"636\" src=\"https://mako.cc/copyrighteous/wp-content/uploads/2022/07/Screenshot_2022-07-11_09-41-39-1024x636.png\" alt=\"\" class=\"wp-image-1446\" srcset=\"https://mako.cc/copyrighteous/wp-content/uploads/2022/07/Screenshot_2022-07-11_09-41-39-1024x636.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/Screenshot_2022-07-11_09-41-39-300x186.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/Screenshot_2022-07-11_09-41-39-768x477.png 768w, https://mako.cc/copyrighteous/wp-content/uploads/2022/07/Screenshot_2022-07-11_09-41-39.png 1257w\" sizes=\"(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px\" /><figcaption class=\"wp-element-caption\">Charts showing the probability that an edit will be reverted as a function of ORES scores in the neighborhood of the discontinuous threshold that triggers the RCfilters flag. The jump in the increase in reversion chances is larger for registered editors compared to unregistered editors at both thresholds.</figcaption></figure>\n\n\n\n<p>To understand how this system may affect the fairness of Wikipedia moderation, we estimate the effects of flagging on edits on different groups of editors. Comparing the magnitude of these estimates lets us measure how flagging is associated with several different definitions of fairness. <em>Surprisingly, we found evidence that these flags improved fairness for categories of editors that have been widely perceived as troublesome—particularly unregistered (anonymous) editors</em>. This occurred because flagging has a much stronger effect on edits by the registered than on edits by the unregistered.</p>\n\n\n\n<p>We believe that our results are driven by the fact that algorithmic flags are especially helpful for finding damage that can&#8217;t be easily detected otherwise. Wikipedia moderators can see the editor&#8217;s registration status in the recent changes, watchlists, and edit history. Because unregistered editors are often troublesome, Wikipedia moderators&#8217; attention is often focused on their contributions, with or without algorithmic flags. Algorithmic flags make damage by registered editors (in addition to unregistered editors) much more detectable to moderators and so help moderators focus on damage overall, not just damage by suspicious editors. <em>As a result, the algorithmic flagging system decreases the bias that moderators have against unregistered editors.</em></p>\n\n\n\n<p>This finding is particularly surprising because the ORES algorithm we analyzed was itself demonstrably biased against<em> </em>unregistered editors (i.e., the algorithm tended to greatly overestimate the probability that edits by these editors were damaging).  Despite the fact that the algorithms were biased, their introduction could still lead to less biased outcomes overall. </p>\n\n\n\n<p>Our work shows that although it is important to design predictive algorithms to avoid such biases, it is equally important to study fairness at the level of the broader sociotechnical system. Since we first published a preprint of our paper, <a href=\"https://dl.acm.org/doi/abs/10.1145/3531146.3533147\">a follow-up piece by Leijie Wang and Haiyi Zhu</a> replicated much of our work and showed that differences between different Wikipedia communities may be another important factor driving the effect of the system. Overall, this work suggests that social signals and social context can interact with algorithmic signals, and together these can influence behavior in important and unexpected ways.</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n\n\n\n<p class=\"has-small-font-size\">The full citation for the paper is: TeBlunthuis, Nathan, Benjamin Mako Hill, and Aaron Halfaker. 2021. “Effects of Algorithmic Flagging on Fairness: Quasi-Experimental Evidence from Wikipedia.” <em>Proceedings of the ACM on Human-Computer Interaction</em> 5 (CSCW): 56:1-56:27. <a href=\"https://doi.org/10.1145/3449130\">https://doi.org/10.1145/3449130</a>.</p>\n\n\n\n<p class=\"has-small-font-size\">We have also released <a href=\"https://doi.org/10.7910/DVN/E0RYJ4\">replication materials for the paper</a>, including all the data and code used to conduct the analysis and compile the paper itself.</p>",
-    "author": "Benjamin Mako Hill",
-    "categories": [
-      "AI Literacy",
-      "Uncategorized",
-      "academic",
-      "projects"
     ],
     "imageUrl": null
   },
@@ -1384,6 +1382,22 @@
       "Software Libre",
       "Tecnología",
       "Universidad"
+    ],
+    "imageUrl": null
+  },
+  {
+    "sourceName": "Myriam Schweingruber",
+    "sourceUrl": "http://blogs.fsfe.org/myriam/?feed=rss2",
+    "title": "A week ago …",
+    "link": "https://blogs.fsfe.org/myriam/2016/06/08/a-week-ago/",
+    "date": "2016-06-08T20:44:39.000Z",
+    "snippet": "my cat Filoue turned 15. She survives her nephew Stupsi, who sadly left us earlier this year.\nThis reminds me how long I contribute to KDE already  She has been sitting next to the keyboard purring on almost everything I did in the last 15 years.",
+    "contentHtml": "<p>my cat Filoue turned 15. She survives her nephew Stupsi, who sadly left us earlier this year.<a href=\"http://blogs.fsfe.org/myriam/files/2016/06/DSC_0040.jpg\"><img class=\"alignnone size-medium wp-image-767\" src=\"http://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-300x199.jpg\" alt=\"\" width=\"300\" height=\"199\" srcset=\"https://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-300x199.jpg 300w, https://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-1024x680.jpg 1024w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></a></p>\n<p>This reminds me how long I contribute to KDE already <img src=\"https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png\" alt=\"🙂\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /> She has been sitting next to the keyboard purring on almost everything I did in the last 15 years.</p>",
+    "author": "myriam",
+    "categories": [
+      "Cats",
+      "KDE",
+      "personal"
     ],
     "imageUrl": null
   },

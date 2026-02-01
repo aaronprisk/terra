@@ -6,9 +6,18 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sat, 31 Jan 2026 02:12:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 02:43:02 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fifty</title>
+      <link>https://www.kryogenix.org/days/2026/01/29/fifty/</link>
+      <guid isPermaLink="true">https://www.kryogenix.org/days/2026/01/29/fifty/</guid>
+      <pubDate>Thu, 29 Jan 2026 23:19:00 GMT</pubDate>
+      <description><![CDATA[<p>fifty.</p>
+<p>that can't be right.<sup id="sf-fifty-1-back"><a href="#sf-fifty-1" class="simple-footnote" title="no big long writeup this time of musings on a year passing like I normally do. I think I did most of that earlier in the month.">1</a></sup> fifty years ago was the war.</p><ol class="simple-footnotes"><li id="sf-fifty-1">no big long writeup this time of musings on a year passing like I <a href="https://www.kryogenix.org/days/2025/01/30/forty-nine/">normally</a> do. I think I did most of that <a href="https://www.kryogenix.org/days/2026/01/04/flipping-the-cube-2025-is-over/">earlier in the month</a>. <a href="#sf-fifty-1-back" class="simple-footnote-back">↩</a></li></ol>]]></description>
+      <source url="http://feeds.feedburner.com/kryogenix">Stuart Langridge</source>
+    </item>
     <item>
       <title>Announcing Incus 6.21</title>
       <link>https://stgraber.org/2026/01/27/announcing-incus-6-21/</link>
@@ -1178,37 +1187,6 @@ A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustrado
 
 <a class="dbox-donation-page-button" href="https://donorbox.org/open-source-work?" style="background: rgb(18, 138, 237); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; gap: 8px; width: fit-content; font-size: 16px; border-radius: 5px; line-height: 24px; padding: 8px 24px;"><img decoding="async" src="https://donorbox.org/images/white_logo.svg">Donate</a>]]></description>
       <source url="https://www.scarlettgatelymoore.dev/category/open-source-software/feed/">Scarlett Gately Moore</source>
-    </item>
-    <item>
-      <title>Flipping the cube: 2025 is over</title>
-      <link>https://www.kryogenix.org/days/2026/01/04/flipping-the-cube-2025-is-over/</link>
-      <guid isPermaLink="true">https://www.kryogenix.org/days/2026/01/04/flipping-the-cube-2025-is-over/</guid>
-      <pubDate>Sun, 04 Jan 2026 16:21:00 GMT</pubDate>
-      <description><![CDATA[<p>You know that optical illusion with a wireframe cube? Where you can't tell which way around it is, but if you concentrate a bit you can make the cube "flip" from being oriented one way to being oriented another?</p>
-<p><img src="https://kryogenix.org/images/necker-1.png" alt="a wireframe cube"></p>
-<p>So you look at that cube (it's called a <a href="https://en.wikipedia.org/wiki/Necker_cube">Necker cube</a> when you're viewing it as an optical illusion) and with a bit of concentration you can change how you perceive it, from pointing in one direction to pointing in another.</p>
-<p><img src="https://kryogenix.org/images/necker-2.png" alt="two wireframe cubes, one with one face filled in so that face appears at the front, and the other with another face filled in so that other face appears at the front instead, displaying the two perceiveable orientations"></p>
-<p>A bit like the dancer who might be spinning one way or the other, or the picture that's a duck or a rabbit. The key point here is: it's either one way, or it's the other. You can switch between ways, but it takes a bit of mental effort. And it can't be both at once.</p>
-<p>This is how I feel about 2025. Some stuff happened, some of it amazing, and I am glad the year is over.</p>
-<p>There are, I think, four major separate stuffs on that list. Obviously, what actually occupies your mind day to day is the more minor things; you got bolognaise sauce on your good shirt (did that) or your job changed a bit (did that) or you really need to lose some weight or you're nearly fifty or they're <em>still</em> not <a href="https://en.wikipedia.org/wiki/2025_Birmingham_bin_strike">collecting the bins</a>. But I'll not bore you to tears with all of that; only my head should be pecked by this sort of thing, not everybody's.</p>
-<p>Last year, on my birthday, I <a href="https://www.kryogenix.org/days/2025/01/30/forty-nine/">wrote</a> "Maybe 2025 will be better, although to be honest I doubt it." Oh, sweet summer child. If you only knew.</p>
-<p>In March, my dad died.</p>
-<p>This, for those of you who do not know, sucks. A very large amount.</p>
-<p>It wasn't <em>unexpected</em>. He'd been unwell for a while, and getting worse. And he knew what was happening, and wasn't suffering much, and was content. It could have been considerably worse on that front than it was. We might consider that sort of thing tactical unhappiness: short term, dominates your thinking right now, but you need to reach beyond it. The strategic unhappiness, that's what he could see ahead for himself, and he didn't want it, and I think he was right in that and I'm glad that's what he chose, and I'm glad that he chose it. We tried to express that at the <a href="https://www.kryogenix.org/peter/">funeral</a> and the wake with eulogies and readings and hugs and memories, and that's where I said everything that I wanted to say, and that went OK -- well, as OK as you can expect for your dad's funeral. Mardi Gras it was not. But the old man left a handprint on the world that made it better, and that's most of what you can hope for.</p>
-<p>It's hard with him gone, though. You play all these moody film moments in your head with yourself in the starring role, of monumental grief that takes people's breath away, of sombre melancholy where you're nonetheless handsomely well-dressed in a rainy black-and-white street scene and people whisper under their breath how brave and noble you are for handling it so well. You imagine how you'll be when the next one dies. What you should have done instead. Or, maybe <em>you</em> don't do that at all, which is probably a better and more caring way to be. The things people warn you about -- how you'll think, oh that's cool I need to ask dad about that, and then remember that ah, no, I can't -- that goes away pretty fast. The needle changes direction from sadness to wistfulness, loss rather than bitterness; the thing's still there but the opacity of it drops gradually over time, even though it'll never fully go away. Not entirely.</p>
-<p>It's harder on my mum. They were married for over fifty years, for goodness's sake. I only managed ten; I can hardly imagine what it's like for something that's been there for half a century to suddenly be gone. How do you even imagine that? It's been a rough year for her, it really has. Christmas, the first Christmas, was hard. I'm used to living alone; she is not, quite apart from the emotional turmoil. And that's where all the minor things come into play; something tiny that happens each day and feels like so much more a burden. You're supposed to not let the bastards grind you down, but the problem is that a lot of the time there aren't any bastards. There's just... life. Life's hard to deal with, when you're dealing with things.</p>
-<p>So, was it all bad? No. There are some bright spots: some that are so great that they're almost blinding.</p>
-<p>My daughter is engaged, to a decent guy, and they're pregnant. Next June, I'll be a grandfather.</p>
-<p>This is cool.</p>
-<p>I think I'm the first, among my friends. This isn't that surprising; I was the first to get married, too, we got started early. But I'm pretty excited about the idea of being a grandad. I still have to work stuff out -- do I need to keep Werther's Originals in my pocket all the time? Buy a flat cap? -- but man, this is going to be great. I liked my grandparents, even the ones I don't really remember; if I can be as good as they were, as good as my dad was for my daughter, I'll be happy with that. And we can read books together! Go look at cool stuff! Make dinners and giggle a lot! Maybe not for the first couple of years, admittedly, but as I understand it when the more, er, brown-stained bits of parenthood come around I get to just hand my grandchild back. I served my time on that sort of thing. I just get the fun bits. Hooray!</p>
-<p>It did occur to me that there were times when my daughter was very young that we'd say, hey, we can drop her on the grandparents for a weekend and actually go to the pub again. And now I am the grandad being dropped upon... but I am OK with this. There are <em>so</em> many books we're going to share together. Bring it on. I'm really looking forward to it.</p>
-<p>You see, it's not all bad. I have wonderful friends -- we almost all got together in what I am told is now called "Twixtmas" (and which I refuse to call "the merryneum", thank you Bruce), the bit in between Christmas and New Year, and I had such an excellent day. One of the highlights of my year, every year. <a href="https://open-web-advocacy.org/en/">Open Web Advocacy</a> has had quite some successes this year. I got a neat new cooking pot for Christmas which I'm really looking forward to trying out.</p>
-<p>But then there's the fourth thing: we've had death, engagement, grandfatherhood, and finally we have... the world. A world which is getting a little bit worse, every day. A little bit more mean, a little bit more cold, a little bit more gilded and segregated and exclusionary. My industry, my internet, my web, the thing I built (other people were also involved, I admit) is not what we all wanted it to be. Our place, our internet, is no longer ours; it belongs to the arseholes, to everyone who exchanges decency and joy for money and control and considers themselves superior and visionary for doing it. Plenty of people who actually are wise and eloquent have written recently about this, and how bad it is, and what can be done about it, or just how exhausting it is for it to happen: see <a href="https://craphound.com/shop/">Cory</a> or <a href="https://henry.codes/writing/a-website-to-destroy-all-websites/">Henry</a> or <a href="https://ethanmarcotte.com/wrote/our-frail-thoughts/">Ethan</a> or <a href="https://whitep4nth3r.com/blog/this-is-not-a-2025-wrap-up-post/">Salma</a> or, or, or. But the world is worse, every day, and it makes me dread what's coming.</p>
-<p>And so I confront the question: was 2025 a bad year with some good bits, or a good year with some bad bits?</p>
-<p>I think that it's up to me. Remember the Necker cube, from one hundred years ago when I started writing this? How you get to choose, with a little bit of effort, which way it points? I reckon that seems right. I could see 2025 as having been a crap year with a couple of bright spots that were drowned by the misery, and that is in fact what I've mostly been doing. But I don't think it helps, and I don't think it's healthy. The world is increasingly shit, and it's considerably more shit for people who aren't as lucky as me, and it's that way because of people who want it that way, and there there really are bastards and I could let <em>those</em> bastards grind me down... but I don't wanna. I'm trying to make a conscious effort to flip the cube, to look forward to the good stuff that's coming and not look down at my feet to avoid the bad. I apologise in advance for all the days to come when I don't quite manage it.</p>
-<p>So, that was 2025. Goodbye, dad. Hello, your great-grandchild, whoever they turn out to be. I hope it's just better and I don't need to try to perceive it that way, but... if it isn't, I'll try anyway.</p>
-<p>Here's to 2026. Fingers crossed.</p>]]></description>
-      <source url="http://feeds.feedburner.com/kryogenix">Stuart Langridge</source>
     </item>
     <item>
       <title>Effects of Algorithmic Flagging on Fairness: Quasi-experimental Evidence from Wikipedia</title>
@@ -7863,15 +7841,6 @@ Jeremy Bicha and Tim Lunn</p>
 <p>Si deseas participar en dicha actividad recuerda que debes registrarte a través del siguiente enlace: <a href="https://www.eventbrite.es/e/entradas-festival-universitario-de-tecnologias-libres-2016-27283438499">https://www.eventbrite.es/e/entradas-festival-universitario-de-tecnologias-libres-2016-27283438499</a></p>
 <p>Si deseas obtener mayor información, puedes contactarme a través del correo <a href="mailto:csevilla@fundacite-zulia.gob.ve">csevilla@fundacite-zulia.gob.ve</a></p>]]></description>
       <source url="https://cesarsevilla.wordpress.com/category/ubuntu/feed/?mrss=off">Cesar Sevilla</source>
-    </item>
-    <item>
-      <title>A week ago …</title>
-      <link>https://blogs.fsfe.org/myriam/2016/06/08/a-week-ago/</link>
-      <guid isPermaLink="true">https://blogs.fsfe.org/myriam/2016/06/08/a-week-ago/</guid>
-      <pubDate>Wed, 08 Jun 2016 20:44:39 GMT</pubDate>
-      <description><![CDATA[<p>my cat Filoue turned 15. She survives her nephew Stupsi, who sadly left us earlier this year.<a href="http://blogs.fsfe.org/myriam/files/2016/06/DSC_0040.jpg"><img class="alignnone size-medium wp-image-767" src="http://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-300x199.jpg" alt="" width="300" height="199" srcset="https://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-300x199.jpg 300w, https://blogs.fsfe.org/myriam/files/2016/06/DSC_0040-1024x680.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>This reminds me how long I contribute to KDE already <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> She has been sitting next to the keyboard purring on almost everything I did in the last 15 years.</p>]]></description>
-      <source url="http://blogs.fsfe.org/myriam/?feed=rss2">Myriam Schweingruber</source>
     </item>
     <item>
       <title>Ask Ubuntu moderator election is now underway!</title>

@@ -6,27 +6,91 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sun, 01 Feb 2026 00:39:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:35:42 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dialogue</title>
-      <link>https://mako.cc/copyrighteous/dialogue</link>
-      <guid isPermaLink="true">https://mako.cc/copyrighteous/dialogue</guid>
-      <pubDate>Sat, 31 Jan 2026 10:59:24 GMT</pubDate>
-      <description><![CDATA[<p>Me: Do you want your coffee in a Japanese or Western style tea cup?</p>
+      <title>What do people do when they edit Wikipedia through Tor?</title>
+      <link>https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</link>
+      <guid isPermaLink="true">https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</guid>
+      <pubDate>Sun, 01 Feb 2026 12:19:11 GMT</pubDate>
+      <description><![CDATA[<p class="has-small-font-size"><em><strong>Note:</strong> I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This post is closely based on <a href="https://blog.communitydata.science/what-do-people-do-when-they-edit-wikipedia-through-tor/">a previously published post</a> by <a href="https://kayleachampion.com/">Kaylea Champion</a> on <a href="https://blog.communitydata.science/">the Community Data Science Blog</a>.</em></p>
 
 
 
-<p>M: <a href="https://en.wikipedia.org/wiki/Yunomi">Yunomi</a>.</p>
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg"><img fetchpriority="high" decoding="async" width="1024" height="691" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg" alt="" class="wp-image-3322" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-300x202.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-768x518.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Many individuals use Tor to reduce their visibility to widespread internet surveillance.</figcaption></figure>
 
 
 
-<p>Me: Apparently not as well as you think I do!</p>
+<p>One popular approach to protecting our privacy online is to use the <a href="https://www.torproject.org/">Tor network</a>. Tor protects users from being identified by their IP address, which can be tied to a physical location. However, if you’d like to contribute to Wikipedia using Tor, you’ll run into a problem. Although most IP addresses can edit without an account, Tor users are blocked from editing.</p>
 
 
 
-<p></p>]]></description>
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg"><img decoding="async" width="1024" height="576" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg" alt="" class="wp-image-3323" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-300x169.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-768x432.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Tor users attempting to contribute to Wikipedia are shown a screen that informs them that they are not allowed to edit Wikipedia.</figcaption></figure>
+
+
+
+<p><a href="https://mako.cc/copyrighteous/?p=957">Other research by my team</a> has shown that Wikipedia’s attempt to block Tor is imperfect and that some people have been able to edit despite the ban. As part of this work, we built a dataset of more than 11,000 contributions to Wikipedia via Tor and used quantitative analysis to show that contributions from Tor were of about the same quality as contributions from other new editors and other contributors without accounts. Of course, given the unusual circumstances Tor-based contributors face, we wondered whether a deeper look at the content of their edits might reveal more about their motives and the kinds of contributions they seek to make. Kaylea Champion (then a student, now faculty at UW Bothell) led a qualitative investigation to explore these questions.</p>
+
+
+
+<p>Given the challenges of studying anonymity seekers, we designed a novel “forensic” qualitative approach inspired by techniques common in computer security and criminal investigation. We applied this new technique to a sample of 500 editing sessions and categorized each session based on what the editor seemed to be intending to do.</p>
+
+
+
+<p>Most of the contributions we found fell into one of the two following categories:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Many contributions were <strong>quotidian</strong> attempts to add to the encyclopedia. Tor-based editors added facts, fixed typos, and updated train schedules. There’s no way to know whether these individuals knew they were just getting lucky in their ability to edit or were patiently reloading to evade the ban.</li>
+
+
+
+<li>Second, we found <strong>harassing comments and vandalism</strong>. Unwelcome conduct is common in online environments, and it is sometimes more common when the likelihood of being identified decreases. Some of the harassing comments we observed were direct responses to being banned as a Tor user.</li>
+</ul>
+
+
+
+<p>Although these were most of what we observed, we  also found evidence of several types of contributor intent:</p>
+
+
+
+<ul class="wp-block-list">
+<li>We observed <strong>activism</strong>: when a contributor tried to draw attention to journalistic accounts of environmental and human rights abuses committed by a mining company, only to have editors linked to the mining company repeatedly remove their edits. Another example involved an editor trying to diminish the influence of proponents of alternative medicine.</li>
+
+
+
+<li>We also observed <strong>quality maintenance</strong> activities when editors used Wikipedia’s rules on appropriate sourcing to remove personal websites being cited in conspiracy theories.</li>
+
+
+
+<li>We saw <strong>edit wars</strong> with Tor editors participating in a back-and-forth removal and replacement of content as part of a dispute, in some cases countering the work of an experienced Wikipedia editor whom even other experienced editors had gauged to be biased.</li>
+
+
+
+<li>Finally, we saw Tor-based editors participating in <strong>non-article discussions,</strong> such as investigations into administrator misconduct and <span style="box-sizing: border-box; margin: 0px; padding: 0px;"><strong>protests against the Wikipedia platform&#8217;s mistrust of Tor editors</strong></span>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png"><img decoding="async" width="1024" height="804" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png" alt="" class="wp-image-3324" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-300x236.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-768x603.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">An exploratory mapping of our themes in terms of the value a type of contribution represents to the Wikipedia community and the importance of anonymity in facilitating it. Anonymity-protecting tools play a critical role in facilitating contributions on the right side of the figure, while edits on the left are more likely to occur even when anonymity is impossible. Contributions toward the top reflect valuable forms of participation in Wikipedia, while edits at the bottom reflect damage.</figcaption></figure>
+
+
+
+<p>In all, these themes led us to reflect on how the risks individuals face when contributing to online communities sometimes diverge from the risks the communities face in accepting their work. Expressing minoritized perspectives, maintaining community standards even when you may be targeted by the rulebreaker, highlighting injustice, or acting as a whistleblower can be very risky for an individual, and may not be possible without privacy protections. Of course, in platforms seeking to support the public good, such knowledge and accountability may be crucial.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="has-small-font-size"><em>This work was published as a paper at CSCW: </em>Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. 2019. A Forensic Qualitative Analysis of Contributions to Wikipedia from Anonymity Seeking Users. <em>Proceedings of the ACM on Human-Computer Interaction</em>. 3, CSCW, Article 53 (November 2019), 26 pages. <a href="https://doi.org/10.1145/3359155">https://doi.org/10.1145/3359155</a></p>
+
+
+
+<p class="has-small-font-size"><em>This project was conducted by Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. This work was supported by the National Science Foundation (awards CNS-1703736 and CNS-1703049) and included the work of two undergraduates supported through an NSF REU supplement.</em></p>]]></description>
       <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
     </item>
     <item>
@@ -1613,6 +1677,145 @@ python-certifi for the Python&nbsp;team.</p>
 
 <p>If you have ideas or feedback, reach out to us!</p>]]></description>
       <source url="http://news.launchpad.net/feed">Launchpad News</source>
+    </item>
+    <item>
+      <title>Think you can’t interpose static binaries with LD_PRELOAD? Think again!</title>
+      <link>https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</link>
+      <guid isPermaLink="true">https://balintreczey.hu/blog/think-you-cant-interpose-static-binaries-with-ld_preload-think-again/</guid>
+      <pubDate>Thu, 20 Nov 2025 20:56:17 GMT</pubDate>
+      <description><![CDATA[<div class="wp-block-media-text alignwide is-vertically-aligned-center" style="grid-template-columns:21% auto"><figure class="wp-block-media-text__media"><img fetchpriority="high" decoding="async" width="4614" height="4001" src="https://balintreczey.hu/blog/wp-content/uploads/2023/04/firebuild-logo.svg" alt="" class="wp-image-853 size-thumbnail"/></figure><div class="wp-block-media-text__content">
+<p>Well, you are right, you can&#8217;t. At least not directly. This is well documented in many projects relying on interposing binaries, like faketime.</p>
+
+
+
+<p> </p>
+</div></div>
+
+
+
+<p></p>
+
+
+
+<p>But what if we could write something that would take a static binary, replace at least the direct syscalls with ones going through libc and load it with the dynamic linker? We are in luck, because the excellent QEMU project has a user space emulator! It can be compiled as a dynamically linked executable, honors LD_PRELOAD and uses the host libc&#8217;s syscall &#8211; well, at least sometimes. Sometimes syscalls just bypass libc.</p>
+
+
+
+<p>The missing piece was a way to make QEMU always take the interposable path and call the host libc instead of using an arch-specifix assembly routine (`safe_syscall_base`) to construct the syscall and going directly to the kernel. Luckily, this turned out to be doable. A small patch later, QEMU gained a switch that forces all syscalls through libc. Suddenly, our static binaries started looking a lot more dynamic!</p>
+
+
+
+<pre class="wp-block-code"><code>$ faketime '2008-12-24 08:15:42'  qemu-x86_64 ./test_static_clock_gettime
+2008-12-24 08:15:42.725404654
+$ file test_static_clock_gettime 
+test_clock_gettime: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, ...</code></pre>
+
+
+
+<p>With this in place, Firebuild can finally wrap even those secretive statically linked tools. QEMU runs them, libc catches their syscalls, <code>LD_PRELOAD</code> injects <code>libfirebuild.so</code>, and from there the usual interposition magic happens. The result: previously uncachable build steps can now be traced, cached, and shortcut just like their dynamic friends.</p>
+
+
+
+<p>There is one more problem though. Why would the static binaries deep in the build be run by QEMU? Firebuild also intercepts the `exec()` calls and now it rewrites them on the fly whenever the executed binary would be statically linked!</p>
+
+
+
+<pre class="wp-block-code"><code>$ firebuild -d comm bash -c ./test_static
+...
+FIREBUILD: fd 9.1: ({ExecedProcess 161077.1, running, "bash -c ./test_static", fds=&#91;0: {FileFD ofd={FileO
+FD #0 type=FD_PIPE_IN r} cloexec=false}, 1: {FileFD ofd={FileOFD #3 type=FD_PIPE_OUT w} {Pipe #0} close_o
+n_popen=false cloexec=false}, 2: {FileFD ofd={FileOFD #4 type=FD_PIPE_OUT w} {Pipe #1} close_on_popen=fal
+se cloexec=false}, 3: {FileFD NULL} /* times 2 */]})
+{
+    "&#91;FBBCOMM_TAG]": "exec",
+    "file": "test_static",
+    "// fd": null,
+    "// dirfd": null,
+    "arg": &#91;
+        "./test_static"
+    ],
+    "env": &#91;
+        "SHELL=/bin/bash",
+ ...
+        "FB_SOCKET=/tmp/firebuild.cpMn75/socket",
+        "_=./test_static"
+    ],
+    "with_p": false,
+    "// path": null,
+    "utime_u": 0,
+    "stime_u": 1017
+}
+FIREBUILD: -> proc_ic_msg()  (message_processor.cc:782)  proc={ExecedProcess 161077.1, running, "bash -c 
+./test_static", fds=&#91;0: {FileFD ofd={FileOFD #0 type=FD_PIPE_IN r} cloexec=false}, 1: {FileFD ofd={FileOF
+D #3 type=FD_PIPE_OUT w} {Pipe #0} close_on_popen=false cloexec=false}, 2: {FileFD ofd={FileOFD #4 type=F
+D_PIPE_OUT w} {Pipe #1} close_on_popen=false cloexec=false}, 3: {FileFD NULL} /* times 2 */]}, fd_conn=9.
+1, tag=exec, ack_num=0
+FIREBUILD:   -> send_fbb()  (utils.cc:292)  conn=9.1, ack_num=0 fd_count=0
+Sending message with ancillary fds &#91;]:
+{
+    "&#91;FBBCOMM_TAG]": "rewritten_args",
+    "arg": &#91;
+        "/usr/bin/qemu-user-interposable",
+        "-libc-syscalls",
+        "./test_static"
+    ],
+    "path": "/usr/bin/qemu-user-interposable"
+}
+...
+FIREBUILD: -> accept_ic_conn()  (firebuild.cc:139)  listener=6
+...
+FIREBUILD: fd 9.2: ({Process NULL})
+{
+    "&#91;FBBCOMM_TAG]": "scproc_query",
+    "pid": 161077,
+    "ppid": 161073,
+    "cwd": "/home/rbalint/projects/firebuild/test",
+    "arg": &#91;
+        "/usr/bin/qemu-user-interposable",
+        "-libc-syscalls",
+        "./test_static"
+    ],
+    "env_var": &#91;
+        "CCACHE_DISABLE=1",
+...
+        "SHELL=/bin/bash",
+        "SHLVL=0",
+        "_=./test_static"
+    ],
+    "umask": "0002",
+    "jobserver_fds": &#91;],
+    "// jobserver_fifo": null,
+    "executable": "/usr/bin/qemu-user-interposable",
+    "// executed_path": null,
+    "// original_executed_path": null,
+    "libs": &#91;
+        "/lib/x86_64-linux-gnu/libatomic.so.1",
+        "/lib/x86_64-linux-gnu/libc.so.6",
+        "/lib/x86_64-linux-gnu/libglib-2.0.so.0",
+        "/lib/x86_64-linux-gnu/libm.so.6",
+        "/lib/x86_64-linux-gnu/libpcre2-8.so.0",
+        "/lib64/ld-linux-x86-64.so.2"
+    ],
+    "version": "0.8.5.1"
+}
+</code></pre>
+
+
+
+<p>The QEMU patch is <a href="https://lists.gnu.org/archive/html/qemu-devel/2025-11/msg02559.html">forwarded to qemu-devel</a>. If it lands, anyone using QEMU user-mode emulation could benefit — not just Firebuild.</p>
+
+
+
+<p>For Firebuild users, though, the impact is immediate. Toolchains that mix dynamic and static helpers? Cross-builds that pull in odd little statically linked utilities? Previously “invisible” steps in your builds? All now fair game for caching.</p>
+
+
+
+<p><a href="https://github.com/firebuild/firebuild/releases/tag/v0.8.5">Firebuild 0.8.5</a> ships this new capability out of the box. Just update, make sure you’re using a patched QEMU, and enjoy the feeling of watching even static binaries fall neatly into place in your cached build graph. Ubuntu users can get the prebuilt patched QEMU packages from the <a href="https://launchpad.net/~firebuild/+archive/ubuntu/stable">Firebuild PPA</a> already. </p>
+
+
+
+<p>Static binaries, welcome to the party!</p>]]></description>
+      <source url="https://balintreczey.hu/blog/tag/ubuntu/feed/">Balint Reczey</source>
     </item>
     <item>
       <title>GSoC 2025 Final Submission: Re-architecting PyCups for a Modern, Pythonic Future</title>

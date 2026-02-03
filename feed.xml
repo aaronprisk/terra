@@ -6,27 +6,91 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Mon, 02 Feb 2026 02:33:11 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 02:30:09 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dialogue</title>
-      <link>https://mako.cc/copyrighteous/dialogue</link>
-      <guid isPermaLink="true">https://mako.cc/copyrighteous/dialogue</guid>
-      <pubDate>Sat, 31 Jan 2026 10:59:24 GMT</pubDate>
-      <description><![CDATA[<p>Me: Do you want your coffee in a Japanese or Western style tea cup?</p>
+      <title>What do people do when they edit Wikipedia through Tor?</title>
+      <link>https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</link>
+      <guid isPermaLink="true">https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</guid>
+      <pubDate>Sun, 01 Feb 2026 12:19:11 GMT</pubDate>
+      <description><![CDATA[<p class="has-small-font-size"><em><strong>Note:</strong> I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This post is closely based on <a href="https://blog.communitydata.science/what-do-people-do-when-they-edit-wikipedia-through-tor/">a previously published post</a> by <a href="https://kayleachampion.com/">Kaylea Champion</a> on <a href="https://blog.communitydata.science/">the Community Data Science Blog</a>.</em></p>
 
 
 
-<p>M: <a href="https://en.wikipedia.org/wiki/Yunomi">Yunomi</a>.</p>
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg"><img fetchpriority="high" decoding="async" width="1024" height="691" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg" alt="" class="wp-image-3322" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-300x202.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-768x518.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Many individuals use Tor to reduce their visibility to widespread internet surveillance.</figcaption></figure>
 
 
 
-<p>Me: Apparently not as well as you think I do!</p>
+<p>One popular approach to protecting our privacy online is to use the <a href="https://www.torproject.org/">Tor network</a>. Tor protects users from being identified by their IP address, which can be tied to a physical location. However, if you’d like to contribute to Wikipedia using Tor, you’ll run into a problem. Although most IP addresses can edit without an account, Tor users are blocked from editing.</p>
 
 
 
-<p></p>]]></description>
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg"><img decoding="async" width="1024" height="576" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg" alt="" class="wp-image-3323" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-300x169.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-768x432.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Tor users attempting to contribute to Wikipedia are shown a screen that informs them that they are not allowed to edit Wikipedia.</figcaption></figure>
+
+
+
+<p><a href="https://mako.cc/copyrighteous/?p=957">Other research by my team</a> has shown that Wikipedia’s attempt to block Tor is imperfect and that some people have been able to edit despite the ban. As part of this work, we built a dataset of more than 11,000 contributions to Wikipedia via Tor and used quantitative analysis to show that contributions from Tor were of about the same quality as contributions from other new editors and other contributors without accounts. Of course, given the unusual circumstances Tor-based contributors face, we wondered whether a deeper look at the content of their edits might reveal more about their motives and the kinds of contributions they seek to make. Kaylea Champion (then a student, now faculty at UW Bothell) led a qualitative investigation to explore these questions.</p>
+
+
+
+<p>Given the challenges of studying anonymity seekers, we designed a novel “forensic” qualitative approach inspired by techniques common in computer security and criminal investigation. We applied this new technique to a sample of 500 editing sessions and categorized each session based on what the editor seemed to be intending to do.</p>
+
+
+
+<p>Most of the contributions we found fell into one of the two following categories:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Many contributions were <strong>quotidian</strong> attempts to add to the encyclopedia. Tor-based editors added facts, fixed typos, and updated train schedules. There’s no way to know whether these individuals knew they were just getting lucky in their ability to edit or were patiently reloading to evade the ban.</li>
+
+
+
+<li>Second, we found <strong>harassing comments and vandalism</strong>. Unwelcome conduct is common in online environments, and it is sometimes more common when the likelihood of being identified decreases. Some of the harassing comments we observed were direct responses to being banned as a Tor user.</li>
+</ul>
+
+
+
+<p>Although these were most of what we observed, we  also found evidence of several types of contributor intent:</p>
+
+
+
+<ul class="wp-block-list">
+<li>We observed <strong>activism</strong>: when a contributor tried to draw attention to journalistic accounts of environmental and human rights abuses committed by a mining company, only to have editors linked to the mining company repeatedly remove their edits. Another example involved an editor trying to diminish the influence of proponents of alternative medicine.</li>
+
+
+
+<li>We also observed <strong>quality maintenance</strong> activities when editors used Wikipedia’s rules on appropriate sourcing to remove personal websites being cited in conspiracy theories.</li>
+
+
+
+<li>We saw <strong>edit wars</strong> with Tor editors participating in a back-and-forth removal and replacement of content as part of a dispute, in some cases countering the work of an experienced Wikipedia editor whom even other experienced editors had gauged to be biased.</li>
+
+
+
+<li>Finally, we saw Tor-based editors participating in <strong>non-article discussions,</strong> such as investigations into administrator misconduct and <span style="box-sizing: border-box; margin: 0px; padding: 0px;"><strong>protests against the Wikipedia platform&#8217;s mistrust of Tor editors</strong></span>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png"><img decoding="async" width="1024" height="804" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png" alt="" class="wp-image-3324" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-300x236.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-768x603.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">An exploratory mapping of our themes in terms of the value a type of contribution represents to the Wikipedia community and the importance of anonymity in facilitating it. Anonymity-protecting tools play a critical role in facilitating contributions on the right side of the figure, while edits on the left are more likely to occur even when anonymity is impossible. Contributions toward the top reflect valuable forms of participation in Wikipedia, while edits at the bottom reflect damage.</figcaption></figure>
+
+
+
+<p>In all, these themes led us to reflect on how the risks individuals face when contributing to online communities sometimes diverge from the risks the communities face in accepting their work. Expressing minoritized perspectives, maintaining community standards even when you may be targeted by the rulebreaker, highlighting injustice, or acting as a whistleblower can be very risky for an individual, and may not be possible without privacy protections. Of course, in platforms seeking to support the public good, such knowledge and accountability may be crucial.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="has-small-font-size"><em>This work was published as a paper at CSCW: </em>Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. 2019. A Forensic Qualitative Analysis of Contributions to Wikipedia from Anonymity Seeking Users. <em>Proceedings of the ACM on Human-Computer Interaction</em>. 3, CSCW, Article 53 (November 2019), 26 pages. <a href="https://doi.org/10.1145/3359155">https://doi.org/10.1145/3359155</a></p>
+
+
+
+<p class="has-small-font-size"><em>This project was conducted by Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. This work was supported by the National Science Foundation (awards CNS-1703736 and CNS-1703049) and included the work of two undergraduates supported through an NSF REU supplement.</em></p>]]></description>
       <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
     </item>
     <item>

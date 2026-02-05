@@ -6,9 +6,48 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Wed, 04 Feb 2026 02:24:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 02:26:14 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS IoT Greengrass comes to Ubuntu Core</title>
+      <link>https://ubuntu.com//blog/aws-iot-greengrass-comes-to-ubuntu-core</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/aws-iot-greengrass-comes-to-ubuntu-core</guid>
+      <pubDate>Tue, 03 Feb 2026 09:55:59 GMT</pubDate>
+      <description><![CDATA[<h4 class="wp-block-heading">AWS’s open source edge run time meets Canonical’s fully containerized OS for devices delivering a supported and robust end-to-end answer for enterprises looking to develop their own IoT hardware and solutions.</h4>
+<p><strong>London, February 3, 2026 — Canonical and AWS are pleased to announce the release of the new snap for AWS IoT Greengrass, making the deployment of your IoT solutions easy and seamless all the way from silicon to the cloud</strong>. </p>
+<p>With the <a href="https://snapcraft.io/aws-iot-greengrass">AWS IoT Greengrass agent</a> now available as a snap package from the Canonical Snap Store, Ubuntu Core has become the ideal operating system for all your AWS IoT edge workloads and data ingress. Its broad compatibility with silicon hardware, long-term support, and proven, reliable performance unlock endless possibilities for your IoT devices utilizing the power of the AWS cloud.</p>
+<p>AWS Greengrass is one of the market-leading IoT edge platforms, bringing the comprehensive capabilities of the AWS cloud to distributed edge environments.</p>
+<p>Ubuntu Core offers extensive silicon compatibility, simplifying device deployment across various hardware platforms. Canonical further supports this by providing device enablement and certification for custom hardware, ensuring long-term support for your products. </p>
+<p>The combined solutions enable enterprises to focus on their products with confidence, knowing their infrastructure and devices are covered.</p>
+<blockquote class="wp-block-quote">
+<p><em>“AWS IoT Greengrass is the best way to bring the power of AWS to the edge, and what better option to partner it with than the industry leading OS for edge devices – Ubuntu Core? With the release of the Greengrass snap, enterprises will be hard pressed to find an easier, more secure, reliable or robust foundation for their IoT needs.” </em></p>
+<p><em>– Michael Croft-White, Engineering Director, Canonical.</em></p>
+</blockquote>
+<h2 class="wp-block-heading">The power of the cloud at the edge</h2>
+<p>AWS Greengrass enables organizations to deploy and manage containerized applications and AWS Lambda functions directly onto their local hardware, streamlining their edge solution development.</p>
+<p>AWS IoT Greengrass brings processing and machine learning inference closer to the point of data collection. This makes it ideal for applications needing low latency and real-time decisions. Furthermore, with its reliable offline capabilities, Greengrass ensures continued operation during periods of intermittent network connectivity. Running on top of Canonical’s Ubuntu Core, enterprises can build, develop, and deploy sophisticated, resilient, and scalable edge solutions in sectors such as industrial automation, logistics, and automotive.</p>
+<h2 class="wp-block-heading">Made for security, resilience, and longevity</h2>
+<p>Ubuntu Core is purpose built for IoT and embedded devices. With Canonical’s reputation for industry-leading reliability and robust security and focus on long-term support commitment, you can rely on a predictable release cycle and stability across your entire fleet.</p>
+<p>Its minimal, containerized design with automatic, transactional updates can ensure timely delivery of security patches without downtime. Extensive hardware and silicon compatibility gives the freedom to optimize your device’s design for each and every use case.</p>
+<p>Through Ubuntu Pro, both Ubuntu and Ubuntu Core can be extended with up to 15 years of maintenance and security updates with <a href="https://ubuntu.com/security/esm">Canonical’s Expanded Security Maintenance (ESM)</a>. This gives organizations the confidence that their IoT infrastructure remains securely maintained against  vulnerabilities for the long term, reducing operational risk and total cost of ownership.</p>
+<h2 class="wp-block-heading">Get the snap for AWS IoT Greengrass</h2>
+<p>You can download and install the snap from the <a href="https://snapcraft.io/aws-iot-greengrass">Snap Store</a> directly onto your IoT device with the following command:</p>
+<pre class="wp-block-code"><code>snap install aws-iot-greengrass</code></pre>
+<p>For more information on Ubuntu Core, visit <a href="https://ubuntu.com/core">ubuntu.com/core</a>, or check out our <a href="http://canonical.com/blog/tutorial-getting-started-with-aws-greengrass-on-ubuntu-core">tutorial blog</a> for everything you need to get started, including a hands-on demo. </p>
+<p>If you are not already familiar with AWS IoT Greengrass, more information can be found <a href="https://aws.amazon.com/greengrass/">here</a>. </p>
+<p>Are you interested in running Ubuntu Core with AWS IoT Greengrass on your devices and are working on a commercial project?</p>
+<p> <a aria-label=" (opens in a new tab)" class="p-button--small p-button--positive" href="https://canonical.com/contact-us#get-in-touch" rel="noreferrer noopener" target="_blank">Get in touch</a></p>
+<h2 class="wp-block-heading">Further reading</h2>
+<ul>
+<li><a href="http://canonical.com/blog/tutorial-getting-started-with-aws-greengrass-on-ubuntu-core">Tutorial: getting started with AWS Greengrass on Ubuntu Core</a></li>
+<li><a href="https://ubuntu.com/core">Ubuntu Core: The embedded Linux OS for devices</a></li>
+<li><a href="https://aws.amazon.com/greengrass/">Intelligence at the IoT Edge – AWS IoT Greengrass</a></li>
+</ul>
+<h2 class="wp-block-heading">About Canonical</h2>
+<p>Canonical, the publisher of Ubuntu, provides open-source security, support and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone.<br/>Learn more at <a href="https://canonical.com/">https://canonical.com/</a></p>]]></description>
+      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
+    </item>
     <item>
       <title>What do people do when they edit Wikipedia through Tor?</title>
       <link>https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</link>
@@ -914,74 +953,6 @@
             <p><small>1 post - 1 participant</small></p>
             <p><a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-929/75636">Read full topic</a></p>]]></description>
       <source url="https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss">Ubuntu Weekly News</source>
-    </item>
-    <item>
-      <title>How to avoid package End of Life through backporting </title>
-      <link>https://ubuntu.com//blog/how-to-avoid-package-end-of-life-through-backporting</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/how-to-avoid-package-end-of-life-through-backporting</guid>
-      <pubDate>Fri, 23 Jan 2026 09:15:20 GMT</pubDate>
-      <description><![CDATA[<p>In July 2025, git received <a href="https://ubuntu.com/security/CVE-2025-48384">CVE-2025-48384</a>, a high vulnerability allowing arbitrary code execution when cloning repositories. The US Cybersecurity and Infrastructure Security Agency added it to their Known Exploited Vulnerabilities catalog after confirming active exploitation in the wild.</p>
-<p>If your Ubuntu system had already passed the End of Standard Support when this vulnerability was disclosed, you faced a choice: subscribe to Ubuntu Pro for the security patch, or continue running git with a known remote code execution vulnerability on your developer workstations and CI/CD infrastructure. </p>
-<p>This scenario highlights a critical decision point: how do you maintain security when packages lose standard support? This blog explores your options and how Canonical’s backporting strategy helps you stay protected. </p>
-<h2 class="wp-block-heading">The impact of End of Standard Support</h2>
-<p>Support lifecycle directly affects your system security. Although Canonical maintains LTS releases for extended periods, there inevitably comes a point where decisions are required to avoid running unsecured packages.</p>
-<p>When Ubuntu 20.04 LTS reached End of Standard Support in April 2025, thousands of packages in the main repository lost free security maintenance. A typical enterprise server runs around 800 packages, which almost guarantees that some packages will no longer be covered by free security updates.</p>
-<h2 class="wp-block-heading">Understanding End of Standard Support vs End of Life</h2>
-<p>Here’s what many users misunderstand: End of Standard Support and End of Life are different concepts for Canonical built and supported packages.</p>
-<p>Canonical provides two types of security coverage. The first is standard security maintenance, which lasts 5 years and provides free security updates for packages in the main repository only. Universe repository packages never receive free security updates, even during this period.</p>
-<p>After 5 years, main repository packages stop receiving free updates but remain functional. Security patches continue to be developed and released for another 10 years through Ubuntu Pro subscriptions, the second type of coverage, covering both main and universe repositories.</p>
-<p>End of Life occurs at the 15-year mark, when the Ubuntu Pro period with legacy add-on concludes. Only then do security patches stop being developed entirely.</p>
-<figure class="wp-block-image size-full"><img alt="" height="314" loading="lazy" sizes="(min-width: 917px) 917px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_917/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_917/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fbba5%2Flidia-random-slides.png 917w" width="917"/></figure>
-<p>If you’re running Ubuntu and want to check your current support status, you can easily do this via the terminal:</p>
-<pre class="wp-block-code"><code>pro security-status</code></pre>
-<p>This shows which packages have active security coverage and which represent potential vulnerability exposure in your infrastructure.</p>
-<h2 class="wp-block-heading">What are the actual risks?</h2>
-<p>The dependency problem significantly compounds the risk. When package A depends on package B, which depends on package C, an unsupported package anywhere in that chain creates vulnerability across your entire stack. <a href="https://www.endorlabs.com/learn/state-of-dependency-management-2023">Research from Endor Labs</a> analyzing software packages found that 95 percent of all vulnerabilities are found in transitive dependencies, meaning most security risk in your software supply chain is indirect.</p>
-<p>Systems without security updates remain vulnerable to every threat disclosed after support ends. The git vulnerability demonstrates how attackers exploit publicly documented weaknesses. Malicious repositories become attack vectors for remote code execution on developer workstations and CI/CD systems.</p>
-<p>Beyond immediate security exposure, organizations face tangible compliance and operational consequences. The EU Cyber Resilience Act, which applies from December 2027, requires manufacturers to provide timely security updates throughout a product’s lifecycle. Frameworks like FedRAMP, FISMA, and HIPAA require FIPS-140 certified cryptographic modules, while PCI-DSS mandates current security patches and vendor support. Running unsupported packages puts organizations at risk of failing these regulatory requirements. Organizations also face compatibility issues when newer packages expect updated dependencies and limited support when troubleshooting production incidents.</p>
-<h2 class="wp-block-heading">Your options when standard support ends</h2>
-<ol>
-<li><strong>Upgrade to a newer LTS release</strong></li>
-</ol>
-<p>Upgrading moves your infrastructure to an LTS version within its 5-year standard support window. This restores free security updates for packages in the main repository and eliminates the support gap for those packages.</p>
-<p>This approach works well when you have resources to test deployment thoroughly, your applications are compatible with the newer release, and you have time for comprehensive validation. The challenge is that major upgrades carry real costs and risks. Version jumps can break compatibility, require application changes, or introduce dependencies that need extensive testing before production deployment.</p>
-<ol start="2">
-<li><strong>Enable Ubuntu Pro for expanded security maintenance</strong></li>
-</ol>
-<p>Enabling Ubuntu Pro on your infrastructure extends security coverage from 5 years to 15 years for packages in both main and universe repositories. This allows you to continue running your current release while receiving backported security patches. Canonical’s security team actively scans, triages, and backports critical, high, and select medium CVEs to all maintained LTS releases.</p>
-<p>The backporting strategy means Canonical applies security fixes to your current package versions rather than forcing major upgrades. You receive vulnerability patches without the breaking changes that come with major version jumps or the re-certification requirements that disrupt tightly controlled compliance environments.</p>
-<p>Ubuntu Pro covers thousands of packages across main and universe. For organizations requiring the full 15-year support window, the legacy add-on becomes available after 10 years of coverage at 50% above the standard Ubuntu Pro subscription cost. We recommend this approach for organizations seeking cost-effective security and compliance. Ubuntu Pro offloads much of the vulnerability management effort while providing comprehensive coverage across open-source packages with simple, predictable pricing.</p>
-<p>Read about Canonical’s technical approach to security backporting and long term maintenance in our documentation at <a href="https://ubuntu.com/security/esm">ubuntu.com/security/esm</a>.</p>
-<ol start="3">
-<li><strong>Run without security updates</strong></li>
-</ol>
-<p>Though not recommended, you can consciously choose to run packages without active support. This might be considered when the package handles genuinely non-critical functionality, the system operates in complete isolation from network exposure, or strong compensating controls effectively mitigate the vulnerability risk.</p>
-<p>Be explicit about this choice and thoroughly document it. Maintain a register of unsupported packages with clear business justification, documented risk assessment, and regular review schedules. This will help you audit your system much faster in the future. What represents acceptable risk today may not remain acceptable as the threat landscape evolves and new attack patterns emerge.</p>
-<p>Running without support through ignorance or inertia differs fundamentally from making a conscious risk acceptance decision with appropriate governance and executive approval.</p>
-<h2 class="wp-block-heading">How expanded security maintenance works</h2>
-<p>Canonical’s security team monitors for vulnerabilities daily and evaluates their impact on supported packages. When vulnerabilities affect packages under Ubuntu Pro coverage, engineers apply available upstream patches or backport security fixes from newer versions to your maintained release. Updates undergo rigorous testing to verify stability and compatibility before becoming available through standard package management.</p>
-<p>For embargoed vulnerabilities like the recent git security issues, Canonical prepares fixes in advance and releases them precisely when the embargo lifts, ensuring you’re protected the moment the vulnerability becomes public knowledge.</p>
-<p>This approach means you don’t face a forced choice between security and operational stability. You maintain your current, tested environment while receiving necessary security patches that preserve compatibility.</p>
-<h2 class="wp-block-heading">How to choose the right approach after End of Standard support</h2>
-<p>LTS release support timelines are predictable. Ubuntu 20.04 released in April 2020 and reached End of Standard Support in April 2025, exactly 5 years later. Begin planning at least 6 months before standard support concludes. This gives you time to audit affected packages, test upgrade paths, secure budget, and coordinate infrastructure changes. Strategic planning prevents emergency decisions under pressure.</p>
-<p>Your decision depends on risk tolerance, compliance requirements, engineering capacity, and budget. Most enterprises use a combination approach. Overall, our suggestions are as follows:</p>
-<ul>
-<li>You should choose to upgrade your LTS when you can test thoroughly, your stack supports the next LTS, and staying current aligns with your strategy.</li>
-<li>Choose expanded security maintenance when you need stability, lack upgrade resources, or require patches without version mandates.</li>
-<li>You should <strong>only </strong>accept running without updates if you can reasonably maintain minimal risk exposure, can implement strong compensating controls, and have explicit documented approval.</li>
-<li>The worst outcome is no decision at all, allowing support coverage to lapse through inaction.</li>
-</ul>
-<h2 class="wp-block-heading">What should you do today?</h2>
-<p>Run <strong>pro security-status</strong> to assess your current coverage. Identify which packages will lose standard support and when.</p>
-<p>For Ubuntu 20.04 or earlier, standard support has ended. Those systems need decisions now.</p>
-<figure class="wp-block-pullquote"><blockquote><p>Explore Ubuntu Pro options at <a href="http://ubuntu.com/pro">ubuntu.com/pro</a> or <a href="https://ubuntu.com/contact-us/form?product=pro">contact our team</a> to discuss your requirements.</p></blockquote></figure>
-<p><strong>Read more:</strong></p>
-<ul>
-<li><a href="https://ubuntu.com/about/release-cycle">Understand Ubuntu release cycle</a></li>
-<li><a href="https://ubuntu.com/pro/linux-patch-management-with-pro">See which packages Ubuntu Pro supports</a></li>
-<li><a href="https://ubuntu.com/security/security-standards">Run Ubuntu in high-security environments</a></li>
-</ul>]]></description>
-      <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>
     <item>
       <title>E371 Pluvioso Duvidoso</title>
@@ -3633,7 +3604,8 @@ here’s my approach and a bit of motivation</p>
       <guid isPermaLink="true">https://blog.slyon.de/2024/10/15/waiting-for-a-linux-system-to-be-online/</guid>
       <pubDate>Tue, 15 Oct 2024 07:33:10 GMT</pubDate>
       <description><![CDATA[<div class="wp-block-image">
-<figure class="aligncenter size-large"><a href="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050.avif"><img fetchpriority="high" decoding="async" width="1024" height="569" src="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-1024x569.avif" alt="" class="wp-image-2424" srcset="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-1024x569.avif 1024w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-300x167.avif 300w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-768x427.avif 768w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050.avif 1380w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">Designed by <a href="https://www.freepik.com">Freepik</a></figcaption></figure></div>
+<figure class="aligncenter size-large"><a href="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050.avif"><img fetchpriority="high" decoding="async" width="1024" height="569" src="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-1024x569.avif" alt="" class="wp-image-2424" srcset="https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-1024x569.avif 1024w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-300x167.avif 300w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050-768x427.avif 768w, https://blog.slyon.de/wp-content/uploads/2024/10/gradient-network-connection-background_23-2148874050.avif 1380w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">Designed by <a href="https://www.freepik.com">Freepik</a></figcaption></figure>
+</div>
 
 
 <h2 class="wp-block-heading">What is an “online” system?</h2>

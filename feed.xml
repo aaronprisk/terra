@@ -6,316 +6,131 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Thu, 05 Feb 2026 00:35:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 00:32:48 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI meets SQL Server 2025 on Ubuntu</title>
-      <link>https://ubuntu.com//blog/sql-server-2025-on-ubuntu</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/sql-server-2025-on-ubuntu</guid>
-      <pubDate>Wed, 04 Feb 2026 14:34:41 GMT</pubDate>
-      <description><![CDATA[<h1 class="wp-block-heading"><strong>Partnership between Microsoft and Canonical</strong></h1>
-<p>Since 2016, when Microsoft announced its intention to make Linux a first class citizen in its ecosystem, Canonical and Microsoft have been working hand in hand to make that vision a reality. Ubuntu was among the first distributions to support the <a href="https://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux">preview</a> of SQL Server on Linux. Ubuntu was the <a href="https://learn.microsoft.com/en-us/archive/blogs/wsl/windows-subsystem-for-linux-overview">first distribution</a> offered in the launch of Windows Subsystem for Linux (WSL), and it remains the <a href="https://learn.microsoft.com/en-us/windows/wsl/install">default</a> to this day. Ubuntu was also the first Linux distribution to support Azure’s <a href="https://docs.microsoft.com/en-us/azure/confidential-computing/quick-create-confidential-vm-portal-amd">Confidential VMs</a>.</p>
-<p>SQL server has been a cornerstone of the ongoing collaboration to deliver a seamless Linux experience for developers and enterprises alike. Together, we have been able to meet growing customer demands with a number of joint offerings including ready-made and jointly <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?filters=linux%3Bmicrosoft&amp;page=1&amp;search=Ubuntu">supported configurations</a> for SQL Server on top of Ubuntu. In this article, we’ll take a look at our latest collaboration: SQL Server 2025 on Ubuntu.</p>
-<h1 class="wp-block-heading"><strong>SQL Server 2025</strong></h1>
-<p>The <a href="https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver17&amp;tabs=ubuntu2004%2C2025ubuntu2204%2Codbc-ubuntu-1804">General Availability of SQL Server 2025 on Ubuntu 24.04</a> is a milestone in our partnership. SQL Server 2025 brings several <a href="https://learn.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2025?view=sql-server-ver17">new features</a>, including new AI capabilities such as vector search and external AI models integrations. Here’s how you can get up and running with these new capabilities.</p>
-<h2 class="wp-block-heading"><strong>Your new AI playground</strong></h2>
-<h2 class="wp-block-heading"><strong>Deploying a database server instance</strong></h2>
-<p>Let’s start by installing <a href="https://ubuntu.com/lxd">LXD</a>, our Canonical tool to easily manage virtual machines and containers.</p>
-<pre class="wp-block-code"><code>sudo snap install lxd 
-sudo snap list | awk '/lxd/ {print $3}'
-sudo lxd init --minimal # configure LXD</code></pre>
-<p>Let’s now create a virtual machine to serve as a playground:</p>
-<pre class="wp-block-code"><code>sudo lxc launch ubuntu:24.04 mssql25 --vm -c limits.cpu=4 -c limits.memory=6GiB -d root,size=24GiB</code></pre>
-<p>Next, we will be installing all the pre-requisites to get a SQL Server 2017 running:</p>
-<pre class="wp-block-code"><code>sudo lxc exec mssql25 bash
-su -l ubuntu
-# Like always, we start by updating our packages
-sudo apt -y update &amp;&amp; sudo apt -y upgrade
-
-# Download and trust the Microsoft key 
-curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg
-
-# Register the SQL Server repository
-curl -fsSL https://packages.microsoft.com/config/ubuntu/24.04/mssql-server-2025.list | sudo tee /etc/apt/sources.list.d/mssql-server-2025.list
-
-# Ensures new repositories are loaded
-sudo apt-get update
-
-# Install SQL server and a password generator
-sudo apt-get install -y mssql-server pwgen</code></pre>
-<p>Let’s now set up the installed SQL Server to get a running instance as follows:</p>
-<pre class="wp-block-code"><code>PW="$(pwgen -sB 22 1)" # Generates SQL Server compliant-password
-# Prepare some environment variables to setup SQL Server
-install -d -m 700 ~/.secrets/sql
-install -m 600 /dev/null ~/.secrets/sql/mssql.env
-
-cat &gt; ~/.secrets/sql/mssql.env &lt;&lt;EOF
-MSSQL_PID=Developer
-MSSQL_SA_PASSWORD='$PW'
-SQLSERVER=127.0.0.1
-SQLPORT=1433
-SQLUSER=sa
-SQLCMDPASSWORD='$PW'
-EOF
-
-# Export every line in mssql.env as an environment variable
-set -a; . ~/.secrets/sql/mssql.env; set +a
-
-# Set up SQL Server
-sudo MSSQL_SA_PASSWORD="$MSSQL_SA_PASSWORD" MSSQL_PID="$MSSQL_PID" /opt/mssql/bin/mssql-conf -n setup
-
-# Let's check that everything went fine
-systemctl status mssql-server --no-pager</code></pre>
-<p>We will now install some additional tools to be able to connect to SQL Server</p>
-<pre class="wp-block-code"><code># Download the deb package
-curl -sSL -O https://packages.microsoft.com/config/ubuntu/$(grep VERSION_ID /etc/os-release | cut -d '"' -f 2)/packages-microsoft-prod.deb
-# Install the downloaded deb package
-sudo dpkg -i packages-microsoft-prod.deb
-# Delete the downloaded package
-rm packages-microsoft-prod.deb
-# Install Microsoft's ODBC driver and additional tools
-sudo apt-get update
-sudo apt-get install -y msodbcsql18  mssql-tools18 unixodbc-dev libodbc2
-echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' &gt;&gt; ~/.bashrc
-source ~/.bashrc</code></pre>
-<p>We will run a query to check that everything is running as intended:</p>
-<pre class="wp-block-code"><code>/opt/mssql-tools18/bin/sqlcmd -S 127.0.0.1 -U sa -No -C -P "$SQLCMDPASSWORD"
-SELECT @@VERSION AS 'SQL Server Version';
-GO</code></pre>
-<p>The above should return the exact version of SQL Server you are running. So far, we’ve made simple interactions with SQL Server. In the next section, we will test some new exciting features of the 2025 edition.</p>
-<h2 class="wp-block-heading"><strong>Vector type</strong></h2>
-<p>A vector type is a contiguous array of fixed-length numbers designed to enable hardware-accelerated vectorized (SIMD) execution. A vector type is the perfect type to use to store embeddings (i.e. numerical representations) of objects manipulated by AI models such as text and images.  Let’s create a table with a column of type of vector as follows:</p>
-<pre class="wp-block-code"><code>CREATE DATABASE DemoDb;
-GO
-
-USE DemoDb;
-GO
-
-ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
-CREATE TABLE dbo.VectorDemo (id INT IDENTITY(1,1) PRIMARY KEY, embedding VECTOR(3) NOT NULL);
-GO
-
-INSERT INTO dbo.VectorDemo (embedding) VALUES ('[2,3,5]'), ('[7,11,13]'), ('[17,19,23]');
-GO
-
-DECLARE @q VECTOR(3) = '[7,11,13]';
-SELECT embedding, VECTOR_DISTANCE('euclidean', embedding, @q) AS distance FROM dbo.VectorDemo ORDER BY distance;
-GO
-
-DECLARE @q2 VECTOR(3) = '[7,11,13]';
-SELECT embedding, VECTOR_DISTANCE('cosine', embedding, @q2) AS distance FROM dbo.VectorDemo ORDER BY distance;
-GO
-exit</code></pre>
-<p>We have checked how to create a vector type and how to use the vector_distance operator. We will next provide an example of a more advanced use case involving calling an AI model and performing a similarity search.</p>
-<h2 class="wp-block-heading"><strong>AI models integration</strong></h2>
-<p>One of the most exciting features of SQL Server 2025 is the ability to call AI models from within the comfort of your database in a structured way. Let’s check how:</p>
-<h3 class="wp-block-heading"><strong>AI models deployment</strong></h3>
-<p>We will start by deploying a local embedding model using Ollama.</p>
-<pre class="wp-block-code"><code>curl -fsSL https://ollama.com/install.sh | sh # Installs ollama
-ollama pull nomic-embed-text # Pulls an embedding model
-curl -k http://localhost:11434/api/tags  # Checks the api endpoint</code></pre>
-<h3 class="wp-block-heading"><strong>Deploying a http proxy</strong></h3>
-<p>SQL Server 2025 requires that model endpoints are exposed using https (not just plain http). We will therefore deploy and configure Caddy for that purpose as follows:</p>
-<pre class="wp-block-code"><code>sudo apt install -y caddy 
-
-sudo cp /etc/caddy/Caddyfile /etc/caddy/Caddyfile.bak # Keep  a backup
-
-sudo tee /etc/caddy/Caddyfile &gt;/dev/null &lt;&lt;'EOF'
-https://localhost:11435 {
-  tls internal
-  reverse_proxy 127.0.0.1:11434
-}
-EOF
-
-sudo systemctl reload caddy # Needed to pick the previous changes
-
-# We need the system to trust Caddy's certificate by doing the following:
-sudo cp /var/lib/caddy/.local/share/caddy/pki/authorities/local/root.crt /usr/local/share/ca-certificates/caddy-local-root.crt
-
-# We need also SQL Server system to trust Caddy's certificate:
-sudo mkdir -p /var/opt/mssql/security/ca-certificates
-sudo cp /var/lib/caddy/.local/share/caddy/pki/authorities/local/root.crt /var/opt/mssql/security/ca-certificates/caddy-local-root.crt
-sudo chown -R mssql:mssql /var/opt/mssql/security
-sudo chmod 744 /var/opt/mssql/security/ca-certificates
-sudo chmod 644 /var/opt/mssql/security/ca-certificates/caddy-local-root.crt
-
-# Update the VM's trusted certificates
-sudo update-ca-certificates
-
-# Restart SQL Server 
-sudo systemctl restart mssql-server
-
-# Check a few https endpoints 
-curl -w '\n' https://localhost:11435/api/tags 
-curl -w '\n' https://localhost:11435/api/embed \
-  -H "Content-Type: application/json" \
-  -d '{ "model":"nomic-embed-text", "input":"hello from caddy" }'</code></pre>
-<h3 class="wp-block-heading"><strong>Python dependencies</strong></h3>
-<p>Let’s now proceed with the installation of the pre-requisites to connect to the SQL Server instance using a python program.</p>
-<pre class="wp-block-code"><code>sudo apt install -y python3-openai python3-pyodbc</code></pre>
-<h3 class="wp-block-heading"><strong>Calling AI models from within SQL Server 2025</strong></h3>
-<p>We will now enable SQL Server to use an external endpoint and then restart it to ensure it correctly picked the new trusted certificates.</p>
-<pre class="wp-block-code"><code>/opt/mssql-tools18/bin/sqlcmd -S 127.0.0.1 -U sa -C -P "$SQLCMDPASSWORD" -Q "EXEC sp_configure 'external rest endpoint enabled', 1; RECONFIGURE;"
-sudo systemctl restart mssql-server</code></pre>
-<p>Then we will write a simple Python script to test the following:</p>
+      <title>SpacemiT announces the availability of  Ubuntu on K3/K1 series RISC-V AI computing platforms</title>
+      <link>https://ubuntu.com//blog/spacemit-announces-availability-of-ubuntu-on-k3-k1-series</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/spacemit-announces-availability-of-ubuntu-on-k3-k1-series</guid>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[<p>SpacemiT (Hangzhou) Technology Co., Ltd. today announced a  collaboration with Canonical to make  Ubuntu available on SpacemiT’s new K3 SoC and the existing K1 series RISC-V computing platforms. This collaboration marks a deep integration between open-source operating systems and open RISC-V silicon, bringing powerful, flexible, and reliable intelligent computing solutions to developers worldwide.</p>
+<h2 class="wp-block-heading"><strong>Hardware platforms designed for high-performance intelligent computing</strong></h2>
+<p>SpacemiT’s new K3 series and the existing K1 series chips are built on proprietary RISC-V processor cores and integrate homogeneous AI computing capabilities. Designed for high-performance AI edge inference and AI robotics, the platforms are well suited for applications including robotics, intelligent security at the edge, industrial vision, and AI edge inference.</p>
+<figure class="wp-block-image size-full"><img alt="" height="1139" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1267w" width="1267"/></figure>
+<h2 class="wp-block-heading"><strong>Advancing intelligent computing: seamless OS integration </strong></h2>
+<p>With the rapid advancement of artificial intelligence, edge computing, and robotics, the market increasingly requires hardware and software platforms that deliver both strong computing performance and high development efficiency. Built on advanced RISC-V architecture and innovative system design, SpacemiT’s K3 and K1 series chips provide an ideal platform for RISC-V high-performance computing. Ubuntu, one of the world’s most widely used Linux distributions, is known for its stability, rich software ecosystem, and strong community support. The availability of  Ubuntu on the K3 and K1 series means developers benefit from seamless hardware-software integration as well as:</p>
 <ul>
-<li>Connecting to the server programmatically</li>
-<li>Registering Ollama model via HTTPS proxy</li>
-<li>Creating a vector column and feeding it with some examples using the registered model</li>
-<li>Creating a vector-optimized index and using it to perform similarity search</li>
+<li>Familiar environment: low barrier to entry for  existing Ubuntu users</li>
+<li>Ecosystem compatibility: seamless access to Ubuntu’s vast software repositories and application ecosystem</li>
+<li>Community-driven innovation: access to global Ubuntu community resources, documentation and shared expertise</li>
 </ul>
-<pre class="wp-block-code"><code>cat &lt;&lt;EOT &gt; ~/mssqlvector.py
-import pyodbc
-
-# Define parameters based on your sqlcmd
-server = '127.0.0.1'
-database = 'DemoDb'
-username = 'sa'
-password = "$MSSQL_SA_PASSWORD"
-port = '1433'
-
-# Connection string using SQL Server Authentication
-connection_string = (
-    "DRIVER={ODBC Driver 18 for SQL Server};"
-    f"SERVER={server},{port};"
-    f"DATABASE={database};"
-    f"UID={username};"
-    f"PWD={{{password}}};"
-    f"Encrypt=no;"
-    f"Connection Timeout=7;"
-    f"TrustServerCertificate=yes;"
-)
-
-try:
-    conn = pyodbc.connect(connection_string)
-    cur = conn.cursor()
-    print("Connected to SQL Server!")
-
-    # Example: simple query
-    cur.execute("SELECT name FROM sys.databases;")
-    for row in cur.fetchall():
-        print(row)
-
-    conn.autocommit = True
-
-    # 1) Register Ollama model via HTTPS proxy
-    cur.execute("""
-IF NOT EXISTS (SELECT * FROM sys.external_models WHERE name='ollama')
-CREATE EXTERNAL MODEL ollama
-WITH (
-        LOCATION   = 'https://localhost:11435/api/embed',
-        API_FORMAT = 'Ollama',
-        MODEL_TYPE = EMBEDDINGS,
-        MODEL      = 'nomic-embed-text'   -- 768 dims
-);
-""")
-
-    # 2) Create a new table including a vector column
-    cur.execute("""
-DROP TABLE IF EXISTS dbo.SupportMatrix;
-CREATE TABLE dbo.SupportMatrix (
-        id        INT IDENTITY PRIMARY KEY,
-        sentence  NVARCHAR(400) NOT NULL,
-        embedding VECTOR(768)   NULL
-);
-""")
-
-    # 3) Insert your Ubuntu/SQL Server lines
-    texts = [
-        "Ubuntu 24.04 is supported by SQL Server 2025",
-        "Ubuntu 22.04 is supported by SQL Server 2022",
-        "Ubuntu 20.04 is supported by SQL Server 2019",
-        "Ubuntu 18.04 is supported by SQL Server 2019"
-    ]
-    cur.executemany("INSERT INTO dbo.SupportMatrix(sentence) VALUES (?);", [(t,) for t in texts])
-
-    # 4) Generate embeddings in-database (using the external model)
-    cur.execute("""
-UPDATE dbo.SupportMatrix
-SET embedding = AI_GENERATE_EMBEDDINGS(sentence USE MODEL ollama)
-WHERE embedding IS NULL;
-""")
-
-    # 5) Create an ANN similarity index (DiskANN) on the vector column
-    cur.execute("""
-IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = 'IX_SupportMatrix_Embedding')
-CREATE VECTOR INDEX IX_SupportMatrix_Embedding
-ON dbo.SupportMatrix(embedding)
-WITH (METRIC = 'cosine', TYPE = 'diskann');
-""")
-
-    # 6) Run a similarity search with VECTOR_SEARCH (uses the ANN index)
-    query_text = "What Ubuntu version is supported by SQL Server 2025?"
-    cur.execute("""
-DECLARE @q VECTOR(768) = AI_GENERATE_EMBEDDINGS(?, ollama);
-
-SELECT TOP (3)
-  t.id,
-  t.sentence,
-  s.distance
-FROM VECTOR_SEARCH(
-    table = dbo.SupportMatrix AS t,
-    column = embedding,
-    similar_to = @q,
-    metric = 'cosine',
-    top_n = 3
-) AS s
-ORDER BY s.distance, t.id;
-""", (query_text,))
-
-    print(f"Top matches for: '{query_text}'\n")
-    for row in cur.fetchall():
-        print(row)
-
-except Exception as e:
-    print("Connection failed:", e)
-
-finally:
-    conn.close()
-
-EOT</code></pre>
-<p>We then can use our python scipt as follows:</p>
-<pre class="wp-block-code"><code>python3 ~/mssqlvector.py</code></pre>
-<p>We’ve checked some of the new AI-related features that you can use from within the comfort of your SQL Server database. Bringing AI closer to your data is a good recipe for getting more value out of your data without the challenges inherent to data duplication.</p>
-<p>Another challenge companies need to address is securing the AI supply chain. Let’s look at how you can handle that next.</p>
-<h1 class="wp-block-heading"><strong>Your secure AI playground</strong></h1>
-<p>In order to get security updates for up to 25,000 open source packages, you can subscribe to Ubuntu Pro (free for personal use for up to 5 machines). You can check whether you have already a subscription by running the following command:</p>
-<pre class="wp-block-code"><code>pro api u.pro.status.enabled_services.v1 | grep -c esm</code></pre>
-<p>If not enabled then you can subscribe to Ubuntu Pro <a href="https://ubuntu.com/pro/subscribe">here</a>. Once you get your token, just type:</p>
-<pre class="wp-block-code"><code>sudo pro attach &lt;token&gt;</code></pre>
-<p>Now that you have covered all of your Canonical maintained packages, you should next check the providers of your other packages that aren’t included in Ubuntu Pro. The following command helps you identify all the deb packages that are not maintained directly by Canonical:</p>
-<pre class="wp-block-code"><code>dpkg-query -W -f='${Package}\n' | while read pkg; do
-    src=$(apt-cache policy "$pkg" | grep -m 1 http | awk '{print $2}')
-    if [[ -n "$src" &amp;&amp; "$src" != *ubuntu.com* ]]; then
-        echo "$pkg -&gt; $src"
-    fi
-done</code></pre>
-<p>In my testing virtual machine, the above yields the following Microsoft-provided packages:</p>
-<pre class="wp-block-code"><code>msodbcsql18 -&gt; https://packages.microsoft.com/ubuntu/24.04/prod
-mssql-server -&gt; https://packages.microsoft.com/ubuntu/24.04/mssql-server-preview
-mssql-tools18 -&gt; https://packages.microsoft.com/ubuntu/24.04/prod
-packages-microsoft-prod -&gt; https://packages.microsoft.com/ubuntu/24.04/prod</code></pre>
-<p>You should only keep trusted sources such as Microsoft and Canonical.  You need also to perform the same checks for all the other types of packages or images you might be using (containers, snaps …). Unfortunately, many companies might overlook securing the models themselves. Canonical not only provides audited AI models but also ones that are optimized for your infrastructure. Let’s look at an example.</p>
-<h1 class="wp-block-heading"><strong>Your optimized AI models</strong></h1>
-<p>Canonical recently <a href="https://canonical.com/blog/canonical-releases-inference-snaps">announced</a> <a href="https://documentation.ubuntu.com/inference-snaps/">inference snaps</a> that take advantage of your silicon capabilities (whether CPUs or GPUs) to accelerate your AI workloads.  Here’s how you can install one:</p>
-<pre class="wp-block-code"><code>sudo snap install qwen-vl --beta
-qwen-vl status # Checks it finished successfully</code></pre>
-<p>On my machine, I get:</p>
-<pre class="wp-block-code"><code>engine: cpu-avx512
-endpoints:
-    openai: http://localhost:8326/v1</code></pre>
-<p>You can then use the newly deployed model as follows:</p>
-<pre class="wp-block-code"><code>curl http://localhost:8326/v1/chat/completions \
--H "Content-Type: application/json" \
--d '{ "model": "&lt;model-name&gt;", "messages": [{"role": "user", "content": "Who is the publisher of Ubuntu?"}],
-"temperature": 0.7
-}' | jq</code></pre>
-<p>You should then get a response to the supplied prompt.</p>
-<p>Running optimized AI models along Ubuntu Pro and SQL Server provides you with a secure and reliable stack to support your AI workflows. Canonical and Microsoft can help you go further with jointly supported offerings.</p>
-<h1 class="wp-block-heading"><strong>Your supported AI playground</strong></h1>
-<p>We saw together how Canonical and Microsoft help you run an integrated AI stack from the operating system up to the database engine and the AI models. Canonical and Microsoft  deliver prebuilt Azure VM images with pre-configured SQL Server on top of Ubuntu Pro, with support from both companies. We can also help you run highly available and supported SQL Server deployments on top of Ubuntu Pro. Please <a href="https://canonical.com/data#get-in-touch">contact us</a> for more details.</p>]]></description>
+<figure class="wp-block-image size-full"><img alt="" height="713" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1267w" width="1267"/></figure>
+<h2 class="wp-block-heading"><strong>Introducing one of the first RVA23 compliant platforms with Ubuntu</strong></h2>
+<p>The RISC-V RVA23 profile, introduced in 2024, defines a mandatory set of hardware features for 64-bit processors to help facilitate a consistent software-to-hardware interface. Some of the mandatory features include vector computing for AI workloads, advanced security extensions and hypervisor support. SpacemiT’s K3 SoC is one of the first RVA23 compliant platforms available today. Canonical announced  <a href="https://canonical.com/blog/canonical-releases-ubuntu-25-10-questing-quokka">adoption of RVA23</a> as a baseline profile for RISC-V builds with the release of Ubuntu 25.10. This enables users of RVA23 compliant platforms with Ubuntu to leverage the full power of the chip out-of-the-box and gain a stable, high performing experience. </p>
+<h2 class="wp-block-heading"><strong>Collaborating on platform enablement </strong></h2>
+<p>With RVA23 compliance in mind, SpacemiT has taken the lead in enabling the Ubuntu 26.04 LTS Preview release on the K3 SoC, delivering a new RISC-V desktop experience. The enablement of Ubuntu 26.04 LTS, which will officially be released in April 2026, on the K3 chip will support RVA23-compliant computing systems and products worldwide, representing a milestone in the development of the RISC-V software ecosystem. This is expected to attract more developers and partners, accelerating ecosystem maturity with greater speed and efficiency.</p>
+<figure class="wp-block-image size-full"><img alt="" height="713" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1267w" width="1267"/></figure>
+<h2 class="wp-block-heading"><strong>Ubuntu 24.04 LTS availability on SpacemiT’s existing K1 platform</strong></h2>
+<p>In addition to enabling Ubuntu on the new K3 chip, SpacemiT and Canonical have also collaborated to enable Ubuntu 24.04 LTS across the broader SpacemiT lineup, including the K1 MUSE Book and MUSE Pi Pro. This initiative reflects the companies’ shared mission to bring a world-class Linux experience to the entire SpacemiT community. </p>
+<h2 class="wp-block-heading"><strong>A win-win collaboration to accelerate the RISC-V ecosystem</strong></h2>
+<p>“Ubuntu is one of the most popular Linux distributions globally, and we are delighted to work with Canonical to bring Ubuntu to our K3/K1 intelligent computing platforms and jointly advance the open RISC-V architecture and Linux software ecosystem,” said Sun Yanbang, President of SpacemiT. “This collaboration not only provides developers with a more complete technical solution, but also reflects SpacemiT’s long-term commitment to open standards and open-source ecosystems. By combining Ubuntu’s mature software ecosystem with our advanced RISC-V hardware technologies, we aim to drive innovation and growth in intelligent computing,” he added.</p>
+<p>”SpacemiT has significantly contributed to the fast-growing RISC-V ecosystem and leading adoption of RVA23 with Ubuntu 26.04,” said Cindy Goldberg, VP of Cloud and Silicon Partnerships at Canonical. “We’re delighted to work with SpacemiT to make the intelligent computing capabilities of the K3 and K1 series easily accessible to developers. Canonical is committed to amplifying the impact of open source software and making it available to users everywhere. The collaboration with SpacemiT aligns perfectly with our vision and our commitment to the RISC-Vecosystem.”</p>
+<h2 class="wp-block-heading"><strong>About Canonical</strong></h2>
+<p>Canonical, the publisher of Ubuntu, provides open source security, support and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone. Learn more at <a href="https://canonical.com/">https://canonical.com/</a> </p>
+<h2 class="wp-block-heading"><strong>About SpacemiT</strong></h2>
+<p>Founded in November 2021, SpacemiT is a computing ecosystem company built on next-generation RISC-V architecture. The company focuses on full-stack computing technologies including high-performance RISC-V CPU cores, RISC-V AI cores, NoC interconnects, RISC-V AI CPU chips, and software systems. SpacemiT delivers end-to-end computing system solutions and is committed to building the optimal native computing platform for the next AI era, enabling new applications such as AI computers and AI robots. <a href="https://www.spacemit.com">https://www.spacemit.com</a> </p>
+<figure class="wp-block-image size-full"><img alt="" height="535" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1267w" width="1267"/></figure>]]></description>
       <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
+    </item>
+    <item>
+      <title>E372 De Volta À Idade Média</title>
+      <link>https://podcastubuntuportugal.org/e372/</link>
+      <guid isPermaLink="true">https://podcastubuntuportugal.org/e372/</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Depois de uma tempestade que deixou metade do país às escuras, aproveitámos e voltámos à Idade Média (ou seja, Portugal contemporâneo). Com os preços dos Raspberry Pi a subir, estará na altura de voltar aos ábacos? Como foi a peregrinação à FOSDEM? Que novidades traz o Diogo? O mundo do Firefox está em polvorosa com Autos de Fé; o LibreOffice pula e avança no mundo germanófono; os Snaps podem agora ser farejados por uma nova ferramenta; anda aí um novo Kernel e imagens de Ubuntu 26.04 para testar; o Papers já permite desenhar bonecos e o Steam tem ainda mais jogos para arrombar o monopólio de outros sistemas (por favor não usem o termo Microslop).</p>
+<p>Já sabem: oiçam, subscrevam e partilhem!</p>
+<ul>
+<li>FOSDEM 2026: <a href="https://fosdem.org/2026/">https://fosdem.org/2026/</a></li>
+<li>LCD Porto: <a href="https://lcdporto.org">https://lcdporto.org</a></li>
+<li>Firefox:
+<ul>
+<li><a href="https://www.omgubuntu.co.uk/2026/01/firefox-147-released-">https://www.omgubuntu.co.uk/2026/01/firefox-147-released-</a> <a href="https://www.phoronix.com/news/Firefox-148-AI-Controls">https://www.phoronix.com/news/Firefox-148-AI-Controls</a></li>
+<li><a href="https://9to5linux.com/firefoxs-ai-kill-switch-lands-in-firefox-nightly-slated-for-firefox-148">https://9to5linux.com/firefoxs-ai-kill-switch-lands-in-firefox-nightly-slated-for-firefox-148</a></li>
+<li><a href="https://www.omgubuntu.co.uk/2026/02/firefox-148-disable-ai-features">https://www.omgubuntu.co.uk/2026/02/firefox-148-disable-ai-features</a></li>
+</ul>
+</li>
+<li>Ubuntu 24.04.4 HWE:
+<ul>
+<li><a href="https://www.omgubuntu.co.uk/2026/01/ubuntu-24-04-4-lts-hwe-update-kernel-mesa">https://www.omgubuntu.co.uk/2026/01/ubuntu-24-04-4-lts-hwe-update-kernel-mesa</a></li>
+<li><a href="https://9to5linux.com/ubuntu-24-04-lts-users-get-linux-6-17-and-mesa-25-2-ahead-of-ubuntu-24-04-4-lts">https://9to5linux.com/ubuntu-24-04-lts-users-get-linux-6-17-and-mesa-25-2-ahead-of-ubuntu-24-04-4-lts</a></li>
+</ul>
+</li>
+<li>Ubuntu 26.04:
+<ul>
+<li>Snapshot 3:
+<ul>
+<li><a href="https://www.phoronix.com/news/Ubuntu-26.04-Snapshot-3">https://www.phoronix.com/news/Ubuntu-26.04-Snapshot-3</a></li>
+<li><a href="https://www.omgubuntu.co.uk/2026/01/ubuntu-26-04-snapshot-3-released">https://www.omgubuntu.co.uk/2026/01/ubuntu-26-04-snapshot-3-released</a></li>
+</ul>
+</li>
+<li>kernel 6.20; apesar de ainda estar em RC:
+<ul>
+<li><a href="https://discourse.ubuntu.com/t/26-04-resolute-raccoon-kernel-schedule/75827">https://discourse.ubuntu.com/t/26-04-resolute-raccoon-kernel-schedule/75827</a></li>
+<li><a href="https://www.phoronix.com/news/Ubuntu-26.04-LTS-Linux-Commit">https://www.phoronix.com/news/Ubuntu-26.04-LTS-Linux-Commit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ubuntu Pro, agora disponível em WSL:
+<ul>
+<li><a href="https://www.omgubuntu.co.uk/2025/12/ubuntu-pro-wsl-free-personal-use">https://www.omgubuntu.co.uk/2025/12/ubuntu-pro-wsl-free-personal-use</a></li>
+<li><a href="https://www.phoronix.com/news/Ubuntu-Pro-For-WSL">https://www.phoronix.com/news/Ubuntu-Pro-For-WSL</a></li>
+</ul>
+</li>
+<li>Snaps:
+<ul>
+<li>Alan Pope criou uma ferramenta de rastreio de vulnerabilidades para snaps:</li>
+<li><a href="https://snapscope.popey.com/">https://snapscope.popey.com/</a></li>
+<li><a href="https://www.youtube.com/watch?v=-hB2Z2xI5vY">https://www.youtube.com/watch?v=-hB2Z2xI5vY</a></li>
+<li>Snap do Steam em ARM64:</li>
+<li><a href="https://www.omgubuntu.co.uk/2026/01/steam-snap-arm64-ubuntu-gaming-performance">https://www.omgubuntu.co.uk/2026/01/steam-snap-arm64-ubuntu-gaming-performance</a></li>
+<li><a href="https://www.phoronix.com/news/Steam-Snap-ARM64-FEX">https://www.phoronix.com/news/Steam-Snap-ARM64-FEX</a></li>
+</ul>
+</li>
+<li>Papers, agora com bonecos: <a href="https://www.omgubuntu.co.uk/2026/02/papers-gnome-app-annotations-signature">https://www.omgubuntu.co.uk/2026/02/papers-gnome-app-annotations-signature</a></li>
+<li>Steam - Estatisticas de Janeiro de 2026:
+<ul>
+<li><a href="https://www.phoronix.com/news/Steam-Survey-January-2026">https://www.phoronix.com/news/Steam-Survey-January-2026</a></li>
+<li><a href="https://discourse.ubuntu.com/t/call-for-testing-steam-snap-for-arm64/74719?u=d0od">https://discourse.ubuntu.com/t/call-for-testing-steam-snap-for-arm64/74719?u=d0od</a></li>
+<li><a href="https://www.omgubuntu.co.uk/2026/01/steam-snap-arm64-ubuntu-gaming-performance">https://www.omgubuntu.co.uk/2026/01/steam-snap-arm64-ubuntu-gaming-performance</a></li>
+</ul>
+</li>
+<li>Rust Core Utills:
+<ul>
+<li><a href="https://www.phoronix.com/news/Rust-Coreutils-0.6">https://www.phoronix.com/news/Rust-Coreutils-0.6</a></li>
+<li><a href="https://www.phoronix.com/news/Rust-Coreutils-FOSDEM-2026">https://www.phoronix.com/news/Rust-Coreutils-FOSDEM-2026</a></li>
+</ul>
+</li>
+<li>Raspberry Pi mais caro: <a href="https://www.omgubuntu.co.uk/2026/02/raspberry-pi-annouce-more-price-rises">https://www.omgubuntu.co.uk/2026/02/raspberry-pi-annouce-more-price-rises</a></li>
+<li>LibreOffice:
+<ul>
+<li>Exército Austríaco migra para LibreOffice: <a href="https://www.zdnet.com/article/this-european-military-just-ditched-microsoft-for-open-source-libreoffice-heres-why/">https://www.zdnet.com/article/this-european-military-just-ditched-microsoft-for-open-source-libreoffice-heres-why/</a></li>
+<li>Estado Alemão prevê poupanças de 15 milhões de Euro em 2026, devido à já anunciada migração para LibreOffice: <a href="https://www.kn-online.de/schleswig-holstein/open-source-statt-microsoft-schleswig-holstein-spart-millionen-G7SUXTH42BBE3FGJC7VQQU4LTA.html">https://www.kn-online.de/schleswig-holstein/open-source-statt-microsoft-schleswig-holstein-spart-millionen-G7SUXTH42BBE3FGJC7VQQU4LTA.html</a></li>
+</ul>
+</li>
+<li>Aparentemente, um ábaco tem 54 bits: <a href="https://pt.wikipedia.org/wiki/%C3%81baco">https://pt.wikipedia.org/wiki/%C3%81baco</a></li>
+<li>LoCo PT: <a href="https://loco.ubuntu.com/teams/ubuntu-pt/">https://loco.ubuntu.com/teams/ubuntu-pt/</a></li>
+<li>Mastodon: <a href="https://masto.pt/@pup">https://masto.pt/@pup</a></li>
+<li>Youtube: <a href="https://youtube.com/PodcastUbuntuPortugal">https://youtube.com/PodcastUbuntuPortugal</a></li>
+</ul>
+<h3 id="atribuição-e-licenças">Atribuição e licenças</h3>
+<p>Este episódio foi produzido por Diogo Constantino, Miguel e Tiago Carrondo e editado pelo <a href="https://senhorpodcast.pt/">Senhor Podcast</a>.
+O website é produzido por Tiago Carrondo e o <a href="https://gitlab.com/podcastubuntuportugal/website">código aberto</a> está licenciado nos termos da <a href="https://gitlab.com/podcastubuntuportugal/website/main/LICENSE">Licença MIT</a>. (<a href="https://creativecommons.org/licenses/by/4.0/)">https://creativecommons.org/licenses/by/4.0/)</a>. A música do genérico é: &ldquo;Won&rsquo;t see it comin&rsquo; (Feat Aequality &amp; N&rsquo;sorte d&rsquo;autruche)&rdquo;, por Alpha Hydrae e está licenciada nos termos da <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal License</a>.
+Os separadores de péssima qualidade foram tocados ao vivo e sem rede pelo Miguel, pelo que pedimos desculpa pelos incómodos causados. Os efeitos sonoros têm as seguintes licenças: Medieval Fanfare_neonaeon_tweaked by CGEffex.wav by CGEffex &ndash; <a href="https://freesound.org/s/99961/">https://freesound.org/s/99961/</a> &ndash; License: Attribution 4.0; Tech Corporation (short version) by AudioCoffee &ndash; <a href="https://freesound.org/s/756428/">https://freesound.org/s/756428/</a> &ndash; License: Attribution NonCommercial 4.0; Short Elevator Music Loop by BlondPanda &ndash; <a href="https://freesound.org/s/659889/">https://freesound.org/s/659889/</a> &ndash; License: Creative Commons 0; Risos de piadas secas; patrons laughing.mp3 by pbrproductions &ndash; <a href="https://freesound.org/s/418831/">https://freesound.org/s/418831/</a> &ndash; License: Attribution 3.0; Quem ganhou? 01 WINNER.mp3 by jordanielmills &ndash; <a href="https://freesound.org/s/167535/">https://freesound.org/s/167535/</a> &ndash; License: Creative Commons 0; Isto é um Alerta Ubuntu: Breaking news intro music by humanoide9000 &ndash; <a href="https://freesound.org/s/760770/">https://freesound.org/s/760770/</a> &ndash; License: Attribution 4.0.
+Este episódio está licenciado nos termos da licença: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">cujo texto integral pode ser lido aqui</a>. Estamos abertos a licenciar para permitir outros tipos de utilização, <a href="https://podcastubuntuportugal.org/contactos">contactem-nos</a> para validação e autorização.
+A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustradora e autora de BD. Podem ficar a conhecer melhor a <a href="https://ciberlandia.pt/@shizamura">Shizamura na Ciberlândia</a> e no <a href="https://sarilho.net/">seu sítio web</a>.</p>]]></description>
+      <source url="https://podcastubuntuportugal.org/feed/podcast/index.xml">Podcast Ubuntu Portugal</source>
     </item>
     <item>
       <title>Launchpad mailing lists have been shut down</title>
@@ -328,90 +143,6 @@ endpoints:
 
 <p>For backup and archival, we have provided an archive of the public mailing lists at<a href="https://archive.lists.launchpad.net"> https://archive.lists.launchpad.net</a>. All valid public lists.launchpad.net URLs that existed at the time of the shutdown now redirect to the archive, where the content will remain accessible. If you experience any issues with the archive, please report them by submitting a <a href="https://answers.launchpad.net/launchpad/+addquestion">question</a> or by contacting us on our Matrix channel, <code>#launchpad:ubuntu.com</code>.</p>]]></description>
       <source url="http://news.launchpad.net/feed">Launchpad News</source>
-    </item>
-    <item>
-      <title>What do people do when they edit Wikipedia through Tor?</title>
-      <link>https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</link>
-      <guid isPermaLink="true">https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</guid>
-      <pubDate>Sun, 01 Feb 2026 12:19:11 GMT</pubDate>
-      <description><![CDATA[<p class="has-small-font-size"><em><strong>Note:</strong> I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This post is closely based on <a href="https://blog.communitydata.science/what-do-people-do-when-they-edit-wikipedia-through-tor/">a previously published post</a> by <a href="https://kayleachampion.com/">Kaylea Champion</a> on <a href="https://blog.communitydata.science/">the Community Data Science Blog</a>.</em></p>
-
-
-
-<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg"><img fetchpriority="high" decoding="async" width="1024" height="691" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg" alt="" class="wp-image-3322" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-300x202.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-768x518.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Many individuals use Tor to reduce their visibility to widespread internet surveillance.</figcaption></figure>
-
-
-
-<p>One popular approach to protecting our privacy online is to use the <a href="https://www.torproject.org/">Tor network</a>. Tor protects users from being identified by their IP address, which can be tied to a physical location. However, if you’d like to contribute to Wikipedia using Tor, you’ll run into a problem. Although most IP addresses can edit without an account, Tor users are blocked from editing.</p>
-
-
-
-<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg"><img decoding="async" width="1024" height="576" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg" alt="" class="wp-image-3323" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-300x169.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-768x432.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Tor users attempting to contribute to Wikipedia are shown a screen that informs them that they are not allowed to edit Wikipedia.</figcaption></figure>
-
-
-
-<p><a href="https://mako.cc/copyrighteous/?p=957">Other research by my team</a> has shown that Wikipedia’s attempt to block Tor is imperfect and that some people have been able to edit despite the ban. As part of this work, we built a dataset of more than 11,000 contributions to Wikipedia via Tor and used quantitative analysis to show that contributions from Tor were of about the same quality as contributions from other new editors and other contributors without accounts. Of course, given the unusual circumstances Tor-based contributors face, we wondered whether a deeper look at the content of their edits might reveal more about their motives and the kinds of contributions they seek to make. Kaylea Champion (then a student, now faculty at UW Bothell) led a qualitative investigation to explore these questions.</p>
-
-
-
-<p>Given the challenges of studying anonymity seekers, we designed a novel “forensic” qualitative approach inspired by techniques common in computer security and criminal investigation. We applied this new technique to a sample of 500 editing sessions and categorized each session based on what the editor seemed to be intending to do.</p>
-
-
-
-<p>Most of the contributions we found fell into one of the two following categories:</p>
-
-
-
-<ul class="wp-block-list">
-<li>Many contributions were <strong>quotidian</strong> attempts to add to the encyclopedia. Tor-based editors added facts, fixed typos, and updated train schedules. There’s no way to know whether these individuals knew they were just getting lucky in their ability to edit or were patiently reloading to evade the ban.</li>
-
-
-
-<li>Second, we found <strong>harassing comments and vandalism</strong>. Unwelcome conduct is common in online environments, and it is sometimes more common when the likelihood of being identified decreases. Some of the harassing comments we observed were direct responses to being banned as a Tor user.</li>
-</ul>
-
-
-
-<p>Although these were most of what we observed, we  also found evidence of several types of contributor intent:</p>
-
-
-
-<ul class="wp-block-list">
-<li>We observed <strong>activism</strong>: when a contributor tried to draw attention to journalistic accounts of environmental and human rights abuses committed by a mining company, only to have editors linked to the mining company repeatedly remove their edits. Another example involved an editor trying to diminish the influence of proponents of alternative medicine.</li>
-
-
-
-<li>We also observed <strong>quality maintenance</strong> activities when editors used Wikipedia’s rules on appropriate sourcing to remove personal websites being cited in conspiracy theories.</li>
-
-
-
-<li>We saw <strong>edit wars</strong> with Tor editors participating in a back-and-forth removal and replacement of content as part of a dispute, in some cases countering the work of an experienced Wikipedia editor whom even other experienced editors had gauged to be biased.</li>
-
-
-
-<li>Finally, we saw Tor-based editors participating in <strong>non-article discussions,</strong> such as investigations into administrator misconduct and <span style="box-sizing: border-box; margin: 0px; padding: 0px;"><strong>protests against the Wikipedia platform&#8217;s mistrust of Tor editors</strong></span>.</li>
-</ul>
-
-
-
-<figure class="wp-block-image size-full"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png"><img decoding="async" width="1024" height="804" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png" alt="" class="wp-image-3324" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-300x236.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-768x603.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">An exploratory mapping of our themes in terms of the value a type of contribution represents to the Wikipedia community and the importance of anonymity in facilitating it. Anonymity-protecting tools play a critical role in facilitating contributions on the right side of the figure, while edits on the left are more likely to occur even when anonymity is impossible. Contributions toward the top reflect valuable forms of participation in Wikipedia, while edits at the bottom reflect damage.</figcaption></figure>
-
-
-
-<p>In all, these themes led us to reflect on how the risks individuals face when contributing to online communities sometimes diverge from the risks the communities face in accepting their work. Expressing minoritized perspectives, maintaining community standards even when you may be targeted by the rulebreaker, highlighting injustice, or acting as a whistleblower can be very risky for an individual, and may not be possible without privacy protections. Of course, in platforms seeking to support the public good, such knowledge and accountability may be crucial.</p>
-
-
-
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-
-
-<p class="has-small-font-size"><em>This work was published as a paper at CSCW: </em>Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. 2019. A Forensic Qualitative Analysis of Contributions to Wikipedia from Anonymity Seeking Users. <em>Proceedings of the ACM on Human-Computer Interaction</em>. 3, CSCW, Article 53 (November 2019), 26 pages. <a href="https://doi.org/10.1145/3359155">https://doi.org/10.1145/3359155</a></p>
-
-
-
-<p class="has-small-font-size"><em>This project was conducted by Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. This work was supported by the National Science Foundation (awards CNS-1703736 and CNS-1703049) and included the work of two undergraduates supported through an NSF REU supplement.</em></p>]]></description>
-      <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
     </item>
     <item>
       <title>fifty</title>
@@ -1234,45 +965,6 @@ endpoints:
             <p><small>1 post - 1 participant</small></p>
             <p><a href="https://discourse.ubuntu.com/t/ubuntu-weekly-newsletter-issue-929/75636">Read full topic</a></p>]]></description>
       <source url="https://discourse.ubuntu.com/c/uwn/uwn-issues/419.rss">Ubuntu Weekly News</source>
-    </item>
-    <item>
-      <title>E371 Pluvioso Duvidoso</title>
-      <link>https://podcastubuntuportugal.org/e371/</link>
-      <guid isPermaLink="true">https://podcastubuntuportugal.org/e371/</guid>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>A conversa continua com os verdadeiros nómadas digitais; David Negreira, Tiago Carrondo, Miguel e Diogo Constantino - alguns a dobrarem as ceroulas para irem à FOSDEM. Queres ter o teu próprio e-mail? Ah! Querias! É mais complicado do que parece? Nim. A merdificação da internet e dos serviços digitais tem saída? Errr&hellip; E a Inferência Estatístisca Turbinada, vulgo Intelijumência Artificial? É ensinada ou treinada? Deve ser tratada como Deus na terra&hellip;ou como um estagiário meio-burro? Entretanto, o site da comunidade Ubuntu Portugal pula e avança, empurrado pela mãozinha do Hugo. Ainda a procissão vai no adro!&hellip;</p>
-<p>Já sabem: oiçam, subscrevam e partilhem!</p>
-<ul>
-<li>ZBT-2: <a href="https://www.home-assistant.io/connect/zbt-2">https://www.home-assistant.io/connect/zbt-2</a></li>
-<li>FOSDEM 2026: <a href="https://fosdem.org/2026/">https://fosdem.org/2026/</a></li>
-<li>Mailfence: <a href="https://mailfence.com/">https://mailfence.com/</a></li>
-<li>Tutamail: <a href="https://tuta.com/">https://tuta.com/</a></li>
-<li>Protonmail: <a href="https://mail.proton.me">https://mail.proton.me</a></li>
-<li>Mailgun: <a href="https://www.mailgun.com/">https://www.mailgun.com/</a></li>
-<li>Mail-in-a-box: <a href="https://github.com/mail-in-a-box">https://github.com/mail-in-a-box</a></li>
-<li>Hugo: <a href="https://gohugo.io/">https://gohugo.io/</a></li>
-<li>Vota sim ou não à IA: <a href="https://voteyesornoai.com/">https://voteyesornoai.com/</a></li>
-<li>Livro «Operating Systems: Three Easy Pieces» : <a href="https://pages.cs.wisc.edu//~remzi/OSTEP/">https://pages.cs.wisc.edu//~remzi/OSTEP/</a></li>
-<li>Anubis: <a href="https://anubis.techaro.lol/">https://anubis.techaro.lol/</a></li>
-<li>Home Assistant: <a href="https://www.home-assistant.io/">https://www.home-assistant.io/</a></li>
-<li>Ciência não é encher chouriços: <a href="https://www.nature.com/articles/d41586-025-04061-w">https://www.nature.com/articles/d41586-025-04061-w</a></li>
-<li>LLM para jornalismo? Uma boa má ideia: <a href="https://www.techdirt.com/2026/01/07/journalistic-malpractice-no-llm-ever-admits-to-anything-and-reporting-otherwise-is-a-lie/">https://www.techdirt.com/2026/01/07/journalistic-malpractice-no-llm-ever-admits-to-anything-and-reporting-otherwise-is-a-lie/</a></li>
-<li>Dependência de software Norte-Americano: <a href="https://www.cigref.fr/technological-dependence-on-american-software-and-cloud-services-an-assessment-of-the-economic-consequences-in-europe">https://www.cigref.fr/technological-dependence-on-american-software-and-cloud-services-an-assessment-of-the-economic-consequences-in-europe</a></li>
-<li>Como assim, desenvolver Ubuntu com IA? <a href="https://discourse.ubuntu.com/t/developing-with-ai-on-ubuntu/75299">https://discourse.ubuntu.com/t/developing-with-ai-on-ubuntu/75299</a></li>
-<li>Merdificação da Internet: <a href="https://guilhotrina.substack.com/p/a-epoca-de-ouro-digital-morreu-longa">https://guilhotrina.substack.com/p/a-epoca-de-ouro-digital-morreu-longa</a></li>
-<li>Merdificação (Enshittification): <a href="https://pt.wikipedia.org/wiki/Merdifica%C3%A7%C3%A3o">https://pt.wikipedia.org/wiki/Merdifica%C3%A7%C3%A3o</a></li>
-<li>Blog do Cory Doctorow: <a href="https://pluralistic.net/">https://pluralistic.net/</a></li>
-<li>LoCo PT: <a href="https://loco.ubuntu.com/teams/ubuntu-pt/">https://loco.ubuntu.com/teams/ubuntu-pt/</a></li>
-<li>Mastodon: <a href="https://masto.pt/@pup">https://masto.pt/@pup</a></li>
-<li>Youtube: <a href="https://youtube.com/PodcastUbuntuPortugal">https://youtube.com/PodcastUbuntuPortugal</a></li>
-</ul>
-<h3 id="atribuição-e-licenças">Atribuição e licenças</h3>
-<p>Este episódio foi produzido por Diogo Constantino, Miguel e Tiago Carrondo e editado pelo <a href="https://senhorpodcast.pt/">Senhor Podcast</a>.
-O website é produzido por Tiago Carrondo e o <a href="https://gitlab.com/podcastubuntuportugal/website">código aberto</a> está licenciado nos termos da <a href="https://gitlab.com/podcastubuntuportugal/website/main/LICENSE">Licença MIT</a>. (<a href="https://creativecommons.org/licenses/by/4.0/)">https://creativecommons.org/licenses/by/4.0/)</a>. A música do genérico é: &ldquo;Won&rsquo;t see it comin&rsquo; (Feat Aequality &amp; N&rsquo;sorte d&rsquo;autruche)&rdquo;, por Alpha Hydrae e está licenciada nos termos da <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal License</a>.
-Os separadores de péssima qualidade foram tocados ao vivo e sem rede pelo Miguel, pelo que pedimos desculpa pelos incómodos causados.
-Este episódio está licenciado nos termos da licença: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">cujo texto integral pode ser lido aqui</a>. Estamos abertos a licenciar para permitir outros tipos de utilização, <a href="https://podcastubuntuportugal.org/contactos">contactem-nos</a> para validação e autorização.
-A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustradora e autora de BD. Podem ficar a conhecer melhor a <a href="https://ciberlandia.pt/@shizamura">Shizamura na Ciberlândia</a> e no <a href="https://sarilho.net/">seu sítio web</a>.</p>]]></description>
-      <source url="https://podcastubuntuportugal.org/feed/podcast/index.xml">Podcast Ubuntu Portugal</source>
     </item>
     <item>
       <title>Developing with AI on Ubuntu</title>

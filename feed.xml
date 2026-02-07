@@ -6,41 +6,25 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Fri, 06 Feb 2026 00:32:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 00:33:06 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>SpacemiT announces the availability of  Ubuntu on K3/K1 series RISC-V AI computing platforms</title>
-      <link>https://ubuntu.com//blog/spacemit-announces-availability-of-ubuntu-on-k3-k1-series</link>
-      <guid isPermaLink="true">https://ubuntu.com//blog/spacemit-announces-availability-of-ubuntu-on-k3-k1-series</guid>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 GMT</pubDate>
-      <description><![CDATA[<p>SpacemiT (Hangzhou) Technology Co., Ltd. today announced a  collaboration with Canonical to make  Ubuntu available on SpacemiT’s new K3 SoC and the existing K1 series RISC-V computing platforms. This collaboration marks a deep integration between open-source operating systems and open RISC-V silicon, bringing powerful, flexible, and reliable intelligent computing solutions to developers worldwide.</p>
-<h2 class="wp-block-heading"><strong>Hardware platforms designed for high-performance intelligent computing</strong></h2>
-<p>SpacemiT’s new K3 series and the existing K1 series chips are built on proprietary RISC-V processor cores and integrate homogeneous AI computing capabilities. Designed for high-performance AI edge inference and AI robotics, the platforms are well suited for applications including robotics, intelligent security at the edge, industrial vision, and AI edge inference.</p>
-<figure class="wp-block-image size-full"><img alt="" height="1139" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fac59%2Fimage-1.jpeg 1267w" width="1267"/></figure>
-<h2 class="wp-block-heading"><strong>Advancing intelligent computing: seamless OS integration </strong></h2>
-<p>With the rapid advancement of artificial intelligence, edge computing, and robotics, the market increasingly requires hardware and software platforms that deliver both strong computing performance and high development efficiency. Built on advanced RISC-V architecture and innovative system design, SpacemiT’s K3 and K1 series chips provide an ideal platform for RISC-V high-performance computing. Ubuntu, one of the world’s most widely used Linux distributions, is known for its stability, rich software ecosystem, and strong community support. The availability of  Ubuntu on the K3 and K1 series means developers benefit from seamless hardware-software integration as well as:</p>
-<ul>
-<li>Familiar environment: low barrier to entry for  existing Ubuntu users</li>
-<li>Ecosystem compatibility: seamless access to Ubuntu’s vast software repositories and application ecosystem</li>
-<li>Community-driven innovation: access to global Ubuntu community resources, documentation and shared expertise</li>
-</ul>
-<figure class="wp-block-image size-full"><img alt="" height="713" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fa872%2Fimage.png 1267w" width="1267"/></figure>
-<h2 class="wp-block-heading"><strong>Introducing one of the first RVA23 compliant platforms with Ubuntu</strong></h2>
-<p>The RISC-V RVA23 profile, introduced in 2024, defines a mandatory set of hardware features for 64-bit processors to help facilitate a consistent software-to-hardware interface. Some of the mandatory features include vector computing for AI workloads, advanced security extensions and hypervisor support. SpacemiT’s K3 SoC is one of the first RVA23 compliant platforms available today. Canonical announced  <a href="https://canonical.com/blog/canonical-releases-ubuntu-25-10-questing-quokka">adoption of RVA23</a> as a baseline profile for RISC-V builds with the release of Ubuntu 25.10. This enables users of RVA23 compliant platforms with Ubuntu to leverage the full power of the chip out-of-the-box and gain a stable, high performing experience. </p>
-<h2 class="wp-block-heading"><strong>Collaborating on platform enablement </strong></h2>
-<p>With RVA23 compliance in mind, SpacemiT has taken the lead in enabling the Ubuntu 26.04 LTS Preview release on the K3 SoC, delivering a new RISC-V desktop experience. The enablement of Ubuntu 26.04 LTS, which will officially be released in April 2026, on the K3 chip will support RVA23-compliant computing systems and products worldwide, representing a milestone in the development of the RISC-V software ecosystem. This is expected to attract more developers and partners, accelerating ecosystem maturity with greater speed and efficiency.</p>
-<figure class="wp-block-image size-full"><img alt="" height="713" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2Fef14%2Fimage.png 1267w" width="1267"/></figure>
-<h2 class="wp-block-heading"><strong>Ubuntu 24.04 LTS availability on SpacemiT’s existing K1 platform</strong></h2>
-<p>In addition to enabling Ubuntu on the new K3 chip, SpacemiT and Canonical have also collaborated to enable Ubuntu 24.04 LTS across the broader SpacemiT lineup, including the K1 MUSE Book and MUSE Pi Pro. This initiative reflects the companies’ shared mission to bring a world-class Linux experience to the entire SpacemiT community. </p>
-<h2 class="wp-block-heading"><strong>A win-win collaboration to accelerate the RISC-V ecosystem</strong></h2>
-<p>“Ubuntu is one of the most popular Linux distributions globally, and we are delighted to work with Canonical to bring Ubuntu to our K3/K1 intelligent computing platforms and jointly advance the open RISC-V architecture and Linux software ecosystem,” said Sun Yanbang, President of SpacemiT. “This collaboration not only provides developers with a more complete technical solution, but also reflects SpacemiT’s long-term commitment to open standards and open-source ecosystems. By combining Ubuntu’s mature software ecosystem with our advanced RISC-V hardware technologies, we aim to drive innovation and growth in intelligent computing,” he added.</p>
-<p>”SpacemiT has significantly contributed to the fast-growing RISC-V ecosystem and leading adoption of RVA23 with Ubuntu 26.04,” said Cindy Goldberg, VP of Cloud and Silicon Partnerships at Canonical. “We’re delighted to work with SpacemiT to make the intelligent computing capabilities of the K3 and K1 series easily accessible to developers. Canonical is committed to amplifying the impact of open source software and making it available to users everywhere. The collaboration with SpacemiT aligns perfectly with our vision and our commitment to the RISC-Vecosystem.”</p>
-<h2 class="wp-block-heading"><strong>About Canonical</strong></h2>
-<p>Canonical, the publisher of Ubuntu, provides open source security, support and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments and home users, Canonical delivers trusted open source for everyone. Learn more at <a href="https://canonical.com/">https://canonical.com/</a> </p>
-<h2 class="wp-block-heading"><strong>About SpacemiT</strong></h2>
-<p>Founded in November 2021, SpacemiT is a computing ecosystem company built on next-generation RISC-V architecture. The company focuses on full-stack computing technologies including high-performance RISC-V CPU cores, RISC-V AI cores, NoC interconnects, RISC-V AI CPU chips, and software systems. SpacemiT delivers end-to-end computing system solutions and is committed to building the optimal native computing platform for the next AI era, enabling new applications such as AI computers and AI robots. <a href="https://www.spacemit.com">https://www.spacemit.com</a> </p>
-<figure class="wp-block-image size-full"><img alt="" height="535" loading="lazy" sizes="(min-width: 1267px) 1267px, 100vw" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg" srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_460/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 460w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_620/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 620w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1036/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1036w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1681/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1681w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1920/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1920w, https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1267/https%3A%2F%2Fubuntu.com%2Fwp-content%2Fuploads%2F41d4%2Fimage-1.jpeg 1267w" width="1267"/></figure>]]></description>
+      <title>SQL Server 2025 is generally available on Ubuntu 24.04 LTS</title>
+      <link>https://ubuntu.com//blog/sql-server-2025-ubuntu-24-04-lts</link>
+      <guid isPermaLink="true">https://ubuntu.com//blog/sql-server-2025-ubuntu-24-04-lts</guid>
+      <pubDate>Fri, 06 Feb 2026 15:41:36 GMT</pubDate>
+      <description><![CDATA[<p>Microsoft has announced the General Availability (GA) of SQL Server 2025 on Ubuntu 24.04 LTS, starting with the CU1 release. This milestone allows enterprises to deploy mission-critical workloads on our latest Long Term Support release, benefiting from predictable stability and up-to-date kernels.</p>
+<h3 class="wp-block-heading">Update your repository</h3>
+<p>If you have been testing the preview version, you must switch your repository configuration to ensure you are on the production track. To switch your repository configuration, update your source from mssql-server-preview.repo to mssql-server-2025.repo. Continuing to use the preview repository may result in installing pre-release builds that are not intended for production workloads.</p>
+<h3 class="wp-block-heading">Enhancements for Linux</h3>
+<p>SQL Server 2025 CU1 introduces specific improvements for managing databases on Linux infrastructure.</p>
+<p>New Dynamic Management Views (DMVs) now expose OS-level metrics directly to database administrators. Views such as sys.dm_os_linux_cpu_stats and sys.dm_os_linux_disk_stats help distinguish between database-specific bottlenecks and infrastructure issues. The release also includes sys.dm_os_linux_net_stats, which provides real-time network interface statistics to troubleshoot connectivity and throughput.</p>
+<p>We also see improvements in Contained Availability Groups (CAG). Administrators can now enable database creation and restoration directly within a CAG session using sp_set_session_context. This simplifies lifecycle operations while maintaining strict access controls: only users with the dbcreator role can create databases, while the db_owner or sysadmin roles are required for restoration.</p>
+<h3 class="wp-block-heading">Enterprise security</h3>
+<p>For organizations with strict compliance requirements, Ubuntu Pro is the preferred choice. It extends the standard LTS security coverage to the full software stack covered in Universe and offers FIPS compliance, which is critical for many regulated SQL Server workloads.</p>
+<p><a href="https://ubuntu.com/azure/pro">Learn more about Ubuntu Pro for Azure ›</a></p>
+<p>You can install the production-ready version of SQL Server 2025 on Ubuntu 24.04 today by following the <a href="https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu">official installation guide</a>.</p>]]></description>
       <source url="https://ubuntu.com/blog/feed/">Ubuntu Blog</source>
     </item>
     <item>
@@ -143,6 +127,90 @@ A arte de episódio foi criada por encomenda pela Shizamura - artista, ilustrado
 
 <p>For backup and archival, we have provided an archive of the public mailing lists at<a href="https://archive.lists.launchpad.net"> https://archive.lists.launchpad.net</a>. All valid public lists.launchpad.net URLs that existed at the time of the shutdown now redirect to the archive, where the content will remain accessible. If you experience any issues with the archive, please report them by submitting a <a href="https://answers.launchpad.net/launchpad/+addquestion">question</a> or by contacting us on our Matrix channel, <code>#launchpad:ubuntu.com</code>.</p>]]></description>
       <source url="http://news.launchpad.net/feed">Launchpad News</source>
+    </item>
+    <item>
+      <title>What do people do when they edit Wikipedia through Tor?</title>
+      <link>https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</link>
+      <guid isPermaLink="true">https://mako.cc/copyrighteous/what-do-people-do-when-they-edit-wikipedia-through-tor</guid>
+      <pubDate>Sun, 01 Feb 2026 12:19:11 GMT</pubDate>
+      <description><![CDATA[<p class="has-small-font-size"><em><strong>Note:</strong> I have not published blog posts about my academic papers over the past few years. To ensure that my blog contains a more comprehensive record of my published papers and to surface these for folks who missed them, I will be periodically (re)publishing blog posts about some &#8220;older&#8221; published projects. This post is closely based on <a href="https://blog.communitydata.science/what-do-people-do-when-they-edit-wikipedia-through-tor/">a previously published post</a> by <a href="https://kayleachampion.com/">Kaylea Champion</a> on <a href="https://blog.communitydata.science/">the Community Data Science Blog</a>.</em></p>
+
+
+
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg"><img fetchpriority="high" decoding="async" width="1024" height="691" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg" alt="" class="wp-image-3322" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-300x202.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/the_eye-35591174412_6d0d07d405-smaller-1024x691-1-768x518.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Many individuals use Tor to reduce their visibility to widespread internet surveillance.</figcaption></figure>
+
+
+
+<p>One popular approach to protecting our privacy online is to use the <a href="https://www.torproject.org/">Tor network</a>. Tor protects users from being identified by their IP address, which can be tied to a physical location. However, if you’d like to contribute to Wikipedia using Tor, you’ll run into a problem. Although most IP addresses can edit without an account, Tor users are blocked from editing.</p>
+
+
+
+<figure class="wp-block-image size-full size-large"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg"><img decoding="async" width="1024" height="576" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg" alt="" class="wp-image-3323" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2.jpg 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-300x169.jpg 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_wikipedia-cant_edit-1024x576-2-768x432.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">Tor users attempting to contribute to Wikipedia are shown a screen that informs them that they are not allowed to edit Wikipedia.</figcaption></figure>
+
+
+
+<p><a href="https://mako.cc/copyrighteous/?p=957">Other research by my team</a> has shown that Wikipedia’s attempt to block Tor is imperfect and that some people have been able to edit despite the ban. As part of this work, we built a dataset of more than 11,000 contributions to Wikipedia via Tor and used quantitative analysis to show that contributions from Tor were of about the same quality as contributions from other new editors and other contributors without accounts. Of course, given the unusual circumstances Tor-based contributors face, we wondered whether a deeper look at the content of their edits might reveal more about their motives and the kinds of contributions they seek to make. Kaylea Champion (then a student, now faculty at UW Bothell) led a qualitative investigation to explore these questions.</p>
+
+
+
+<p>Given the challenges of studying anonymity seekers, we designed a novel “forensic” qualitative approach inspired by techniques common in computer security and criminal investigation. We applied this new technique to a sample of 500 editing sessions and categorized each session based on what the editor seemed to be intending to do.</p>
+
+
+
+<p>Most of the contributions we found fell into one of the two following categories:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Many contributions were <strong>quotidian</strong> attempts to add to the encyclopedia. Tor-based editors added facts, fixed typos, and updated train schedules. There’s no way to know whether these individuals knew they were just getting lucky in their ability to edit or were patiently reloading to evade the ban.</li>
+
+
+
+<li>Second, we found <strong>harassing comments and vandalism</strong>. Unwelcome conduct is common in online environments, and it is sometimes more common when the likelihood of being identified decreases. Some of the harassing comments we observed were direct responses to being banned as a Tor user.</li>
+</ul>
+
+
+
+<p>Although these were most of what we observed, we  also found evidence of several types of contributor intent:</p>
+
+
+
+<ul class="wp-block-list">
+<li>We observed <strong>activism</strong>: when a contributor tried to draw attention to journalistic accounts of environmental and human rights abuses committed by a mining company, only to have editors linked to the mining company repeatedly remove their edits. Another example involved an editor trying to diminish the influence of proponents of alternative medicine.</li>
+
+
+
+<li>We also observed <strong>quality maintenance</strong> activities when editors used Wikipedia’s rules on appropriate sourcing to remove personal websites being cited in conspiracy theories.</li>
+
+
+
+<li>We saw <strong>edit wars</strong> with Tor editors participating in a back-and-forth removal and replacement of content as part of a dispute, in some cases countering the work of an experienced Wikipedia editor whom even other experienced editors had gauged to be biased.</li>
+
+
+
+<li>Finally, we saw Tor-based editors participating in <strong>non-article discussions,</strong> such as investigations into administrator misconduct and <span style="box-sizing: border-box; margin: 0px; padding: 0px;"><strong>protests against the Wikipedia platform&#8217;s mistrust of Tor editors</strong></span>.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png"><img decoding="async" width="1024" height="804" src="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png" alt="" class="wp-image-3324" srcset="https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1.png 1024w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-300x236.png 300w, https://mako.cc/copyrighteous/wp-content/uploads/2026/02/tor_stories-bubble_plot-1024x804-1-768x603.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></a><figcaption class="wp-element-caption">An exploratory mapping of our themes in terms of the value a type of contribution represents to the Wikipedia community and the importance of anonymity in facilitating it. Anonymity-protecting tools play a critical role in facilitating contributions on the right side of the figure, while edits on the left are more likely to occur even when anonymity is impossible. Contributions toward the top reflect valuable forms of participation in Wikipedia, while edits at the bottom reflect damage.</figcaption></figure>
+
+
+
+<p>In all, these themes led us to reflect on how the risks individuals face when contributing to online communities sometimes diverge from the risks the communities face in accepting their work. Expressing minoritized perspectives, maintaining community standards even when you may be targeted by the rulebreaker, highlighting injustice, or acting as a whistleblower can be very risky for an individual, and may not be possible without privacy protections. Of course, in platforms seeking to support the public good, such knowledge and accountability may be crucial.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="has-small-font-size"><em>This work was published as a paper at CSCW: </em>Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. 2019. A Forensic Qualitative Analysis of Contributions to Wikipedia from Anonymity Seeking Users. <em>Proceedings of the ACM on Human-Computer Interaction</em>. 3, CSCW, Article 53 (November 2019), 26 pages. <a href="https://doi.org/10.1145/3359155">https://doi.org/10.1145/3359155</a></p>
+
+
+
+<p class="has-small-font-size"><em>This project was conducted by Kaylea Champion, Nora McDonald, Stephanie Bankes, Joseph Zhang, Rachel Greenstadt, Andrea Forte, and Benjamin Mako Hill. This work was supported by the National Science Foundation (awards CNS-1703736 and CNS-1703049) and included the work of two undergraduates supported through an NSF REU supplement.</em></p>]]></description>
+      <source url="http://mako.cc/copyrighteous/?flav=rss">Benjamin Mako Hill</source>
     </item>
     <item>
       <title>fifty</title>

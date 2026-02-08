@@ -6,7 +6,7 @@
     <description>Fresh posts from the Planet Ubuntu</description>
     <language>en</language>
     <generator>json-to-rss (GitHub Actions)</generator>
-    <lastBuildDate>Sat, 07 Feb 2026 00:33:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 00:43:44 GMT</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://ubuntu-community-team.github.io/terra//feed.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -21,6 +21,8 @@
 <p>SQL Server 2025 CU1 introduces specific improvements for managing databases on Linux infrastructure.</p>
 <p>New Dynamic Management Views (DMVs) now expose OS-level metrics directly to database administrators. Views such as sys.dm_os_linux_cpu_stats and sys.dm_os_linux_disk_stats help distinguish between database-specific bottlenecks and infrastructure issues. The release also includes sys.dm_os_linux_net_stats, which provides real-time network interface statistics to troubleshoot connectivity and throughput.</p>
 <p>We also see improvements in Contained Availability Groups (CAG). Administrators can now enable database creation and restoration directly within a CAG session using sp_set_session_context. This simplifies lifecycle operations while maintaining strict access controls: only users with the dbcreator role can create databases, while the db_owner or sysadmin roles are required for restoration.</p>
+<h3 class="wp-block-heading">AI capabilities</h3>
+<p>This release also brings native vector support for machine learning applications. To learn how to build a secure AI playground with these new capabilities, read our technical guide, <a href="https://ubuntu.com/blog/sql-server-2025-on-ubuntu">AI meets SQL Server 2025 on Ubuntu.</a></p>
 <h3 class="wp-block-heading">Enterprise security</h3>
 <p>For organizations with strict compliance requirements, Ubuntu Pro is the preferred choice. It extends the standard LTS security coverage to the full software stack covered in Universe and offers FIPS compliance, which is critical for many regulated SQL Server workloads.</p>
 <p><a href="https://ubuntu.com/azure/pro">Learn more about Ubuntu Pro for Azure ›</a></p>
